@@ -1,9 +1,8 @@
 {
-  "name": "meanwhilejs",
+  "name": "astrology",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://meanwhilejs.github.io/meanwhile",
   "bin": {
     "m": "./bin/m/bin/index.mjs"
   },
@@ -17,7 +16,7 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.mjs",
     "build:local": "cross-env NODE_ENV=staging webpack --config webpack.config.mjs",
     "serve": "http-server dist",
-    "start": "http-server dist -p $PORT --spa",
+    "start": "node server-start.mjs",
     "start:dev": "cross-env NODE_ENV=development webpack --config webpack.config.mjs && http-server dist",
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.mjs",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
