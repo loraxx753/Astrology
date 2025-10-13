@@ -76,6 +76,9 @@ export const Content = () => <>
       <Button size={"lg"} asChild>
         <a href="/signs">Explore Signs</a>
       </Button>
+      <Button size={"lg"} asChild>
+        <a href="/houses">Explore Houses</a>
+      </Button>
       <Button size={"lg"} variant={"outline"}>
         Get Your Chart
       </Button>
