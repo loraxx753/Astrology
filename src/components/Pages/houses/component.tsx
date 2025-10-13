@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ThirdParty/ShadCn/Badge';
 import { Home, Users, MessageCircle, Heart, Crown, Briefcase, Shield, Plane, Trophy, Sparkles, Fish } from 'lucide-react';
 import HouseWheelVisualization from '@/components/Visualizations/HouseWheel';
+import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 
 const astrologicalHouses = [
   {
@@ -140,9 +141,12 @@ const astrologicalHouses = [
 ];
 
 const HousesPage = () => {
+  // Set the page background using the custom hook
+  usePageBackground(pageBackgrounds.astrology);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen">
+      <div className="max-w-7xl mx-auto p-6">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-white mb-4">
             Astrological Houses

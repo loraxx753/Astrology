@@ -5,6 +5,7 @@ import { Badge } from "@/components/ThirdParty/ShadCn/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ThirdParty/ShadCn/Card";
 import { Separator } from "@/components/ThirdParty/ShadCn/Separator";
 import { StarIcon, Flame, Zap } from "lucide-react";
+import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 
 const AriesTraits = {
   positive: [
@@ -29,8 +30,11 @@ const AriesDetails = {
 };
 
 export const AriesPage: PageComponentType = () => {
+  // Set the fire element background for Aries
+  usePageBackground(pageBackgrounds.fire);
+  
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-pink-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection.SimpleCentered>
         <div className="container relative py-24 lg:py-32">

@@ -5,6 +5,7 @@ import { Badge } from "@/components/ThirdParty/ShadCn/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ThirdParty/ShadCn/Card";
 import { Separator } from "@/components/ThirdParty/ShadCn/Separator";
 import { StarIcon, SunIcon, Flame } from "lucide-react";
+import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 
 const LeoTraits = {
   positive: [
@@ -29,8 +30,11 @@ const LeoDetails = {
 };
 
 export const LeoPage: PageComponentType = () => {
+  // Set the fire element background for Leo
+  usePageBackground(pageBackgrounds.fire);
+  
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection.SimpleCentered>
         <div className="container relative py-24 lg:py-32">

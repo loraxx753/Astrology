@@ -17,7 +17,7 @@
     "build:local": "cross-env NODE_ENV=staging webpack --config webpack.config.mjs",
     "serve": "serve dist -s",
     "start": "node server-start.mjs",
-    "start:dev": "cross-env NODE_ENV=development webpack --config webpack.config.mjs && http-server dist",
+    "start:dev": "cross-env NODE_ENV=development webpack --config webpack.config.mjs && serve dist -s",
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.mjs",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "cross-env mode=storybook storybook dev -p 7001",

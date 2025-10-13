@@ -5,6 +5,7 @@ import { Badge } from "@/components/ThirdParty/ShadCn/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ThirdParty/ShadCn/Card";
 import { Separator } from "@/components/ThirdParty/ShadCn/Separator";
 import { StarIcon, Wind, MessageCircle } from "lucide-react";
+import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 
 const GeminiTraits = {
   positive: [
@@ -29,8 +30,11 @@ const GeminiDetails = {
 };
 
 export const GeminiPage: PageComponentType = () => {
+  // Set the air element background for Gemini
+  usePageBackground(pageBackgrounds.air);
+  
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-blue-50 to-purple-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection.SimpleCentered>
         <div className="container relative py-24 lg:py-32">

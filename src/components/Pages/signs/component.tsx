@@ -1,9 +1,11 @@
+import React from 'react';
 import { PageComponentType } from '@/lib/types'
 import { HeroSection } from '@/components/ThirdParty/UiBlocks';
 import { Button } from "@/components/ThirdParty/ShadCn/Button";
 import { Badge } from "@/components/ThirdParty/ShadCn/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ThirdParty/ShadCn/Card";
 import { StarIcon, Flame, Mountain, Wind, Droplets } from "lucide-react";
+import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 
 const zodiacSigns = [
   {
@@ -13,8 +15,8 @@ const zodiacSigns = [
     dates: "Mar 21 - Apr 19",
     element: "Fire",
     elementEmoji: "🔥",
-    icon: <Flame className="w-8 h-8 text-red-500" />,
-    gradient: "from-red-500 to-orange-500",
+    icon: <Flame className="w-8 h-8" style={{color: '#dc2626'}} />,
+    gradient: "bg-gradient-to-br from-[#dc2626] to-[#b91c1c]",
     description: "Courageous, determined, and confident pioneers who lead with passion.",
     path: "/signs/aries"
   },
@@ -25,8 +27,8 @@ const zodiacSigns = [
     dates: "Apr 20 - May 20",
     element: "Earth",
     elementEmoji: "🌍",
-    icon: <Mountain className="w-8 h-8 text-green-500" />,
-    gradient: "from-green-500 to-teal-500",
+    icon: <Mountain className="w-8 h-8" style={{color: '#059669'}} />,
+    gradient: "bg-gradient-to-br from-[#059669] to-[#047857]",
     description: "Reliable, practical, and devoted individuals who value stability.",
     path: "/signs/taurus"
   },
@@ -37,8 +39,8 @@ const zodiacSigns = [
     dates: "May 21 - Jun 20", 
     element: "Air",
     elementEmoji: "💨",
-    icon: <Wind className="w-8 h-8 text-blue-500" />,
-    gradient: "from-blue-500 to-purple-500",
+    icon: <Wind className="w-8 h-8" style={{color: '#06b6d4'}} />,
+    gradient: "bg-gradient-to-br from-[#06b6d4] to-[#0891b2]",
     description: "Adaptable, versatile, and communicative souls who love variety.",
     path: "/signs/gemini"
   },
@@ -49,8 +51,8 @@ const zodiacSigns = [
     dates: "Jun 21 - Jul 22",
     element: "Water", 
     elementEmoji: "💧",
-    icon: <Droplets className="w-8 h-8 text-cyan-500" />,
-    gradient: "from-cyan-500 to-blue-500",
+    icon: <Droplets className="w-8 h-8" style={{color: '#2563eb'}} />,
+    gradient: "bg-gradient-to-br from-[#2563eb] to-[#1d4ed8]",
     description: "Intuitive, emotional, and protective nurturers with deep empathy.",
     path: "/signs/cancer"
   },
@@ -61,8 +63,8 @@ const zodiacSigns = [
     dates: "Jul 23 - Aug 22",
     element: "Fire",
     elementEmoji: "🔥",
-    icon: <Flame className="w-8 h-8 text-yellow-500" />,
-    gradient: "from-yellow-500 to-orange-500", 
+    icon: <Flame className="w-8 h-8" style={{color: '#ef4444'}} />,
+    gradient: "bg-gradient-to-br from-[#ef4444] to-[#dc2626]", 
     description: "Generous, warm-hearted, and creative leaders who radiate confidence.",
     path: "/signs/leo"
   },
@@ -73,8 +75,8 @@ const zodiacSigns = [
     dates: "Aug 23 - Sep 22",
     element: "Earth",
     elementEmoji: "🌍",
-    icon: <Mountain className="w-8 h-8 text-emerald-500" />,
-    gradient: "from-emerald-500 to-green-500",
+    icon: <Mountain className="w-8 h-8" style={{color: '#22c55e'}} />,
+    gradient: "bg-gradient-to-br from-[#22c55e] to-[#16a34a]",
     description: "Loyal, analytical, and practical perfectionists who serve others.",
     path: "/signs/virgo"
   },
@@ -85,8 +87,8 @@ const zodiacSigns = [
     dates: "Sep 23 - Oct 22",
     element: "Air",
     elementEmoji: "💨",
-    icon: <Wind className="w-8 h-8 text-pink-500" />,
-    gradient: "from-pink-500 to-rose-500",
+    icon: <Wind className="w-8 h-8" style={{color: '#22d3ee'}} />,
+    gradient: "bg-gradient-to-br from-[#22d3ee] to-[#06b6d4]",
     description: "Cooperative, diplomatic, and gracious seekers of harmony and balance.",
     path: "/signs/libra"
   },
@@ -97,8 +99,8 @@ const zodiacSigns = [
     dates: "Oct 23 - Nov 21",
     element: "Water",
     elementEmoji: "💧",
-    icon: <Droplets className="w-8 h-8 text-red-600" />,
-    gradient: "from-red-600 to-purple-600",
+    icon: <Droplets className="w-8 h-8" style={{color: '#1d4ed8'}} />,
+    gradient: "bg-gradient-to-br from-[#1d4ed8] to-[#1e3a8a]",
     description: "Resourceful, brave, and passionate individuals with magnetic intensity.",
     path: "/signs/scorpio"
   },
@@ -109,8 +111,8 @@ const zodiacSigns = [
     dates: "Nov 22 - Dec 21", 
     element: "Fire",
     elementEmoji: "🔥",
-    icon: <Flame className="w-8 h-8 text-orange-500" />,
-    gradient: "from-orange-500 to-red-500",
+    icon: <Flame className="w-8 h-8" style={{color: '#f97316'}} />,
+    gradient: "bg-gradient-to-br from-[#f97316] to-[#ea580c]",
     description: "Generous, idealistic, and adventurous philosophers and explorers.",
     path: "/signs/sagittarius"
   },
@@ -121,8 +123,8 @@ const zodiacSigns = [
     dates: "Dec 22 - Jan 19",
     element: "Earth", 
     elementEmoji: "🌍",
-    icon: <Mountain className="w-8 h-8 text-gray-600" />,
-    gradient: "from-gray-600 to-slate-600",
+    icon: <Mountain className="w-8 h-8" style={{color: '#059669'}} />,
+    gradient: "bg-gradient-to-br from-[#059669] to-[#047857]",
     description: "Responsible, disciplined, and ambitious achievers with great patience.",
     path: "/signs/capricorn"
   },
@@ -133,8 +135,8 @@ const zodiacSigns = [
     dates: "Jan 20 - Feb 18",
     element: "Air",
     elementEmoji: "💨",
-    icon: <Wind className="w-8 h-8 text-indigo-500" />,
-    gradient: "from-indigo-500 to-blue-500", 
+    icon: <Wind className="w-8 h-8" style={{color: '#14b8a6'}} />,
+    gradient: "bg-gradient-to-br from-[#14b8a6] to-[#0d9488]", 
     description: "Progressive, original, and independent humanitarians who think differently.",
     path: "/signs/aquarius"
   },
@@ -145,16 +147,19 @@ const zodiacSigns = [
     dates: "Feb 19 - Mar 20",
     element: "Water",
     elementEmoji: "💧",
-    icon: <Droplets className="w-8 h-8 text-purple-500" />,
-    gradient: "from-purple-500 to-indigo-500",
+    icon: <Droplets className="w-8 h-8" style={{color: '#1e3a8a'}} />,
+    gradient: "bg-gradient-to-br from-[#1e3a8a] to-[#1e40af]",
     description: "Compassionate, artistic, and intuitive dreamers with deep wisdom.",
     path: "/signs/pisces"
   }
 ];
 
 export const SignsPage: PageComponentType = () => {
+  // Set the page background using the custom hook
+  usePageBackground(pageBackgrounds.zodiac);
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection.SimpleCentered>
         <div className="container relative py-24 lg:py-32">

@@ -77,7 +77,7 @@ const HouseWheelVisualization: React.FC = () => {
 
             {/* SVG Wheel */}
             <div className="order-1 lg:order-2">
-              <svg width="520" height="520" viewBox="-260 -260 520 520" className="drop-shadow-lg">
+              <svg width="520" height="520" viewBox="-280 -280 560 560" className="drop-shadow-lg">
                 {/* Background circle */}
                 <circle cx="0" cy="0" r="240" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
                 
@@ -119,8 +119,8 @@ const HouseWheelVisualization: React.FC = () => {
                       
                       {/* House name */}
                       <text
-                        x={getTextPosition(house.angle, 235).x}
-                        y={getTextPosition(house.angle, 235).y}
+                        x={getTextPosition(house.angle, 220).x}
+                        y={getTextPosition(house.angle, 220).y}
                         textAnchor="middle"
                         dominantBaseline="middle"
                         fill="white"

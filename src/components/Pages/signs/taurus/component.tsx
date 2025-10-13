@@ -5,6 +5,7 @@ import { Badge } from "@/components/ThirdParty/ShadCn/Badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ThirdParty/ShadCn/Card";
 import { Separator } from "@/components/ThirdParty/ShadCn/Separator";
 import { StarIcon, Mountain, Heart } from "lucide-react";
+import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 
 const TaurusTraits = {
   positive: [
@@ -29,8 +30,11 @@ const TaurusDetails = {
 };
 
 export const TaurusPage: PageComponentType = () => {
+  // Set the earth element background for Taurus
+  usePageBackground(pageBackgrounds.earth);
+  
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection.SimpleCentered>
         <div className="container relative py-24 lg:py-32">

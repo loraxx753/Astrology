@@ -68,3 +68,19 @@
   --chart-4: 55 100% 60%; /* Strong yellow */
   --chart-5: 30 100% 55%; /* Bright orange */
 }
+
+/* Dynamic page background system */
+:root {
+  --page-background: transparent;
+}
+
+/* Override Radix UI background to use our dynamic system */
+.radix-themes[data-has-background='true'] {
+  background: var(--page-background) !important;
+}
+
+/* Page background utility class */
+.dynamic-page-background {
+  background: var(--page-background) !important;
+  min-height: 100vh;
+}
