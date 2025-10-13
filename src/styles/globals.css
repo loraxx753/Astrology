@@ -10,8 +10,6 @@
 @import '@radix-ui/colors/green-dark.css';
 @import '@radix-ui/colors/red-dark.css';
 
-@import './fonts.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

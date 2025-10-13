@@ -2,10 +2,10 @@ import { spawn } from 'child_process';
 import process from 'process';
 
 const port = process.env.PORT || 8080;
-const args = ['dist', '-p', port, '--spa', '-o'];
+const args = ['dist', '-s', '-l', port];
 
-console.log(`Starting http-server on port ${port}`);
-const server = spawn('npx', ['http-server', ...args], { 
+console.log(`Starting serve on port ${port}`);
+const server = spawn('npx', ['serve', ...args], { 
   stdio: 'inherit',
   shell: true 
 });

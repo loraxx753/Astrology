@@ -15,7 +15,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.mjs",
     "build:local": "cross-env NODE_ENV=staging webpack --config webpack.config.mjs",
-    "serve": "http-server dist",
+    "serve": "serve dist -s",
     "start": "node server-start.mjs",
     "start:dev": "cross-env NODE_ENV=development webpack --config webpack.config.mjs && http-server dist",
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.mjs",
@@ -83,6 +83,7 @@
     "react-resizable-panels": "^2.0.22",
     "react-router-dom": "^6.25.1",
     "recharts": "^2.12.7",
+    "serve": "^14.2.5",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
