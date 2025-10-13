@@ -1,0 +1,1 @@
+export { AriesPage } from './component'

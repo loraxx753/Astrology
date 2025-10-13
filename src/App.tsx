@@ -2,23 +2,21 @@
 import { Theme } from '@radix-ui/themes';
 import './styles/globals.css'
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider
 } from 'react-router-dom';
 import * as pages from './components/Pages'
 
 /**
- * Router documentation https://reactrouter.com/en/main/routers/create-hash-router
+ * Router documentation https://reactrouter.com/en/main/routers/create-browser-router
  */
-const router = createHashRouter(Object.entries(pages).map(([_, Element]) => {
+const router = createBrowserRouter(Object.entries(pages).map(([_, Element]) => {
   return ({
     ...Element,
     element: <Element />,
   })
 }), {
 });
-
-console.log(router.routes)
 
 
 function App() {

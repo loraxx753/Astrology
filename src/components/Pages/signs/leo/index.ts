@@ -1,0 +1,1 @@
+export { LeoPage } from './component'

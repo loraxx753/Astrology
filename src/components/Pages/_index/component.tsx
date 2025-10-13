@@ -60,21 +60,24 @@ export const Content = () => <>
     {/* End Announcement Banner */}
     {/* Title */}
     <div className="mt-5 max-w-2xl text-center mx-auto">
-      <h1 className="scroll-m-20 text-4xl font-happy-monkey-regular tracking-tight lg:text-5xl">
-        is index
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-6xl bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+        Astrology App ✨
       </h1>
     </div>
     {/* End Title */}
     <div className="mt-5 max-w-3xl text-center mx-auto">
       <p className="text-xl text-muted-foreground">
-      Welcome to <b>Meanwhile</b> - the modular, scalable, and customizable front-end setup for building modern web applications. Whether you're starting a new project or looking to scale an existing one, Meanwhile provides the tools and components you need to create efficient, high-performance web applications.
+      Explore the cosmos within you. Discover your <b>zodiac sign</b>, understand your traits, 
+      and uncover the celestial influences that shape your personality and destiny.
       </p>
     </div>
     {/* Buttons */}
     <div className="mt-8 gap-3 flex justify-center">
-      <Button size={"lg"}>Get started</Button>
+      <Button size={"lg"} asChild>
+        <a href="/signs">Explore Signs</a>
+      </Button>
       <Button size={"lg"} variant={"outline"}>
-        Learn more
+        Get Your Chart
       </Button>
     </div>
     {/* End Buttons */}
