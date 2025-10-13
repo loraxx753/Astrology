@@ -9,8 +9,10 @@ const zodiacSigns = [
   {
     name: "Aries",
     symbol: "♈",
+    emoji: "♈",
     dates: "Mar 21 - Apr 19",
     element: "Fire",
+    elementEmoji: "🔥",
     icon: <Flame className="w-8 h-8 text-red-500" />,
     gradient: "from-red-500 to-orange-500",
     description: "Courageous, determined, and confident pioneers who lead with passion.",
@@ -19,8 +21,10 @@ const zodiacSigns = [
   {
     name: "Taurus",
     symbol: "♉", 
+    emoji: "♉",
     dates: "Apr 20 - May 20",
     element: "Earth",
+    elementEmoji: "🌍",
     icon: <Mountain className="w-8 h-8 text-green-500" />,
     gradient: "from-green-500 to-teal-500",
     description: "Reliable, practical, and devoted individuals who value stability.",
@@ -29,8 +33,10 @@ const zodiacSigns = [
   {
     name: "Gemini",
     symbol: "♊",
+    emoji: "♊",
     dates: "May 21 - Jun 20", 
     element: "Air",
+    elementEmoji: "💨",
     icon: <Wind className="w-8 h-8 text-blue-500" />,
     gradient: "from-blue-500 to-purple-500",
     description: "Adaptable, versatile, and communicative souls who love variety.",
@@ -39,8 +45,10 @@ const zodiacSigns = [
   {
     name: "Cancer",
     symbol: "♋",
+    emoji: "♋",
     dates: "Jun 21 - Jul 22",
     element: "Water", 
+    elementEmoji: "💧",
     icon: <Droplets className="w-8 h-8 text-cyan-500" />,
     gradient: "from-cyan-500 to-blue-500",
     description: "Intuitive, emotional, and protective nurturers with deep empathy.",
@@ -49,8 +57,10 @@ const zodiacSigns = [
   {
     name: "Leo",
     symbol: "♌",
+    emoji: "♌",
     dates: "Jul 23 - Aug 22",
     element: "Fire",
+    elementEmoji: "🔥",
     icon: <Flame className="w-8 h-8 text-yellow-500" />,
     gradient: "from-yellow-500 to-orange-500", 
     description: "Generous, warm-hearted, and creative leaders who radiate confidence.",
@@ -59,8 +69,10 @@ const zodiacSigns = [
   {
     name: "Virgo",
     symbol: "♍",
+    emoji: "♍",
     dates: "Aug 23 - Sep 22",
     element: "Earth",
+    elementEmoji: "🌍",
     icon: <Mountain className="w-8 h-8 text-emerald-500" />,
     gradient: "from-emerald-500 to-green-500",
     description: "Loyal, analytical, and practical perfectionists who serve others.",
@@ -69,8 +81,10 @@ const zodiacSigns = [
   {
     name: "Libra", 
     symbol: "♎",
+    emoji: "♎",
     dates: "Sep 23 - Oct 22",
     element: "Air",
+    elementEmoji: "💨",
     icon: <Wind className="w-8 h-8 text-pink-500" />,
     gradient: "from-pink-500 to-rose-500",
     description: "Cooperative, diplomatic, and gracious seekers of harmony and balance.",
@@ -79,8 +93,10 @@ const zodiacSigns = [
   {
     name: "Scorpio",
     symbol: "♏", 
+    emoji: "♏",
     dates: "Oct 23 - Nov 21",
     element: "Water",
+    elementEmoji: "💧",
     icon: <Droplets className="w-8 h-8 text-red-600" />,
     gradient: "from-red-600 to-purple-600",
     description: "Resourceful, brave, and passionate individuals with magnetic intensity.",
@@ -89,8 +105,10 @@ const zodiacSigns = [
   {
     name: "Sagittarius",
     symbol: "♐",
+    emoji: "♐",
     dates: "Nov 22 - Dec 21", 
     element: "Fire",
+    elementEmoji: "🔥",
     icon: <Flame className="w-8 h-8 text-orange-500" />,
     gradient: "from-orange-500 to-red-500",
     description: "Generous, idealistic, and adventurous philosophers and explorers.",
@@ -99,8 +117,10 @@ const zodiacSigns = [
   {
     name: "Capricorn",
     symbol: "♑",
+    emoji: "♑",
     dates: "Dec 22 - Jan 19",
     element: "Earth", 
+    elementEmoji: "🌍",
     icon: <Mountain className="w-8 h-8 text-gray-600" />,
     gradient: "from-gray-600 to-slate-600",
     description: "Responsible, disciplined, and ambitious achievers with great patience.",
@@ -109,8 +129,10 @@ const zodiacSigns = [
   {
     name: "Aquarius",
     symbol: "♒",
+    emoji: "♒",
     dates: "Jan 20 - Feb 18",
     element: "Air",
+    elementEmoji: "💨",
     icon: <Wind className="w-8 h-8 text-indigo-500" />,
     gradient: "from-indigo-500 to-blue-500", 
     description: "Progressive, original, and independent humanitarians who think differently.",
@@ -119,8 +141,10 @@ const zodiacSigns = [
   {
     name: "Pisces",
     symbol: "♓",
+    emoji: "♓",
     dates: "Feb 19 - Mar 20",
     element: "Water",
+    elementEmoji: "💧",
     icon: <Droplets className="w-8 h-8 text-purple-500" />,
     gradient: "from-purple-500 to-indigo-500",
     description: "Compassionate, artistic, and intuitive dreamers with deep wisdom.",
@@ -164,15 +188,17 @@ export const SignsPage: PageComponentType = () => {
                 <div className="flex items-center justify-center mb-4">
                   {sign.icon}
                 </div>
-                <CardTitle className={`text-2xl bg-gradient-to-r ${sign.gradient} bg-clip-text text-transparent`}>
-                  {sign.name} {sign.symbol}
+                <CardTitle className={`text-2xl bg-gradient-to-r ${sign.gradient} bg-clip-text text-transparent flex items-center justify-center gap-2`}>
+                  {sign.name} 
+                  <span className="text-3xl">{sign.emoji}</span>
                 </CardTitle>
                 <CardDescription>
                   <Badge variant="outline" className="mb-2">
                     {sign.dates}
                   </Badge>
                   <br />
-                  <Badge variant="secondary" className="mt-2">
+                  <Badge variant="secondary" className="mt-2 flex items-center justify-center gap-1 w-fit mx-auto">
+                    <span>{sign.elementEmoji}</span>
                     {sign.element} Sign
                   </Badge>
                 </CardDescription>
