@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cardinal",
+    "label": "Cardinal",
+    "summary": "Initiation and direction."
+  },
+  {
+    "id": "fixed",
+    "label": "Fixed",
+    "summary": "Stability and consolidation."
+  },
+  {
+    "id": "mutable",
+    "label": "Mutable",
+    "summary": "Adaptation and transition."
+  }
+]

@@ -51,8 +51,8 @@ export const Content = () => <>
       <Button size={"lg"} asChild className="w-full sm:w-auto">
         <a href="/houses">Explore Houses</a>
       </Button>
-      <Button size={"lg"} variant={"outline"} className="w-full sm:w-auto">
-        Get Your Chart
+      <Button size={"lg"} variant={"outline"} asChild className="w-full sm:w-auto">
+        <a href="/reading">Get Your Chart</a>
       </Button>
     </div>
     {/* End Buttons */}

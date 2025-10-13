@@ -1,0 +1,42 @@
+[
+  {
+    "id": "conjunction",
+    "label": "Conjunction",
+    "angle_deg": 0,
+    "family": "major",
+    "nature": "neutral",
+    "default_orb_deg": 8
+  },
+  {
+    "id": "sextile",
+    "label": "Sextile",
+    "angle_deg": 60,
+    "family": "major",
+    "nature": "soft",
+    "default_orb_deg": 4
+  },
+  {
+    "id": "square",
+    "label": "Square",
+    "angle_deg": 90,
+    "family": "major",
+    "nature": "hard",
+    "default_orb_deg": 6
+  },
+  {
+    "id": "trine",
+    "label": "Trine",
+    "angle_deg": 120,
+    "family": "major",
+    "nature": "soft",
+    "default_orb_deg": 6
+  },
+  {
+    "id": "opposition",
+    "label": "Opposition",
+    "angle_deg": 180,
+    "family": "major",
+    "nature": "hard",
+    "default_orb_deg": 8
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "traditional",
+    "label": "Traditional",
+    "description": "Classical domiciles without modern co-rulers. Keep model identity explicit.",
+    "sign_to_rulers": [
+      {
+        "sign_id": "aries",
+        "primary_body_id": "mars"
+      },
+      {
+        "sign_id": "taurus",
+        "primary_body_id": "venus"
+      },
+      {
+        "sign_id": "gemini",
+        "primary_body_id": "mercury"
+      },
+      {
+        "sign_id": "cancer",
+        "primary_body_id": "moon"
+      },
+      {
+        "sign_id": "leo",
+        "primary_body_id": "sun"
+      },
+      {
+        "sign_id": "virgo",
+        "primary_body_id": "mercury"
+      },
+      {
+        "sign_id": "libra",
+        "primary_body_id": "venus"
+      },
+      {
+        "sign_id": "scorpio",
+        "primary_body_id": "mars"
+      },
+      {
+        "sign_id": "sagittarius",
+        "primary_body_id": "jupiter"
+      },
+      {
+        "sign_id": "capricorn",
+        "primary_body_id": "saturn"
+      },
+      {
+        "sign_id": "aquarius",
+        "primary_body_id": "saturn"
+      },
+      {
+        "sign_id": "pisces",
+        "primary_body_id": "jupiter"
+      }
+    ],
+    "source_ids": []
+  }
+]

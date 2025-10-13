@@ -29,6 +29,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <Button variant="ghost" asChild className="text-gray-700 hover:text-gray-900 hover:bg-gray-100/50">
                 <a href="/houses">Houses</a>
               </Button>
+              <Button variant="ghost" asChild className="text-gray-700 hover:text-gray-900 hover:bg-gray-100/50">
+                <a href="/reading">Reading</a>
+              </Button>
             </nav>
 
             {/* Mobile menu button */}
@@ -57,6 +60,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </Button>
                 <Button variant="ghost" asChild className="w-full justify-start text-gray-700 hover:text-gray-900 hover:bg-gray-100/50">
                   <a href="/houses" onClick={() => setIsMobileMenuOpen(false)}>Houses</a>
+                </Button>
+                <Button variant="ghost" asChild className="w-full justify-start text-gray-700 hover:text-gray-900 hover:bg-gray-100/50">
+                  <a href="/reading" onClick={() => setIsMobileMenuOpen(false)}>Reading</a>
                 </Button>
               </div>
             </div>

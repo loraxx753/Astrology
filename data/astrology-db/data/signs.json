@@ -1,0 +1,272 @@
+[
+  {
+    "id": "aries",
+    "label": "Aries",
+    "symbol": "♈",
+    "element_id": "fire",
+    "modality_id": "cardinal",
+    "polarity": "yang",
+    "ecliptic_start": 0,
+    "ecliptic_end": 30,
+    "keywords": [],
+    "domicile_candidates": [
+      "mars"
+    ],
+    "exaltation_candidates": [
+      "sun"
+    ],
+    "detriment_candidates": [
+      "venus"
+    ],
+    "fall_candidates": [
+      "saturn"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "taurus",
+    "label": "Taurus",
+    "symbol": "♉",
+    "element_id": "earth",
+    "modality_id": "fixed",
+    "polarity": "yin",
+    "ecliptic_start": 30,
+    "ecliptic_end": 60,
+    "keywords": [],
+    "domicile_candidates": [
+      "venus"
+    ],
+    "exaltation_candidates": [
+      "moon"
+    ],
+    "detriment_candidates": [
+      "mars"
+    ],
+    "fall_candidates": [
+      "south-node"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "gemini",
+    "label": "Gemini",
+    "symbol": "♊",
+    "element_id": "air",
+    "modality_id": "mutable",
+    "polarity": "yang",
+    "ecliptic_start": 60,
+    "ecliptic_end": 90,
+    "keywords": [],
+    "domicile_candidates": [
+      "mercury"
+    ],
+    "exaltation_candidates": [],
+    "detriment_candidates": [
+      "jupiter"
+    ],
+    "fall_candidates": [],
+    "source_ids": []
+  },
+  {
+    "id": "cancer",
+    "label": "Cancer",
+    "symbol": "♋",
+    "element_id": "water",
+    "modality_id": "cardinal",
+    "polarity": "yin",
+    "ecliptic_start": 90,
+    "ecliptic_end": 120,
+    "keywords": [],
+    "domicile_candidates": [
+      "moon"
+    ],
+    "exaltation_candidates": [
+      "jupiter"
+    ],
+    "detriment_candidates": [
+      "saturn"
+    ],
+    "fall_candidates": [
+      "mars"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "leo",
+    "label": "Leo",
+    "symbol": "♌",
+    "element_id": "fire",
+    "modality_id": "fixed",
+    "polarity": "yang",
+    "ecliptic_start": 120,
+    "ecliptic_end": 150,
+    "keywords": [],
+    "domicile_candidates": [
+      "sun"
+    ],
+    "exaltation_candidates": [],
+    "detriment_candidates": [
+      "saturn"
+    ],
+    "fall_candidates": [],
+    "source_ids": []
+  },
+  {
+    "id": "virgo",
+    "label": "Virgo",
+    "symbol": "♍",
+    "element_id": "earth",
+    "modality_id": "mutable",
+    "polarity": "yin",
+    "ecliptic_start": 150,
+    "ecliptic_end": 180,
+    "keywords": [],
+    "domicile_candidates": [
+      "mercury"
+    ],
+    "exaltation_candidates": [
+      "mercury"
+    ],
+    "detriment_candidates": [
+      "jupiter"
+    ],
+    "fall_candidates": [
+      "venus"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "libra",
+    "label": "Libra",
+    "symbol": "♎",
+    "element_id": "air",
+    "modality_id": "cardinal",
+    "polarity": "yang",
+    "ecliptic_start": 180,
+    "ecliptic_end": 210,
+    "keywords": [],
+    "domicile_candidates": [
+      "venus"
+    ],
+    "exaltation_candidates": [
+      "saturn"
+    ],
+    "detriment_candidates": [
+      "mars"
+    ],
+    "fall_candidates": [
+      "sun"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "scorpio",
+    "label": "Scorpio",
+    "symbol": "♏",
+    "element_id": "water",
+    "modality_id": "fixed",
+    "polarity": "yin",
+    "ecliptic_start": 210,
+    "ecliptic_end": 240,
+    "keywords": [],
+    "domicile_candidates": [
+      "mars"
+    ],
+    "exaltation_candidates": [],
+    "detriment_candidates": [
+      "venus"
+    ],
+    "fall_candidates": [],
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius",
+    "label": "Sagittarius",
+    "symbol": "♐",
+    "element_id": "fire",
+    "modality_id": "mutable",
+    "polarity": "yang",
+    "ecliptic_start": 240,
+    "ecliptic_end": 270,
+    "keywords": [],
+    "domicile_candidates": [
+      "jupiter"
+    ],
+    "exaltation_candidates": [
+      "south-node"
+    ],
+    "detriment_candidates": [
+      "mercury"
+    ],
+    "fall_candidates": [],
+    "source_ids": []
+  },
+  {
+    "id": "capricorn",
+    "label": "Capricorn",
+    "symbol": "♑",
+    "element_id": "earth",
+    "modality_id": "cardinal",
+    "polarity": "yin",
+    "ecliptic_start": 270,
+    "ecliptic_end": 300,
+    "keywords": [],
+    "domicile_candidates": [
+      "saturn"
+    ],
+    "exaltation_candidates": [
+      "mars"
+    ],
+    "detriment_candidates": [
+      "moon"
+    ],
+    "fall_candidates": [
+      "jupiter"
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "aquarius",
+    "label": "Aquarius",
+    "symbol": "♒",
+    "element_id": "air",
+    "modality_id": "fixed",
+    "polarity": "yang",
+    "ecliptic_start": 300,
+    "ecliptic_end": 330,
+    "keywords": [],
+    "domicile_candidates": [
+      "saturn"
+    ],
+    "exaltation_candidates": [],
+    "detriment_candidates": [
+      "sun"
+    ],
+    "fall_candidates": [],
+    "source_ids": []
+  },
+  {
+    "id": "pisces",
+    "label": "Pisces",
+    "symbol": "♓",
+    "element_id": "water",
+    "modality_id": "mutable",
+    "polarity": "yin",
+    "ecliptic_start": 330,
+    "ecliptic_end": 360,
+    "keywords": [],
+    "domicile_candidates": [
+      "jupiter"
+    ],
+    "exaltation_candidates": [
+      "venus"
+    ],
+    "detriment_candidates": [
+      "mercury"
+    ],
+    "fall_candidates": [
+      "mercury"
+    ],
+    "source_ids": []
+  }
+]

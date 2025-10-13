@@ -1,0 +1,18 @@
+[
+  {
+    "id": "traditional",
+    "label": "Traditional"
+  },
+  {
+    "id": "psychological",
+    "label": "Psychological"
+  },
+  {
+    "id": "medical",
+    "label": "Medical"
+  },
+  {
+    "id": "modern",
+    "label": "Modern"
+  }
+]

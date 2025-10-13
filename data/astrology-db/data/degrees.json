@@ -1,0 +1,3242 @@
+[
+  {
+    "id": "aries-00",
+    "sign_id": "aries",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-01",
+    "sign_id": "aries",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-02",
+    "sign_id": "aries",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-03",
+    "sign_id": "aries",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-04",
+    "sign_id": "aries",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-05",
+    "sign_id": "aries",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-06",
+    "sign_id": "aries",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-07",
+    "sign_id": "aries",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-08",
+    "sign_id": "aries",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-09",
+    "sign_id": "aries",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-10",
+    "sign_id": "aries",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-11",
+    "sign_id": "aries",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-12",
+    "sign_id": "aries",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-13",
+    "sign_id": "aries",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-14",
+    "sign_id": "aries",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-15",
+    "sign_id": "aries",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-16",
+    "sign_id": "aries",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-17",
+    "sign_id": "aries",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-18",
+    "sign_id": "aries",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-19",
+    "sign_id": "aries",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-20",
+    "sign_id": "aries",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-21",
+    "sign_id": "aries",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-22",
+    "sign_id": "aries",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-23",
+    "sign_id": "aries",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-24",
+    "sign_id": "aries",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-25",
+    "sign_id": "aries",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-26",
+    "sign_id": "aries",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-27",
+    "sign_id": "aries",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-28",
+    "sign_id": "aries",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aries-29",
+    "sign_id": "aries",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-00",
+    "sign_id": "taurus",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-01",
+    "sign_id": "taurus",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-02",
+    "sign_id": "taurus",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-03",
+    "sign_id": "taurus",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-04",
+    "sign_id": "taurus",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-05",
+    "sign_id": "taurus",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-06",
+    "sign_id": "taurus",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-07",
+    "sign_id": "taurus",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-08",
+    "sign_id": "taurus",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-09",
+    "sign_id": "taurus",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-10",
+    "sign_id": "taurus",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-11",
+    "sign_id": "taurus",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-12",
+    "sign_id": "taurus",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-13",
+    "sign_id": "taurus",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-14",
+    "sign_id": "taurus",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-15",
+    "sign_id": "taurus",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-16",
+    "sign_id": "taurus",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-17",
+    "sign_id": "taurus",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-18",
+    "sign_id": "taurus",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-19",
+    "sign_id": "taurus",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-20",
+    "sign_id": "taurus",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-21",
+    "sign_id": "taurus",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-22",
+    "sign_id": "taurus",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-23",
+    "sign_id": "taurus",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-24",
+    "sign_id": "taurus",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-25",
+    "sign_id": "taurus",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-26",
+    "sign_id": "taurus",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-27",
+    "sign_id": "taurus",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-28",
+    "sign_id": "taurus",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "taurus-29",
+    "sign_id": "taurus",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-00",
+    "sign_id": "gemini",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-01",
+    "sign_id": "gemini",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-02",
+    "sign_id": "gemini",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-03",
+    "sign_id": "gemini",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-04",
+    "sign_id": "gemini",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-05",
+    "sign_id": "gemini",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-06",
+    "sign_id": "gemini",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-07",
+    "sign_id": "gemini",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-08",
+    "sign_id": "gemini",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-09",
+    "sign_id": "gemini",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-10",
+    "sign_id": "gemini",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-11",
+    "sign_id": "gemini",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-12",
+    "sign_id": "gemini",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-13",
+    "sign_id": "gemini",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-14",
+    "sign_id": "gemini",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-15",
+    "sign_id": "gemini",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-16",
+    "sign_id": "gemini",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-17",
+    "sign_id": "gemini",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-18",
+    "sign_id": "gemini",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-19",
+    "sign_id": "gemini",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-20",
+    "sign_id": "gemini",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-21",
+    "sign_id": "gemini",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-22",
+    "sign_id": "gemini",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-23",
+    "sign_id": "gemini",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-24",
+    "sign_id": "gemini",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-25",
+    "sign_id": "gemini",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-26",
+    "sign_id": "gemini",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-27",
+    "sign_id": "gemini",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-28",
+    "sign_id": "gemini",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "gemini-29",
+    "sign_id": "gemini",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-00",
+    "sign_id": "cancer",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-01",
+    "sign_id": "cancer",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-02",
+    "sign_id": "cancer",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-03",
+    "sign_id": "cancer",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-04",
+    "sign_id": "cancer",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-05",
+    "sign_id": "cancer",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-06",
+    "sign_id": "cancer",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-07",
+    "sign_id": "cancer",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-08",
+    "sign_id": "cancer",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-09",
+    "sign_id": "cancer",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-10",
+    "sign_id": "cancer",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-11",
+    "sign_id": "cancer",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-12",
+    "sign_id": "cancer",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-13",
+    "sign_id": "cancer",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-14",
+    "sign_id": "cancer",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-15",
+    "sign_id": "cancer",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-16",
+    "sign_id": "cancer",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-17",
+    "sign_id": "cancer",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-18",
+    "sign_id": "cancer",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-19",
+    "sign_id": "cancer",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-20",
+    "sign_id": "cancer",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-21",
+    "sign_id": "cancer",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-22",
+    "sign_id": "cancer",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-23",
+    "sign_id": "cancer",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-24",
+    "sign_id": "cancer",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-25",
+    "sign_id": "cancer",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-26",
+    "sign_id": "cancer",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-27",
+    "sign_id": "cancer",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-28",
+    "sign_id": "cancer",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "cancer-29",
+    "sign_id": "cancer",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-00",
+    "sign_id": "leo",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-01",
+    "sign_id": "leo",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-02",
+    "sign_id": "leo",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-03",
+    "sign_id": "leo",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-04",
+    "sign_id": "leo",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-05",
+    "sign_id": "leo",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-06",
+    "sign_id": "leo",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-07",
+    "sign_id": "leo",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-08",
+    "sign_id": "leo",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-09",
+    "sign_id": "leo",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-10",
+    "sign_id": "leo",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-11",
+    "sign_id": "leo",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-12",
+    "sign_id": "leo",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-13",
+    "sign_id": "leo",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-14",
+    "sign_id": "leo",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-15",
+    "sign_id": "leo",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-16",
+    "sign_id": "leo",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-17",
+    "sign_id": "leo",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-18",
+    "sign_id": "leo",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-19",
+    "sign_id": "leo",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-20",
+    "sign_id": "leo",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-21",
+    "sign_id": "leo",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-22",
+    "sign_id": "leo",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-23",
+    "sign_id": "leo",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-24",
+    "sign_id": "leo",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-25",
+    "sign_id": "leo",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-26",
+    "sign_id": "leo",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-27",
+    "sign_id": "leo",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-28",
+    "sign_id": "leo",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "leo-29",
+    "sign_id": "leo",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-00",
+    "sign_id": "virgo",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-01",
+    "sign_id": "virgo",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-02",
+    "sign_id": "virgo",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-03",
+    "sign_id": "virgo",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-04",
+    "sign_id": "virgo",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-05",
+    "sign_id": "virgo",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-06",
+    "sign_id": "virgo",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-07",
+    "sign_id": "virgo",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-08",
+    "sign_id": "virgo",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-09",
+    "sign_id": "virgo",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-10",
+    "sign_id": "virgo",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-11",
+    "sign_id": "virgo",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-12",
+    "sign_id": "virgo",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-13",
+    "sign_id": "virgo",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-14",
+    "sign_id": "virgo",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-15",
+    "sign_id": "virgo",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-16",
+    "sign_id": "virgo",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-17",
+    "sign_id": "virgo",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-18",
+    "sign_id": "virgo",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-19",
+    "sign_id": "virgo",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-20",
+    "sign_id": "virgo",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-21",
+    "sign_id": "virgo",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-22",
+    "sign_id": "virgo",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-23",
+    "sign_id": "virgo",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-24",
+    "sign_id": "virgo",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-25",
+    "sign_id": "virgo",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-26",
+    "sign_id": "virgo",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-27",
+    "sign_id": "virgo",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-28",
+    "sign_id": "virgo",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "virgo-29",
+    "sign_id": "virgo",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-00",
+    "sign_id": "libra",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-01",
+    "sign_id": "libra",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-02",
+    "sign_id": "libra",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-03",
+    "sign_id": "libra",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-04",
+    "sign_id": "libra",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-05",
+    "sign_id": "libra",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-06",
+    "sign_id": "libra",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-07",
+    "sign_id": "libra",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-08",
+    "sign_id": "libra",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-09",
+    "sign_id": "libra",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-10",
+    "sign_id": "libra",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-11",
+    "sign_id": "libra",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-12",
+    "sign_id": "libra",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-13",
+    "sign_id": "libra",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-14",
+    "sign_id": "libra",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-15",
+    "sign_id": "libra",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-16",
+    "sign_id": "libra",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-17",
+    "sign_id": "libra",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-18",
+    "sign_id": "libra",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-19",
+    "sign_id": "libra",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-20",
+    "sign_id": "libra",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-21",
+    "sign_id": "libra",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-22",
+    "sign_id": "libra",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-23",
+    "sign_id": "libra",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-24",
+    "sign_id": "libra",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-25",
+    "sign_id": "libra",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-26",
+    "sign_id": "libra",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-27",
+    "sign_id": "libra",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-28",
+    "sign_id": "libra",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "libra-29",
+    "sign_id": "libra",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-00",
+    "sign_id": "scorpio",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-01",
+    "sign_id": "scorpio",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-02",
+    "sign_id": "scorpio",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-03",
+    "sign_id": "scorpio",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-04",
+    "sign_id": "scorpio",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-05",
+    "sign_id": "scorpio",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-06",
+    "sign_id": "scorpio",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-07",
+    "sign_id": "scorpio",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-08",
+    "sign_id": "scorpio",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-09",
+    "sign_id": "scorpio",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-10",
+    "sign_id": "scorpio",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-11",
+    "sign_id": "scorpio",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-12",
+    "sign_id": "scorpio",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-13",
+    "sign_id": "scorpio",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-14",
+    "sign_id": "scorpio",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-15",
+    "sign_id": "scorpio",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-16",
+    "sign_id": "scorpio",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-17",
+    "sign_id": "scorpio",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-18",
+    "sign_id": "scorpio",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-19",
+    "sign_id": "scorpio",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-20",
+    "sign_id": "scorpio",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-21",
+    "sign_id": "scorpio",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-22",
+    "sign_id": "scorpio",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-23",
+    "sign_id": "scorpio",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-24",
+    "sign_id": "scorpio",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-25",
+    "sign_id": "scorpio",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-26",
+    "sign_id": "scorpio",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-27",
+    "sign_id": "scorpio",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-28",
+    "sign_id": "scorpio",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-29",
+    "sign_id": "scorpio",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-00",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-01",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-02",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-03",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-04",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-05",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-06",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-07",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-08",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-09",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-10",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-11",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-12",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-13",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-14",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-15",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-16",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-17",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-18",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-19",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-20",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-21",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-22",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-23",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-24",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-25",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-26",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-27",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-28",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-29",
+    "sign_id": "sagittarius",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-00",
+    "sign_id": "capricorn",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-01",
+    "sign_id": "capricorn",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-02",
+    "sign_id": "capricorn",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-03",
+    "sign_id": "capricorn",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-04",
+    "sign_id": "capricorn",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-05",
+    "sign_id": "capricorn",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-06",
+    "sign_id": "capricorn",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-07",
+    "sign_id": "capricorn",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-08",
+    "sign_id": "capricorn",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-09",
+    "sign_id": "capricorn",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-10",
+    "sign_id": "capricorn",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-11",
+    "sign_id": "capricorn",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-12",
+    "sign_id": "capricorn",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-13",
+    "sign_id": "capricorn",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-14",
+    "sign_id": "capricorn",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-15",
+    "sign_id": "capricorn",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-16",
+    "sign_id": "capricorn",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-17",
+    "sign_id": "capricorn",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-18",
+    "sign_id": "capricorn",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-19",
+    "sign_id": "capricorn",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-20",
+    "sign_id": "capricorn",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-21",
+    "sign_id": "capricorn",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-22",
+    "sign_id": "capricorn",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-23",
+    "sign_id": "capricorn",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-24",
+    "sign_id": "capricorn",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-25",
+    "sign_id": "capricorn",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-26",
+    "sign_id": "capricorn",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-27",
+    "sign_id": "capricorn",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-28",
+    "sign_id": "capricorn",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-29",
+    "sign_id": "capricorn",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-00",
+    "sign_id": "aquarius",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-01",
+    "sign_id": "aquarius",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-02",
+    "sign_id": "aquarius",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-03",
+    "sign_id": "aquarius",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-04",
+    "sign_id": "aquarius",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-05",
+    "sign_id": "aquarius",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-06",
+    "sign_id": "aquarius",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-07",
+    "sign_id": "aquarius",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-08",
+    "sign_id": "aquarius",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-09",
+    "sign_id": "aquarius",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-10",
+    "sign_id": "aquarius",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-11",
+    "sign_id": "aquarius",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-12",
+    "sign_id": "aquarius",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-13",
+    "sign_id": "aquarius",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-14",
+    "sign_id": "aquarius",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-15",
+    "sign_id": "aquarius",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-16",
+    "sign_id": "aquarius",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-17",
+    "sign_id": "aquarius",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-18",
+    "sign_id": "aquarius",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-19",
+    "sign_id": "aquarius",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-20",
+    "sign_id": "aquarius",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-21",
+    "sign_id": "aquarius",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-22",
+    "sign_id": "aquarius",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-23",
+    "sign_id": "aquarius",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-24",
+    "sign_id": "aquarius",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-25",
+    "sign_id": "aquarius",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-26",
+    "sign_id": "aquarius",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-27",
+    "sign_id": "aquarius",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-28",
+    "sign_id": "aquarius",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-29",
+    "sign_id": "aquarius",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-00",
+    "sign_id": "pisces",
+    "degree_in_sign": 0,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-01",
+    "sign_id": "pisces",
+    "degree_in_sign": 1,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-02",
+    "sign_id": "pisces",
+    "degree_in_sign": 2,
+    "sabian_symbol": null,
+    "dwad_sign_id": "pisces",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-03",
+    "sign_id": "pisces",
+    "degree_in_sign": 3,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-04",
+    "sign_id": "pisces",
+    "degree_in_sign": 4,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aries",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-05",
+    "sign_id": "pisces",
+    "degree_in_sign": 5,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-06",
+    "sign_id": "pisces",
+    "degree_in_sign": 6,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-07",
+    "sign_id": "pisces",
+    "degree_in_sign": 7,
+    "sabian_symbol": null,
+    "dwad_sign_id": "taurus",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-08",
+    "sign_id": "pisces",
+    "degree_in_sign": 8,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-09",
+    "sign_id": "pisces",
+    "degree_in_sign": 9,
+    "sabian_symbol": null,
+    "dwad_sign_id": "gemini",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-10",
+    "sign_id": "pisces",
+    "degree_in_sign": 10,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-11",
+    "sign_id": "pisces",
+    "degree_in_sign": 11,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-12",
+    "sign_id": "pisces",
+    "degree_in_sign": 12,
+    "sabian_symbol": null,
+    "dwad_sign_id": "cancer",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-13",
+    "sign_id": "pisces",
+    "degree_in_sign": 13,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-14",
+    "sign_id": "pisces",
+    "degree_in_sign": 14,
+    "sabian_symbol": null,
+    "dwad_sign_id": "leo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-15",
+    "sign_id": "pisces",
+    "degree_in_sign": 15,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-16",
+    "sign_id": "pisces",
+    "degree_in_sign": 16,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-17",
+    "sign_id": "pisces",
+    "degree_in_sign": 17,
+    "sabian_symbol": null,
+    "dwad_sign_id": "virgo",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-18",
+    "sign_id": "pisces",
+    "degree_in_sign": 18,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-19",
+    "sign_id": "pisces",
+    "degree_in_sign": 19,
+    "sabian_symbol": null,
+    "dwad_sign_id": "libra",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-20",
+    "sign_id": "pisces",
+    "degree_in_sign": 20,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-21",
+    "sign_id": "pisces",
+    "degree_in_sign": 21,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-22",
+    "sign_id": "pisces",
+    "degree_in_sign": 22,
+    "sabian_symbol": null,
+    "dwad_sign_id": "scorpio",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-23",
+    "sign_id": "pisces",
+    "degree_in_sign": 23,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-24",
+    "sign_id": "pisces",
+    "degree_in_sign": 24,
+    "sabian_symbol": null,
+    "dwad_sign_id": "sagittarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-25",
+    "sign_id": "pisces",
+    "degree_in_sign": 25,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-26",
+    "sign_id": "pisces",
+    "degree_in_sign": 26,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-27",
+    "sign_id": "pisces",
+    "degree_in_sign": 27,
+    "sabian_symbol": null,
+    "dwad_sign_id": "capricorn",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-28",
+    "sign_id": "pisces",
+    "degree_in_sign": 28,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  },
+  {
+    "id": "pisces-29",
+    "sign_id": "pisces",
+    "degree_in_sign": 29,
+    "sabian_symbol": null,
+    "dwad_sign_id": "aquarius",
+    "notes_markdown": "",
+    "source_ids": []
+  }
+]

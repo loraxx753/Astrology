@@ -1,0 +1,10 @@
+{
+  "dataset_id": "jw-astrology-db",
+  "version": "0.2.0",
+  "created": "2025-10-13",
+  "updated": "2025-10-13",
+  "default_rulership_model_id": "traditional",
+  "default_dignity_model_id": "ptolemaic-essential-with-terms-faces",
+  "license": "CC-BY-4.0",
+  "notes": "Scaffold generated programmatically; extend cautiously with sourced content."
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "sun",
+    "label": "Sun",
+    "kind": "luminary",
+    "symbol": "☉",
+    "mean_orb_deg": 10,
+    "avg_speed_deg_per_day": 0.9856,
+    "keywords": [
+      "core identity",
+      "vitality"
+    ]
+  },
+  {
+    "id": "moon",
+    "label": "Moon",
+    "kind": "luminary",
+    "symbol": "☾",
+    "mean_orb_deg": 12,
+    "avg_speed_deg_per_day": 13.176,
+    "keywords": [
+      "needs",
+      "habits",
+      "body rhythms"
+    ]
+  },
+  {
+    "id": "mercury",
+    "label": "Mercury",
+    "kind": "planet",
+    "symbol": "☿",
+    "mean_orb_deg": 7,
+    "avg_speed_deg_per_day": 1.607,
+    "keywords": [
+      "thinking",
+      "language",
+      "trade"
+    ]
+  },
+  {
+    "id": "venus",
+    "label": "Venus",
+    "kind": "planet",
+    "symbol": "♀",
+    "mean_orb_deg": 7,
+    "avg_speed_deg_per_day": 1.174,
+    "keywords": [
+      "attraction",
+      "coherence",
+      "pleasure"
+    ]
+  },
+  {
+    "id": "mars",
+    "label": "Mars",
+    "kind": "planet",
+    "symbol": "♂",
+    "mean_orb_deg": 5,
+    "avg_speed_deg_per_day": 0.524,
+    "keywords": [
+      "will",
+      "severing",
+      "heat"
+    ]
+  },
+  {
+    "id": "jupiter",
+    "label": "Jupiter",
+    "kind": "planet",
+    "symbol": "♃",
+    "mean_orb_deg": 7,
+    "avg_speed_deg_per_day": 0.0831,
+    "keywords": [
+      "growth",
+      "meaning",
+      "cohesion"
+    ]
+  },
+  {
+    "id": "saturn",
+    "label": "Saturn",
+    "kind": "planet",
+    "symbol": "♄",
+    "mean_orb_deg": 5,
+    "avg_speed_deg_per_day": 0.0335,
+    "keywords": [
+      "limits",
+      "time",
+      "structure"
+    ]
+  },
+  {
+    "id": "uranus",
+    "label": "Uranus",
+    "kind": "planet",
+    "symbol": "♅",
+    "mean_orb_deg": 3,
+    "avg_speed_deg_per_day": 0.0117,
+    "keywords": [
+      "disruption",
+      "novelty"
+    ]
+  },
+  {
+    "id": "neptune",
+    "label": "Neptune",
+    "kind": "planet",
+    "symbol": "♆",
+    "mean_orb_deg": 3,
+    "avg_speed_deg_per_day": 0.006,
+    "keywords": [
+      "dissolution",
+      "vision"
+    ]
+  },
+  {
+    "id": "pluto",
+    "label": "Pluto",
+    "kind": "planet",
+    "symbol": "♇",
+    "mean_orb_deg": 3,
+    "avg_speed_deg_per_day": 0.0039,
+    "keywords": [
+      "power",
+      "depth"
+    ]
+  },
+  {
+    "id": "asc",
+    "label": "Ascendant",
+    "kind": "point",
+    "symbol": "Asc",
+    "mean_orb_deg": 3,
+    "keywords": [
+      "embodiment",
+      "interface"
+    ]
+  },
+  {
+    "id": "mc",
+    "label": "Midheaven",
+    "kind": "point",
+    "symbol": "MC",
+    "mean_orb_deg": 3,
+    "keywords": [
+      "vocation",
+      "zenith"
+    ]
+  },
+  {
+    "id": "north-node",
+    "label": "North Node",
+    "kind": "point",
+    "symbol": "☊",
+    "mean_orb_deg": 3,
+    "keywords": [
+      "pull",
+      "learning"
+    ]
+  },
+  {
+    "id": "south-node",
+    "label": "South Node",
+    "kind": "point",
+    "symbol": "☋",
+    "mean_orb_deg": 3,
+    "keywords": [
+      "release",
+      "habit"
+    ]
+  }
+]

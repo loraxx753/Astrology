@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "label",
+    "angle_deg",
+    "family",
+    "nature"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "angle_deg": {
+      "type": "number"
+    },
+    "family": {
+      "enum": [
+        "major",
+        "minor",
+        "harmonic",
+        "other"
+      ]
+    },
+    "nature": {
+      "enum": [
+        "soft",
+        "hard",
+        "neutral"
+      ]
+    },
+    "default_orb_deg": {
+      "type": "number"
+    },
+    "harmonic": {
+      "type": "number"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

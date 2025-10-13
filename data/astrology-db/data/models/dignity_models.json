@@ -1,0 +1,2084 @@
+[
+  {
+    "id": "ptolemaic-essential",
+    "label": "Essential (Ptolemaic-style) – scaffold",
+    "description": "Minimal scaffold. Extend with terms/faces by degree as needed.",
+    "essential": [
+      {
+        "planet_id": "sun",
+        "sign_id": "leo",
+        "kind": "domicile",
+        "score": 5
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aries",
+        "kind": "exaltation",
+        "score": 4
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aquarius",
+        "kind": "detriment",
+        "score": -5
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "libra",
+        "kind": "fall",
+        "score": -4
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "cancer",
+        "kind": "domicile",
+        "score": 5
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "taurus",
+        "kind": "exaltation",
+        "score": 4
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "capricorn",
+        "kind": "detriment",
+        "score": -5
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "scorpio",
+        "kind": "fall",
+        "score": -4
+      }
+    ],
+    "source_ids": []
+  },
+  {
+    "id": "ptolemaic-essential-terms-faces",
+    "label": "Essential (Ptolemaic) with Egyptian Terms & Chaldean Faces",
+    "description": "Adds Egyptian terms (+2) and Chaldean face rulers (+1) with degree ranges to the essential dignity scaffold.",
+    "essential": [
+      {
+        "planet_id": "sun",
+        "sign_id": "leo",
+        "kind": "domicile",
+        "score": 5
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aries",
+        "kind": "exaltation",
+        "score": 4
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aquarius",
+        "kind": "detriment",
+        "score": -5
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "libra",
+        "kind": "fall",
+        "score": -4
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "cancer",
+        "kind": "domicile",
+        "score": 5
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "taurus",
+        "kind": "exaltation",
+        "score": 4
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "capricorn",
+        "kind": "detriment",
+        "score": -5
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "scorpio",
+        "kind": "fall",
+        "score": -4
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          6
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          6,
+          14
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          21
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          26
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          26,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          8
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          8,
+          14
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          22
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          22,
+          27
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          27,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          20
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          20,
+          25
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          25,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          19
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          19,
+          28
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          28,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          6
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          6,
+          13
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          19
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          19,
+          25
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          25,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          17
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          17,
+          21
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          28
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          28,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          6
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          6,
+          14
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          21
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          28
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          28,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          19
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          19,
+          24
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          24,
+          30
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          12
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          12,
+          17
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          17,
+          21
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          26
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          26,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          14
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          22
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          22,
+          26
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          26,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          20
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          20,
+          25
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          25,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          12
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          12,
+          19
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          19,
+          28
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          28,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "aries",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aries",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aries",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "taurus",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "taurus",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "taurus",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "gemini",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "gemini",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "gemini",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "cancer",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "cancer",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "cancer",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "leo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "leo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "leo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "virgo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "virgo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "virgo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "libra",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "libra",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "libra",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "scorpio",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "scorpio",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "scorpio",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "sagittarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "sagittarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "sagittarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "capricorn",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "capricorn",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "capricorn",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aquarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "aquarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "aquarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "pisces",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "pisces",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "pisces",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      }
+    ],
+    "source_ids": [
+      "ptolemy-tetrabiblos"
+    ]
+  },
+  {
+    "id": "ptolemaic-essential-with-terms-faces",
+    "label": "Essential (Ptolemaic) + Egyptian Terms + Chaldean Faces",
+    "description": "Adds Egyptian bounds (terms) and Chaldean faces (decans) with standard scores (+2 terms, +1 face). Ranges are degrees within the sign [start,end).",
+    "essential": [
+      {
+        "planet_id": "sun",
+        "sign_id": "leo",
+        "kind": "domicile",
+        "score": 5
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aries",
+        "kind": "exaltation",
+        "score": 4
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aquarius",
+        "kind": "detriment",
+        "score": -5
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "libra",
+        "kind": "fall",
+        "score": -4
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "cancer",
+        "kind": "domicile",
+        "score": 5
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "taurus",
+        "kind": "exaltation",
+        "score": 4
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "capricorn",
+        "kind": "detriment",
+        "score": -5
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "scorpio",
+        "kind": "fall",
+        "score": -4
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          6
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          6,
+          14
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          21
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          26
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "aries",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          26,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          8
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          8,
+          14
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          22
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          22,
+          27
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "taurus",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          27,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          14
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          21
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          26
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "gemini",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          26,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          6
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          6,
+          13
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          20
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          20,
+          27
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "cancer",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          27,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          6
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          6,
+          13
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          20
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          20,
+          27
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "leo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          27,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          17
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          17,
+          21
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "virgo",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          6
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          6,
+          14
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          21
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          28
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "libra",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          28,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          19
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          19,
+          24
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "scorpio",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          24,
+          30
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          12
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          12,
+          17
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          17,
+          21
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          21,
+          26
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "sagittarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          26,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          14
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          14,
+          22
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          22,
+          26
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "capricorn",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          26,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          7
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          7,
+          13
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          13,
+          20
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          20,
+          25
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "aquarius",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          25,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          0,
+          12
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          12,
+          19
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          19,
+          28
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "pisces",
+        "kind": "term",
+        "score": 2,
+        "range_in_sign": [
+          28,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "aries",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "aries",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aries",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "taurus",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "taurus",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "taurus",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "gemini",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "gemini",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "gemini",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "cancer",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "cancer",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "cancer",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "leo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "leo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "leo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "virgo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "virgo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "virgo",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "libra",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "libra",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "libra",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "scorpio",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "scorpio",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "scorpio",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "sagittarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "sagittarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "sagittarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "capricorn",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "capricorn",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "sun",
+        "sign_id": "capricorn",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "venus",
+        "sign_id": "aquarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "mercury",
+        "sign_id": "aquarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "moon",
+        "sign_id": "aquarius",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      },
+      {
+        "planet_id": "saturn",
+        "sign_id": "pisces",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          0,
+          10
+        ]
+      },
+      {
+        "planet_id": "jupiter",
+        "sign_id": "pisces",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          10,
+          20
+        ]
+      },
+      {
+        "planet_id": "mars",
+        "sign_id": "pisces",
+        "kind": "face",
+        "score": 1,
+        "range_in_sign": [
+          20,
+          30
+        ]
+      }
+    ],
+    "source_ids": [
+      "ptolemy-tetrabiblos"
+    ]
+  }
+]

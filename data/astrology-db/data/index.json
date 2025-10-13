@@ -1,0 +1,8118 @@
+[
+  {
+    "type": "element",
+    "id": "fire",
+    "label": "Fire",
+    "search_text": "Fire fire element",
+    "refs": {}
+  },
+  {
+    "type": "element",
+    "id": "earth",
+    "label": "Earth",
+    "search_text": "Earth earth element",
+    "refs": {}
+  },
+  {
+    "type": "element",
+    "id": "air",
+    "label": "Air",
+    "search_text": "Air air element",
+    "refs": {}
+  },
+  {
+    "type": "element",
+    "id": "water",
+    "label": "Water",
+    "search_text": "Water water element",
+    "refs": {}
+  },
+  {
+    "type": "modality",
+    "id": "cardinal",
+    "label": "Cardinal",
+    "search_text": "Cardinal cardinal modality",
+    "refs": {}
+  },
+  {
+    "type": "modality",
+    "id": "fixed",
+    "label": "Fixed",
+    "search_text": "Fixed fixed modality",
+    "refs": {}
+  },
+  {
+    "type": "modality",
+    "id": "mutable",
+    "label": "Mutable",
+    "search_text": "Mutable mutable modality",
+    "refs": {}
+  },
+  {
+    "type": "sign",
+    "id": "aries",
+    "label": "Aries",
+    "search_text": "Aries aries fire cardinal yang",
+    "refs": {
+      "element_id": "fire",
+      "modality_id": "cardinal"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "taurus",
+    "label": "Taurus",
+    "search_text": "Taurus taurus earth fixed yin",
+    "refs": {
+      "element_id": "earth",
+      "modality_id": "fixed"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "gemini",
+    "label": "Gemini",
+    "search_text": "Gemini gemini air mutable yang",
+    "refs": {
+      "element_id": "air",
+      "modality_id": "mutable"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "cancer",
+    "label": "Cancer",
+    "search_text": "Cancer cancer water cardinal yin",
+    "refs": {
+      "element_id": "water",
+      "modality_id": "cardinal"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "leo",
+    "label": "Leo",
+    "search_text": "Leo leo fire fixed yang",
+    "refs": {
+      "element_id": "fire",
+      "modality_id": "fixed"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "virgo",
+    "label": "Virgo",
+    "search_text": "Virgo virgo earth mutable yin",
+    "refs": {
+      "element_id": "earth",
+      "modality_id": "mutable"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "libra",
+    "label": "Libra",
+    "search_text": "Libra libra air cardinal yang",
+    "refs": {
+      "element_id": "air",
+      "modality_id": "cardinal"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "scorpio",
+    "label": "Scorpio",
+    "search_text": "Scorpio scorpio water fixed yin",
+    "refs": {
+      "element_id": "water",
+      "modality_id": "fixed"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "sagittarius",
+    "label": "Sagittarius",
+    "search_text": "Sagittarius sagittarius fire mutable yang",
+    "refs": {
+      "element_id": "fire",
+      "modality_id": "mutable"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "capricorn",
+    "label": "Capricorn",
+    "search_text": "Capricorn capricorn earth cardinal yin",
+    "refs": {
+      "element_id": "earth",
+      "modality_id": "cardinal"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "aquarius",
+    "label": "Aquarius",
+    "search_text": "Aquarius aquarius air fixed yang",
+    "refs": {
+      "element_id": "air",
+      "modality_id": "fixed"
+    }
+  },
+  {
+    "type": "sign",
+    "id": "pisces",
+    "label": "Pisces",
+    "search_text": "Pisces pisces water mutable yin",
+    "refs": {
+      "element_id": "water",
+      "modality_id": "mutable"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-1",
+    "label": "First House",
+    "search_text": "First House angular house-1",
+    "refs": {
+      "angularity": "angular"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-2",
+    "label": "Second House",
+    "search_text": "Second House succedent house-2",
+    "refs": {
+      "angularity": "succedent"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-3",
+    "label": "Third House",
+    "search_text": "Third House cadent house-3",
+    "refs": {
+      "angularity": "cadent"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-4",
+    "label": "Fourth House",
+    "search_text": "Fourth House angular house-4",
+    "refs": {
+      "angularity": "angular"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-5",
+    "label": "Fifth House",
+    "search_text": "Fifth House succedent house-5",
+    "refs": {
+      "angularity": "succedent"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-6",
+    "label": "Sixth House",
+    "search_text": "Sixth House cadent house-6",
+    "refs": {
+      "angularity": "cadent"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-7",
+    "label": "Seventh House",
+    "search_text": "Seventh House angular house-7",
+    "refs": {
+      "angularity": "angular"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-8",
+    "label": "Eighth House",
+    "search_text": "Eighth House succedent house-8",
+    "refs": {
+      "angularity": "succedent"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-9",
+    "label": "Ninth House",
+    "search_text": "Ninth House cadent house-9",
+    "refs": {
+      "angularity": "cadent"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-10",
+    "label": "Tenth House",
+    "search_text": "Tenth House angular house-10",
+    "refs": {
+      "angularity": "angular"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-11",
+    "label": "Eleventh House",
+    "search_text": "Eleventh House succedent house-11",
+    "refs": {
+      "angularity": "succedent"
+    }
+  },
+  {
+    "type": "house",
+    "id": "house-12",
+    "label": "Twelfth House",
+    "search_text": "Twelfth House cadent house-12",
+    "refs": {
+      "angularity": "cadent"
+    }
+  },
+  {
+    "type": "body",
+    "id": "sun",
+    "label": "Sun",
+    "search_text": "Sun sun luminary",
+    "refs": {
+      "kind": "luminary"
+    }
+  },
+  {
+    "type": "body",
+    "id": "moon",
+    "label": "Moon",
+    "search_text": "Moon moon luminary",
+    "refs": {
+      "kind": "luminary"
+    }
+  },
+  {
+    "type": "body",
+    "id": "mercury",
+    "label": "Mercury",
+    "search_text": "Mercury mercury planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "venus",
+    "label": "Venus",
+    "search_text": "Venus venus planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "mars",
+    "label": "Mars",
+    "search_text": "Mars mars planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "jupiter",
+    "label": "Jupiter",
+    "search_text": "Jupiter jupiter planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "saturn",
+    "label": "Saturn",
+    "search_text": "Saturn saturn planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "uranus",
+    "label": "Uranus",
+    "search_text": "Uranus uranus planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "neptune",
+    "label": "Neptune",
+    "search_text": "Neptune neptune planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "pluto",
+    "label": "Pluto",
+    "search_text": "Pluto pluto planet",
+    "refs": {
+      "kind": "planet"
+    }
+  },
+  {
+    "type": "body",
+    "id": "asc",
+    "label": "Ascendant",
+    "search_text": "Ascendant asc point",
+    "refs": {
+      "kind": "point"
+    }
+  },
+  {
+    "type": "body",
+    "id": "mc",
+    "label": "Midheaven",
+    "search_text": "Midheaven mc point",
+    "refs": {
+      "kind": "point"
+    }
+  },
+  {
+    "type": "body",
+    "id": "north-node",
+    "label": "North Node",
+    "search_text": "North Node north-node point",
+    "refs": {
+      "kind": "point"
+    }
+  },
+  {
+    "type": "body",
+    "id": "south-node",
+    "label": "South Node",
+    "search_text": "South Node south-node point",
+    "refs": {
+      "kind": "point"
+    }
+  },
+  {
+    "type": "aspect",
+    "id": "conjunction",
+    "label": "Conjunction",
+    "search_text": "Conjunction conjunction 0 major neutral",
+    "refs": {
+      "angle_deg": 0
+    }
+  },
+  {
+    "type": "aspect",
+    "id": "sextile",
+    "label": "Sextile",
+    "search_text": "Sextile sextile 60 major soft",
+    "refs": {
+      "angle_deg": 60
+    }
+  },
+  {
+    "type": "aspect",
+    "id": "square",
+    "label": "Square",
+    "search_text": "Square square 90 major hard",
+    "refs": {
+      "angle_deg": 90
+    }
+  },
+  {
+    "type": "aspect",
+    "id": "trine",
+    "label": "Trine",
+    "search_text": "Trine trine 120 major soft",
+    "refs": {
+      "angle_deg": 120
+    }
+  },
+  {
+    "type": "aspect",
+    "id": "opposition",
+    "label": "Opposition",
+    "search_text": "Opposition opposition 180 major hard",
+    "refs": {
+      "angle_deg": 180
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-aries-mars",
+    "label": "mars rules aries (traditional)",
+    "search_text": "mars rulership aries traditional",
+    "refs": {
+      "sign_id": "aries",
+      "body_id": "mars",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-taurus-venus",
+    "label": "venus rules taurus (traditional)",
+    "search_text": "venus rulership taurus traditional",
+    "refs": {
+      "sign_id": "taurus",
+      "body_id": "venus",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-gemini-mercury",
+    "label": "mercury rules gemini (traditional)",
+    "search_text": "mercury rulership gemini traditional",
+    "refs": {
+      "sign_id": "gemini",
+      "body_id": "mercury",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-cancer-moon",
+    "label": "moon rules cancer (traditional)",
+    "search_text": "moon rulership cancer traditional",
+    "refs": {
+      "sign_id": "cancer",
+      "body_id": "moon",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-leo-sun",
+    "label": "sun rules leo (traditional)",
+    "search_text": "sun rulership leo traditional",
+    "refs": {
+      "sign_id": "leo",
+      "body_id": "sun",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-virgo-mercury",
+    "label": "mercury rules virgo (traditional)",
+    "search_text": "mercury rulership virgo traditional",
+    "refs": {
+      "sign_id": "virgo",
+      "body_id": "mercury",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-libra-venus",
+    "label": "venus rules libra (traditional)",
+    "search_text": "venus rulership libra traditional",
+    "refs": {
+      "sign_id": "libra",
+      "body_id": "venus",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-scorpio-mars",
+    "label": "mars rules scorpio (traditional)",
+    "search_text": "mars rulership scorpio traditional",
+    "refs": {
+      "sign_id": "scorpio",
+      "body_id": "mars",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-sagittarius-jupiter",
+    "label": "jupiter rules sagittarius (traditional)",
+    "search_text": "jupiter rulership sagittarius traditional",
+    "refs": {
+      "sign_id": "sagittarius",
+      "body_id": "jupiter",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-capricorn-saturn",
+    "label": "saturn rules capricorn (traditional)",
+    "search_text": "saturn rulership capricorn traditional",
+    "refs": {
+      "sign_id": "capricorn",
+      "body_id": "saturn",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-aquarius-saturn",
+    "label": "saturn rules aquarius (traditional)",
+    "search_text": "saturn rulership aquarius traditional",
+    "refs": {
+      "sign_id": "aquarius",
+      "body_id": "saturn",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "rulership",
+    "id": "ruler-pisces-jupiter",
+    "label": "jupiter rules pisces (traditional)",
+    "search_text": "jupiter rulership pisces traditional",
+    "refs": {
+      "sign_id": "pisces",
+      "body_id": "jupiter",
+      "model_id": "traditional"
+    }
+  },
+  {
+    "type": "decan",
+    "id": "aries-1",
+    "label": "Aries decan 1",
+    "search_text": "aries-1 aries decan ruler mars",
+    "refs": {
+      "sign_id": "aries",
+      "rulers": [
+        "mars"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "aries-2",
+    "label": "Aries decan 2",
+    "search_text": "aries-2 aries decan ruler sun",
+    "refs": {
+      "sign_id": "aries",
+      "rulers": [
+        "sun"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "aries-3",
+    "label": "Aries decan 3",
+    "search_text": "aries-3 aries decan ruler venus",
+    "refs": {
+      "sign_id": "aries",
+      "rulers": [
+        "venus"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "taurus-1",
+    "label": "Taurus decan 1",
+    "search_text": "taurus-1 taurus decan ruler mercury",
+    "refs": {
+      "sign_id": "taurus",
+      "rulers": [
+        "mercury"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "taurus-2",
+    "label": "Taurus decan 2",
+    "search_text": "taurus-2 taurus decan ruler moon",
+    "refs": {
+      "sign_id": "taurus",
+      "rulers": [
+        "moon"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "taurus-3",
+    "label": "Taurus decan 3",
+    "search_text": "taurus-3 taurus decan ruler saturn",
+    "refs": {
+      "sign_id": "taurus",
+      "rulers": [
+        "saturn"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "gemini-1",
+    "label": "Gemini decan 1",
+    "search_text": "gemini-1 gemini decan ruler jupiter",
+    "refs": {
+      "sign_id": "gemini",
+      "rulers": [
+        "jupiter"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "gemini-2",
+    "label": "Gemini decan 2",
+    "search_text": "gemini-2 gemini decan ruler mars",
+    "refs": {
+      "sign_id": "gemini",
+      "rulers": [
+        "mars"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "gemini-3",
+    "label": "Gemini decan 3",
+    "search_text": "gemini-3 gemini decan ruler sun",
+    "refs": {
+      "sign_id": "gemini",
+      "rulers": [
+        "sun"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "cancer-1",
+    "label": "Cancer decan 1",
+    "search_text": "cancer-1 cancer decan ruler venus",
+    "refs": {
+      "sign_id": "cancer",
+      "rulers": [
+        "venus"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "cancer-2",
+    "label": "Cancer decan 2",
+    "search_text": "cancer-2 cancer decan ruler mercury",
+    "refs": {
+      "sign_id": "cancer",
+      "rulers": [
+        "mercury"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "cancer-3",
+    "label": "Cancer decan 3",
+    "search_text": "cancer-3 cancer decan ruler moon",
+    "refs": {
+      "sign_id": "cancer",
+      "rulers": [
+        "moon"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "leo-1",
+    "label": "Leo decan 1",
+    "search_text": "leo-1 leo decan ruler saturn",
+    "refs": {
+      "sign_id": "leo",
+      "rulers": [
+        "saturn"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "leo-2",
+    "label": "Leo decan 2",
+    "search_text": "leo-2 leo decan ruler jupiter",
+    "refs": {
+      "sign_id": "leo",
+      "rulers": [
+        "jupiter"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "leo-3",
+    "label": "Leo decan 3",
+    "search_text": "leo-3 leo decan ruler mars",
+    "refs": {
+      "sign_id": "leo",
+      "rulers": [
+        "mars"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "virgo-1",
+    "label": "Virgo decan 1",
+    "search_text": "virgo-1 virgo decan ruler sun",
+    "refs": {
+      "sign_id": "virgo",
+      "rulers": [
+        "sun"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "virgo-2",
+    "label": "Virgo decan 2",
+    "search_text": "virgo-2 virgo decan ruler venus",
+    "refs": {
+      "sign_id": "virgo",
+      "rulers": [
+        "venus"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "virgo-3",
+    "label": "Virgo decan 3",
+    "search_text": "virgo-3 virgo decan ruler mercury",
+    "refs": {
+      "sign_id": "virgo",
+      "rulers": [
+        "mercury"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "libra-1",
+    "label": "Libra decan 1",
+    "search_text": "libra-1 libra decan ruler moon",
+    "refs": {
+      "sign_id": "libra",
+      "rulers": [
+        "moon"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "libra-2",
+    "label": "Libra decan 2",
+    "search_text": "libra-2 libra decan ruler saturn",
+    "refs": {
+      "sign_id": "libra",
+      "rulers": [
+        "saturn"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "libra-3",
+    "label": "Libra decan 3",
+    "search_text": "libra-3 libra decan ruler jupiter",
+    "refs": {
+      "sign_id": "libra",
+      "rulers": [
+        "jupiter"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "scorpio-1",
+    "label": "Scorpio decan 1",
+    "search_text": "scorpio-1 scorpio decan ruler mars",
+    "refs": {
+      "sign_id": "scorpio",
+      "rulers": [
+        "mars"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "scorpio-2",
+    "label": "Scorpio decan 2",
+    "search_text": "scorpio-2 scorpio decan ruler sun",
+    "refs": {
+      "sign_id": "scorpio",
+      "rulers": [
+        "sun"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "scorpio-3",
+    "label": "Scorpio decan 3",
+    "search_text": "scorpio-3 scorpio decan ruler venus",
+    "refs": {
+      "sign_id": "scorpio",
+      "rulers": [
+        "venus"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "sagittarius-1",
+    "label": "Sagittarius decan 1",
+    "search_text": "sagittarius-1 sagittarius decan ruler mercury",
+    "refs": {
+      "sign_id": "sagittarius",
+      "rulers": [
+        "mercury"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "sagittarius-2",
+    "label": "Sagittarius decan 2",
+    "search_text": "sagittarius-2 sagittarius decan ruler moon",
+    "refs": {
+      "sign_id": "sagittarius",
+      "rulers": [
+        "moon"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "sagittarius-3",
+    "label": "Sagittarius decan 3",
+    "search_text": "sagittarius-3 sagittarius decan ruler saturn",
+    "refs": {
+      "sign_id": "sagittarius",
+      "rulers": [
+        "saturn"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "capricorn-1",
+    "label": "Capricorn decan 1",
+    "search_text": "capricorn-1 capricorn decan ruler jupiter",
+    "refs": {
+      "sign_id": "capricorn",
+      "rulers": [
+        "jupiter"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "capricorn-2",
+    "label": "Capricorn decan 2",
+    "search_text": "capricorn-2 capricorn decan ruler mars",
+    "refs": {
+      "sign_id": "capricorn",
+      "rulers": [
+        "mars"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "capricorn-3",
+    "label": "Capricorn decan 3",
+    "search_text": "capricorn-3 capricorn decan ruler sun",
+    "refs": {
+      "sign_id": "capricorn",
+      "rulers": [
+        "sun"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "aquarius-1",
+    "label": "Aquarius decan 1",
+    "search_text": "aquarius-1 aquarius decan ruler venus",
+    "refs": {
+      "sign_id": "aquarius",
+      "rulers": [
+        "venus"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "aquarius-2",
+    "label": "Aquarius decan 2",
+    "search_text": "aquarius-2 aquarius decan ruler mercury",
+    "refs": {
+      "sign_id": "aquarius",
+      "rulers": [
+        "mercury"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "aquarius-3",
+    "label": "Aquarius decan 3",
+    "search_text": "aquarius-3 aquarius decan ruler moon",
+    "refs": {
+      "sign_id": "aquarius",
+      "rulers": [
+        "moon"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "pisces-1",
+    "label": "Pisces decan 1",
+    "search_text": "pisces-1 pisces decan ruler saturn",
+    "refs": {
+      "sign_id": "pisces",
+      "rulers": [
+        "saturn"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "pisces-2",
+    "label": "Pisces decan 2",
+    "search_text": "pisces-2 pisces decan ruler jupiter",
+    "refs": {
+      "sign_id": "pisces",
+      "rulers": [
+        "jupiter"
+      ]
+    }
+  },
+  {
+    "type": "decan",
+    "id": "pisces-3",
+    "label": "Pisces decan 3",
+    "search_text": "pisces-3 pisces decan ruler mars",
+    "refs": {
+      "sign_id": "pisces",
+      "rulers": [
+        "mars"
+      ]
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-00",
+    "label": "Aries 0°",
+    "search_text": "aries-00 aries degree 0 dwad aries",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-01",
+    "label": "Aries 1°",
+    "search_text": "aries-01 aries degree 1 dwad aries",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-02",
+    "label": "Aries 2°",
+    "search_text": "aries-02 aries degree 2 dwad aries",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-03",
+    "label": "Aries 3°",
+    "search_text": "aries-03 aries degree 3 dwad taurus",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-04",
+    "label": "Aries 4°",
+    "search_text": "aries-04 aries degree 4 dwad taurus",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-05",
+    "label": "Aries 5°",
+    "search_text": "aries-05 aries degree 5 dwad gemini",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-06",
+    "label": "Aries 6°",
+    "search_text": "aries-06 aries degree 6 dwad gemini",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-07",
+    "label": "Aries 7°",
+    "search_text": "aries-07 aries degree 7 dwad gemini",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-08",
+    "label": "Aries 8°",
+    "search_text": "aries-08 aries degree 8 dwad cancer",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-09",
+    "label": "Aries 9°",
+    "search_text": "aries-09 aries degree 9 dwad cancer",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-10",
+    "label": "Aries 10°",
+    "search_text": "aries-10 aries degree 10 dwad leo",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-11",
+    "label": "Aries 11°",
+    "search_text": "aries-11 aries degree 11 dwad leo",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-12",
+    "label": "Aries 12°",
+    "search_text": "aries-12 aries degree 12 dwad leo",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-13",
+    "label": "Aries 13°",
+    "search_text": "aries-13 aries degree 13 dwad virgo",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-14",
+    "label": "Aries 14°",
+    "search_text": "aries-14 aries degree 14 dwad virgo",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-15",
+    "label": "Aries 15°",
+    "search_text": "aries-15 aries degree 15 dwad libra",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-16",
+    "label": "Aries 16°",
+    "search_text": "aries-16 aries degree 16 dwad libra",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-17",
+    "label": "Aries 17°",
+    "search_text": "aries-17 aries degree 17 dwad libra",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-18",
+    "label": "Aries 18°",
+    "search_text": "aries-18 aries degree 18 dwad scorpio",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-19",
+    "label": "Aries 19°",
+    "search_text": "aries-19 aries degree 19 dwad scorpio",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-20",
+    "label": "Aries 20°",
+    "search_text": "aries-20 aries degree 20 dwad sagittarius",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-21",
+    "label": "Aries 21°",
+    "search_text": "aries-21 aries degree 21 dwad sagittarius",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-22",
+    "label": "Aries 22°",
+    "search_text": "aries-22 aries degree 22 dwad sagittarius",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-23",
+    "label": "Aries 23°",
+    "search_text": "aries-23 aries degree 23 dwad capricorn",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-24",
+    "label": "Aries 24°",
+    "search_text": "aries-24 aries degree 24 dwad capricorn",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-25",
+    "label": "Aries 25°",
+    "search_text": "aries-25 aries degree 25 dwad aquarius",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-26",
+    "label": "Aries 26°",
+    "search_text": "aries-26 aries degree 26 dwad aquarius",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-27",
+    "label": "Aries 27°",
+    "search_text": "aries-27 aries degree 27 dwad aquarius",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-28",
+    "label": "Aries 28°",
+    "search_text": "aries-28 aries degree 28 dwad pisces",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aries-29",
+    "label": "Aries 29°",
+    "search_text": "aries-29 aries degree 29 dwad pisces",
+    "refs": {
+      "sign_id": "aries",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-00",
+    "label": "Taurus 0°",
+    "search_text": "taurus-00 taurus degree 0 dwad taurus",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-01",
+    "label": "Taurus 1°",
+    "search_text": "taurus-01 taurus degree 1 dwad taurus",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-02",
+    "label": "Taurus 2°",
+    "search_text": "taurus-02 taurus degree 2 dwad taurus",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-03",
+    "label": "Taurus 3°",
+    "search_text": "taurus-03 taurus degree 3 dwad gemini",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-04",
+    "label": "Taurus 4°",
+    "search_text": "taurus-04 taurus degree 4 dwad gemini",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-05",
+    "label": "Taurus 5°",
+    "search_text": "taurus-05 taurus degree 5 dwad cancer",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-06",
+    "label": "Taurus 6°",
+    "search_text": "taurus-06 taurus degree 6 dwad cancer",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-07",
+    "label": "Taurus 7°",
+    "search_text": "taurus-07 taurus degree 7 dwad cancer",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-08",
+    "label": "Taurus 8°",
+    "search_text": "taurus-08 taurus degree 8 dwad leo",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-09",
+    "label": "Taurus 9°",
+    "search_text": "taurus-09 taurus degree 9 dwad leo",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-10",
+    "label": "Taurus 10°",
+    "search_text": "taurus-10 taurus degree 10 dwad virgo",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-11",
+    "label": "Taurus 11°",
+    "search_text": "taurus-11 taurus degree 11 dwad virgo",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-12",
+    "label": "Taurus 12°",
+    "search_text": "taurus-12 taurus degree 12 dwad virgo",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-13",
+    "label": "Taurus 13°",
+    "search_text": "taurus-13 taurus degree 13 dwad libra",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-14",
+    "label": "Taurus 14°",
+    "search_text": "taurus-14 taurus degree 14 dwad libra",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-15",
+    "label": "Taurus 15°",
+    "search_text": "taurus-15 taurus degree 15 dwad scorpio",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-16",
+    "label": "Taurus 16°",
+    "search_text": "taurus-16 taurus degree 16 dwad scorpio",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-17",
+    "label": "Taurus 17°",
+    "search_text": "taurus-17 taurus degree 17 dwad scorpio",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-18",
+    "label": "Taurus 18°",
+    "search_text": "taurus-18 taurus degree 18 dwad sagittarius",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-19",
+    "label": "Taurus 19°",
+    "search_text": "taurus-19 taurus degree 19 dwad sagittarius",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-20",
+    "label": "Taurus 20°",
+    "search_text": "taurus-20 taurus degree 20 dwad capricorn",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-21",
+    "label": "Taurus 21°",
+    "search_text": "taurus-21 taurus degree 21 dwad capricorn",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-22",
+    "label": "Taurus 22°",
+    "search_text": "taurus-22 taurus degree 22 dwad capricorn",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-23",
+    "label": "Taurus 23°",
+    "search_text": "taurus-23 taurus degree 23 dwad aquarius",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-24",
+    "label": "Taurus 24°",
+    "search_text": "taurus-24 taurus degree 24 dwad aquarius",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-25",
+    "label": "Taurus 25°",
+    "search_text": "taurus-25 taurus degree 25 dwad pisces",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-26",
+    "label": "Taurus 26°",
+    "search_text": "taurus-26 taurus degree 26 dwad pisces",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-27",
+    "label": "Taurus 27°",
+    "search_text": "taurus-27 taurus degree 27 dwad pisces",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-28",
+    "label": "Taurus 28°",
+    "search_text": "taurus-28 taurus degree 28 dwad aries",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "taurus-29",
+    "label": "Taurus 29°",
+    "search_text": "taurus-29 taurus degree 29 dwad aries",
+    "refs": {
+      "sign_id": "taurus",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-00",
+    "label": "Gemini 0°",
+    "search_text": "gemini-00 gemini degree 0 dwad gemini",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-01",
+    "label": "Gemini 1°",
+    "search_text": "gemini-01 gemini degree 1 dwad gemini",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-02",
+    "label": "Gemini 2°",
+    "search_text": "gemini-02 gemini degree 2 dwad gemini",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-03",
+    "label": "Gemini 3°",
+    "search_text": "gemini-03 gemini degree 3 dwad cancer",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-04",
+    "label": "Gemini 4°",
+    "search_text": "gemini-04 gemini degree 4 dwad cancer",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-05",
+    "label": "Gemini 5°",
+    "search_text": "gemini-05 gemini degree 5 dwad leo",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-06",
+    "label": "Gemini 6°",
+    "search_text": "gemini-06 gemini degree 6 dwad leo",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-07",
+    "label": "Gemini 7°",
+    "search_text": "gemini-07 gemini degree 7 dwad leo",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-08",
+    "label": "Gemini 8°",
+    "search_text": "gemini-08 gemini degree 8 dwad virgo",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-09",
+    "label": "Gemini 9°",
+    "search_text": "gemini-09 gemini degree 9 dwad virgo",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-10",
+    "label": "Gemini 10°",
+    "search_text": "gemini-10 gemini degree 10 dwad libra",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-11",
+    "label": "Gemini 11°",
+    "search_text": "gemini-11 gemini degree 11 dwad libra",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-12",
+    "label": "Gemini 12°",
+    "search_text": "gemini-12 gemini degree 12 dwad libra",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-13",
+    "label": "Gemini 13°",
+    "search_text": "gemini-13 gemini degree 13 dwad scorpio",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-14",
+    "label": "Gemini 14°",
+    "search_text": "gemini-14 gemini degree 14 dwad scorpio",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-15",
+    "label": "Gemini 15°",
+    "search_text": "gemini-15 gemini degree 15 dwad sagittarius",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-16",
+    "label": "Gemini 16°",
+    "search_text": "gemini-16 gemini degree 16 dwad sagittarius",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-17",
+    "label": "Gemini 17°",
+    "search_text": "gemini-17 gemini degree 17 dwad sagittarius",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-18",
+    "label": "Gemini 18°",
+    "search_text": "gemini-18 gemini degree 18 dwad capricorn",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-19",
+    "label": "Gemini 19°",
+    "search_text": "gemini-19 gemini degree 19 dwad capricorn",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-20",
+    "label": "Gemini 20°",
+    "search_text": "gemini-20 gemini degree 20 dwad aquarius",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-21",
+    "label": "Gemini 21°",
+    "search_text": "gemini-21 gemini degree 21 dwad aquarius",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-22",
+    "label": "Gemini 22°",
+    "search_text": "gemini-22 gemini degree 22 dwad aquarius",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-23",
+    "label": "Gemini 23°",
+    "search_text": "gemini-23 gemini degree 23 dwad pisces",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-24",
+    "label": "Gemini 24°",
+    "search_text": "gemini-24 gemini degree 24 dwad pisces",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-25",
+    "label": "Gemini 25°",
+    "search_text": "gemini-25 gemini degree 25 dwad aries",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-26",
+    "label": "Gemini 26°",
+    "search_text": "gemini-26 gemini degree 26 dwad aries",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-27",
+    "label": "Gemini 27°",
+    "search_text": "gemini-27 gemini degree 27 dwad aries",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-28",
+    "label": "Gemini 28°",
+    "search_text": "gemini-28 gemini degree 28 dwad taurus",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "gemini-29",
+    "label": "Gemini 29°",
+    "search_text": "gemini-29 gemini degree 29 dwad taurus",
+    "refs": {
+      "sign_id": "gemini",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-00",
+    "label": "Cancer 0°",
+    "search_text": "cancer-00 cancer degree 0 dwad cancer",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-01",
+    "label": "Cancer 1°",
+    "search_text": "cancer-01 cancer degree 1 dwad cancer",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-02",
+    "label": "Cancer 2°",
+    "search_text": "cancer-02 cancer degree 2 dwad cancer",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-03",
+    "label": "Cancer 3°",
+    "search_text": "cancer-03 cancer degree 3 dwad leo",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-04",
+    "label": "Cancer 4°",
+    "search_text": "cancer-04 cancer degree 4 dwad leo",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-05",
+    "label": "Cancer 5°",
+    "search_text": "cancer-05 cancer degree 5 dwad virgo",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-06",
+    "label": "Cancer 6°",
+    "search_text": "cancer-06 cancer degree 6 dwad virgo",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-07",
+    "label": "Cancer 7°",
+    "search_text": "cancer-07 cancer degree 7 dwad virgo",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-08",
+    "label": "Cancer 8°",
+    "search_text": "cancer-08 cancer degree 8 dwad libra",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-09",
+    "label": "Cancer 9°",
+    "search_text": "cancer-09 cancer degree 9 dwad libra",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-10",
+    "label": "Cancer 10°",
+    "search_text": "cancer-10 cancer degree 10 dwad scorpio",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-11",
+    "label": "Cancer 11°",
+    "search_text": "cancer-11 cancer degree 11 dwad scorpio",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-12",
+    "label": "Cancer 12°",
+    "search_text": "cancer-12 cancer degree 12 dwad scorpio",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-13",
+    "label": "Cancer 13°",
+    "search_text": "cancer-13 cancer degree 13 dwad sagittarius",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-14",
+    "label": "Cancer 14°",
+    "search_text": "cancer-14 cancer degree 14 dwad sagittarius",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-15",
+    "label": "Cancer 15°",
+    "search_text": "cancer-15 cancer degree 15 dwad capricorn",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-16",
+    "label": "Cancer 16°",
+    "search_text": "cancer-16 cancer degree 16 dwad capricorn",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-17",
+    "label": "Cancer 17°",
+    "search_text": "cancer-17 cancer degree 17 dwad capricorn",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-18",
+    "label": "Cancer 18°",
+    "search_text": "cancer-18 cancer degree 18 dwad aquarius",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-19",
+    "label": "Cancer 19°",
+    "search_text": "cancer-19 cancer degree 19 dwad aquarius",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-20",
+    "label": "Cancer 20°",
+    "search_text": "cancer-20 cancer degree 20 dwad pisces",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-21",
+    "label": "Cancer 21°",
+    "search_text": "cancer-21 cancer degree 21 dwad pisces",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-22",
+    "label": "Cancer 22°",
+    "search_text": "cancer-22 cancer degree 22 dwad pisces",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-23",
+    "label": "Cancer 23°",
+    "search_text": "cancer-23 cancer degree 23 dwad aries",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-24",
+    "label": "Cancer 24°",
+    "search_text": "cancer-24 cancer degree 24 dwad aries",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-25",
+    "label": "Cancer 25°",
+    "search_text": "cancer-25 cancer degree 25 dwad taurus",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-26",
+    "label": "Cancer 26°",
+    "search_text": "cancer-26 cancer degree 26 dwad taurus",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-27",
+    "label": "Cancer 27°",
+    "search_text": "cancer-27 cancer degree 27 dwad taurus",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-28",
+    "label": "Cancer 28°",
+    "search_text": "cancer-28 cancer degree 28 dwad gemini",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "cancer-29",
+    "label": "Cancer 29°",
+    "search_text": "cancer-29 cancer degree 29 dwad gemini",
+    "refs": {
+      "sign_id": "cancer",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-00",
+    "label": "Leo 0°",
+    "search_text": "leo-00 leo degree 0 dwad leo",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-01",
+    "label": "Leo 1°",
+    "search_text": "leo-01 leo degree 1 dwad leo",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-02",
+    "label": "Leo 2°",
+    "search_text": "leo-02 leo degree 2 dwad leo",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-03",
+    "label": "Leo 3°",
+    "search_text": "leo-03 leo degree 3 dwad virgo",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-04",
+    "label": "Leo 4°",
+    "search_text": "leo-04 leo degree 4 dwad virgo",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-05",
+    "label": "Leo 5°",
+    "search_text": "leo-05 leo degree 5 dwad libra",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-06",
+    "label": "Leo 6°",
+    "search_text": "leo-06 leo degree 6 dwad libra",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-07",
+    "label": "Leo 7°",
+    "search_text": "leo-07 leo degree 7 dwad libra",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-08",
+    "label": "Leo 8°",
+    "search_text": "leo-08 leo degree 8 dwad scorpio",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-09",
+    "label": "Leo 9°",
+    "search_text": "leo-09 leo degree 9 dwad scorpio",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-10",
+    "label": "Leo 10°",
+    "search_text": "leo-10 leo degree 10 dwad sagittarius",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-11",
+    "label": "Leo 11°",
+    "search_text": "leo-11 leo degree 11 dwad sagittarius",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-12",
+    "label": "Leo 12°",
+    "search_text": "leo-12 leo degree 12 dwad sagittarius",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-13",
+    "label": "Leo 13°",
+    "search_text": "leo-13 leo degree 13 dwad capricorn",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-14",
+    "label": "Leo 14°",
+    "search_text": "leo-14 leo degree 14 dwad capricorn",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-15",
+    "label": "Leo 15°",
+    "search_text": "leo-15 leo degree 15 dwad aquarius",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-16",
+    "label": "Leo 16°",
+    "search_text": "leo-16 leo degree 16 dwad aquarius",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-17",
+    "label": "Leo 17°",
+    "search_text": "leo-17 leo degree 17 dwad aquarius",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-18",
+    "label": "Leo 18°",
+    "search_text": "leo-18 leo degree 18 dwad pisces",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-19",
+    "label": "Leo 19°",
+    "search_text": "leo-19 leo degree 19 dwad pisces",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-20",
+    "label": "Leo 20°",
+    "search_text": "leo-20 leo degree 20 dwad aries",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-21",
+    "label": "Leo 21°",
+    "search_text": "leo-21 leo degree 21 dwad aries",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-22",
+    "label": "Leo 22°",
+    "search_text": "leo-22 leo degree 22 dwad aries",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-23",
+    "label": "Leo 23°",
+    "search_text": "leo-23 leo degree 23 dwad taurus",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-24",
+    "label": "Leo 24°",
+    "search_text": "leo-24 leo degree 24 dwad taurus",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-25",
+    "label": "Leo 25°",
+    "search_text": "leo-25 leo degree 25 dwad gemini",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-26",
+    "label": "Leo 26°",
+    "search_text": "leo-26 leo degree 26 dwad gemini",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-27",
+    "label": "Leo 27°",
+    "search_text": "leo-27 leo degree 27 dwad gemini",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-28",
+    "label": "Leo 28°",
+    "search_text": "leo-28 leo degree 28 dwad cancer",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "leo-29",
+    "label": "Leo 29°",
+    "search_text": "leo-29 leo degree 29 dwad cancer",
+    "refs": {
+      "sign_id": "leo",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-00",
+    "label": "Virgo 0°",
+    "search_text": "virgo-00 virgo degree 0 dwad virgo",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-01",
+    "label": "Virgo 1°",
+    "search_text": "virgo-01 virgo degree 1 dwad virgo",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-02",
+    "label": "Virgo 2°",
+    "search_text": "virgo-02 virgo degree 2 dwad virgo",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-03",
+    "label": "Virgo 3°",
+    "search_text": "virgo-03 virgo degree 3 dwad libra",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-04",
+    "label": "Virgo 4°",
+    "search_text": "virgo-04 virgo degree 4 dwad libra",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-05",
+    "label": "Virgo 5°",
+    "search_text": "virgo-05 virgo degree 5 dwad scorpio",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-06",
+    "label": "Virgo 6°",
+    "search_text": "virgo-06 virgo degree 6 dwad scorpio",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-07",
+    "label": "Virgo 7°",
+    "search_text": "virgo-07 virgo degree 7 dwad scorpio",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-08",
+    "label": "Virgo 8°",
+    "search_text": "virgo-08 virgo degree 8 dwad sagittarius",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-09",
+    "label": "Virgo 9°",
+    "search_text": "virgo-09 virgo degree 9 dwad sagittarius",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-10",
+    "label": "Virgo 10°",
+    "search_text": "virgo-10 virgo degree 10 dwad capricorn",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-11",
+    "label": "Virgo 11°",
+    "search_text": "virgo-11 virgo degree 11 dwad capricorn",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-12",
+    "label": "Virgo 12°",
+    "search_text": "virgo-12 virgo degree 12 dwad capricorn",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-13",
+    "label": "Virgo 13°",
+    "search_text": "virgo-13 virgo degree 13 dwad aquarius",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-14",
+    "label": "Virgo 14°",
+    "search_text": "virgo-14 virgo degree 14 dwad aquarius",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-15",
+    "label": "Virgo 15°",
+    "search_text": "virgo-15 virgo degree 15 dwad pisces",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-16",
+    "label": "Virgo 16°",
+    "search_text": "virgo-16 virgo degree 16 dwad pisces",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-17",
+    "label": "Virgo 17°",
+    "search_text": "virgo-17 virgo degree 17 dwad pisces",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-18",
+    "label": "Virgo 18°",
+    "search_text": "virgo-18 virgo degree 18 dwad aries",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-19",
+    "label": "Virgo 19°",
+    "search_text": "virgo-19 virgo degree 19 dwad aries",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-20",
+    "label": "Virgo 20°",
+    "search_text": "virgo-20 virgo degree 20 dwad taurus",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-21",
+    "label": "Virgo 21°",
+    "search_text": "virgo-21 virgo degree 21 dwad taurus",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-22",
+    "label": "Virgo 22°",
+    "search_text": "virgo-22 virgo degree 22 dwad taurus",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-23",
+    "label": "Virgo 23°",
+    "search_text": "virgo-23 virgo degree 23 dwad gemini",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-24",
+    "label": "Virgo 24°",
+    "search_text": "virgo-24 virgo degree 24 dwad gemini",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-25",
+    "label": "Virgo 25°",
+    "search_text": "virgo-25 virgo degree 25 dwad cancer",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-26",
+    "label": "Virgo 26°",
+    "search_text": "virgo-26 virgo degree 26 dwad cancer",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-27",
+    "label": "Virgo 27°",
+    "search_text": "virgo-27 virgo degree 27 dwad cancer",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-28",
+    "label": "Virgo 28°",
+    "search_text": "virgo-28 virgo degree 28 dwad leo",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "virgo-29",
+    "label": "Virgo 29°",
+    "search_text": "virgo-29 virgo degree 29 dwad leo",
+    "refs": {
+      "sign_id": "virgo",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-00",
+    "label": "Libra 0°",
+    "search_text": "libra-00 libra degree 0 dwad libra",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-01",
+    "label": "Libra 1°",
+    "search_text": "libra-01 libra degree 1 dwad libra",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-02",
+    "label": "Libra 2°",
+    "search_text": "libra-02 libra degree 2 dwad libra",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-03",
+    "label": "Libra 3°",
+    "search_text": "libra-03 libra degree 3 dwad scorpio",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-04",
+    "label": "Libra 4°",
+    "search_text": "libra-04 libra degree 4 dwad scorpio",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-05",
+    "label": "Libra 5°",
+    "search_text": "libra-05 libra degree 5 dwad sagittarius",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-06",
+    "label": "Libra 6°",
+    "search_text": "libra-06 libra degree 6 dwad sagittarius",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-07",
+    "label": "Libra 7°",
+    "search_text": "libra-07 libra degree 7 dwad sagittarius",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-08",
+    "label": "Libra 8°",
+    "search_text": "libra-08 libra degree 8 dwad capricorn",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-09",
+    "label": "Libra 9°",
+    "search_text": "libra-09 libra degree 9 dwad capricorn",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-10",
+    "label": "Libra 10°",
+    "search_text": "libra-10 libra degree 10 dwad aquarius",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-11",
+    "label": "Libra 11°",
+    "search_text": "libra-11 libra degree 11 dwad aquarius",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-12",
+    "label": "Libra 12°",
+    "search_text": "libra-12 libra degree 12 dwad aquarius",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-13",
+    "label": "Libra 13°",
+    "search_text": "libra-13 libra degree 13 dwad pisces",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-14",
+    "label": "Libra 14°",
+    "search_text": "libra-14 libra degree 14 dwad pisces",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-15",
+    "label": "Libra 15°",
+    "search_text": "libra-15 libra degree 15 dwad aries",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-16",
+    "label": "Libra 16°",
+    "search_text": "libra-16 libra degree 16 dwad aries",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-17",
+    "label": "Libra 17°",
+    "search_text": "libra-17 libra degree 17 dwad aries",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-18",
+    "label": "Libra 18°",
+    "search_text": "libra-18 libra degree 18 dwad taurus",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-19",
+    "label": "Libra 19°",
+    "search_text": "libra-19 libra degree 19 dwad taurus",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-20",
+    "label": "Libra 20°",
+    "search_text": "libra-20 libra degree 20 dwad gemini",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-21",
+    "label": "Libra 21°",
+    "search_text": "libra-21 libra degree 21 dwad gemini",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-22",
+    "label": "Libra 22°",
+    "search_text": "libra-22 libra degree 22 dwad gemini",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-23",
+    "label": "Libra 23°",
+    "search_text": "libra-23 libra degree 23 dwad cancer",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-24",
+    "label": "Libra 24°",
+    "search_text": "libra-24 libra degree 24 dwad cancer",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-25",
+    "label": "Libra 25°",
+    "search_text": "libra-25 libra degree 25 dwad leo",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-26",
+    "label": "Libra 26°",
+    "search_text": "libra-26 libra degree 26 dwad leo",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-27",
+    "label": "Libra 27°",
+    "search_text": "libra-27 libra degree 27 dwad leo",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-28",
+    "label": "Libra 28°",
+    "search_text": "libra-28 libra degree 28 dwad virgo",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "libra-29",
+    "label": "Libra 29°",
+    "search_text": "libra-29 libra degree 29 dwad virgo",
+    "refs": {
+      "sign_id": "libra",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-00",
+    "label": "Scorpio 0°",
+    "search_text": "scorpio-00 scorpio degree 0 dwad scorpio",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-01",
+    "label": "Scorpio 1°",
+    "search_text": "scorpio-01 scorpio degree 1 dwad scorpio",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-02",
+    "label": "Scorpio 2°",
+    "search_text": "scorpio-02 scorpio degree 2 dwad scorpio",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-03",
+    "label": "Scorpio 3°",
+    "search_text": "scorpio-03 scorpio degree 3 dwad sagittarius",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-04",
+    "label": "Scorpio 4°",
+    "search_text": "scorpio-04 scorpio degree 4 dwad sagittarius",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-05",
+    "label": "Scorpio 5°",
+    "search_text": "scorpio-05 scorpio degree 5 dwad capricorn",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-06",
+    "label": "Scorpio 6°",
+    "search_text": "scorpio-06 scorpio degree 6 dwad capricorn",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-07",
+    "label": "Scorpio 7°",
+    "search_text": "scorpio-07 scorpio degree 7 dwad capricorn",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-08",
+    "label": "Scorpio 8°",
+    "search_text": "scorpio-08 scorpio degree 8 dwad aquarius",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-09",
+    "label": "Scorpio 9°",
+    "search_text": "scorpio-09 scorpio degree 9 dwad aquarius",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-10",
+    "label": "Scorpio 10°",
+    "search_text": "scorpio-10 scorpio degree 10 dwad pisces",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-11",
+    "label": "Scorpio 11°",
+    "search_text": "scorpio-11 scorpio degree 11 dwad pisces",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-12",
+    "label": "Scorpio 12°",
+    "search_text": "scorpio-12 scorpio degree 12 dwad pisces",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-13",
+    "label": "Scorpio 13°",
+    "search_text": "scorpio-13 scorpio degree 13 dwad aries",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-14",
+    "label": "Scorpio 14°",
+    "search_text": "scorpio-14 scorpio degree 14 dwad aries",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-15",
+    "label": "Scorpio 15°",
+    "search_text": "scorpio-15 scorpio degree 15 dwad taurus",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-16",
+    "label": "Scorpio 16°",
+    "search_text": "scorpio-16 scorpio degree 16 dwad taurus",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-17",
+    "label": "Scorpio 17°",
+    "search_text": "scorpio-17 scorpio degree 17 dwad taurus",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-18",
+    "label": "Scorpio 18°",
+    "search_text": "scorpio-18 scorpio degree 18 dwad gemini",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-19",
+    "label": "Scorpio 19°",
+    "search_text": "scorpio-19 scorpio degree 19 dwad gemini",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-20",
+    "label": "Scorpio 20°",
+    "search_text": "scorpio-20 scorpio degree 20 dwad cancer",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-21",
+    "label": "Scorpio 21°",
+    "search_text": "scorpio-21 scorpio degree 21 dwad cancer",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-22",
+    "label": "Scorpio 22°",
+    "search_text": "scorpio-22 scorpio degree 22 dwad cancer",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-23",
+    "label": "Scorpio 23°",
+    "search_text": "scorpio-23 scorpio degree 23 dwad leo",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-24",
+    "label": "Scorpio 24°",
+    "search_text": "scorpio-24 scorpio degree 24 dwad leo",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-25",
+    "label": "Scorpio 25°",
+    "search_text": "scorpio-25 scorpio degree 25 dwad virgo",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-26",
+    "label": "Scorpio 26°",
+    "search_text": "scorpio-26 scorpio degree 26 dwad virgo",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-27",
+    "label": "Scorpio 27°",
+    "search_text": "scorpio-27 scorpio degree 27 dwad virgo",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-28",
+    "label": "Scorpio 28°",
+    "search_text": "scorpio-28 scorpio degree 28 dwad libra",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "scorpio-29",
+    "label": "Scorpio 29°",
+    "search_text": "scorpio-29 scorpio degree 29 dwad libra",
+    "refs": {
+      "sign_id": "scorpio",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-00",
+    "label": "Sagittarius 0°",
+    "search_text": "sagittarius-00 sagittarius degree 0 dwad sagittarius",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-01",
+    "label": "Sagittarius 1°",
+    "search_text": "sagittarius-01 sagittarius degree 1 dwad sagittarius",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-02",
+    "label": "Sagittarius 2°",
+    "search_text": "sagittarius-02 sagittarius degree 2 dwad sagittarius",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-03",
+    "label": "Sagittarius 3°",
+    "search_text": "sagittarius-03 sagittarius degree 3 dwad capricorn",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-04",
+    "label": "Sagittarius 4°",
+    "search_text": "sagittarius-04 sagittarius degree 4 dwad capricorn",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-05",
+    "label": "Sagittarius 5°",
+    "search_text": "sagittarius-05 sagittarius degree 5 dwad aquarius",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-06",
+    "label": "Sagittarius 6°",
+    "search_text": "sagittarius-06 sagittarius degree 6 dwad aquarius",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-07",
+    "label": "Sagittarius 7°",
+    "search_text": "sagittarius-07 sagittarius degree 7 dwad aquarius",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-08",
+    "label": "Sagittarius 8°",
+    "search_text": "sagittarius-08 sagittarius degree 8 dwad pisces",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-09",
+    "label": "Sagittarius 9°",
+    "search_text": "sagittarius-09 sagittarius degree 9 dwad pisces",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-10",
+    "label": "Sagittarius 10°",
+    "search_text": "sagittarius-10 sagittarius degree 10 dwad aries",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-11",
+    "label": "Sagittarius 11°",
+    "search_text": "sagittarius-11 sagittarius degree 11 dwad aries",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-12",
+    "label": "Sagittarius 12°",
+    "search_text": "sagittarius-12 sagittarius degree 12 dwad aries",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-13",
+    "label": "Sagittarius 13°",
+    "search_text": "sagittarius-13 sagittarius degree 13 dwad taurus",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-14",
+    "label": "Sagittarius 14°",
+    "search_text": "sagittarius-14 sagittarius degree 14 dwad taurus",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-15",
+    "label": "Sagittarius 15°",
+    "search_text": "sagittarius-15 sagittarius degree 15 dwad gemini",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-16",
+    "label": "Sagittarius 16°",
+    "search_text": "sagittarius-16 sagittarius degree 16 dwad gemini",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-17",
+    "label": "Sagittarius 17°",
+    "search_text": "sagittarius-17 sagittarius degree 17 dwad gemini",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-18",
+    "label": "Sagittarius 18°",
+    "search_text": "sagittarius-18 sagittarius degree 18 dwad cancer",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-19",
+    "label": "Sagittarius 19°",
+    "search_text": "sagittarius-19 sagittarius degree 19 dwad cancer",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-20",
+    "label": "Sagittarius 20°",
+    "search_text": "sagittarius-20 sagittarius degree 20 dwad leo",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-21",
+    "label": "Sagittarius 21°",
+    "search_text": "sagittarius-21 sagittarius degree 21 dwad leo",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-22",
+    "label": "Sagittarius 22°",
+    "search_text": "sagittarius-22 sagittarius degree 22 dwad leo",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-23",
+    "label": "Sagittarius 23°",
+    "search_text": "sagittarius-23 sagittarius degree 23 dwad virgo",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-24",
+    "label": "Sagittarius 24°",
+    "search_text": "sagittarius-24 sagittarius degree 24 dwad virgo",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-25",
+    "label": "Sagittarius 25°",
+    "search_text": "sagittarius-25 sagittarius degree 25 dwad libra",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-26",
+    "label": "Sagittarius 26°",
+    "search_text": "sagittarius-26 sagittarius degree 26 dwad libra",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-27",
+    "label": "Sagittarius 27°",
+    "search_text": "sagittarius-27 sagittarius degree 27 dwad libra",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-28",
+    "label": "Sagittarius 28°",
+    "search_text": "sagittarius-28 sagittarius degree 28 dwad scorpio",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "sagittarius-29",
+    "label": "Sagittarius 29°",
+    "search_text": "sagittarius-29 sagittarius degree 29 dwad scorpio",
+    "refs": {
+      "sign_id": "sagittarius",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-00",
+    "label": "Capricorn 0°",
+    "search_text": "capricorn-00 capricorn degree 0 dwad capricorn",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-01",
+    "label": "Capricorn 1°",
+    "search_text": "capricorn-01 capricorn degree 1 dwad capricorn",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-02",
+    "label": "Capricorn 2°",
+    "search_text": "capricorn-02 capricorn degree 2 dwad capricorn",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-03",
+    "label": "Capricorn 3°",
+    "search_text": "capricorn-03 capricorn degree 3 dwad aquarius",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-04",
+    "label": "Capricorn 4°",
+    "search_text": "capricorn-04 capricorn degree 4 dwad aquarius",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-05",
+    "label": "Capricorn 5°",
+    "search_text": "capricorn-05 capricorn degree 5 dwad pisces",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-06",
+    "label": "Capricorn 6°",
+    "search_text": "capricorn-06 capricorn degree 6 dwad pisces",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-07",
+    "label": "Capricorn 7°",
+    "search_text": "capricorn-07 capricorn degree 7 dwad pisces",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-08",
+    "label": "Capricorn 8°",
+    "search_text": "capricorn-08 capricorn degree 8 dwad aries",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-09",
+    "label": "Capricorn 9°",
+    "search_text": "capricorn-09 capricorn degree 9 dwad aries",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-10",
+    "label": "Capricorn 10°",
+    "search_text": "capricorn-10 capricorn degree 10 dwad taurus",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-11",
+    "label": "Capricorn 11°",
+    "search_text": "capricorn-11 capricorn degree 11 dwad taurus",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-12",
+    "label": "Capricorn 12°",
+    "search_text": "capricorn-12 capricorn degree 12 dwad taurus",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-13",
+    "label": "Capricorn 13°",
+    "search_text": "capricorn-13 capricorn degree 13 dwad gemini",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-14",
+    "label": "Capricorn 14°",
+    "search_text": "capricorn-14 capricorn degree 14 dwad gemini",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-15",
+    "label": "Capricorn 15°",
+    "search_text": "capricorn-15 capricorn degree 15 dwad cancer",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-16",
+    "label": "Capricorn 16°",
+    "search_text": "capricorn-16 capricorn degree 16 dwad cancer",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-17",
+    "label": "Capricorn 17°",
+    "search_text": "capricorn-17 capricorn degree 17 dwad cancer",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-18",
+    "label": "Capricorn 18°",
+    "search_text": "capricorn-18 capricorn degree 18 dwad leo",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-19",
+    "label": "Capricorn 19°",
+    "search_text": "capricorn-19 capricorn degree 19 dwad leo",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-20",
+    "label": "Capricorn 20°",
+    "search_text": "capricorn-20 capricorn degree 20 dwad virgo",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-21",
+    "label": "Capricorn 21°",
+    "search_text": "capricorn-21 capricorn degree 21 dwad virgo",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-22",
+    "label": "Capricorn 22°",
+    "search_text": "capricorn-22 capricorn degree 22 dwad virgo",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-23",
+    "label": "Capricorn 23°",
+    "search_text": "capricorn-23 capricorn degree 23 dwad libra",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-24",
+    "label": "Capricorn 24°",
+    "search_text": "capricorn-24 capricorn degree 24 dwad libra",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-25",
+    "label": "Capricorn 25°",
+    "search_text": "capricorn-25 capricorn degree 25 dwad scorpio",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-26",
+    "label": "Capricorn 26°",
+    "search_text": "capricorn-26 capricorn degree 26 dwad scorpio",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-27",
+    "label": "Capricorn 27°",
+    "search_text": "capricorn-27 capricorn degree 27 dwad scorpio",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-28",
+    "label": "Capricorn 28°",
+    "search_text": "capricorn-28 capricorn degree 28 dwad sagittarius",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "capricorn-29",
+    "label": "Capricorn 29°",
+    "search_text": "capricorn-29 capricorn degree 29 dwad sagittarius",
+    "refs": {
+      "sign_id": "capricorn",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-00",
+    "label": "Aquarius 0°",
+    "search_text": "aquarius-00 aquarius degree 0 dwad aquarius",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-01",
+    "label": "Aquarius 1°",
+    "search_text": "aquarius-01 aquarius degree 1 dwad aquarius",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-02",
+    "label": "Aquarius 2°",
+    "search_text": "aquarius-02 aquarius degree 2 dwad aquarius",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-03",
+    "label": "Aquarius 3°",
+    "search_text": "aquarius-03 aquarius degree 3 dwad pisces",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-04",
+    "label": "Aquarius 4°",
+    "search_text": "aquarius-04 aquarius degree 4 dwad pisces",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-05",
+    "label": "Aquarius 5°",
+    "search_text": "aquarius-05 aquarius degree 5 dwad aries",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-06",
+    "label": "Aquarius 6°",
+    "search_text": "aquarius-06 aquarius degree 6 dwad aries",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-07",
+    "label": "Aquarius 7°",
+    "search_text": "aquarius-07 aquarius degree 7 dwad aries",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-08",
+    "label": "Aquarius 8°",
+    "search_text": "aquarius-08 aquarius degree 8 dwad taurus",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-09",
+    "label": "Aquarius 9°",
+    "search_text": "aquarius-09 aquarius degree 9 dwad taurus",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-10",
+    "label": "Aquarius 10°",
+    "search_text": "aquarius-10 aquarius degree 10 dwad gemini",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-11",
+    "label": "Aquarius 11°",
+    "search_text": "aquarius-11 aquarius degree 11 dwad gemini",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-12",
+    "label": "Aquarius 12°",
+    "search_text": "aquarius-12 aquarius degree 12 dwad gemini",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-13",
+    "label": "Aquarius 13°",
+    "search_text": "aquarius-13 aquarius degree 13 dwad cancer",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-14",
+    "label": "Aquarius 14°",
+    "search_text": "aquarius-14 aquarius degree 14 dwad cancer",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-15",
+    "label": "Aquarius 15°",
+    "search_text": "aquarius-15 aquarius degree 15 dwad leo",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-16",
+    "label": "Aquarius 16°",
+    "search_text": "aquarius-16 aquarius degree 16 dwad leo",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-17",
+    "label": "Aquarius 17°",
+    "search_text": "aquarius-17 aquarius degree 17 dwad leo",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-18",
+    "label": "Aquarius 18°",
+    "search_text": "aquarius-18 aquarius degree 18 dwad virgo",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-19",
+    "label": "Aquarius 19°",
+    "search_text": "aquarius-19 aquarius degree 19 dwad virgo",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-20",
+    "label": "Aquarius 20°",
+    "search_text": "aquarius-20 aquarius degree 20 dwad libra",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-21",
+    "label": "Aquarius 21°",
+    "search_text": "aquarius-21 aquarius degree 21 dwad libra",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-22",
+    "label": "Aquarius 22°",
+    "search_text": "aquarius-22 aquarius degree 22 dwad libra",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-23",
+    "label": "Aquarius 23°",
+    "search_text": "aquarius-23 aquarius degree 23 dwad scorpio",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-24",
+    "label": "Aquarius 24°",
+    "search_text": "aquarius-24 aquarius degree 24 dwad scorpio",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-25",
+    "label": "Aquarius 25°",
+    "search_text": "aquarius-25 aquarius degree 25 dwad sagittarius",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-26",
+    "label": "Aquarius 26°",
+    "search_text": "aquarius-26 aquarius degree 26 dwad sagittarius",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-27",
+    "label": "Aquarius 27°",
+    "search_text": "aquarius-27 aquarius degree 27 dwad sagittarius",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-28",
+    "label": "Aquarius 28°",
+    "search_text": "aquarius-28 aquarius degree 28 dwad capricorn",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "aquarius-29",
+    "label": "Aquarius 29°",
+    "search_text": "aquarius-29 aquarius degree 29 dwad capricorn",
+    "refs": {
+      "sign_id": "aquarius",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-00",
+    "label": "Pisces 0°",
+    "search_text": "pisces-00 pisces degree 0 dwad pisces",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 0,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-01",
+    "label": "Pisces 1°",
+    "search_text": "pisces-01 pisces degree 1 dwad pisces",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 1,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-02",
+    "label": "Pisces 2°",
+    "search_text": "pisces-02 pisces degree 2 dwad pisces",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 2,
+      "dwad_sign_id": "pisces"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-03",
+    "label": "Pisces 3°",
+    "search_text": "pisces-03 pisces degree 3 dwad aries",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 3,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-04",
+    "label": "Pisces 4°",
+    "search_text": "pisces-04 pisces degree 4 dwad aries",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 4,
+      "dwad_sign_id": "aries"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-05",
+    "label": "Pisces 5°",
+    "search_text": "pisces-05 pisces degree 5 dwad taurus",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 5,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-06",
+    "label": "Pisces 6°",
+    "search_text": "pisces-06 pisces degree 6 dwad taurus",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 6,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-07",
+    "label": "Pisces 7°",
+    "search_text": "pisces-07 pisces degree 7 dwad taurus",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 7,
+      "dwad_sign_id": "taurus"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-08",
+    "label": "Pisces 8°",
+    "search_text": "pisces-08 pisces degree 8 dwad gemini",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 8,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-09",
+    "label": "Pisces 9°",
+    "search_text": "pisces-09 pisces degree 9 dwad gemini",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 9,
+      "dwad_sign_id": "gemini"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-10",
+    "label": "Pisces 10°",
+    "search_text": "pisces-10 pisces degree 10 dwad cancer",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 10,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-11",
+    "label": "Pisces 11°",
+    "search_text": "pisces-11 pisces degree 11 dwad cancer",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 11,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-12",
+    "label": "Pisces 12°",
+    "search_text": "pisces-12 pisces degree 12 dwad cancer",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 12,
+      "dwad_sign_id": "cancer"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-13",
+    "label": "Pisces 13°",
+    "search_text": "pisces-13 pisces degree 13 dwad leo",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 13,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-14",
+    "label": "Pisces 14°",
+    "search_text": "pisces-14 pisces degree 14 dwad leo",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 14,
+      "dwad_sign_id": "leo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-15",
+    "label": "Pisces 15°",
+    "search_text": "pisces-15 pisces degree 15 dwad virgo",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 15,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-16",
+    "label": "Pisces 16°",
+    "search_text": "pisces-16 pisces degree 16 dwad virgo",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 16,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-17",
+    "label": "Pisces 17°",
+    "search_text": "pisces-17 pisces degree 17 dwad virgo",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 17,
+      "dwad_sign_id": "virgo"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-18",
+    "label": "Pisces 18°",
+    "search_text": "pisces-18 pisces degree 18 dwad libra",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 18,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-19",
+    "label": "Pisces 19°",
+    "search_text": "pisces-19 pisces degree 19 dwad libra",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 19,
+      "dwad_sign_id": "libra"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-20",
+    "label": "Pisces 20°",
+    "search_text": "pisces-20 pisces degree 20 dwad scorpio",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 20,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-21",
+    "label": "Pisces 21°",
+    "search_text": "pisces-21 pisces degree 21 dwad scorpio",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 21,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-22",
+    "label": "Pisces 22°",
+    "search_text": "pisces-22 pisces degree 22 dwad scorpio",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 22,
+      "dwad_sign_id": "scorpio"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-23",
+    "label": "Pisces 23°",
+    "search_text": "pisces-23 pisces degree 23 dwad sagittarius",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 23,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-24",
+    "label": "Pisces 24°",
+    "search_text": "pisces-24 pisces degree 24 dwad sagittarius",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 24,
+      "dwad_sign_id": "sagittarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-25",
+    "label": "Pisces 25°",
+    "search_text": "pisces-25 pisces degree 25 dwad capricorn",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 25,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-26",
+    "label": "Pisces 26°",
+    "search_text": "pisces-26 pisces degree 26 dwad capricorn",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 26,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-27",
+    "label": "Pisces 27°",
+    "search_text": "pisces-27 pisces degree 27 dwad capricorn",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 27,
+      "dwad_sign_id": "capricorn"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-28",
+    "label": "Pisces 28°",
+    "search_text": "pisces-28 pisces degree 28 dwad aquarius",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 28,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "degree",
+    "id": "pisces-29",
+    "label": "Pisces 29°",
+    "search_text": "pisces-29 pisces degree 29 dwad aquarius",
+    "refs": {
+      "sign_id": "pisces",
+      "degree_in_sign": 29,
+      "dwad_sign_id": "aquarius"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-aries",
+    "label": "Aries – Sign Profile",
+    "search_text": "Aries – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "aries",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-taurus",
+    "label": "Taurus – Sign Profile",
+    "search_text": "Taurus – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "taurus",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-gemini",
+    "label": "Gemini – Sign Profile",
+    "search_text": "Gemini – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "gemini",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-cancer",
+    "label": "Cancer – Sign Profile",
+    "search_text": "Cancer – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "cancer",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-leo",
+    "label": "Leo – Sign Profile",
+    "search_text": "Leo – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "leo",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-virgo",
+    "label": "Virgo – Sign Profile",
+    "search_text": "Virgo – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "virgo",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-libra",
+    "label": "Libra – Sign Profile",
+    "search_text": "Libra – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "libra",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-scorpio",
+    "label": "Scorpio – Sign Profile",
+    "search_text": "Scorpio – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "scorpio",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-sagittarius",
+    "label": "Sagittarius – Sign Profile",
+    "search_text": "Sagittarius – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "sagittarius",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-capricorn",
+    "label": "Capricorn – Sign Profile",
+    "search_text": "Capricorn – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "capricorn",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-aquarius",
+    "label": "Aquarius – Sign Profile",
+    "search_text": "Aquarius – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "aquarius",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "sign-profile-pisces",
+    "label": "Pisces – Sign Profile",
+    "search_text": "Pisces – Sign Profile sign-profile natal",
+    "refs": {
+      "sign_id": "pisces",
+      "topic": "sign-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-1",
+    "label": "First House – House Profile",
+    "search_text": "First House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-1",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-2",
+    "label": "Second House – House Profile",
+    "search_text": "Second House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-2",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-3",
+    "label": "Third House – House Profile",
+    "search_text": "Third House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-3",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-4",
+    "label": "Fourth House – House Profile",
+    "search_text": "Fourth House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-4",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-5",
+    "label": "Fifth House – House Profile",
+    "search_text": "Fifth House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-5",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-6",
+    "label": "Sixth House – House Profile",
+    "search_text": "Sixth House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-6",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-7",
+    "label": "Seventh House – House Profile",
+    "search_text": "Seventh House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-7",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-8",
+    "label": "Eighth House – House Profile",
+    "search_text": "Eighth House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-8",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-9",
+    "label": "Ninth House – House Profile",
+    "search_text": "Ninth House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-9",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-10",
+    "label": "Tenth House – House Profile",
+    "search_text": "Tenth House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-10",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-11",
+    "label": "Eleventh House – House Profile",
+    "search_text": "Eleventh House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-11",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "house-profile-house-12",
+    "label": "Twelfth House – House Profile",
+    "search_text": "Twelfth House – House Profile house-profile natal",
+    "refs": {
+      "house_id": "house-12",
+      "topic": "house-profile",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-aries",
+    "label": "Sun in Aries",
+    "search_text": "Sun in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-taurus",
+    "label": "Sun in Taurus",
+    "search_text": "Sun in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-gemini",
+    "label": "Sun in Gemini",
+    "search_text": "Sun in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-cancer",
+    "label": "Sun in Cancer",
+    "search_text": "Sun in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-leo",
+    "label": "Sun in Leo",
+    "search_text": "Sun in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-virgo",
+    "label": "Sun in Virgo",
+    "search_text": "Sun in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-libra",
+    "label": "Sun in Libra",
+    "search_text": "Sun in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-scorpio",
+    "label": "Sun in Scorpio",
+    "search_text": "Sun in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-sagittarius",
+    "label": "Sun in Sagittarius",
+    "search_text": "Sun in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-capricorn",
+    "label": "Sun in Capricorn",
+    "search_text": "Sun in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-aquarius",
+    "label": "Sun in Aquarius",
+    "search_text": "Sun in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-pisces",
+    "label": "Sun in Pisces",
+    "search_text": "Sun in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "sun",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-aries",
+    "label": "Moon in Aries",
+    "search_text": "Moon in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-taurus",
+    "label": "Moon in Taurus",
+    "search_text": "Moon in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-gemini",
+    "label": "Moon in Gemini",
+    "search_text": "Moon in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-cancer",
+    "label": "Moon in Cancer",
+    "search_text": "Moon in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-leo",
+    "label": "Moon in Leo",
+    "search_text": "Moon in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-virgo",
+    "label": "Moon in Virgo",
+    "search_text": "Moon in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-libra",
+    "label": "Moon in Libra",
+    "search_text": "Moon in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-scorpio",
+    "label": "Moon in Scorpio",
+    "search_text": "Moon in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-sagittarius",
+    "label": "Moon in Sagittarius",
+    "search_text": "Moon in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-capricorn",
+    "label": "Moon in Capricorn",
+    "search_text": "Moon in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-aquarius",
+    "label": "Moon in Aquarius",
+    "search_text": "Moon in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-pisces",
+    "label": "Moon in Pisces",
+    "search_text": "Moon in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "moon",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-aries",
+    "label": "Mercury in Aries",
+    "search_text": "Mercury in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-taurus",
+    "label": "Mercury in Taurus",
+    "search_text": "Mercury in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-gemini",
+    "label": "Mercury in Gemini",
+    "search_text": "Mercury in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-cancer",
+    "label": "Mercury in Cancer",
+    "search_text": "Mercury in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-leo",
+    "label": "Mercury in Leo",
+    "search_text": "Mercury in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-virgo",
+    "label": "Mercury in Virgo",
+    "search_text": "Mercury in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-libra",
+    "label": "Mercury in Libra",
+    "search_text": "Mercury in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-scorpio",
+    "label": "Mercury in Scorpio",
+    "search_text": "Mercury in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-sagittarius",
+    "label": "Mercury in Sagittarius",
+    "search_text": "Mercury in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-capricorn",
+    "label": "Mercury in Capricorn",
+    "search_text": "Mercury in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-aquarius",
+    "label": "Mercury in Aquarius",
+    "search_text": "Mercury in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-pisces",
+    "label": "Mercury in Pisces",
+    "search_text": "Mercury in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "mercury",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-aries",
+    "label": "Venus in Aries",
+    "search_text": "Venus in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-taurus",
+    "label": "Venus in Taurus",
+    "search_text": "Venus in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-gemini",
+    "label": "Venus in Gemini",
+    "search_text": "Venus in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-cancer",
+    "label": "Venus in Cancer",
+    "search_text": "Venus in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-leo",
+    "label": "Venus in Leo",
+    "search_text": "Venus in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-virgo",
+    "label": "Venus in Virgo",
+    "search_text": "Venus in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-libra",
+    "label": "Venus in Libra",
+    "search_text": "Venus in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-scorpio",
+    "label": "Venus in Scorpio",
+    "search_text": "Venus in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-sagittarius",
+    "label": "Venus in Sagittarius",
+    "search_text": "Venus in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-capricorn",
+    "label": "Venus in Capricorn",
+    "search_text": "Venus in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-aquarius",
+    "label": "Venus in Aquarius",
+    "search_text": "Venus in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-pisces",
+    "label": "Venus in Pisces",
+    "search_text": "Venus in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "venus",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-aries",
+    "label": "Mars in Aries",
+    "search_text": "Mars in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-taurus",
+    "label": "Mars in Taurus",
+    "search_text": "Mars in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-gemini",
+    "label": "Mars in Gemini",
+    "search_text": "Mars in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-cancer",
+    "label": "Mars in Cancer",
+    "search_text": "Mars in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-leo",
+    "label": "Mars in Leo",
+    "search_text": "Mars in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-virgo",
+    "label": "Mars in Virgo",
+    "search_text": "Mars in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-libra",
+    "label": "Mars in Libra",
+    "search_text": "Mars in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-scorpio",
+    "label": "Mars in Scorpio",
+    "search_text": "Mars in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-sagittarius",
+    "label": "Mars in Sagittarius",
+    "search_text": "Mars in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-capricorn",
+    "label": "Mars in Capricorn",
+    "search_text": "Mars in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-aquarius",
+    "label": "Mars in Aquarius",
+    "search_text": "Mars in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-pisces",
+    "label": "Mars in Pisces",
+    "search_text": "Mars in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "mars",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-aries",
+    "label": "Jupiter in Aries",
+    "search_text": "Jupiter in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-taurus",
+    "label": "Jupiter in Taurus",
+    "search_text": "Jupiter in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-gemini",
+    "label": "Jupiter in Gemini",
+    "search_text": "Jupiter in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-cancer",
+    "label": "Jupiter in Cancer",
+    "search_text": "Jupiter in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-leo",
+    "label": "Jupiter in Leo",
+    "search_text": "Jupiter in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-virgo",
+    "label": "Jupiter in Virgo",
+    "search_text": "Jupiter in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-libra",
+    "label": "Jupiter in Libra",
+    "search_text": "Jupiter in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-scorpio",
+    "label": "Jupiter in Scorpio",
+    "search_text": "Jupiter in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-sagittarius",
+    "label": "Jupiter in Sagittarius",
+    "search_text": "Jupiter in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-capricorn",
+    "label": "Jupiter in Capricorn",
+    "search_text": "Jupiter in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-aquarius",
+    "label": "Jupiter in Aquarius",
+    "search_text": "Jupiter in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-pisces",
+    "label": "Jupiter in Pisces",
+    "search_text": "Jupiter in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-aries",
+    "label": "Saturn in Aries",
+    "search_text": "Saturn in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-taurus",
+    "label": "Saturn in Taurus",
+    "search_text": "Saturn in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-gemini",
+    "label": "Saturn in Gemini",
+    "search_text": "Saturn in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-cancer",
+    "label": "Saturn in Cancer",
+    "search_text": "Saturn in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-leo",
+    "label": "Saturn in Leo",
+    "search_text": "Saturn in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-virgo",
+    "label": "Saturn in Virgo",
+    "search_text": "Saturn in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-libra",
+    "label": "Saturn in Libra",
+    "search_text": "Saturn in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-scorpio",
+    "label": "Saturn in Scorpio",
+    "search_text": "Saturn in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-sagittarius",
+    "label": "Saturn in Sagittarius",
+    "search_text": "Saturn in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-capricorn",
+    "label": "Saturn in Capricorn",
+    "search_text": "Saturn in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-aquarius",
+    "label": "Saturn in Aquarius",
+    "search_text": "Saturn in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-pisces",
+    "label": "Saturn in Pisces",
+    "search_text": "Saturn in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "saturn",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-aries",
+    "label": "Uranus in Aries",
+    "search_text": "Uranus in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-taurus",
+    "label": "Uranus in Taurus",
+    "search_text": "Uranus in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-gemini",
+    "label": "Uranus in Gemini",
+    "search_text": "Uranus in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-cancer",
+    "label": "Uranus in Cancer",
+    "search_text": "Uranus in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-leo",
+    "label": "Uranus in Leo",
+    "search_text": "Uranus in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-virgo",
+    "label": "Uranus in Virgo",
+    "search_text": "Uranus in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-libra",
+    "label": "Uranus in Libra",
+    "search_text": "Uranus in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-scorpio",
+    "label": "Uranus in Scorpio",
+    "search_text": "Uranus in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-sagittarius",
+    "label": "Uranus in Sagittarius",
+    "search_text": "Uranus in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-capricorn",
+    "label": "Uranus in Capricorn",
+    "search_text": "Uranus in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-aquarius",
+    "label": "Uranus in Aquarius",
+    "search_text": "Uranus in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-pisces",
+    "label": "Uranus in Pisces",
+    "search_text": "Uranus in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "uranus",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-aries",
+    "label": "Neptune in Aries",
+    "search_text": "Neptune in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-taurus",
+    "label": "Neptune in Taurus",
+    "search_text": "Neptune in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-gemini",
+    "label": "Neptune in Gemini",
+    "search_text": "Neptune in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-cancer",
+    "label": "Neptune in Cancer",
+    "search_text": "Neptune in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-leo",
+    "label": "Neptune in Leo",
+    "search_text": "Neptune in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-virgo",
+    "label": "Neptune in Virgo",
+    "search_text": "Neptune in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-libra",
+    "label": "Neptune in Libra",
+    "search_text": "Neptune in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-scorpio",
+    "label": "Neptune in Scorpio",
+    "search_text": "Neptune in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-sagittarius",
+    "label": "Neptune in Sagittarius",
+    "search_text": "Neptune in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-capricorn",
+    "label": "Neptune in Capricorn",
+    "search_text": "Neptune in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-aquarius",
+    "label": "Neptune in Aquarius",
+    "search_text": "Neptune in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-pisces",
+    "label": "Neptune in Pisces",
+    "search_text": "Neptune in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "neptune",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-aries",
+    "label": "Pluto in Aries",
+    "search_text": "Pluto in Aries planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "aries",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-taurus",
+    "label": "Pluto in Taurus",
+    "search_text": "Pluto in Taurus planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "taurus",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-gemini",
+    "label": "Pluto in Gemini",
+    "search_text": "Pluto in Gemini planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "gemini",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-cancer",
+    "label": "Pluto in Cancer",
+    "search_text": "Pluto in Cancer planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "cancer",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-leo",
+    "label": "Pluto in Leo",
+    "search_text": "Pluto in Leo planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "leo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-virgo",
+    "label": "Pluto in Virgo",
+    "search_text": "Pluto in Virgo planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "virgo",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-libra",
+    "label": "Pluto in Libra",
+    "search_text": "Pluto in Libra planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "libra",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-scorpio",
+    "label": "Pluto in Scorpio",
+    "search_text": "Pluto in Scorpio planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "scorpio",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-sagittarius",
+    "label": "Pluto in Sagittarius",
+    "search_text": "Pluto in Sagittarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "sagittarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-capricorn",
+    "label": "Pluto in Capricorn",
+    "search_text": "Pluto in Capricorn planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "capricorn",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-aquarius",
+    "label": "Pluto in Aquarius",
+    "search_text": "Pluto in Aquarius planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "aquarius",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-pisces",
+    "label": "Pluto in Pisces",
+    "search_text": "Pluto in Pisces planet-in-sign natal",
+    "refs": {
+      "planet_id": "pluto",
+      "sign_id": "pisces",
+      "topic": "planet-in-sign",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-1",
+    "label": "Sun in First House",
+    "search_text": "Sun in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-2",
+    "label": "Sun in Second House",
+    "search_text": "Sun in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-3",
+    "label": "Sun in Third House",
+    "search_text": "Sun in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-4",
+    "label": "Sun in Fourth House",
+    "search_text": "Sun in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-5",
+    "label": "Sun in Fifth House",
+    "search_text": "Sun in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-6",
+    "label": "Sun in Sixth House",
+    "search_text": "Sun in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-7",
+    "label": "Sun in Seventh House",
+    "search_text": "Sun in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-8",
+    "label": "Sun in Eighth House",
+    "search_text": "Sun in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-9",
+    "label": "Sun in Ninth House",
+    "search_text": "Sun in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-10",
+    "label": "Sun in Tenth House",
+    "search_text": "Sun in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-11",
+    "label": "Sun in Eleventh House",
+    "search_text": "Sun in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-sun-in-house-12",
+    "label": "Sun in Twelfth House",
+    "search_text": "Sun in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "sun",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-1",
+    "label": "Moon in First House",
+    "search_text": "Moon in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-2",
+    "label": "Moon in Second House",
+    "search_text": "Moon in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-3",
+    "label": "Moon in Third House",
+    "search_text": "Moon in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-4",
+    "label": "Moon in Fourth House",
+    "search_text": "Moon in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-5",
+    "label": "Moon in Fifth House",
+    "search_text": "Moon in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-6",
+    "label": "Moon in Sixth House",
+    "search_text": "Moon in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-7",
+    "label": "Moon in Seventh House",
+    "search_text": "Moon in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-8",
+    "label": "Moon in Eighth House",
+    "search_text": "Moon in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-9",
+    "label": "Moon in Ninth House",
+    "search_text": "Moon in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-10",
+    "label": "Moon in Tenth House",
+    "search_text": "Moon in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-11",
+    "label": "Moon in Eleventh House",
+    "search_text": "Moon in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-moon-in-house-12",
+    "label": "Moon in Twelfth House",
+    "search_text": "Moon in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "moon",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-1",
+    "label": "Mercury in First House",
+    "search_text": "Mercury in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-2",
+    "label": "Mercury in Second House",
+    "search_text": "Mercury in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-3",
+    "label": "Mercury in Third House",
+    "search_text": "Mercury in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-4",
+    "label": "Mercury in Fourth House",
+    "search_text": "Mercury in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-5",
+    "label": "Mercury in Fifth House",
+    "search_text": "Mercury in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-6",
+    "label": "Mercury in Sixth House",
+    "search_text": "Mercury in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-7",
+    "label": "Mercury in Seventh House",
+    "search_text": "Mercury in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-8",
+    "label": "Mercury in Eighth House",
+    "search_text": "Mercury in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-9",
+    "label": "Mercury in Ninth House",
+    "search_text": "Mercury in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-10",
+    "label": "Mercury in Tenth House",
+    "search_text": "Mercury in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-11",
+    "label": "Mercury in Eleventh House",
+    "search_text": "Mercury in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mercury-in-house-12",
+    "label": "Mercury in Twelfth House",
+    "search_text": "Mercury in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mercury",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-1",
+    "label": "Venus in First House",
+    "search_text": "Venus in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-2",
+    "label": "Venus in Second House",
+    "search_text": "Venus in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-3",
+    "label": "Venus in Third House",
+    "search_text": "Venus in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-4",
+    "label": "Venus in Fourth House",
+    "search_text": "Venus in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-5",
+    "label": "Venus in Fifth House",
+    "search_text": "Venus in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-6",
+    "label": "Venus in Sixth House",
+    "search_text": "Venus in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-7",
+    "label": "Venus in Seventh House",
+    "search_text": "Venus in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-8",
+    "label": "Venus in Eighth House",
+    "search_text": "Venus in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-9",
+    "label": "Venus in Ninth House",
+    "search_text": "Venus in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-10",
+    "label": "Venus in Tenth House",
+    "search_text": "Venus in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-11",
+    "label": "Venus in Eleventh House",
+    "search_text": "Venus in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-venus-in-house-12",
+    "label": "Venus in Twelfth House",
+    "search_text": "Venus in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "venus",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-1",
+    "label": "Mars in First House",
+    "search_text": "Mars in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-2",
+    "label": "Mars in Second House",
+    "search_text": "Mars in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-3",
+    "label": "Mars in Third House",
+    "search_text": "Mars in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-4",
+    "label": "Mars in Fourth House",
+    "search_text": "Mars in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-5",
+    "label": "Mars in Fifth House",
+    "search_text": "Mars in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-6",
+    "label": "Mars in Sixth House",
+    "search_text": "Mars in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-7",
+    "label": "Mars in Seventh House",
+    "search_text": "Mars in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-8",
+    "label": "Mars in Eighth House",
+    "search_text": "Mars in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-9",
+    "label": "Mars in Ninth House",
+    "search_text": "Mars in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-10",
+    "label": "Mars in Tenth House",
+    "search_text": "Mars in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-11",
+    "label": "Mars in Eleventh House",
+    "search_text": "Mars in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-mars-in-house-12",
+    "label": "Mars in Twelfth House",
+    "search_text": "Mars in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "mars",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-1",
+    "label": "Jupiter in First House",
+    "search_text": "Jupiter in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-2",
+    "label": "Jupiter in Second House",
+    "search_text": "Jupiter in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-3",
+    "label": "Jupiter in Third House",
+    "search_text": "Jupiter in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-4",
+    "label": "Jupiter in Fourth House",
+    "search_text": "Jupiter in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-5",
+    "label": "Jupiter in Fifth House",
+    "search_text": "Jupiter in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-6",
+    "label": "Jupiter in Sixth House",
+    "search_text": "Jupiter in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-7",
+    "label": "Jupiter in Seventh House",
+    "search_text": "Jupiter in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-8",
+    "label": "Jupiter in Eighth House",
+    "search_text": "Jupiter in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-9",
+    "label": "Jupiter in Ninth House",
+    "search_text": "Jupiter in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-10",
+    "label": "Jupiter in Tenth House",
+    "search_text": "Jupiter in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-11",
+    "label": "Jupiter in Eleventh House",
+    "search_text": "Jupiter in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-jupiter-in-house-12",
+    "label": "Jupiter in Twelfth House",
+    "search_text": "Jupiter in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "jupiter",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-1",
+    "label": "Saturn in First House",
+    "search_text": "Saturn in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-2",
+    "label": "Saturn in Second House",
+    "search_text": "Saturn in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-3",
+    "label": "Saturn in Third House",
+    "search_text": "Saturn in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-4",
+    "label": "Saturn in Fourth House",
+    "search_text": "Saturn in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-5",
+    "label": "Saturn in Fifth House",
+    "search_text": "Saturn in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-6",
+    "label": "Saturn in Sixth House",
+    "search_text": "Saturn in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-7",
+    "label": "Saturn in Seventh House",
+    "search_text": "Saturn in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-8",
+    "label": "Saturn in Eighth House",
+    "search_text": "Saturn in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-9",
+    "label": "Saturn in Ninth House",
+    "search_text": "Saturn in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-10",
+    "label": "Saturn in Tenth House",
+    "search_text": "Saturn in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-11",
+    "label": "Saturn in Eleventh House",
+    "search_text": "Saturn in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-saturn-in-house-12",
+    "label": "Saturn in Twelfth House",
+    "search_text": "Saturn in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "saturn",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-1",
+    "label": "Uranus in First House",
+    "search_text": "Uranus in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-2",
+    "label": "Uranus in Second House",
+    "search_text": "Uranus in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-3",
+    "label": "Uranus in Third House",
+    "search_text": "Uranus in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-4",
+    "label": "Uranus in Fourth House",
+    "search_text": "Uranus in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-5",
+    "label": "Uranus in Fifth House",
+    "search_text": "Uranus in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-6",
+    "label": "Uranus in Sixth House",
+    "search_text": "Uranus in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-7",
+    "label": "Uranus in Seventh House",
+    "search_text": "Uranus in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-8",
+    "label": "Uranus in Eighth House",
+    "search_text": "Uranus in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-9",
+    "label": "Uranus in Ninth House",
+    "search_text": "Uranus in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-10",
+    "label": "Uranus in Tenth House",
+    "search_text": "Uranus in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-11",
+    "label": "Uranus in Eleventh House",
+    "search_text": "Uranus in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-uranus-in-house-12",
+    "label": "Uranus in Twelfth House",
+    "search_text": "Uranus in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "uranus",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-1",
+    "label": "Neptune in First House",
+    "search_text": "Neptune in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-2",
+    "label": "Neptune in Second House",
+    "search_text": "Neptune in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-3",
+    "label": "Neptune in Third House",
+    "search_text": "Neptune in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-4",
+    "label": "Neptune in Fourth House",
+    "search_text": "Neptune in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-5",
+    "label": "Neptune in Fifth House",
+    "search_text": "Neptune in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-6",
+    "label": "Neptune in Sixth House",
+    "search_text": "Neptune in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-7",
+    "label": "Neptune in Seventh House",
+    "search_text": "Neptune in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-8",
+    "label": "Neptune in Eighth House",
+    "search_text": "Neptune in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-9",
+    "label": "Neptune in Ninth House",
+    "search_text": "Neptune in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-10",
+    "label": "Neptune in Tenth House",
+    "search_text": "Neptune in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-11",
+    "label": "Neptune in Eleventh House",
+    "search_text": "Neptune in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-neptune-in-house-12",
+    "label": "Neptune in Twelfth House",
+    "search_text": "Neptune in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "neptune",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-1",
+    "label": "Pluto in First House",
+    "search_text": "Pluto in First House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-1",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-2",
+    "label": "Pluto in Second House",
+    "search_text": "Pluto in Second House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-2",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-3",
+    "label": "Pluto in Third House",
+    "search_text": "Pluto in Third House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-3",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-4",
+    "label": "Pluto in Fourth House",
+    "search_text": "Pluto in Fourth House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-4",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-5",
+    "label": "Pluto in Fifth House",
+    "search_text": "Pluto in Fifth House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-5",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-6",
+    "label": "Pluto in Sixth House",
+    "search_text": "Pluto in Sixth House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-6",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-7",
+    "label": "Pluto in Seventh House",
+    "search_text": "Pluto in Seventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-7",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-8",
+    "label": "Pluto in Eighth House",
+    "search_text": "Pluto in Eighth House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-8",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-9",
+    "label": "Pluto in Ninth House",
+    "search_text": "Pluto in Ninth House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-9",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-10",
+    "label": "Pluto in Tenth House",
+    "search_text": "Pluto in Tenth House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-10",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-11",
+    "label": "Pluto in Eleventh House",
+    "search_text": "Pluto in Eleventh House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-11",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  },
+  {
+    "type": "interpretation",
+    "id": "natal-pluto-in-house-12",
+    "label": "Pluto in Twelfth House",
+    "search_text": "Pluto in Twelfth House planet-in-house natal",
+    "refs": {
+      "planet_id": "pluto",
+      "house_id": "house-12",
+      "topic": "planet-in-house",
+      "scope": "natal"
+    }
+  }
+]

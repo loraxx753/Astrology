@@ -1,0 +1,4070 @@
+[
+  {
+    "id": "sign-profile-aries",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "aries",
+    "title": "Aries – Sign Profile",
+    "summary": "Core themes and style of Aries.",
+    "markdown": "**Aries** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-taurus",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "taurus",
+    "title": "Taurus – Sign Profile",
+    "summary": "Core themes and style of Taurus.",
+    "markdown": "**Taurus** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-gemini",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "gemini",
+    "title": "Gemini – Sign Profile",
+    "summary": "Core themes and style of Gemini.",
+    "markdown": "**Gemini** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-cancer",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "cancer",
+    "title": "Cancer – Sign Profile",
+    "summary": "Core themes and style of Cancer.",
+    "markdown": "**Cancer** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-leo",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "leo",
+    "title": "Leo – Sign Profile",
+    "summary": "Core themes and style of Leo.",
+    "markdown": "**Leo** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-virgo",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "virgo",
+    "title": "Virgo – Sign Profile",
+    "summary": "Core themes and style of Virgo.",
+    "markdown": "**Virgo** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-libra",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "libra",
+    "title": "Libra – Sign Profile",
+    "summary": "Core themes and style of Libra.",
+    "markdown": "**Libra** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-scorpio",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "scorpio",
+    "title": "Scorpio – Sign Profile",
+    "summary": "Core themes and style of Scorpio.",
+    "markdown": "**Scorpio** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-sagittarius",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "sagittarius",
+    "title": "Sagittarius – Sign Profile",
+    "summary": "Core themes and style of Sagittarius.",
+    "markdown": "**Sagittarius** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-capricorn",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "capricorn",
+    "title": "Capricorn – Sign Profile",
+    "summary": "Core themes and style of Capricorn.",
+    "markdown": "**Capricorn** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-aquarius",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "aquarius",
+    "title": "Aquarius – Sign Profile",
+    "summary": "Core themes and style of Aquarius.",
+    "markdown": "**Aquarius** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "sign-profile-pisces",
+    "scope": "natal",
+    "topic": "sign-profile",
+    "sign_id": "pisces",
+    "title": "Pisces – Sign Profile",
+    "summary": "Core themes and style of Pisces.",
+    "markdown": "**Pisces** expresses its element and modality through characteristic motivations and tactics. Use this as a neutral baseline; actual charts modulate by house, aspects, and sect.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-1",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-1",
+    "title": "First House – House Profile",
+    "summary": "Topics associated with the first house.",
+    "markdown": "The **First House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-2",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-2",
+    "title": "Second House – House Profile",
+    "summary": "Topics associated with the second house.",
+    "markdown": "The **Second House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-3",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-3",
+    "title": "Third House – House Profile",
+    "summary": "Topics associated with the third house.",
+    "markdown": "The **Third House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-4",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-4",
+    "title": "Fourth House – House Profile",
+    "summary": "Topics associated with the fourth house.",
+    "markdown": "The **Fourth House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-5",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-5",
+    "title": "Fifth House – House Profile",
+    "summary": "Topics associated with the fifth house.",
+    "markdown": "The **Fifth House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-6",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-6",
+    "title": "Sixth House – House Profile",
+    "summary": "Topics associated with the sixth house.",
+    "markdown": "The **Sixth House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-7",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-7",
+    "title": "Seventh House – House Profile",
+    "summary": "Topics associated with the seventh house.",
+    "markdown": "The **Seventh House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-8",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-8",
+    "title": "Eighth House – House Profile",
+    "summary": "Topics associated with the eighth house.",
+    "markdown": "The **Eighth House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-9",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-9",
+    "title": "Ninth House – House Profile",
+    "summary": "Topics associated with the ninth house.",
+    "markdown": "The **Ninth House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-10",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-10",
+    "title": "Tenth House – House Profile",
+    "summary": "Topics associated with the tenth house.",
+    "markdown": "The **Tenth House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-11",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-11",
+    "title": "Eleventh House – House Profile",
+    "summary": "Topics associated with the eleventh house.",
+    "markdown": "The **Eleventh House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "house-profile-house-12",
+    "scope": "natal",
+    "topic": "house-profile",
+    "house_id": "house-12",
+    "title": "Twelfth House – House Profile",
+    "summary": "Topics associated with the twelfth house.",
+    "markdown": "The **Twelfth House** addresses its topical areas (see `life_domains`). Interpretation varies by house ruler, planets present, aspects to the house ruler, and the sign on the cusp.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "aries",
+    "title": "Sun in Aries",
+    "summary": "How sun tends to express in Aries.",
+    "markdown": "With **Sun in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "taurus",
+    "title": "Sun in Taurus",
+    "summary": "How sun tends to express in Taurus.",
+    "markdown": "With **Sun in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "gemini",
+    "title": "Sun in Gemini",
+    "summary": "How sun tends to express in Gemini.",
+    "markdown": "With **Sun in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "cancer",
+    "title": "Sun in Cancer",
+    "summary": "How sun tends to express in Cancer.",
+    "markdown": "With **Sun in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "leo",
+    "title": "Sun in Leo",
+    "summary": "How sun tends to express in Leo.",
+    "markdown": "With **Sun in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "virgo",
+    "title": "Sun in Virgo",
+    "summary": "How sun tends to express in Virgo.",
+    "markdown": "With **Sun in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "libra",
+    "title": "Sun in Libra",
+    "summary": "How sun tends to express in Libra.",
+    "markdown": "With **Sun in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "scorpio",
+    "title": "Sun in Scorpio",
+    "summary": "How sun tends to express in Scorpio.",
+    "markdown": "With **Sun in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "sagittarius",
+    "title": "Sun in Sagittarius",
+    "summary": "How sun tends to express in Sagittarius.",
+    "markdown": "With **Sun in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "capricorn",
+    "title": "Sun in Capricorn",
+    "summary": "How sun tends to express in Capricorn.",
+    "markdown": "With **Sun in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "aquarius",
+    "title": "Sun in Aquarius",
+    "summary": "How sun tends to express in Aquarius.",
+    "markdown": "With **Sun in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "sun",
+    "sign_id": "pisces",
+    "title": "Sun in Pisces",
+    "summary": "How sun tends to express in Pisces.",
+    "markdown": "With **Sun in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "aries",
+    "title": "Moon in Aries",
+    "summary": "How moon tends to express in Aries.",
+    "markdown": "With **Moon in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "taurus",
+    "title": "Moon in Taurus",
+    "summary": "How moon tends to express in Taurus.",
+    "markdown": "With **Moon in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "gemini",
+    "title": "Moon in Gemini",
+    "summary": "How moon tends to express in Gemini.",
+    "markdown": "With **Moon in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "cancer",
+    "title": "Moon in Cancer",
+    "summary": "How moon tends to express in Cancer.",
+    "markdown": "With **Moon in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "leo",
+    "title": "Moon in Leo",
+    "summary": "How moon tends to express in Leo.",
+    "markdown": "With **Moon in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "virgo",
+    "title": "Moon in Virgo",
+    "summary": "How moon tends to express in Virgo.",
+    "markdown": "With **Moon in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "libra",
+    "title": "Moon in Libra",
+    "summary": "How moon tends to express in Libra.",
+    "markdown": "With **Moon in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "scorpio",
+    "title": "Moon in Scorpio",
+    "summary": "How moon tends to express in Scorpio.",
+    "markdown": "With **Moon in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "sagittarius",
+    "title": "Moon in Sagittarius",
+    "summary": "How moon tends to express in Sagittarius.",
+    "markdown": "With **Moon in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "capricorn",
+    "title": "Moon in Capricorn",
+    "summary": "How moon tends to express in Capricorn.",
+    "markdown": "With **Moon in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "aquarius",
+    "title": "Moon in Aquarius",
+    "summary": "How moon tends to express in Aquarius.",
+    "markdown": "With **Moon in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "moon",
+    "sign_id": "pisces",
+    "title": "Moon in Pisces",
+    "summary": "How moon tends to express in Pisces.",
+    "markdown": "With **Moon in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "aries",
+    "title": "Mercury in Aries",
+    "summary": "How mercury tends to express in Aries.",
+    "markdown": "With **Mercury in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "taurus",
+    "title": "Mercury in Taurus",
+    "summary": "How mercury tends to express in Taurus.",
+    "markdown": "With **Mercury in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "gemini",
+    "title": "Mercury in Gemini",
+    "summary": "How mercury tends to express in Gemini.",
+    "markdown": "With **Mercury in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "cancer",
+    "title": "Mercury in Cancer",
+    "summary": "How mercury tends to express in Cancer.",
+    "markdown": "With **Mercury in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "leo",
+    "title": "Mercury in Leo",
+    "summary": "How mercury tends to express in Leo.",
+    "markdown": "With **Mercury in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "virgo",
+    "title": "Mercury in Virgo",
+    "summary": "How mercury tends to express in Virgo.",
+    "markdown": "With **Mercury in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "libra",
+    "title": "Mercury in Libra",
+    "summary": "How mercury tends to express in Libra.",
+    "markdown": "With **Mercury in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "scorpio",
+    "title": "Mercury in Scorpio",
+    "summary": "How mercury tends to express in Scorpio.",
+    "markdown": "With **Mercury in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "sagittarius",
+    "title": "Mercury in Sagittarius",
+    "summary": "How mercury tends to express in Sagittarius.",
+    "markdown": "With **Mercury in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "capricorn",
+    "title": "Mercury in Capricorn",
+    "summary": "How mercury tends to express in Capricorn.",
+    "markdown": "With **Mercury in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "aquarius",
+    "title": "Mercury in Aquarius",
+    "summary": "How mercury tends to express in Aquarius.",
+    "markdown": "With **Mercury in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mercury",
+    "sign_id": "pisces",
+    "title": "Mercury in Pisces",
+    "summary": "How mercury tends to express in Pisces.",
+    "markdown": "With **Mercury in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "aries",
+    "title": "Venus in Aries",
+    "summary": "How venus tends to express in Aries.",
+    "markdown": "With **Venus in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "taurus",
+    "title": "Venus in Taurus",
+    "summary": "How venus tends to express in Taurus.",
+    "markdown": "With **Venus in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "gemini",
+    "title": "Venus in Gemini",
+    "summary": "How venus tends to express in Gemini.",
+    "markdown": "With **Venus in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "cancer",
+    "title": "Venus in Cancer",
+    "summary": "How venus tends to express in Cancer.",
+    "markdown": "With **Venus in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "leo",
+    "title": "Venus in Leo",
+    "summary": "How venus tends to express in Leo.",
+    "markdown": "With **Venus in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "virgo",
+    "title": "Venus in Virgo",
+    "summary": "How venus tends to express in Virgo.",
+    "markdown": "With **Venus in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "libra",
+    "title": "Venus in Libra",
+    "summary": "How venus tends to express in Libra.",
+    "markdown": "With **Venus in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "scorpio",
+    "title": "Venus in Scorpio",
+    "summary": "How venus tends to express in Scorpio.",
+    "markdown": "With **Venus in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "sagittarius",
+    "title": "Venus in Sagittarius",
+    "summary": "How venus tends to express in Sagittarius.",
+    "markdown": "With **Venus in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "capricorn",
+    "title": "Venus in Capricorn",
+    "summary": "How venus tends to express in Capricorn.",
+    "markdown": "With **Venus in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "aquarius",
+    "title": "Venus in Aquarius",
+    "summary": "How venus tends to express in Aquarius.",
+    "markdown": "With **Venus in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "venus",
+    "sign_id": "pisces",
+    "title": "Venus in Pisces",
+    "summary": "How venus tends to express in Pisces.",
+    "markdown": "With **Venus in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "aries",
+    "title": "Mars in Aries",
+    "summary": "How mars tends to express in Aries.",
+    "markdown": "With **Mars in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "taurus",
+    "title": "Mars in Taurus",
+    "summary": "How mars tends to express in Taurus.",
+    "markdown": "With **Mars in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "gemini",
+    "title": "Mars in Gemini",
+    "summary": "How mars tends to express in Gemini.",
+    "markdown": "With **Mars in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "cancer",
+    "title": "Mars in Cancer",
+    "summary": "How mars tends to express in Cancer.",
+    "markdown": "With **Mars in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "leo",
+    "title": "Mars in Leo",
+    "summary": "How mars tends to express in Leo.",
+    "markdown": "With **Mars in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "virgo",
+    "title": "Mars in Virgo",
+    "summary": "How mars tends to express in Virgo.",
+    "markdown": "With **Mars in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "libra",
+    "title": "Mars in Libra",
+    "summary": "How mars tends to express in Libra.",
+    "markdown": "With **Mars in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "scorpio",
+    "title": "Mars in Scorpio",
+    "summary": "How mars tends to express in Scorpio.",
+    "markdown": "With **Mars in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "sagittarius",
+    "title": "Mars in Sagittarius",
+    "summary": "How mars tends to express in Sagittarius.",
+    "markdown": "With **Mars in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "capricorn",
+    "title": "Mars in Capricorn",
+    "summary": "How mars tends to express in Capricorn.",
+    "markdown": "With **Mars in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "aquarius",
+    "title": "Mars in Aquarius",
+    "summary": "How mars tends to express in Aquarius.",
+    "markdown": "With **Mars in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "mars",
+    "sign_id": "pisces",
+    "title": "Mars in Pisces",
+    "summary": "How mars tends to express in Pisces.",
+    "markdown": "With **Mars in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "aries",
+    "title": "Jupiter in Aries",
+    "summary": "How jupiter tends to express in Aries.",
+    "markdown": "With **Jupiter in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "taurus",
+    "title": "Jupiter in Taurus",
+    "summary": "How jupiter tends to express in Taurus.",
+    "markdown": "With **Jupiter in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "gemini",
+    "title": "Jupiter in Gemini",
+    "summary": "How jupiter tends to express in Gemini.",
+    "markdown": "With **Jupiter in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "cancer",
+    "title": "Jupiter in Cancer",
+    "summary": "How jupiter tends to express in Cancer.",
+    "markdown": "With **Jupiter in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "leo",
+    "title": "Jupiter in Leo",
+    "summary": "How jupiter tends to express in Leo.",
+    "markdown": "With **Jupiter in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "virgo",
+    "title": "Jupiter in Virgo",
+    "summary": "How jupiter tends to express in Virgo.",
+    "markdown": "With **Jupiter in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "libra",
+    "title": "Jupiter in Libra",
+    "summary": "How jupiter tends to express in Libra.",
+    "markdown": "With **Jupiter in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "scorpio",
+    "title": "Jupiter in Scorpio",
+    "summary": "How jupiter tends to express in Scorpio.",
+    "markdown": "With **Jupiter in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "sagittarius",
+    "title": "Jupiter in Sagittarius",
+    "summary": "How jupiter tends to express in Sagittarius.",
+    "markdown": "With **Jupiter in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "capricorn",
+    "title": "Jupiter in Capricorn",
+    "summary": "How jupiter tends to express in Capricorn.",
+    "markdown": "With **Jupiter in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "aquarius",
+    "title": "Jupiter in Aquarius",
+    "summary": "How jupiter tends to express in Aquarius.",
+    "markdown": "With **Jupiter in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "jupiter",
+    "sign_id": "pisces",
+    "title": "Jupiter in Pisces",
+    "summary": "How jupiter tends to express in Pisces.",
+    "markdown": "With **Jupiter in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "aries",
+    "title": "Saturn in Aries",
+    "summary": "How saturn tends to express in Aries.",
+    "markdown": "With **Saturn in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "taurus",
+    "title": "Saturn in Taurus",
+    "summary": "How saturn tends to express in Taurus.",
+    "markdown": "With **Saturn in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "gemini",
+    "title": "Saturn in Gemini",
+    "summary": "How saturn tends to express in Gemini.",
+    "markdown": "With **Saturn in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "cancer",
+    "title": "Saturn in Cancer",
+    "summary": "How saturn tends to express in Cancer.",
+    "markdown": "With **Saturn in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "leo",
+    "title": "Saturn in Leo",
+    "summary": "How saturn tends to express in Leo.",
+    "markdown": "With **Saturn in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "virgo",
+    "title": "Saturn in Virgo",
+    "summary": "How saturn tends to express in Virgo.",
+    "markdown": "With **Saturn in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "libra",
+    "title": "Saturn in Libra",
+    "summary": "How saturn tends to express in Libra.",
+    "markdown": "With **Saturn in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "scorpio",
+    "title": "Saturn in Scorpio",
+    "summary": "How saturn tends to express in Scorpio.",
+    "markdown": "With **Saturn in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "sagittarius",
+    "title": "Saturn in Sagittarius",
+    "summary": "How saturn tends to express in Sagittarius.",
+    "markdown": "With **Saturn in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "capricorn",
+    "title": "Saturn in Capricorn",
+    "summary": "How saturn tends to express in Capricorn.",
+    "markdown": "With **Saturn in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "aquarius",
+    "title": "Saturn in Aquarius",
+    "summary": "How saturn tends to express in Aquarius.",
+    "markdown": "With **Saturn in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "saturn",
+    "sign_id": "pisces",
+    "title": "Saturn in Pisces",
+    "summary": "How saturn tends to express in Pisces.",
+    "markdown": "With **Saturn in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "aries",
+    "title": "Uranus in Aries",
+    "summary": "How uranus tends to express in Aries.",
+    "markdown": "With **Uranus in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "taurus",
+    "title": "Uranus in Taurus",
+    "summary": "How uranus tends to express in Taurus.",
+    "markdown": "With **Uranus in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "gemini",
+    "title": "Uranus in Gemini",
+    "summary": "How uranus tends to express in Gemini.",
+    "markdown": "With **Uranus in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "cancer",
+    "title": "Uranus in Cancer",
+    "summary": "How uranus tends to express in Cancer.",
+    "markdown": "With **Uranus in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "leo",
+    "title": "Uranus in Leo",
+    "summary": "How uranus tends to express in Leo.",
+    "markdown": "With **Uranus in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "virgo",
+    "title": "Uranus in Virgo",
+    "summary": "How uranus tends to express in Virgo.",
+    "markdown": "With **Uranus in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "libra",
+    "title": "Uranus in Libra",
+    "summary": "How uranus tends to express in Libra.",
+    "markdown": "With **Uranus in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "scorpio",
+    "title": "Uranus in Scorpio",
+    "summary": "How uranus tends to express in Scorpio.",
+    "markdown": "With **Uranus in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "sagittarius",
+    "title": "Uranus in Sagittarius",
+    "summary": "How uranus tends to express in Sagittarius.",
+    "markdown": "With **Uranus in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "capricorn",
+    "title": "Uranus in Capricorn",
+    "summary": "How uranus tends to express in Capricorn.",
+    "markdown": "With **Uranus in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "aquarius",
+    "title": "Uranus in Aquarius",
+    "summary": "How uranus tends to express in Aquarius.",
+    "markdown": "With **Uranus in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "uranus",
+    "sign_id": "pisces",
+    "title": "Uranus in Pisces",
+    "summary": "How uranus tends to express in Pisces.",
+    "markdown": "With **Uranus in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "aries",
+    "title": "Neptune in Aries",
+    "summary": "How neptune tends to express in Aries.",
+    "markdown": "With **Neptune in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "taurus",
+    "title": "Neptune in Taurus",
+    "summary": "How neptune tends to express in Taurus.",
+    "markdown": "With **Neptune in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "gemini",
+    "title": "Neptune in Gemini",
+    "summary": "How neptune tends to express in Gemini.",
+    "markdown": "With **Neptune in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "cancer",
+    "title": "Neptune in Cancer",
+    "summary": "How neptune tends to express in Cancer.",
+    "markdown": "With **Neptune in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "leo",
+    "title": "Neptune in Leo",
+    "summary": "How neptune tends to express in Leo.",
+    "markdown": "With **Neptune in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "virgo",
+    "title": "Neptune in Virgo",
+    "summary": "How neptune tends to express in Virgo.",
+    "markdown": "With **Neptune in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "libra",
+    "title": "Neptune in Libra",
+    "summary": "How neptune tends to express in Libra.",
+    "markdown": "With **Neptune in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "scorpio",
+    "title": "Neptune in Scorpio",
+    "summary": "How neptune tends to express in Scorpio.",
+    "markdown": "With **Neptune in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "sagittarius",
+    "title": "Neptune in Sagittarius",
+    "summary": "How neptune tends to express in Sagittarius.",
+    "markdown": "With **Neptune in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "capricorn",
+    "title": "Neptune in Capricorn",
+    "summary": "How neptune tends to express in Capricorn.",
+    "markdown": "With **Neptune in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "aquarius",
+    "title": "Neptune in Aquarius",
+    "summary": "How neptune tends to express in Aquarius.",
+    "markdown": "With **Neptune in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "neptune",
+    "sign_id": "pisces",
+    "title": "Neptune in Pisces",
+    "summary": "How neptune tends to express in Pisces.",
+    "markdown": "With **Neptune in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-aries",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "aries",
+    "title": "Pluto in Aries",
+    "summary": "How pluto tends to express in Aries.",
+    "markdown": "With **Pluto in Aries**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-taurus",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "taurus",
+    "title": "Pluto in Taurus",
+    "summary": "How pluto tends to express in Taurus.",
+    "markdown": "With **Pluto in Taurus**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-gemini",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "gemini",
+    "title": "Pluto in Gemini",
+    "summary": "How pluto tends to express in Gemini.",
+    "markdown": "With **Pluto in Gemini**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-cancer",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "cancer",
+    "title": "Pluto in Cancer",
+    "summary": "How pluto tends to express in Cancer.",
+    "markdown": "With **Pluto in Cancer**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-leo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "leo",
+    "title": "Pluto in Leo",
+    "summary": "How pluto tends to express in Leo.",
+    "markdown": "With **Pluto in Leo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-virgo",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "virgo",
+    "title": "Pluto in Virgo",
+    "summary": "How pluto tends to express in Virgo.",
+    "markdown": "With **Pluto in Virgo**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-libra",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "libra",
+    "title": "Pluto in Libra",
+    "summary": "How pluto tends to express in Libra.",
+    "markdown": "With **Pluto in Libra**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-scorpio",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "scorpio",
+    "title": "Pluto in Scorpio",
+    "summary": "How pluto tends to express in Scorpio.",
+    "markdown": "With **Pluto in Scorpio**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-sagittarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "sagittarius",
+    "title": "Pluto in Sagittarius",
+    "summary": "How pluto tends to express in Sagittarius.",
+    "markdown": "With **Pluto in Sagittarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-capricorn",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "capricorn",
+    "title": "Pluto in Capricorn",
+    "summary": "How pluto tends to express in Capricorn.",
+    "markdown": "With **Pluto in Capricorn**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-aquarius",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "aquarius",
+    "title": "Pluto in Aquarius",
+    "summary": "How pluto tends to express in Aquarius.",
+    "markdown": "With **Pluto in Aquarius**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-pisces",
+    "scope": "natal",
+    "topic": "planet-in-sign",
+    "planet_id": "pluto",
+    "sign_id": "pisces",
+    "title": "Pluto in Pisces",
+    "summary": "How pluto tends to express in Pisces.",
+    "markdown": "With **Pluto in Pisces**, expression takes on the sign’s tone (element, modality, polarity). Read as a baseline *style* rather than an outcome. Weight by sect, dignity, and aspects.",
+    "source_ids": [],
+    "tags": [
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-1",
+    "title": "Sun in First House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-2",
+    "title": "Sun in Second House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-3",
+    "title": "Sun in Third House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-4",
+    "title": "Sun in Fourth House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-5",
+    "title": "Sun in Fifth House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-6",
+    "title": "Sun in Sixth House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-7",
+    "title": "Sun in Seventh House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-8",
+    "title": "Sun in Eighth House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-9",
+    "title": "Sun in Ninth House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-10",
+    "title": "Sun in Tenth House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-11",
+    "title": "Sun in Eleventh House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-sun-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "sun",
+    "house_id": "house-12",
+    "title": "Sun in Twelfth House",
+    "summary": "Where sun shows up in life experience.",
+    "markdown": "**Sun in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-1",
+    "title": "Moon in First House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-2",
+    "title": "Moon in Second House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-3",
+    "title": "Moon in Third House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-4",
+    "title": "Moon in Fourth House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-5",
+    "title": "Moon in Fifth House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-6",
+    "title": "Moon in Sixth House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-7",
+    "title": "Moon in Seventh House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-8",
+    "title": "Moon in Eighth House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-9",
+    "title": "Moon in Ninth House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-10",
+    "title": "Moon in Tenth House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-11",
+    "title": "Moon in Eleventh House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-moon-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "moon",
+    "house_id": "house-12",
+    "title": "Moon in Twelfth House",
+    "summary": "Where moon shows up in life experience.",
+    "markdown": "**Moon in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-1",
+    "title": "Mercury in First House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-2",
+    "title": "Mercury in Second House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-3",
+    "title": "Mercury in Third House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-4",
+    "title": "Mercury in Fourth House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-5",
+    "title": "Mercury in Fifth House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-6",
+    "title": "Mercury in Sixth House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-7",
+    "title": "Mercury in Seventh House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-8",
+    "title": "Mercury in Eighth House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-9",
+    "title": "Mercury in Ninth House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-10",
+    "title": "Mercury in Tenth House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-11",
+    "title": "Mercury in Eleventh House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mercury-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mercury",
+    "house_id": "house-12",
+    "title": "Mercury in Twelfth House",
+    "summary": "Where mercury shows up in life experience.",
+    "markdown": "**Mercury in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-1",
+    "title": "Venus in First House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-2",
+    "title": "Venus in Second House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-3",
+    "title": "Venus in Third House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-4",
+    "title": "Venus in Fourth House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-5",
+    "title": "Venus in Fifth House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-6",
+    "title": "Venus in Sixth House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-7",
+    "title": "Venus in Seventh House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-8",
+    "title": "Venus in Eighth House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-9",
+    "title": "Venus in Ninth House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-10",
+    "title": "Venus in Tenth House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-11",
+    "title": "Venus in Eleventh House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-venus-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "venus",
+    "house_id": "house-12",
+    "title": "Venus in Twelfth House",
+    "summary": "Where venus shows up in life experience.",
+    "markdown": "**Venus in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-1",
+    "title": "Mars in First House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-2",
+    "title": "Mars in Second House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-3",
+    "title": "Mars in Third House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-4",
+    "title": "Mars in Fourth House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-5",
+    "title": "Mars in Fifth House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-6",
+    "title": "Mars in Sixth House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-7",
+    "title": "Mars in Seventh House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-8",
+    "title": "Mars in Eighth House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-9",
+    "title": "Mars in Ninth House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-10",
+    "title": "Mars in Tenth House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-11",
+    "title": "Mars in Eleventh House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-mars-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "mars",
+    "house_id": "house-12",
+    "title": "Mars in Twelfth House",
+    "summary": "Where mars shows up in life experience.",
+    "markdown": "**Mars in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-1",
+    "title": "Jupiter in First House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-2",
+    "title": "Jupiter in Second House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-3",
+    "title": "Jupiter in Third House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-4",
+    "title": "Jupiter in Fourth House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-5",
+    "title": "Jupiter in Fifth House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-6",
+    "title": "Jupiter in Sixth House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-7",
+    "title": "Jupiter in Seventh House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-8",
+    "title": "Jupiter in Eighth House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-9",
+    "title": "Jupiter in Ninth House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-10",
+    "title": "Jupiter in Tenth House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-11",
+    "title": "Jupiter in Eleventh House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-jupiter-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "jupiter",
+    "house_id": "house-12",
+    "title": "Jupiter in Twelfth House",
+    "summary": "Where jupiter shows up in life experience.",
+    "markdown": "**Jupiter in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-1",
+    "title": "Saturn in First House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-2",
+    "title": "Saturn in Second House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-3",
+    "title": "Saturn in Third House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-4",
+    "title": "Saturn in Fourth House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-5",
+    "title": "Saturn in Fifth House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-6",
+    "title": "Saturn in Sixth House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-7",
+    "title": "Saturn in Seventh House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-8",
+    "title": "Saturn in Eighth House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-9",
+    "title": "Saturn in Ninth House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-10",
+    "title": "Saturn in Tenth House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-11",
+    "title": "Saturn in Eleventh House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-saturn-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "saturn",
+    "house_id": "house-12",
+    "title": "Saturn in Twelfth House",
+    "summary": "Where saturn shows up in life experience.",
+    "markdown": "**Saturn in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-1",
+    "title": "Uranus in First House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-2",
+    "title": "Uranus in Second House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-3",
+    "title": "Uranus in Third House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-4",
+    "title": "Uranus in Fourth House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-5",
+    "title": "Uranus in Fifth House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-6",
+    "title": "Uranus in Sixth House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-7",
+    "title": "Uranus in Seventh House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-8",
+    "title": "Uranus in Eighth House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-9",
+    "title": "Uranus in Ninth House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-10",
+    "title": "Uranus in Tenth House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-11",
+    "title": "Uranus in Eleventh House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-uranus-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "uranus",
+    "house_id": "house-12",
+    "title": "Uranus in Twelfth House",
+    "summary": "Where uranus shows up in life experience.",
+    "markdown": "**Uranus in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-1",
+    "title": "Neptune in First House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-2",
+    "title": "Neptune in Second House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-3",
+    "title": "Neptune in Third House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-4",
+    "title": "Neptune in Fourth House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-5",
+    "title": "Neptune in Fifth House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-6",
+    "title": "Neptune in Sixth House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-7",
+    "title": "Neptune in Seventh House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-8",
+    "title": "Neptune in Eighth House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-9",
+    "title": "Neptune in Ninth House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-10",
+    "title": "Neptune in Tenth House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-11",
+    "title": "Neptune in Eleventh House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-neptune-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "neptune",
+    "house_id": "house-12",
+    "title": "Neptune in Twelfth House",
+    "summary": "Where neptune shows up in life experience.",
+    "markdown": "**Neptune in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-1",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-1",
+    "title": "Pluto in First House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in First House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-2",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-2",
+    "title": "Pluto in Second House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Second House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-3",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-3",
+    "title": "Pluto in Third House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Third House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-4",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-4",
+    "title": "Pluto in Fourth House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Fourth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-5",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-5",
+    "title": "Pluto in Fifth House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Fifth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-6",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-6",
+    "title": "Pluto in Sixth House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Sixth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-7",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-7",
+    "title": "Pluto in Seventh House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Seventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-8",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-8",
+    "title": "Pluto in Eighth House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Eighth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-9",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-9",
+    "title": "Pluto in Ninth House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Ninth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-10",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-10",
+    "title": "Pluto in Tenth House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Tenth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-11",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-11",
+    "title": "Pluto in Eleventh House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Eleventh House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "natal-pluto-in-house-12",
+    "scope": "natal",
+    "topic": "planet-in-house",
+    "planet_id": "pluto",
+    "house_id": "house-12",
+    "title": "Pluto in Twelfth House",
+    "summary": "Where pluto shows up in life experience.",
+    "markdown": "**Pluto in Twelfth House** emphasizes the house’s topics as a stage for that planet’s functions. Delineate via house ruler, sign on cusp, and aspects to the planet.",
+    "source_ids": [],
+    "tags": [
+      "traditional",
+      "psychological"
+    ],
+    "confidence": "low"
+  }
+]

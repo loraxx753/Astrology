@@ -1,0 +1,18 @@
+[
+  {
+    "id": "element-fire",
+    "hex": "#dc2626"
+  },
+  {
+    "id": "element-earth",
+    "hex": "#16a34a"
+  },
+  {
+    "id": "element-air",
+    "hex": "#06b6d4"
+  },
+  {
+    "id": "element-water",
+    "hex": "#2563eb"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "fire",
+    "label": "Fire",
+    "summary": "Initiating, vital heat.",
+    "color_id": "element-fire"
+  },
+  {
+    "id": "earth",
+    "label": "Earth",
+    "summary": "Form, pragmatism, embodiment.",
+    "color_id": "element-earth"
+  },
+  {
+    "id": "air",
+    "label": "Air",
+    "summary": "Exchange, ideas, circulation.",
+    "color_id": "element-air"
+  },
+  {
+    "id": "water",
+    "label": "Water",
+    "summary": "Emotion, bonding, depth.",
+    "color_id": "element-water"
+  }
+]

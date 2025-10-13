@@ -1,0 +1,434 @@
+[
+  {
+    "id": "aries-1",
+    "sign_id": "aries",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "mars"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "aries-2",
+    "sign_id": "aries",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "sun"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "aries-3",
+    "sign_id": "aries",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "venus"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "taurus-1",
+    "sign_id": "taurus",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "mercury"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "taurus-2",
+    "sign_id": "taurus",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "moon"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "taurus-3",
+    "sign_id": "taurus",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "saturn"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "gemini-1",
+    "sign_id": "gemini",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "jupiter"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "gemini-2",
+    "sign_id": "gemini",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "mars"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "gemini-3",
+    "sign_id": "gemini",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "sun"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "cancer-1",
+    "sign_id": "cancer",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "venus"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "cancer-2",
+    "sign_id": "cancer",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "mercury"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "cancer-3",
+    "sign_id": "cancer",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "moon"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "leo-1",
+    "sign_id": "leo",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "saturn"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "leo-2",
+    "sign_id": "leo",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "jupiter"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "leo-3",
+    "sign_id": "leo",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "mars"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "virgo-1",
+    "sign_id": "virgo",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "sun"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "virgo-2",
+    "sign_id": "virgo",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "venus"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "virgo-3",
+    "sign_id": "virgo",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "mercury"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "libra-1",
+    "sign_id": "libra",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "moon"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "libra-2",
+    "sign_id": "libra",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "saturn"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "libra-3",
+    "sign_id": "libra",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "jupiter"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-1",
+    "sign_id": "scorpio",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "mars"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-2",
+    "sign_id": "scorpio",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "sun"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "scorpio-3",
+    "sign_id": "scorpio",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "venus"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-1",
+    "sign_id": "sagittarius",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "mercury"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-2",
+    "sign_id": "sagittarius",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "moon"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "sagittarius-3",
+    "sign_id": "sagittarius",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "saturn"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-1",
+    "sign_id": "capricorn",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "jupiter"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-2",
+    "sign_id": "capricorn",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "mars"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "capricorn-3",
+    "sign_id": "capricorn",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "sun"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-1",
+    "sign_id": "aquarius",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "venus"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-2",
+    "sign_id": "aquarius",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "mercury"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "aquarius-3",
+    "sign_id": "aquarius",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "moon"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "pisces-1",
+    "sign_id": "pisces",
+    "index": 1,
+    "start_deg_in_sign": 0,
+    "end_deg_in_sign": 10,
+    "ruler_body_ids": [
+      "saturn"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "pisces-2",
+    "sign_id": "pisces",
+    "index": 2,
+    "start_deg_in_sign": 10,
+    "end_deg_in_sign": 20,
+    "ruler_body_ids": [
+      "jupiter"
+    ],
+    "keywords": [],
+    "source_ids": []
+  },
+  {
+    "id": "pisces-3",
+    "sign_id": "pisces",
+    "index": 3,
+    "start_deg_in_sign": 20,
+    "end_deg_in_sign": 30,
+    "ruler_body_ids": [
+      "mars"
+    ],
+    "keywords": [],
+    "source_ids": []
+  }
+]

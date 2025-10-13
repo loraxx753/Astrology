@@ -1,0 +1,110 @@
+[
+  {
+    "id": "house-1",
+    "index": 1,
+    "label": "First House",
+    "angularity": "angular",
+    "life_domains": [],
+    "default_sign_hint": "aries",
+    "keywords": []
+  },
+  {
+    "id": "house-2",
+    "index": 2,
+    "label": "Second House",
+    "angularity": "succedent",
+    "life_domains": [],
+    "default_sign_hint": "taurus",
+    "keywords": []
+  },
+  {
+    "id": "house-3",
+    "index": 3,
+    "label": "Third House",
+    "angularity": "cadent",
+    "life_domains": [],
+    "default_sign_hint": "gemini",
+    "keywords": []
+  },
+  {
+    "id": "house-4",
+    "index": 4,
+    "label": "Fourth House",
+    "angularity": "angular",
+    "life_domains": [],
+    "default_sign_hint": "cancer",
+    "keywords": []
+  },
+  {
+    "id": "house-5",
+    "index": 5,
+    "label": "Fifth House",
+    "angularity": "succedent",
+    "life_domains": [],
+    "default_sign_hint": "leo",
+    "keywords": []
+  },
+  {
+    "id": "house-6",
+    "index": 6,
+    "label": "Sixth House",
+    "angularity": "cadent",
+    "life_domains": [],
+    "default_sign_hint": "virgo",
+    "keywords": []
+  },
+  {
+    "id": "house-7",
+    "index": 7,
+    "label": "Seventh House",
+    "angularity": "angular",
+    "life_domains": [],
+    "default_sign_hint": "libra",
+    "keywords": []
+  },
+  {
+    "id": "house-8",
+    "index": 8,
+    "label": "Eighth House",
+    "angularity": "succedent",
+    "life_domains": [],
+    "default_sign_hint": "scorpio",
+    "keywords": []
+  },
+  {
+    "id": "house-9",
+    "index": 9,
+    "label": "Ninth House",
+    "angularity": "cadent",
+    "life_domains": [],
+    "default_sign_hint": "sagittarius",
+    "keywords": []
+  },
+  {
+    "id": "house-10",
+    "index": 10,
+    "label": "Tenth House",
+    "angularity": "angular",
+    "life_domains": [],
+    "default_sign_hint": "capricorn",
+    "keywords": []
+  },
+  {
+    "id": "house-11",
+    "index": 11,
+    "label": "Eleventh House",
+    "angularity": "succedent",
+    "life_domains": [],
+    "default_sign_hint": "aquarius",
+    "keywords": []
+  },
+  {
+    "id": "house-12",
+    "index": 12,
+    "label": "Twelfth House",
+    "angularity": "cadent",
+    "life_domains": [],
+    "default_sign_hint": "pisces",
+    "keywords": []
+  }
+]
