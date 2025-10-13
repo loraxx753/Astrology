@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ThirdParty/ShadCn/Button';
 import { StarIcon, Menu, X } from 'lucide-react';
 
@@ -9,6 +9,27 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Update page title based on current path
+  useEffect(() => {
+    const path = window.location.pathname;
+    let title = 'Astrology Calculator';
+    
+    if (path.startsWith('/signs/')) {
+      const sign = path.split('/')[2];
+      title = `${sign.charAt(0).toUpperCase() + sign.slice(1)} - Zodiac Signs | Astrology Calculator`;
+    } else if (path === '/signs') {
+      title = 'Zodiac Signs | Astrology Calculator';
+    } else if (path === '/houses') {
+      title = 'Astrological Houses | Astrology Calculator';
+    } else if (path === '/reading') {
+      title = 'Birth Chart Reading | Astrology Calculator';
+    } else if (path === '/') {
+      title = 'Astrology Calculator - Educational Birth Chart Analysis';
+    }
+    
+    document.title = title;
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Global Header */}
@@ -17,8 +38,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <StarIcon className="h-8 w-8 text-gray-800" />
-              <span className="text-xl font-bold text-gray-800">Astrology</span>
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-blue-600 flex items-center justify-center">
+                <span className="text-white text-sm font-bold">⊙</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-gray-800 leading-none">Astrology Calculator</span>
+                <span className="text-xs text-gray-600 leading-none">Educational Platform</span>
+              </div>
             </a>
 
             {/* Navigation */}

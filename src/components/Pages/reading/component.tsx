@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { StarIcon, SparklesIcon } from 'lucide-react';
 import { PageComponentType } from '@/lib/types';
 import { CalculationDetails } from '@/components/Visualizations/CalculationDetails';
-import { getSunPositionSteps, calculateSunPosition } from '@/lib/services/calculations';
+import { getSunPositionSteps, calculateSunPosition, getMoonPositionSteps, calculateMoonPosition, getAllPlanetPositionSteps, calculateAllPlanetPositions, getHouseSystemSteps, calculateHouseSystem } from '@/lib/services/calculations';
 
 const ReadingPage: PageComponentType = () => {
   const [chartData, setChartData] = useState<BirthChartData | null>(null);
@@ -140,34 +140,390 @@ const ReadingPage: PageComponentType = () => {
               </button>
             </div>
 
-            {/* Sun Position Calculation */}
-            {(() => {
-              const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
-              const sunPosition = calculateSunPosition(birthDateTime);
-              const sunSteps = getSunPositionSteps(birthDateTime);
-              const summary = `Sun in ${sunPosition.zodiacPosition.degree}° ${sunPosition.zodiacPosition.minutes}' ${sunPosition.zodiacPosition.seconds}" ${sunPosition.zodiacPosition.sign}`;
-              
-              return (
-                <CalculationDetails
-                  title="Sun Position Calculation"
-                  summary={summary}
-                  steps={sunSteps}
-                />
-              );
-            })()}
-
-            {/* Future Calculations Placeholder */}
+            {/* Quick Summary Section */}
             <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8">
-              <div className="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Coming Next</h3>
-                <ul className="text-left text-gray-600 space-y-2">
-                  <li>• 🌙 Moon position and phase calculations</li>
-                  <li>• 🪐 Planetary positions (Mercury, Venus, Mars, Jupiter, Saturn)</li>
-                  <li>• 🏠 House system calculations (using {chartData.houseSystem})</li>
-                  <li>• ⭐ Aspect pattern analysis between celestial bodies</li>
-                  <li>• 📊 Interactive chart wheel visualization</li>
-                  <li>• 📖 AI-powered astrological interpretations</li>
-                </ul>
+              <div className="border-b border-gray-200 pb-4 mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                  <span className="text-3xl">📋</span>
+                  Chart Summary
+                </h2>
+                <p className="text-gray-600 mt-2">
+                  Quick overview of all calculated planetary positions at the moment of birth.
+                </p>
+              </div>
+
+              {(() => {
+                const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                const sunPosition = calculateSunPosition(birthDateTime);
+                const moonPosition = calculateMoonPosition(birthDateTime);
+                const allPlanetPositions = calculateAllPlanetPositions(birthDateTime);
+                const houseSystem = calculateHouseSystem(
+                  birthDateTime, 
+                  chartData.birthLocation.latitude, 
+                  chartData.birthLocation.longitude, 
+                  chartData.houseSystem
+                );
+
+                // Helper function to format angles
+                const formatAngle = (longitude: number) => {
+                  const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
+                  const signIndex = Math.floor(longitude / 30);
+                  const degree = Math.floor(longitude % 30);
+                  const minutes = Math.floor(((longitude % 30) - degree) * 60);
+                  return { degree, minutes, sign: signs[signIndex] };
+                };
+
+                const ascendant = formatAngle(houseSystem.ascendant);
+                const midheaven = formatAngle(houseSystem.midheaven);
+                
+                return (
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {/* Sun */}
+                    <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-lg border border-yellow-200">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-2xl">☀️</span>
+                        <h3 className="font-bold text-yellow-800">Sun</h3>
+                      </div>
+                      <p className="text-yellow-700 font-mono text-sm">
+                        {sunPosition.zodiacPosition.degree}° {sunPosition.zodiacPosition.minutes}' {sunPosition.zodiacPosition.sign}
+                      </p>
+                    </div>
+
+                    {/* Moon */}
+                    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-2xl">🌙</span>
+                        <h3 className="font-bold text-blue-800">Moon</h3>
+                      </div>
+                      <p className="text-blue-700 font-mono text-sm">
+                        {moonPosition.zodiacPosition.degree}° {moonPosition.zodiacPosition.minutes}' {moonPosition.zodiacPosition.sign}
+                      </p>
+                      <p className="text-blue-600 text-xs mt-1">
+                        {moonPosition.phase.phaseName} ({moonPosition.phase.illumination.toFixed(0)}%)
+                      </p>
+                    </div>
+
+                    {/* Ascendant */}
+                    <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-4 rounded-lg border border-emerald-200">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-2xl">⬆️</span>
+                        <h3 className="font-bold text-emerald-800">Ascendant</h3>
+                      </div>
+                      <p className="text-emerald-700 font-mono text-sm">
+                        {ascendant.degree}° {ascendant.minutes}' {ascendant.sign}
+                      </p>
+                      <p className="text-emerald-600 text-xs mt-1">
+                        Rising Sign
+                      </p>
+                    </div>
+
+                    {/* Planets */}
+                    {Object.entries(allPlanetPositions).map(([planetKey, position]) => (
+                      <div key={planetKey} className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-2xl">{position.elements.emoji}</span>
+                          <h3 className="font-bold text-purple-800">{position.elements.name}</h3>
+                        </div>
+                        <p className="text-purple-700 font-mono text-sm">
+                          {position.zodiacPosition.degree}° {position.zodiacPosition.minutes}' {position.zodiacPosition.sign}
+                        </p>
+                      </div>
+                    ))}
+
+                    {/* Midheaven */}
+                    <div className="bg-gradient-to-r from-violet-50 to-purple-50 p-4 rounded-lg border border-violet-200">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-2xl">⬆️</span>
+                        <h3 className="font-bold text-violet-800">Midheaven</h3>
+                      </div>
+                      <p className="text-violet-700 font-mono text-sm">
+                        {midheaven.degree}° {midheaven.minutes}' {midheaven.sign}
+                      </p>
+                      <p className="text-violet-600 text-xs mt-1">
+                        Career Point
+                      </p>
+                    </div>
+                  </div>
+                );
+              })()}
+            </div>
+
+            {/* Luminaries Section (Sun & Moon) */}
+            <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8">
+              <div className="border-b border-gray-200 pb-4 mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                  <span className="text-3xl">☀️🌙</span>
+                  The Luminaries
+                </h2>
+                <p className="text-gray-600 mt-2">
+                  The Sun and Moon are the most important celestial bodies in astrology, representing your core identity and emotional nature.
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                {/* Sun Position Calculation */}
+                {(() => {
+                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const sunPosition = calculateSunPosition(birthDateTime);
+                  const sunSteps = getSunPositionSteps(birthDateTime);
+                  const summary = `Sun in ${sunPosition.zodiacPosition.degree}° ${sunPosition.zodiacPosition.minutes}' ${sunPosition.zodiacPosition.seconds}" ${sunPosition.zodiacPosition.sign}`;
+                  
+                  return (
+                    <CalculationDetails
+                      title="☀️ Sun Position Calculation"
+                      summary={summary}
+                      steps={sunSteps}
+                    />
+                  );
+                })()}
+
+                {/* Moon Position Calculation */}
+                {(() => {
+                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const moonPosition = calculateMoonPosition(birthDateTime);
+                  const moonSteps = getMoonPositionSteps(birthDateTime);
+                  const summary = `Moon in ${moonPosition.zodiacPosition.degree}° ${moonPosition.zodiacPosition.minutes}' ${moonPosition.zodiacPosition.seconds}" ${moonPosition.zodiacPosition.sign} - ${moonPosition.phase.phaseName} (${moonPosition.phase.illumination.toFixed(1)}% illuminated)`;
+                  
+                  return (
+                    <CalculationDetails
+                      title="🌙 Moon Position & Phase Calculation"
+                      summary={summary}
+                      steps={moonSteps}
+                    />
+                  );
+                })()}
+              </div>
+            </div>
+
+            {/* Planetary Positions Section */}
+            <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8">
+              <div className="border-b border-gray-200 pb-4 mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                  <span className="text-3xl">🪐</span>
+                  Planetary Positions
+                </h2>
+                <p className="text-gray-600 mt-2">
+                  The five visible planets and their precise positions using Kepler orbital mechanics and astronomical algorithms.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {(() => {
+                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const allPlanetPositions = calculateAllPlanetPositions(birthDateTime);
+                  const allPlanetSteps = getAllPlanetPositionSteps(birthDateTime);
+                  
+                  const planetOrder = ['mercury', 'venus', 'mars', 'jupiter', 'saturn'];
+                  
+                  return planetOrder.map((planetKey) => {
+                    const position = allPlanetPositions[planetKey];
+                    const steps = allPlanetSteps[planetKey];
+                    const summary = `${position.elements.name} in ${position.zodiacPosition.degree}° ${position.zodiacPosition.minutes}' ${position.zodiacPosition.seconds}" ${position.zodiacPosition.sign}`;
+                    
+                    return (
+                      <CalculationDetails
+                        key={planetKey}
+                        title={`${position.elements.emoji} ${position.elements.name} Position Calculation`}
+                        summary={summary}
+                        steps={steps}
+                      />
+                    );
+                  });
+                })()}
+              </div>
+            </div>
+
+            {/* Houses & Angles Section */}
+            <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8">
+              <div className="border-b border-gray-200 pb-4 mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                  <span className="text-3xl">🏠</span>
+                  Houses & Angles
+                </h2>
+                <p className="text-gray-600 mt-2">
+                  The 12 astrological houses and the four angles (Ascendant, Descendant, Midheaven, Imum Coeli) based on birth time and location.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {(() => {
+                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const houseSystem = calculateHouseSystem(
+                    birthDateTime, 
+                    chartData.birthLocation.latitude, 
+                    chartData.birthLocation.longitude, 
+                    chartData.houseSystem
+                  );
+                  const houseSteps = getHouseSystemSteps(
+                    birthDateTime,
+                    chartData.birthLocation.latitude,
+                    chartData.birthLocation.longitude,
+                    chartData.houseSystem
+                  );
+
+                  // Summary of angles
+                  const ascendantZodiac = (() => {
+                    const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
+                    const signIndex = Math.floor(houseSystem.ascendant / 30);
+                    const degree = Math.floor(houseSystem.ascendant % 30);
+                    const minutes = Math.floor(((houseSystem.ascendant % 30) - degree) * 60);
+                    return `${degree}° ${minutes}' ${signs[signIndex]}`;
+                  })();
+
+                  const midheavenZodiac = (() => {
+                    const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
+                    const signIndex = Math.floor(houseSystem.midheaven / 30);
+                    const degree = Math.floor(houseSystem.midheaven % 30);
+                    const minutes = Math.floor(((houseSystem.midheaven % 30) - degree) * 60);
+                    return `${degree}° ${minutes}' ${signs[signIndex]}`;
+                  })();
+
+                  const summary = `Ascendant: ${ascendantZodiac} | Midheaven: ${midheavenZodiac} | System: ${chartData.houseSystem}`;
+
+                  return (
+                    <CalculationDetails
+                      title={`🏠 ${chartData.houseSystem.charAt(0).toUpperCase() + chartData.houseSystem.slice(1)} House System Calculation`}
+                      summary={summary}
+                      steps={houseSteps}
+                    />
+                  );
+                })()}
+
+                {/* House Summary Grid */}
+                {(() => {
+                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const houseSystem = calculateHouseSystem(
+                    birthDateTime, 
+                    chartData.birthLocation.latitude, 
+                    chartData.birthLocation.longitude, 
+                    chartData.houseSystem
+                  );
+
+                  const houseNames = [
+                    'Self & Identity', 'Values & Possessions', 'Communication', 'Home & Family',
+                    'Creativity & Romance', 'Health & Service', 'Partnerships', 'Transformation',
+                    'Philosophy & Travel', 'Career & Reputation', 'Friends & Hopes', 'Subconscious & Karma'
+                  ];
+
+                  const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
+
+                  return (
+                    <div className="bg-gray-50 rounded-lg p-6">
+                      <h3 className="text-lg font-bold text-gray-800 mb-4">House Cusps Summary</h3>
+                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                        {Object.entries(houseSystem.cusps).map(([house, longitude]) => {
+                          const signIndex = Math.floor(longitude / 30);
+                          const degree = Math.floor(longitude % 30);
+                          const minutes = Math.floor(((longitude % 30) - degree) * 60);
+                          const houseNum = parseInt(house);
+                          
+                          return (
+                            <div key={house} className={`p-3 rounded-lg border ${
+                              houseNum === 1 || houseNum === 4 || houseNum === 7 || houseNum === 10 
+                                ? 'bg-gradient-to-r from-amber-50 to-yellow-50 border-amber-200' 
+                                : 'bg-white border-gray-200'
+                            }`}>
+                              <div className="flex items-center justify-between mb-1">
+                                <span className="font-semibold text-gray-800">
+                                  House {house}
+                                  {(houseNum === 1 || houseNum === 4 || houseNum === 7 || houseNum === 10) && 
+                                    <span className="text-amber-600 ml-1">⭐</span>
+                                  }
+                                </span>
+                                <span className="text-xs text-gray-500 font-mono">
+                                  {degree}° {minutes}' {signs[signIndex]}
+                                </span>
+                              </div>
+                              <div className="text-xs text-gray-600">
+                                {houseNames[houseNum - 1]}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                      <div className="mt-4 text-sm text-gray-600">
+                        <span className="flex items-center gap-2">
+                          <span className="text-amber-600">⭐</span>
+                          Angular houses (most powerful): 1st (Ascendant), 4th (IC), 7th (Descendant), 10th (Midheaven)
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })()}
+              </div>
+            </div>
+
+            {/* Future Development Section */}
+            <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8">
+              <div className="border-b border-gray-200 pb-4 mb-6">
+                <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                  <span className="text-3xl">📊</span>
+                  Development Progress
+                </h2>
+                <p className="text-gray-600 mt-2">
+                  Track the implementation of advanced astrological calculations and features.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Completed Features */}
+                <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
+                  <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
+                    <span className="text-2xl">✅</span>
+                    Completed Calculations
+                  </h3>
+                  <div className="space-y-3">
+                    <div>
+                      <h4 className="font-semibold text-green-700 mb-1">☀️🌙 Luminaries</h4>
+                      <ul className="text-sm text-green-600 space-y-1 ml-4">
+                        <li>• Sun position with astronomical algorithms</li>
+                        <li>• Moon position and phase calculations</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-green-700 mb-1">🪐 Planets</h4>
+                      <ul className="text-sm text-green-600 space-y-1 ml-4">
+                        <li>• Mercury through Saturn orbital mechanics</li>
+                        <li>• Kepler equation solving and true anomaly</li>
+                        <li>• Heliocentric coordinate calculations</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Coming Features */}
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
+                  <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+                    <span className="text-2xl">🚀</span>
+                    Coming Next
+                  </h3>
+                  <div className="space-y-3">
+                    <div>
+                      <h4 className="font-semibold text-blue-700 mb-1">🏠 Houses & Angles</h4>
+                      <ul className="text-sm text-blue-600 space-y-1 ml-4">
+                        <li>• {chartData.houseSystem} house system calculations</li>
+                        <li>• Ascendant (Rising Sign) determination</li>
+                        <li>• Midheaven and house cusps</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-blue-700 mb-1">⭐ Aspects & Analysis</h4>
+                      <ul className="text-sm text-blue-600 space-y-1 ml-4">
+                        <li>• Angular relationships between planets</li>
+                        <li>• Aspect pattern recognition</li>
+                        <li>• Orb calculations and strength</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-blue-700 mb-1">📊 Visualization & AI</h4>
+                      <ul className="text-sm text-blue-600 space-y-1 ml-4">
+                        <li>• Interactive chart wheel</li>
+                        <li>• Retrograde motion detection</li>
+                        <li>• AI-powered interpretations</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
