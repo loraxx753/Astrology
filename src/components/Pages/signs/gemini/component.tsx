@@ -38,7 +38,7 @@ export const GeminiPage: PageComponentType = () => {
       {/* Hero Section */}
       <HeroSection.SimpleCentered>
         <div className="container relative py-24 lg:py-32">
-          <div className="flex flex-col items-center text-center space-y-8">
+          <div className="flex flex-col items-center text-center space-y-8 bg-white/90 backdrop-blur-md rounded-2xl p-8 mx-4 sm:mx-6 lg:mx-auto max-w-4xl border border-white/20">
             <div className="relative">
               <MessageCircle className="w-24 h-24 text-blue-500 animate-pulse" />
               <div className="absolute -top-2 -right-2">
@@ -76,7 +76,7 @@ export const GeminiPage: PageComponentType = () => {
       </HeroSection.SimpleCentered>
 
       {/* Content Section */}
-      <div className="container py-16 space-y-16">
+      <div className="container py-16 space-y-16 px-4 sm:px-6 lg:px-8">
         {/* Personality Traits */}
         <div className="grid md:grid-cols-2 gap-8">
           <Card>

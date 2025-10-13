@@ -4,9 +4,9 @@ import { PageComponentType } from '@/lib/types'
 // import Content from './content/_index.mdx'
 import { HeroSection } from '@/components/ThirdParty/UiBlocks';
 import { Button } from "@/components/ThirdParty/ShadCn/Button";
-import { ChevronRightIcon } from "lucide-react";
-import { Caption } from '@/components/Comics/index';
+
 import { IconSection } from '@/components/ThirdParty/UiBlocks/IconSection';
+import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 
 // import { Caption } from '@/components/Comics/index';
 
@@ -29,38 +29,10 @@ import { IconSection } from '@/components/ThirdParty/UiBlocks/IconSection';
 export const Content = () => <>
 {/* Hero */}
   <div className="container relative py-24 lg:py-32">
-    {/* Announcement Banner */}
 
-    <div className="flex justify-center">
-    <Caption gradiant className='absolute top-4 left-4'>{"Meanwhile"}...</Caption>
-
-      <a
-        className="inline-flex items-center gap-x-2 border text-sm p-1 ps-3 rounded-full transition"
-        href="#"
-      >
-        PRO release - Join to waitlist
-        <span className="py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-muted-foreground/15 font-semibold text-sm">
-          <svg
-            className="flex-shrink-0 w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-            width={24}
-            height={24}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m9 18 6-6-6-6" />
-          </svg>
-        </span>
-      </a>
-    </div>
-    {/* End Announcement Banner */}
     {/* Title */}
     <div className="mt-5 max-w-2xl text-center mx-auto">
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-6xl bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
+      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-6xl bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-500 bg-clip-text text-transparent leading-tight py-2">
         Astrology App ✨
       </h1>
     </div>
@@ -72,46 +44,18 @@ export const Content = () => <>
       </p>
     </div>
     {/* Buttons */}
-    <div className="mt-8 gap-3 flex justify-center">
-      <Button size={"lg"} asChild>
+    <div className="mt-8 gap-3 flex flex-col sm:flex-row justify-center items-stretch sm:items-center px-4">
+      <Button size={"lg"} asChild className="w-full sm:w-auto">
         <a href="/signs">Explore Signs</a>
       </Button>
-      <Button size={"lg"} asChild>
+      <Button size={"lg"} asChild className="w-full sm:w-auto">
         <a href="/houses">Explore Houses</a>
       </Button>
-      <Button size={"lg"} variant={"outline"}>
+      <Button size={"lg"} variant={"outline"} className="w-full sm:w-auto">
         Get Your Chart
       </Button>
     </div>
     {/* End Buttons */}
-    <div className="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
-      <span className="text-sm text-muted-foreground">
-        Package Manager:
-      </span>
-      <span className="text-sm font-bold">npm </span>
-      <svg
-        className="h-5 w-5 text-muted-foreground"
-        width={16}
-        height={16}
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <path
-          d="M6 13L10 3"
-          stroke="currentColor"
-          strokeLinecap="round"
-        />
-      </svg>
-      <a
-        className="inline-flex items-center gap-x-1 text-sm decoration-2 hover:underline font-medium"
-        href="#"
-      >
-        Installation Guide
-        <ChevronRightIcon className="flex-shrink-0 w-4 h-4" />
-      </a>
-    </div>
   </div>
 {/* End Hero */}
 </>
@@ -119,6 +63,9 @@ export const Content = () => <>
 
 // Define the TypeScript interfaces
   export const IndexPage: PageComponentType = () => {
+    // Set the cosmic background for the index page
+    usePageBackground(pageBackgrounds.cosmic);
+    
     // const { loading, error, data } = useQuery(GET_PEOPLE);
   
     // useEffect(() => {
@@ -133,9 +80,13 @@ export const Content = () => <>
       <>
       <div className='font-komika-text'>
         <HeroSection.SimpleCentered className='relative'>
-          <Content />
+          <div className="bg-white/90 backdrop-blur-md rounded-2xl mx-4 sm:mx-6 lg:mx-auto max-w-5xl border border-white/20 mt-8">
+            <Content />
+          </div>
         </HeroSection.SimpleCentered>
-        <IconSection.CircleIconsCenterAligned />
+        <div className="bg-white/90 backdrop-blur-md rounded-2xl mx-4 sm:mx-6 lg:mx-auto max-w-5xl border border-white/20 mt-8">
+          <IconSection.CircleIconsCenterAligned />
+        </div>
       </div>
       </>
     );

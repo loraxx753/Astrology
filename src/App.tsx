@@ -5,7 +5,8 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom';
-import * as pages from './components/Pages'
+import * as pages from './components/Pages';
+import { Layout } from './components/Layout';
 
 /**
  * Router documentation https://reactrouter.com/en/main/routers/create-browser-router
@@ -13,7 +14,11 @@ import * as pages from './components/Pages'
 const router = createBrowserRouter(Object.entries(pages).map(([_, Element]) => {
   return ({
     ...Element,
-    element: <Element />,
+    element: (
+      <Layout>
+        <Element />
+      </Layout>
+    ),
   })
 }), {
 });

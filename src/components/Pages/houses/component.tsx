@@ -145,43 +145,44 @@ const HousesPage = () => {
   usePageBackground(pageBackgrounds.astrology);
 
   return (
-    <div className="min-h-screen">
-      <div className="max-w-7xl mx-auto p-6">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-white mb-4">
-            Astrological Houses
-          </h1>
-          <p className="text-xl text-purple-200 max-w-3xl mx-auto">
-            The 12 houses represent different areas of life experience. Each house governs specific themes and shows where planetary energies manifest in your daily life.
-          </p>
-        </div>
+    <div className="min-h-screen" style={{ width: '100vw' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6" style={{ margin: '0 auto' }}>
+        <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8 mb-8">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl font-bold text-gray-800 mb-4">
+              Astrological Houses
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              The 12 houses represent different areas of life experience. Each house governs specific themes and shows where planetary energies manifest in your daily life.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {astrologicalHouses.map((house) => {
             const IconComponent = house.icon;
             return (
               <Card 
                 key={house.number}
-                className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer group"
+                className="bg-gray-50 border-gray-200 hover:bg-gray-100 transition-all duration-300 cursor-pointer group shadow-sm w-full min-w-0"
               >
                 <CardHeader className="pb-2">
                   <div className="flex items-center justify-between mb-2">
                     <div className={`p-2 rounded-lg bg-gradient-to-r ${house.gradient}`}>
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
-                    <Badge variant="secondary" className="bg-white/20 text-white">
+                    <Badge variant="secondary" className="bg-gray-200 text-gray-700">
                       {house.number}
                     </Badge>
                   </div>
-                  <CardTitle className="text-white text-lg group-hover:text-purple-200 transition-colors">
+                  <CardTitle className="text-gray-800 text-lg group-hover:text-gray-600 transition-colors break-words">
                     {house.title}
                   </CardTitle>
-                  <CardDescription className="text-purple-200 font-medium">
+                  <CardDescription className="text-gray-600 font-medium break-words">
                     {house.theme}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-purple-100 text-sm mb-3 leading-relaxed">
+                  <p className="text-gray-700 text-sm mb-3 leading-relaxed break-words">
                     {house.description}
                   </p>
                   <div className="flex flex-wrap gap-1">
@@ -189,7 +190,7 @@ const HousesPage = () => {
                       <Badge 
                         key={index}
                         variant="outline" 
-                        className="text-xs border-purple-300 text-purple-200 bg-purple-900/30"
+                        className="text-xs border-gray-300 text-gray-600 bg-gray-100/50"
                       >
                         {keyword}
                       </Badge>
@@ -207,31 +208,32 @@ const HousesPage = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Card className="bg-white/10 backdrop-blur-md border-white/20 max-w-4xl mx-auto">
+          <Card className="bg-gray-50 border-gray-200 max-w-4xl mx-auto shadow-sm">
             <CardHeader>
-              <CardTitle className="text-white text-2xl">Understanding the Houses</CardTitle>
+              <CardTitle className="text-gray-800 text-2xl">Understanding the Houses</CardTitle>
             </CardHeader>
-            <CardContent className="text-purple-100 space-y-4">
+            <CardContent className="text-gray-700 space-y-4">
               <p>
                 The astrological houses are based on the Earth's 24-hour rotation and represent different areas of life experience. 
                 Unlike signs which are based on the sun's yearly journey, houses are calculated from your exact birth time and location.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold text-white mb-2">Angular Houses (1, 4, 7, 10)</h3>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Angular Houses (1, 4, 7, 10)</h3>
                   <p className="text-sm">The most powerful houses representing major life themes and personal development.</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold text-white mb-2">Succedent Houses (2, 5, 8, 11)</h3>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Succedent Houses (2, 5, 8, 11)</h3>
                   <p className="text-sm">Houses of stability and resources, showing how you maintain and build upon what you have.</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-lg font-semibold text-white mb-2">Cadent Houses (3, 6, 9, 12)</h3>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">Cadent Houses (3, 6, 9, 12)</h3>
                   <p className="text-sm">Houses of learning and adaptation, representing areas of growth and change.</p>
                 </div>
               </div>
             </CardContent>
           </Card>
+        </div>
         </div>
       </div>
     </div>

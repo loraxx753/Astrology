@@ -54,30 +54,35 @@ const HouseWheelVisualization: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <Card className="bg-white/10 backdrop-blur-md border-white/20">
+      <Card className="bg-gray-50 border-gray-200 shadow-sm">
         <CardHeader>
-          <CardTitle className="text-white text-center text-2xl">Astrological Houses Wheel</CardTitle>
-          <p className="text-purple-200 text-center">Click on any house segment to learn more</p>
+          <CardTitle className="text-gray-800 text-center text-2xl">Astrological Houses Wheel</CardTitle>
+          <p className="text-gray-600 text-center">Click on any house segment to learn more</p>
         </CardHeader>
         <CardContent className="p-8">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
             {/* Legend */}
             <div className="space-y-3 order-2 lg:order-1">
-              <h3 className="text-white font-semibold mb-4">House Types</h3>
+              <h3 className="text-gray-800 font-semibold mb-4">House Types</h3>
               {Object.entries(typeColors).map(([type, color]) => (
                 <div key={type} className="flex items-center space-x-3">
                   <div 
                     className="w-5 h-5 rounded" 
                     style={{ backgroundColor: color }}
                   ></div>
-                  <span className="text-white text-sm font-medium">{type}</span>
+                  <span className="text-gray-700 text-sm font-medium">{type}</span>
                 </div>
               ))}
             </div>
 
             {/* SVG Wheel */}
-            <div className="order-1 lg:order-2">
-              <svg width="520" height="520" viewBox="-280 -280 560 560" className="drop-shadow-lg">
+            <div className="order-1 lg:order-2 w-full flex justify-center">
+              <svg 
+                width="100%" 
+                height="auto" 
+                viewBox="-280 -280 560 560" 
+                className="drop-shadow-lg w-80 h-80 sm:w-96 sm:h-96 lg:w-[520px] lg:h-[520px] max-w-full"
+              >
                 {/* Background circle */}
                 <circle cx="0" cy="0" r="240" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" strokeWidth="2"/>
                 
@@ -109,7 +114,7 @@ const HouseWheelVisualization: React.FC = () => {
                         y={getTextPosition(house.angle, 130).y}
                         textAnchor="middle"
                         dominantBaseline="middle"
-                        fill="white"
+                        fill="#1f2937"
                         fontSize="18"
                         fontWeight="bold"
                         className="pointer-events-none"
@@ -123,7 +128,7 @@ const HouseWheelVisualization: React.FC = () => {
                         y={getTextPosition(house.angle, 220).y}
                         textAnchor="middle"
                         dominantBaseline="middle"
-                        fill="white"
+                        fill="#374151"
                         fontSize="12"
                         fontWeight="500"
                         className="pointer-events-none"
@@ -150,10 +155,10 @@ const HouseWheelVisualization: React.FC = () => {
 
       {/* Selected house details */}
       {selectedHouse && (
-        <Card className="bg-white/10 backdrop-blur-md border-white/20">
+        <Card className="bg-gray-50 border-gray-200 shadow-sm">
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle className="text-white">
+              <CardTitle className="text-gray-800">
                 House {selectedHouse}: {houseData[selectedHouse - 1].name}
               </CardTitle>
               <Badge 
@@ -166,12 +171,12 @@ const HouseWheelVisualization: React.FC = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <div>
-              <h4 className="text-purple-200 font-semibold mb-2">Theme</h4>
-              <p className="text-white">{houseData[selectedHouse - 1].theme}</p>
+              <h4 className="text-gray-600 font-semibold mb-2">Theme</h4>
+              <p className="text-gray-800">{houseData[selectedHouse - 1].theme}</p>
             </div>
             <div>
-              <h4 className="text-purple-200 font-semibold mb-2">Description</h4>
-              <p className="text-purple-100">{houseData[selectedHouse - 1].description}</p>
+              <h4 className="text-gray-600 font-semibold mb-2">Description</h4>
+              <p className="text-gray-700">{houseData[selectedHouse - 1].description}</p>
             </div>
           </CardContent>
         </Card>
@@ -179,46 +184,46 @@ const HouseWheelVisualization: React.FC = () => {
 
       {/* House type explanations */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card className="bg-white/10 backdrop-blur-md border-white/20">
+        <Card className="bg-gray-50 border-gray-200 shadow-sm">
           <CardHeader>
-            <CardTitle className="text-white flex items-center">
+            <CardTitle className="text-gray-800 flex items-center">
               <div className="w-4 h-4 rounded mr-2 bg-red-500"></div>
               Angular Houses
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-purple-100 text-sm mb-2">Houses 1, 4, 7, 10</p>
-            <p className="text-purple-200 text-sm">
+            <p className="text-gray-600 text-sm mb-2">Houses 1, 4, 7, 10</p>
+            <p className="text-gray-700 text-sm">
               The most powerful houses representing major life themes and personal development. These are action-oriented areas of life.
             </p>
           </CardContent>
         </Card>
 
-        <Card className="bg-white/10 backdrop-blur-md border-white/20">
+        <Card className="bg-gray-50 border-gray-200 shadow-sm">
           <CardHeader>
-            <CardTitle className="text-white flex items-center">
+            <CardTitle className="text-gray-800 flex items-center">
               <div className="w-4 h-4 rounded mr-2 bg-green-500"></div>
               Succedent Houses
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-purple-100 text-sm mb-2">Houses 2, 5, 8, 11</p>
-            <p className="text-purple-200 text-sm">
+            <p className="text-gray-600 text-sm mb-2">Houses 2, 5, 8, 11</p>
+            <p className="text-gray-700 text-sm">
               Houses of stability and resources, showing how you maintain and build upon what you have established.
             </p>
           </CardContent>
         </Card>
 
-        <Card className="bg-white/10 backdrop-blur-md border-white/20">
+        <Card className="bg-gray-50 border-gray-200 shadow-sm">
           <CardHeader>
-            <CardTitle className="text-white flex items-center">
+            <CardTitle className="text-gray-800 flex items-center">
               <div className="w-4 h-4 rounded mr-2 bg-blue-500"></div>
               Cadent Houses
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-purple-100 text-sm mb-2">Houses 3, 6, 9, 12</p>
-            <p className="text-purple-200 text-sm">
+            <p className="text-gray-600 text-sm mb-2">Houses 3, 6, 9, 12</p>
+            <p className="text-gray-700 text-sm">
               Houses of learning and adaptation, representing areas of growth, change, and intellectual development.
             </p>
           </CardContent>

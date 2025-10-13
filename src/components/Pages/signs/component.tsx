@@ -159,10 +159,10 @@ export const SignsPage: PageComponentType = () => {
   usePageBackground(pageBackgrounds.zodiac);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" style={{ width: '100vw' }}>
       {/* Hero Section */}
       <HeroSection.SimpleCentered>
-        <div className="container relative py-24 lg:py-32">
+        <div className="container relative py-24 lg:py-32" style={{ margin: '0 auto' }}>
           <div className="flex flex-col items-center text-center space-y-8">
             <div className="relative">
               <StarIcon className="w-24 h-24 text-purple-500 animate-pulse" />
@@ -185,44 +185,38 @@ export const SignsPage: PageComponentType = () => {
       </HeroSection.SimpleCentered>
 
       {/* Signs Grid */}
-      <div className="container py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6" style={{ margin: '0 auto' }}>
+        <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {zodiacSigns.map((sign) => (
-            <Card key={sign.name} className="hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
-              <CardHeader className="text-center">
-                <div className="flex items-center justify-center mb-4">
-                  {sign.icon}
-                </div>
-                <CardTitle className={`text-2xl bg-gradient-to-r ${sign.gradient} bg-clip-text text-transparent flex items-center justify-center gap-2`}>
-                  {sign.name} 
-                  <span className="text-3xl">{sign.emoji}</span>
-                </CardTitle>
-                <CardDescription>
-                  <Badge variant="outline" className="mb-2">
-                    {sign.dates}
-                  </Badge>
-                  <br />
-                  <Badge variant="secondary" className="mt-2 flex items-center justify-center gap-1 w-fit mx-auto">
-                    <span>{sign.elementEmoji}</span>
-                    {sign.element} Sign
-                  </Badge>
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-sm text-muted-foreground mb-4">
-                  {sign.description}
-                </p>
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  className={`w-full group-hover:bg-gradient-to-r group-hover:${sign.gradient} group-hover:text-white group-hover:border-transparent transition-all duration-300`}
-                >
-                  <a href={sign.path}>
-                    Learn More
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
+            <a key={sign.name} href={sign.path} className="block">
+              <Card className="hover:shadow-lg transition-all duration-300 group cursor-pointer h-full">
+                <CardHeader className="text-center">
+                  <div className="flex items-center justify-center mb-4">
+                    {sign.icon}
+                  </div>
+                  <CardTitle className={`text-2xl bg-gradient-to-r ${sign.gradient} bg-clip-text text-transparent flex items-center justify-center gap-2 group-hover:scale-105 transition-transform`}>
+                    {sign.name} 
+                    <span className="text-3xl">{sign.emoji}</span>
+                  </CardTitle>
+                  <CardDescription>
+                    <Badge variant="outline" className="mb-2">
+                      {sign.dates}
+                    </Badge>
+                    <br />
+                    <Badge variant="secondary" className="mt-2 flex items-center justify-center gap-1 w-fit mx-auto">
+                      <span>{sign.elementEmoji}</span>
+                      {sign.element} Sign
+                    </Badge>
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-sm text-muted-foreground">
+                    {sign.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
 
@@ -236,6 +230,7 @@ export const SignsPage: PageComponentType = () => {
           <Button size="lg" className="bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600">
             Get Your Full Birth Chart
           </Button>
+        </div>
         </div>
       </div>
     </div>

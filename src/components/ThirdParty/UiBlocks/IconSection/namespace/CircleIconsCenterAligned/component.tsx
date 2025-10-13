@@ -1,8 +1,8 @@
 import {
-  BookOpenIcon,
-  MessagesSquareIcon,
-  Settings2Icon,
-  TabletSmartphoneIcon,
+  Star,
+  Home,
+  Users,
+  Sparkles,
 } from "lucide-react";
 
 export function CircleIconsCenterAligned() {
@@ -14,12 +14,12 @@ export function CircleIconsCenterAligned() {
           {/* Icon Block */}
           <div className="text-center">
             <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <TabletSmartphoneIcon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
+              <Star className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
             </div>
             <div className="mt-3">
-              <h3 className="text-lg font-semibold ">Responsive</h3>
+              <h3 className="text-lg font-semibold ">12 Zodiac Signs</h3>
               <p className="mt-1 text-muted-foreground">
-                Responsive, and mobile-first project on the web
+                Explore personality traits and characteristics of all zodiac signs
               </p>
             </div>
           </div>
@@ -27,12 +27,12 @@ export function CircleIconsCenterAligned() {
           {/* Icon Block */}
           <div className="text-center">
             <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <Settings2Icon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
+              <Home className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
             </div>
             <div className="mt-3">
-              <h3 className="text-lg font-semibold ">Customizable</h3>
+              <h3 className="text-lg font-semibold ">Astrological Houses</h3>
               <p className="mt-1 text-muted-foreground">
-                Components are easily customized and extendable
+                Understand the 12 houses and their influence on different life areas
               </p>
             </div>
           </div>
@@ -40,12 +40,12 @@ export function CircleIconsCenterAligned() {
           {/* Icon Block */}
           <div className="text-center">
             <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <BookOpenIcon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
+              <Users className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
             </div>
             <div className="mt-3">
-              <h3 className="text-lg font-semibold ">Documentation</h3>
+              <h3 className="text-lg font-semibold ">Compatibility</h3>
               <p className="mt-1 text-muted-foreground">
-                Every component and plugin is well documented
+                Discover how different signs interact and complement each other
               </p>
             </div>
           </div>
@@ -53,12 +53,12 @@ export function CircleIconsCenterAligned() {
           {/* Icon Block */}
           <div className="text-center">
             <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <MessagesSquareIcon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
+              <Sparkles className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
             </div>
             <div className="mt-3">
-              <h3 className="text-lg font-semibold ">24/7 Support</h3>
+              <h3 className="text-lg font-semibold ">Cosmic Insights</h3>
               <p className="mt-1 text-muted-foreground">
-                Contact us 24 hours a day, 7 days a week
+                Gain deeper understanding of celestial influences on your life
               </p>
             </div>
           </div>
