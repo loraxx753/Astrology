@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ThirdParty/ShadCn/Card';
 import { Badge } from '@/components/ThirdParty/ShadCn/Badge';
 import { Home, Users, MessageCircle, Heart, Crown, Briefcase, Shield, Plane, Trophy, Sparkles, Fish } from 'lucide-react';
+import HouseWheelVisualization from '@/components/Visualizations/HouseWheel';
 
 const astrologicalHouses = [
   {
@@ -194,6 +195,11 @@ const HousesPage = () => {
               </Card>
             );
           })}
+        </div>
+
+        {/* Interactive House Wheel */}
+        <div className="mt-16">
+          <HouseWheelVisualization />
         </div>
 
         <div className="mt-16 text-center">
