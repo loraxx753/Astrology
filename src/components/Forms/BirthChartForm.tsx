@@ -11,6 +11,8 @@ import {
 import { 
   geocodeLocation, 
   createDebouncedGeocoder, 
+  reverseGeocode,
+  createDebouncedReverseGeocoder,
   getTimezoneFromCoordinates,
   popularLocations,
   GeocodeRequest,
@@ -41,18 +43,36 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
   });
 
   const [isGeocoding, setIsGeocoding] = useState(false);
+  const [isReverseGeocoding, setIsReverseGeocoding] = useState(false);
   const [geocodeError, setGeocodeError] = useState<string | null>(null);
   const [lastGeocodedLocation, setLastGeocodedLocation] = useState<string>('');
+  const [lastReverseGeocodedCoords, setLastReverseGeocodedCoords] = useState<string>('');
 
   const timeKnown = watch('timeKnown');
   const houseSystem = watch('houseSystem');
   const city = watch('birthLocation.city');
   const country = watch('birthLocation.country');
   const state = watch('birthLocation.state');
+  const latitude = watch('birthLocation.latitude');
+  const longitude = watch('birthLocation.longitude');
 
-  // Create debounced geocoder
+  // Handle timeKnown checkbox - set default time when unchecked
+  useEffect(() => {
+    if (!timeKnown) {
+      setValue('birthTime', '12:00', { shouldValidate: true });
+    }
+  }, [timeKnown, setValue]);
+
+
+
+  // Create debounced geocoder and reverse geocoder
   const debouncedGeocoder = useCallback(
     () => createDebouncedGeocoder(1500), // Wait 1.5 seconds after user stops typing
+    []
+  );
+
+  const debouncedReverseGeocoder = useCallback(
+    () => createDebouncedReverseGeocoder(1500), // Wait 1.5 seconds after user stops typing
     []
   );
 
@@ -82,8 +102,8 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
         });
 
         // Update coordinates and timezone
-        setValue('birthLocation.latitude', result.latitude);
-        setValue('birthLocation.longitude', result.longitude);
+        setValue('birthLocation.latitude', result.latitude, { shouldValidate: true });
+        setValue('birthLocation.longitude', result.longitude, { shouldValidate: true });
         
         // Auto-suggest timezone based on coordinates
         const suggestedTimezone = getTimezoneFromCoordinates(result.latitude, result.longitude);
@@ -105,14 +125,77 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
     performGeocoding();
   }, [city, country, state, setValue, debouncedGeocoder, lastGeocodedLocation, watch]);
 
+  // Reverse geocode when coordinates are manually entered
+  useEffect(() => {
+    const performReverseGeocoding = async () => {
+      if (typeof latitude !== 'number' || typeof longitude !== 'number') {
+        return;
+      }
+
+      // Check if coordinates are valid
+      if (latitude < -90 || latitude > 90 || longitude < -180 || longitude > 180) {
+        return;
+      }
+
+      const coordsString = `${latitude},${longitude}`;
+      
+      // Don't reverse geocode if these are the same coordinates we just processed
+      if (coordsString === lastReverseGeocodedCoords) {
+        return;
+      }
+
+      setIsReverseGeocoding(true);
+      // Clear any existing geocoding errors since we have valid coordinates
+      setGeocodeError(null);
+
+      try {
+        const reverseGeocoder = debouncedReverseGeocoder();
+        const result = await reverseGeocoder(latitude, longitude);
+
+        // Only update location fields if they're empty or if coordinates take precedence
+        const currentCity = watch('birthLocation.city');
+        const currentCountry = watch('birthLocation.country');
+        
+        if (!currentCity && result.city) {
+          setValue('birthLocation.city', result.city, { shouldValidate: true });
+        }
+        if (!currentCountry && result.country) {
+          setValue('birthLocation.country', result.country, { shouldValidate: true });
+        }
+        if (result.state) {
+          setValue('birthLocation.state', result.state, { shouldValidate: true });
+        }
+
+        // Update timezone based on coordinates
+        const timezone = getTimezoneFromCoordinates(latitude, longitude);
+        setValue('birthLocation.timezone', timezone, { shouldValidate: true });
+
+        setLastReverseGeocodedCoords(coordsString);
+        console.log('Reverse geocoding successful:', result);
+      } catch (error) {
+        // Suppress reverse geocoding errors - coordinates are still valid
+        // Just update timezone based on coordinates and continue
+        const timezone = getTimezoneFromCoordinates(latitude, longitude);
+        setValue('birthLocation.timezone', timezone, { shouldValidate: true });
+        
+        setLastReverseGeocodedCoords(coordsString);
+        console.warn('Reverse geocoding failed, but coordinates are still valid:', error);
+      } finally {
+        setIsReverseGeocoding(false);
+      }
+    };
+
+    performReverseGeocoding();
+  }, [latitude, longitude, setValue, debouncedReverseGeocoder, lastReverseGeocodedCoords, watch, setIsReverseGeocoding, setGeocodeError]);
+
   const handleQuickLocation = (location: PopularLocation) => {
     setValue('birthLocation.city', location.city);
     setValue('birthLocation.country', location.country);
     if (location.state) {
       setValue('birthLocation.state', location.state);
     }
-    setValue('birthLocation.latitude', location.lat);
-    setValue('birthLocation.longitude', location.lng);
+    setValue('birthLocation.latitude', location.lat, { shouldValidate: true });
+    setValue('birthLocation.longitude', location.lng, { shouldValidate: true });
     
     const timezone = getTimezoneFromCoordinates(location.lat, location.lng);
     setValue('birthLocation.timezone', timezone);
@@ -242,6 +325,34 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
               </p>
             </div>
           )}
+
+          {/* Timezone - Critical for interpreting birth time correctly */}
+          <div className="space-y-2">
+            <label htmlFor="birthTimezone" className="text-sm font-medium text-gray-700">
+              Birth Time Timezone *
+            </label>
+            <select
+              {...register('birthLocation.timezone')}
+              id="birthTimezone"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            >
+              <option value="">Select timezone</option>
+              {commonTimezones.map((tz) => (
+                <option key={tz.value} value={tz.value}>
+                  {tz.label}
+                </option>
+              ))}
+            </select>
+            {errors.birthLocation?.timezone && (
+              <p className="text-sm text-red-600">{errors.birthLocation.timezone.message}</p>
+            )}
+            <div className="p-2 bg-blue-50 border border-blue-200 rounded-md">
+              <p className="text-xs text-blue-800">
+                <strong>Important:</strong> This timezone determines how your birth time is interpreted. 
+                If you were born in Florida, use Eastern Time even if you enter coordinates manually.
+              </p>
+            </div>
+          </div>
         </CardContent>
       </Card>
 
@@ -306,27 +417,6 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
               />
             </div>
 
-            {/* Timezone */}
-            <div className="space-y-2">
-              <label htmlFor="timezone" className="text-sm font-medium text-gray-700">
-                Timezone *
-              </label>
-              <select
-                {...register('birthLocation.timezone')}
-                id="timezone"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-              >
-                <option value="">Select timezone</option>
-                {commonTimezones.map((tz) => (
-                  <option key={tz.value} value={tz.value}>
-                    {tz.label}
-                  </option>
-                ))}
-              </select>
-              {errors.birthLocation?.timezone && (
-                <p className="text-sm text-red-600">{errors.birthLocation.timezone.message}</p>
-              )}
-            </div>
           </div>
 
           {/* Coordinates */}

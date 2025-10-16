@@ -162,6 +162,74 @@ export const createDebouncedGeocoder = (delay: number = 1000) => {
 };
 
 /**
+ * Reverse geocoding: convert coordinates back to address
+ */
+export interface ReverseGeocodeResult {
+  city?: string;
+  state?: string;
+  country?: string;
+  formattedAddress?: string;
+}
+
+export const reverseGeocode = async (latitude: number, longitude: number): Promise<ReverseGeocodeResult> => {
+  const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&addressdetails=1`;
+  
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'User-Agent': 'AstrologyApp/1.0',
+      },
+    });
+    
+    if (!response.ok) {
+      throw new GecodingError(`HTTP ${response.status}: ${response.statusText}`);
+    }
+    
+    const data = await response.json();
+    
+    if (!data || !data.address) {
+      throw new GecodingError('No address found for these coordinates');
+    }
+    
+    const address = data.address;
+    
+    return {
+      city: address.city || address.town || address.village || address.hamlet,
+      state: address.state || address.province || address.region,
+      country: address.country,
+      formattedAddress: data.display_name,
+    };
+  } catch (error) {
+    if (error instanceof GecodingError) {
+      throw error;
+    }
+    throw new GecodingError(`Reverse geocoding failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+};
+
+/**
+ * Create a debounced reverse geocoder
+ */
+export const createDebouncedReverseGeocoder = (delay: number = 1000) => {
+  let timeoutId: NodeJS.Timeout;
+  
+  return (latitude: number, longitude: number): Promise<ReverseGeocodeResult> => {
+    return new Promise((resolve, reject) => {
+      clearTimeout(timeoutId);
+      
+      timeoutId = setTimeout(async () => {
+        try {
+          const result = await reverseGeocode(latitude, longitude);
+          resolve(result);
+        } catch (error) {
+          reject(error);
+        }
+      }, delay);
+    });
+  };
+};
+
+/**
  * Get timezone from coordinates using a simple heuristic
  * For production, consider using a proper timezone API like:
  * - Google Time Zone API

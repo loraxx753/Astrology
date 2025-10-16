@@ -33,15 +33,15 @@ export const birthChartSchema = z.object({
   timeKnown: z.boolean()
     .default(true), // If false, we'll use noon as default
 
-  // Geographic Location
+  // Geographic Location - Either city/country OR lat/long must be provided
   birthLocation: z.object({
     city: z.string()
-      .min(1, "City is required")
-      .max(100, "City name too long"),
+      .max(100, "City name too long")
+      .optional(),
     
     country: z.string()
-      .min(1, "Country is required")
-      .max(100, "Country name too long"),
+      .max(100, "Country name too long")
+      .optional(),
     
     state: z.string()
       .max(100, "State/Province name too long")
@@ -50,16 +50,30 @@ export const birthChartSchema = z.object({
     // Precise coordinates for astronomical calculations
     latitude: z.number()
       .min(-90, "Latitude must be between -90 and 90 degrees")
-      .max(90, "Latitude must be between -90 and 90 degrees"),
+      .max(90, "Latitude must be between -90 and 90 degrees")
+      .optional(),
     
     longitude: z.number()
       .min(-180, "Longitude must be between -180 and 180 degrees")
-      .max(180, "Longitude must be between -180 and 180 degrees"),
+      .max(180, "Longitude must be between -180 and 180 degrees")
+      .optional(),
 
     // Timezone information
     timezone: z.string()
       .min(1, "Timezone is required")
       .regex(/^[A-Za-z_/+-]+$/, "Invalid timezone format"),
+  }).refine((data) => {
+    // Either both city AND country are provided, OR both latitude AND longitude are provided
+    const hasCityCountry = data.city && data.city.trim().length > 0 && data.country && data.country.trim().length > 0;
+    const hasCoordinates = typeof data.latitude === 'number' && typeof data.longitude === 'number' && 
+                          !isNaN(data.latitude) && !isNaN(data.longitude) &&
+                          data.latitude >= -90 && data.latitude <= 90 &&
+                          data.longitude >= -180 && data.longitude <= 180;
+    
+    return hasCityCountry || hasCoordinates;
+  }, {
+    message: "Either provide city and country, or provide latitude and longitude coordinates",
+    path: ["city"] // This will show the error on the city field
   }),
 
   // Optional preferences for chart calculation

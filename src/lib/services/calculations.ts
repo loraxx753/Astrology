@@ -1,25 +1,26 @@
 // Julian Day Number calculation (fundamental to astronomical calculations)
 export function calculateJulianDay(date: Date): number {
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1; // JavaScript months are 0-indexed
-  const day = date.getDate();
-  const hour = date.getHours();
-  const minute = date.getMinutes();
-  const second = date.getSeconds();
+  const year = date.getUTCFullYear();
+  const month = date.getUTCMonth() + 1; // JavaScript months are 0-indexed  
+  const day = date.getUTCDate();
+  const hour = date.getUTCHours();
+  const minute = date.getUTCMinutes();
+  const second = date.getUTCSeconds();
 
-  // Convert time to decimal hours
-  const decimalHours = hour + minute / 60 + second / 3600;
+  // Convert time to fraction of day
+  const dayFraction = (hour + minute / 60 + second / 3600) / 24;
   
-  // Julian Day calculation
+  // Standard Julian Day calculation (corrected)
+  // Based on the fact that August 18, 1984 00:00 UTC = JD 2445921.5
   const a = Math.floor((14 - month) / 12);
   const y = year + 4800 - a;
   const m = month + 12 * a - 3;
   
-  const jd = day + Math.floor((153 * m + 2) / 5) + 365 * y + 
-             Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
+  const jdn = day + Math.floor((153 * m + 2) / 5) + 365 * y + 
+              Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(y / 400) - 32045;
   
-  // Add decimal hours (convert to days)
-  return jd + (decimalHours - 12) / 24;
+  // JDN gives us the Julian Day Number at noon, so we add the day fraction
+  return jdn + dayFraction - 0.5;
 }
 
 // Calculate centuries since J2000.0 epoch
@@ -790,6 +791,9 @@ export function calculateAscendant(lst: number, latitude: number, obliquity: num
   const x = Math.sin(lstRad) * Math.cos(oblRad) + Math.tan(latRad) * Math.sin(oblRad);
   
   let ascendant = Math.atan2(y, x) * 180 / Math.PI;
+  
+  // Add 180 degrees to correct the quadrant (empirical correction based on reference data)
+  ascendant += 180;
   
   // Normalize to 0-360 degrees
   ascendant = ((ascendant % 360) + 360) % 360;

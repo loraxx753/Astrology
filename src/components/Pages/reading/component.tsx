@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BirthChartData } from '@/lib/schemas/birthChart';
 import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 import BirthChartForm from '@/components/Forms/BirthChartForm';
@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { StarIcon, SparklesIcon } from 'lucide-react';
 import { PageComponentType } from '@/lib/types';
 import { CalculationDetails } from '@/components/Visualizations/CalculationDetails';
-import { getSunPositionSteps, calculateSunPosition, getMoonPositionSteps, calculateMoonPosition, getAllPlanetPositionSteps, calculateAllPlanetPositions, getHouseSystemSteps, calculateHouseSystem } from '@/lib/services/calculations';
+import { getSunPositionSteps, calculateSunPosition, getMoonPositionSteps, calculateMoonPosition, getAllPlanetPositionSteps, calculateAllPlanetPositions, getHouseSystemSteps, calculateHouseSystem, calculateJulianDay } from '@/lib/services/calculations';
 
 const ReadingPage: PageComponentType = () => {
   const [chartData, setChartData] = useState<BirthChartData | null>(null);
@@ -14,6 +14,70 @@ const ReadingPage: PageComponentType = () => {
 
   // Set cosmic background for the reading page
   usePageBackground(pageBackgrounds.cosmic);
+
+  // Parse URL parameters and auto-generate chart if provided
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Check if we have the minimum required parameters for a chart
+    const name = urlParams.get('name');
+    const birthDate = urlParams.get('date');
+    const birthTime = urlParams.get('time');
+    const latitude = urlParams.get('lat');
+    const longitude = urlParams.get('lng');
+    
+    if (name && birthDate && birthTime && latitude && longitude) {
+      const chartDataFromUrl: BirthChartData = {
+        name: decodeURIComponent(name),
+        gender: (urlParams.get('gender') as 'male' | 'female' | 'other' | 'prefer-not-to-say') || undefined,
+        birthDate: birthDate,
+        birthTime: birthTime,
+        timeKnown: urlParams.get('timeKnown') !== 'false', // Default to true
+        birthLocation: {
+          city: urlParams.get('city') || '',
+          country: urlParams.get('country') || '',
+          state: urlParams.get('state') || undefined,
+          latitude: parseFloat(latitude),
+          longitude: parseFloat(longitude),
+          timezone: urlParams.get('timezone') || 'UTC'
+        },
+        houseSystem: (urlParams.get('houseSystem') as 'placidus' | 'koch' | 'equal' | 'whole-sign' | 'campanus' | 'regiomontanus') || 'placidus',
+        orbPreferences: {
+          conjunction: parseInt(urlParams.get('orbConjunction') || '8'),
+          opposition: parseInt(urlParams.get('orbOpposition') || '8'),
+          trine: parseInt(urlParams.get('orbTrine') || '8'),
+          square: parseInt(urlParams.get('orbSquare') || '8'),
+          sextile: parseInt(urlParams.get('orbSextile') || '6'),
+          quincunx: parseInt(urlParams.get('orbQuincunx') || '3'),
+        },
+        notes: urlParams.get('notes') || undefined
+      };
+      
+      console.log('📊 Auto-generating chart from URL parameters:', chartDataFromUrl);
+      handleFormSubmit(chartDataFromUrl);
+    }
+  }, []);
+
+  // Helper function to create timezone-aware UTC datetime for astronomical calculations
+  const createBirthDateTime = (birthDate: string, birthTime: string, lat: number, lng: number): Date => {
+    const [year, month, day] = birthDate.split('-').map(Number);
+    const [hours, minutes] = birthTime.split(':').map(Number);
+    
+    // Estimate timezone offset based on coordinates and date
+    const getTimezoneOffset = (latitude: number, longitude: number, date: Date): number => {
+      // Eastern US (EDT/EST) - Melbourne, FL area
+      const isDST = date.getMonth() >= 2 && date.getMonth() <= 10; // Mar-Nov (approximate)
+      if (longitude < -60 && longitude > -90 && latitude > 25 && latitude < 35) {
+        return isDST ? 4 : 5; // EDT (UTC-4) or EST (UTC-5)
+      }
+      // General longitude-based estimate (15° per hour)
+      return Math.round(-longitude / 15);
+    };
+    
+    const timezoneOffset = getTimezoneOffset(lat, lng, new Date(year, month - 1, day));
+    // Create UTC datetime by adding the timezone offset to convert local time to UTC
+    return new Date(Date.UTC(year, month - 1, day, hours + timezoneOffset, minutes));
+  };
 
   const handleFormSubmit = async (data: BirthChartData) => {
     setIsCalculating(true);
@@ -126,7 +190,7 @@ const ReadingPage: PageComponentType = () => {
                 🎉 Birth Chart for {chartData.name}
               </h2>
               <p className="text-gray-600 mb-2">
-                Born: {new Date(chartData.birthDate).toLocaleDateString()} at {chartData.birthTime}
+                Born: {chartData.birthDate} at {chartData.birthTime}
               </p>
               <p className="text-gray-600 mb-6">
                 Location: {chartData.birthLocation.city}, {chartData.birthLocation.country}
@@ -153,16 +217,80 @@ const ReadingPage: PageComponentType = () => {
               </div>
 
               {(() => {
-                const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                // Ensure we have valid coordinates before calculations
+                const { latitude, longitude } = chartData.birthLocation;
+                if (typeof latitude !== 'number' || typeof longitude !== 'number') {
+                  return (
+                    <div className="text-center p-8 text-red-600">
+                      <p className="text-lg font-semibold mb-2">⚠️ Missing Location Data</p>
+                      <p>Valid coordinates are required for astronomical calculations.</p>
+                      <p className="text-sm mt-2">Please provide either city/country or latitude/longitude coordinates.</p>
+                    </div>
+                  );
+                }
+
+                const birthDateTime = createBirthDateTime(
+                  chartData.birthDate, 
+                  chartData.birthTime, 
+                  latitude, 
+                  longitude
+                );
+                
+
+                
                 const sunPosition = calculateSunPosition(birthDateTime);
                 const moonPosition = calculateMoonPosition(birthDateTime);
                 const allPlanetPositions = calculateAllPlanetPositions(birthDateTime);
                 const houseSystem = calculateHouseSystem(
                   birthDateTime, 
-                  chartData.birthLocation.latitude, 
-                  chartData.birthLocation.longitude, 
+                  latitude, 
+                  longitude, 
                   chartData.houseSystem
                 );
+                
+                // Complete debug data as single copyable object
+                const julianDayProper = calculateJulianDay(birthDateTime);
+                const completeDebugData = {
+                  input: {
+                    birthDate: chartData.birthDate,
+                    birthTime: chartData.birthTime,
+                    coordinates: { latitude, longitude },
+                    timezone: chartData.birthLocation.timezone
+                  },
+                  calculatedDateTime: {
+                    utc: birthDateTime.toISOString(),
+                    local: birthDateTime.toString(),
+                    utcDateParts: {
+                      year: birthDateTime.getUTCFullYear(),
+                      month: birthDateTime.getUTCMonth() + 1,
+                      day: birthDateTime.getUTCDate(),
+                      hour: birthDateTime.getUTCHours(),
+                      minute: birthDateTime.getUTCMinutes(),
+                      second: birthDateTime.getUTCSeconds()
+                    }
+                  },
+                  julianDay: {
+                    calculated: julianDayProper,
+                    expected: 2445922.001,
+                    error: julianDayProper - 2445922.001,
+                    actualUtcParts: {
+                      year: birthDateTime.getUTCFullYear(),
+                      month: birthDateTime.getUTCMonth() + 1,
+                      day: birthDateTime.getUTCDate(),
+                      hour: birthDateTime.getUTCHours(),
+                      minute: birthDateTime.getUTCMinutes(),
+                      second: birthDateTime.getUTCSeconds()
+                    }
+                  },
+                  houseSystem: {
+                    ascendant: houseSystem.ascendant,
+                    midheaven: houseSystem.midheaven,
+                    localSiderealTime: houseSystem.localSiderealTime,
+                    obliquityOfEcliptic: houseSystem.obliquityOfEcliptic,
+                    cusps: houseSystem.cusps
+                  }
+                };
+                console.log('� Complete Calculation Debug:', completeDebugData);
 
                 // Helper function to format angles
                 const formatAngle = (longitude: number) => {
@@ -263,7 +391,18 @@ const ReadingPage: PageComponentType = () => {
               <div className="space-y-6">
                 {/* Sun Position Calculation */}
                 {(() => {
-                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const { latitude, longitude } = chartData.birthLocation;
+                  if (typeof latitude !== 'number' || typeof longitude !== 'number') {
+                    return <div className="text-center p-4 text-red-600">Missing coordinates for Sun calculation</div>;
+                  }
+
+                  const birthDateTime = createBirthDateTime(
+                    chartData.birthDate, 
+                    chartData.birthTime, 
+                    latitude, 
+                    longitude
+                  );
+                  
                   const sunPosition = calculateSunPosition(birthDateTime);
                   const sunSteps = getSunPositionSteps(birthDateTime);
                   const summary = `Sun in ${sunPosition.zodiacPosition.degree}° ${sunPosition.zodiacPosition.minutes}' ${sunPosition.zodiacPosition.seconds}" ${sunPosition.zodiacPosition.sign}`;
@@ -279,7 +418,18 @@ const ReadingPage: PageComponentType = () => {
 
                 {/* Moon Position Calculation */}
                 {(() => {
-                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const { latitude, longitude } = chartData.birthLocation;
+                  if (typeof latitude !== 'number' || typeof longitude !== 'number') {
+                    return <div className="text-center p-4 text-red-600">Missing coordinates for Moon calculation</div>;
+                  }
+
+                  const birthDateTime = createBirthDateTime(
+                    chartData.birthDate, 
+                    chartData.birthTime, 
+                    latitude, 
+                    longitude
+                  );
+                  
                   const moonPosition = calculateMoonPosition(birthDateTime);
                   const moonSteps = getMoonPositionSteps(birthDateTime);
                   const summary = `Moon in ${moonPosition.zodiacPosition.degree}° ${moonPosition.zodiacPosition.minutes}' ${moonPosition.zodiacPosition.seconds}" ${moonPosition.zodiacPosition.sign} - ${moonPosition.phase.phaseName} (${moonPosition.phase.illumination.toFixed(1)}% illuminated)`;
@@ -309,7 +459,18 @@ const ReadingPage: PageComponentType = () => {
 
               <div className="space-y-6">
                 {(() => {
-                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const { latitude, longitude } = chartData.birthLocation;
+                  if (typeof latitude !== 'number' || typeof longitude !== 'number') {
+                    return <div className="text-center p-4 text-red-600">Missing coordinates for planetary calculations</div>;
+                  }
+
+                  const birthDateTime = createBirthDateTime(
+                    chartData.birthDate, 
+                    chartData.birthTime, 
+                    latitude, 
+                    longitude
+                  );
+                  
                   const allPlanetPositions = calculateAllPlanetPositions(birthDateTime);
                   const allPlanetSteps = getAllPlanetPositionSteps(birthDateTime);
                   
@@ -347,17 +508,28 @@ const ReadingPage: PageComponentType = () => {
 
               <div className="space-y-6">
                 {(() => {
-                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const { latitude, longitude } = chartData.birthLocation;
+                  if (typeof latitude !== 'number' || typeof longitude !== 'number') {
+                    return <div className="text-center p-4 text-red-600">Missing coordinates for house system calculation</div>;
+                  }
+
+                  const birthDateTime = createBirthDateTime(
+                    chartData.birthDate, 
+                    chartData.birthTime, 
+                    latitude, 
+                    longitude
+                  );
+                  
                   const houseSystem = calculateHouseSystem(
                     birthDateTime, 
-                    chartData.birthLocation.latitude, 
-                    chartData.birthLocation.longitude, 
+                    latitude, 
+                    longitude, 
                     chartData.houseSystem
                   );
                   const houseSteps = getHouseSystemSteps(
                     birthDateTime,
-                    chartData.birthLocation.latitude,
-                    chartData.birthLocation.longitude,
+                    latitude,
+                    longitude,
                     chartData.houseSystem
                   );
 
@@ -391,11 +563,22 @@ const ReadingPage: PageComponentType = () => {
 
                 {/* House Summary Grid */}
                 {(() => {
-                  const birthDateTime = new Date(`${chartData.birthDate}T${chartData.birthTime}`);
+                  const { latitude, longitude } = chartData.birthLocation;
+                  if (typeof latitude !== 'number' || typeof longitude !== 'number') {
+                    return <div className="text-center p-4 text-red-600">Missing coordinates for house grid calculation</div>;
+                  }
+
+                  const birthDateTime = createBirthDateTime(
+                    chartData.birthDate, 
+                    chartData.birthTime, 
+                    latitude, 
+                    longitude
+                  );
+                  
                   const houseSystem = calculateHouseSystem(
                     birthDateTime, 
-                    chartData.birthLocation.latitude, 
-                    chartData.birthLocation.longitude, 
+                    latitude, 
+                    longitude, 
                     chartData.houseSystem
                   );
 
