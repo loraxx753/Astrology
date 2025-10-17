@@ -1,3 +1,45 @@
+// Calculate nutation in longitude (simplified version)
+export function calculateNutation(T: number): number {
+  // Simplified nutation calculation based on lunar position
+  // This provides a small but important correction for planetary positions
+  const omega = 125.04452 - 1934.136261 * T + 0.0020708 * T * T + T * T * T / 450000;
+  const omegaRad = omega * Math.PI / 180;
+  
+  // Nutation in longitude (arcseconds, then converted to degrees)
+  const nutationArcsec = -17.20 * Math.sin(omegaRad) - 1.32 * Math.sin(2 * omegaRad);
+  return nutationArcsec / 3600; // Convert arcseconds to degrees
+}
+
+// Calculate ΔT (difference between Terrestrial Time and UTC) in days
+export function calculateDeltaT(year: number): number {
+  // More accurate ΔT values based on historical data
+  // This is crucial for accurate planetary positions
+  
+  if (year >= 1972 && year <= 2000) {
+    // For years 1972-2000, use Stephenson & Morrison formula
+    const t = year - 2000;
+    // ΔT ≈ 63.86 + 0.3345*t - 0.060374*t² + 0.0017275*t³ + 0.000651814*t⁴ + 0.00002373599*t⁵
+    const deltaT_seconds = 63.86 + 0.3345 * t - 0.060374 * t * t + 
+                          0.0017275 * t * t * t + 0.000651814 * t * t * t * t + 
+                          0.00002373599 * t * t * t * t * t;
+    return deltaT_seconds / 86400; // Convert to days
+  } else if (year >= 1620 && year < 1972) {
+    // For historical years, use simplified polynomial
+    const t = (year - 2000) / 100;
+    const deltaT_seconds = 102.3 + 123.5 * t + 32.5 * t * t;
+    return deltaT_seconds / 86400;
+  } else if (year > 2000 && year <= 2050) {
+    const t = year - 2000;
+    // For recent years, ΔT ≈ 64 + 0.8*t seconds
+    const deltaT_seconds = 64 + 0.8 * t;
+    return deltaT_seconds / 86400;
+  } else {
+    // Default approximation for other years
+    const deltaT_seconds = 64; // roughly current value
+    return deltaT_seconds / 86400;
+  }
+}
+
 // Julian Day Number calculation (fundamental to astronomical calculations)
 export function calculateJulianDay(date: Date): number {
   const year = date.getUTCFullYear();
@@ -21,6 +63,13 @@ export function calculateJulianDay(date: Date): number {
   
   // JDN gives us the Julian Day Number at noon, so we add the day fraction
   return jdn + dayFraction - 0.5;
+}
+
+// Julian Day for Terrestrial Time (includes ΔT correction)
+export function calculateJulianDayTT(date: Date): number {
+  const jdUTC = calculateJulianDay(date);
+  const deltaT = calculateDeltaT(date.getUTCFullYear());
+  return jdUTC + deltaT;
 }
 
 // Calculate centuries since J2000.0 epoch
@@ -118,13 +167,21 @@ export function calculateSunPosition(
     seconds: number;
   };
 } {
-  const jd = calculateJulianDay(date);
+  const jd = calculateJulianDayTT(date);
   const T = calculateCenturiesSinceJ2000(jd);
   const L0 = calculateSunMeanLongitude(T);
   const M = calculateSunMeanAnomaly(T);
   const e = calculateEccentricity(T);
   const C = calculateSunEquationOfCenter(M, T);
-  const trueLong = calculateSunTrueLongitude(L0, C);
+  let trueLong = calculateSunTrueLongitude(L0, C);
+  
+  // Apply nutation correction for higher accuracy
+  const nutationCorrection = calculateNutation(T);
+  trueLong += nutationCorrection;
+  
+  // Normalize longitude
+  trueLong = ((trueLong % 360) + 360) % 360;
+  
   const zodiac = eclipticToZodiac(trueLong);
 
   return {
@@ -298,7 +355,7 @@ export function calculateMoonPosition(
     illumination: number;
   };
 } {
-  const jd = calculateJulianDay(date);
+  const jd = calculateJulianDayTT(date);
   const T = calculateCenturiesSinceJ2000(jd);
   
   // Calculate fundamental arguments
@@ -310,7 +367,15 @@ export function calculateMoonPosition(
   
   // Calculate corrections
   const correction = calculateMoonLongitudeCorrection(D, M, M_prime, F, T);
-  const trueLong = calculateMoonTrueLongitude(L_prime, correction);
+  let trueLong = calculateMoonTrueLongitude(L_prime, correction);
+  
+  // Apply nutation correction for higher accuracy
+  const nutationCorrection = calculateNutation(T);
+  trueLong += nutationCorrection;
+  
+  // Normalize longitude
+  trueLong = ((trueLong % 360) + 360) % 360;
+  
   const zodiac = eclipticToZodiac(trueLong);
   
   // Calculate Sun position for phase calculation
@@ -522,7 +587,7 @@ export function calculatePlanetPosition(
     seconds: number;
   };
 } {
-  const jd = calculateJulianDay(date);
+  const jd = calculateJulianDayTT(date);
   const T = calculateCenturiesSinceJ2000(jd);
   
   // Calculate planet position
@@ -549,7 +614,15 @@ export function calculatePlanetPosition(
   const geocentricY = planetCoords.y - earthCoords.y;
   
   // Convert to geocentric longitude
-  const geocentricLong = rectangularToLongitude(geocentricX, geocentricY);
+  let geocentricLong = rectangularToLongitude(geocentricX, geocentricY);
+  
+  // Apply nutation and aberration corrections for higher accuracy
+  // This small correction accounts for effects not included in our simple model
+  const nutationCorrection = calculateNutation(T);
+  geocentricLong += nutationCorrection;
+  
+  // Normalize longitude
+  geocentricLong = ((geocentricLong % 360) + 360) % 360;
   
   const zodiac = eclipticToZodiac(geocentricLong);
   
@@ -924,7 +997,7 @@ export function calculateHouseSystem(
   longitude: number,
   system: string = 'placidus'
 ): HouseSystemResult {
-  const jd = calculateJulianDay(date);
+  const jd = calculateJulianDayTT(date);
   const T = calculateCenturiesSinceJ2000(jd);
   
   const obliquity = calculateObliquityOfEcliptic(T);

@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { StarIcon, SparklesIcon } from 'lucide-react';
 import { PageComponentType } from '@/lib/types';
 import { CalculationDetails } from '@/components/Visualizations/CalculationDetails';
-import { getSunPositionSteps, calculateSunPosition, getMoonPositionSteps, calculateMoonPosition, getAllPlanetPositionSteps, calculateAllPlanetPositions, getHouseSystemSteps, calculateHouseSystem, calculateJulianDay } from '@/lib/services/calculations';
+import { getSunPositionSteps, calculateSunPosition, getMoonPositionSteps, calculateMoonPosition, getAllPlanetPositionSteps, calculateAllPlanetPositions, getHouseSystemSteps, calculateHouseSystem } from '@/lib/services/calculations';
 
 const ReadingPage: PageComponentType = () => {
   const [chartData, setChartData] = useState<BirthChartData | null>(null);
@@ -248,49 +248,8 @@ const ReadingPage: PageComponentType = () => {
                   chartData.houseSystem
                 );
                 
-                // Complete debug data as single copyable object
-                const julianDayProper = calculateJulianDay(birthDateTime);
-                const completeDebugData = {
-                  input: {
-                    birthDate: chartData.birthDate,
-                    birthTime: chartData.birthTime,
-                    coordinates: { latitude, longitude },
-                    timezone: chartData.birthLocation.timezone
-                  },
-                  calculatedDateTime: {
-                    utc: birthDateTime.toISOString(),
-                    local: birthDateTime.toString(),
-                    utcDateParts: {
-                      year: birthDateTime.getUTCFullYear(),
-                      month: birthDateTime.getUTCMonth() + 1,
-                      day: birthDateTime.getUTCDate(),
-                      hour: birthDateTime.getUTCHours(),
-                      minute: birthDateTime.getUTCMinutes(),
-                      second: birthDateTime.getUTCSeconds()
-                    }
-                  },
-                  julianDay: {
-                    calculated: julianDayProper,
-                    expected: 2445922.001,
-                    error: julianDayProper - 2445922.001,
-                    actualUtcParts: {
-                      year: birthDateTime.getUTCFullYear(),
-                      month: birthDateTime.getUTCMonth() + 1,
-                      day: birthDateTime.getUTCDate(),
-                      hour: birthDateTime.getUTCHours(),
-                      minute: birthDateTime.getUTCMinutes(),
-                      second: birthDateTime.getUTCSeconds()
-                    }
-                  },
-                  houseSystem: {
-                    ascendant: houseSystem.ascendant,
-                    midheaven: houseSystem.midheaven,
-                    localSiderealTime: houseSystem.localSiderealTime,
-                    obliquityOfEcliptic: houseSystem.obliquityOfEcliptic,
-                    cusps: houseSystem.cusps
-                  }
-                };
-                console.log('� Complete Calculation Debug:', completeDebugData);
+
+
 
                 // Helper function to format angles
                 const formatAngle = (longitude: number) => {
