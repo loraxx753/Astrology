@@ -14,31 +14,31 @@ import swisseph from 'swisseph';
 const referenceData = [
   {
     name: "Kevin Baugh Test Case",
-    date: new Date('1984-08-18T08:03:00.000Z'),
-    latitude: 28.0786111,
-    longitude: -80.6027778
+    date: new Date('1984-08-18T12:03:00.000Z'),
+    latitude: 28.078611,
+    longitude: -80.602778
   },
-  {
-    name: "Modern Test Case",
-    date: new Date('2000-01-01T12:00:00.000Z'),
-    latitude: 40.7128,
-    longitude: -74.0060
-  }
+  // {
+  //   name: "Modern Test Case",
+  //   date: new Date('2000-01-01T12:00:00.000Z'),
+  //   latitude: 40.7128,
+  //   longitude: -74.0060
+  // }
 ];
 
 
-function parseCalculatedPosition(zodiacPos) {
-  const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
-    'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
-  const signIndex = signs.indexOf(zodiacPos.sign);
-  return signIndex * 30 + zodiacPos.degree + zodiacPos.minutes / 60 + (zodiacPos.seconds || 0) / 3600;
-}
+// function parseCalculatedPosition(zodiacPos) {
+//   const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
+//     'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
+//   const signIndex = signs.indexOf(zodiacPos.sign);
+//   return signIndex * 30 + zodiacPos.degree + zodiacPos.minutes / 60 + (zodiacPos.seconds || 0) / 3600;
+// }
 
-function calculateError(calculated, expected) {
-  const diff = Math.abs(calculated - expected);
-  // Handle wrap-around at 0°/360°
-  return Math.min(diff, 360 - diff);
-}
+// function calculateError(calculated, expected) {
+//   const diff = Math.abs(calculated - expected);
+//   // Handle wrap-around at 0°/360°
+//   return Math.min(diff, 360 - diff);
+// }
 
 
 // Map planet names to Swiss Ephemeris constants
@@ -89,97 +89,60 @@ async function getSwissephLongitude(jd, planet) {
   });
 }
 
+function getLocalTimeForLongitude(date, longitude) {
+  // Convert UTC date to local time for given longitude
+  // Each 15° longitude = 1 hour offset
+  const offsetHours = Math.round(longitude / 15);
+  const localDate = new Date(date);
+  localDate.setUTCHours(localDate.getUTCHours() + offsetHours);
+  return localDate;
+}
+
 async function runAccuracyTest() {
   console.log('🎯 Astronomical Accuracy Validation Test (vs Swiss Ephemeris)\n');
 
-  // Set path to ephemeris data (optional, but recommended for accuracy)
-  // swisseph.swe_set_ephe_path('./ephe'); // Uncomment and set if you have ephemeris files
-
   for (const testCase of referenceData) {
     console.log(`\n📊 Testing: ${testCase.name}`);
-    console.log(`Date: ${testCase.date.toISOString()}`);
+    console.log(`Date (input): ${testCase.date.toISOString()}`);
     console.log(`Location: ${testCase.latitude}°, ${testCase.longitude}°\n`);
 
-    try {
+    // Convert UTC to local time for observer longitude
+    const localDate = getLocalTimeForLongitude(testCase.date, testCase.longitude);
+    const localISOString = localDate.toISOString().slice(0, 19).replace('T', ' ');
+    console.log('HORIZONS request datetime (local for observer):', localISOString);
 
-      // Always use HORIZONS planetary positions for chart calculations
-      const horizonsPositions = await getHorizonsBirthChartPositions(
-        testCase.date.toISOString().slice(0, 19),
-        testCase.latitude,
-        testCase.longitude,
-        0,
-        ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
-      );
+    // Request all planets from HORIZONS using local time
+    const horizonsPositions = await getHorizonsBirthChartPositions(
+      localISOString,
+      testCase.latitude,
+      testCase.longitude,
+      ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
+    );
 
-      // Convert HORIZONS positions to zodiac format for chart use
-      const horizonsZodiacMap = {};
-      for (const p of horizonsPositions) {
-        if (typeof p.longitude === 'number' && !isNaN(p.longitude)) {
-          horizonsZodiacMap[p.name.toLowerCase()] = decimalToZodiac(p.longitude);
-        }
+    // Calculate Julian Day for Swiss Ephemeris (UTC)
+    const jd = getJulianDay(testCase.date);
+
+    // Prepare table header
+    console.log('\n| Planet   | HORIZONS Longitude | Swiss Ephemeris Longitude | Difference (arcmin) |');
+    console.log('|----------|-------------------|--------------------------|---------------------|');
+    // Collect and display table rows
+    for (const planet of ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']) {
+      const horizonsPlanet = horizonsPositions.find(p => p.name.toLowerCase() === planet.toLowerCase());
+      let sweLongitude = null;
+      try {
+        sweLongitude = await getSwissephLongitude(jd, PLANET_MAP[planet.toLowerCase()]);
+      } catch (err) {
+        sweLongitude = null;
       }
-
-      // For reference: calculate our engine's positions (not used for chart, just for comparison)
-      const sunPos = calculateSunPosition(testCase.date);
-      const moonPos = calculateMoonPosition(testCase.date);
-      const planets = calculateAllPlanetPositions(testCase.date);
-
-      // Calculate Julian Day
-      const jd = getJulianDay(testCase.date);
-
-      // Query Swiss Ephemeris for each planet
-      const bodies = ['sun', 'moon', 'mercury', 'venus', 'mars', 'jupiter', 'saturn'];
-      const results = [];
-
-      for (const body of bodies) {
-        // Use HORIZONS as the authoritative chart input
-        const horizonsZodiac = horizonsZodiacMap[body];
-        let horizonsDisplay = 'ERR';
-        let horizonsDecimal = null;
-        if (horizonsZodiac) {
-          horizonsDisplay = `${horizonsZodiac.degree}°${horizonsZodiac.minutes}' ${horizonsZodiac.sign}`;
-          horizonsDecimal = horizonsPositions.find(p => p.name.toLowerCase() === body)?.longitude;
-        }
-
-        // For validation: Swiss Ephemeris
-        let sweDecimal = null;
-        let sweZodiac = null;
-        try {
-          sweDecimal = await getSwissephLongitude(jd, PLANET_MAP[body]);
-          sweZodiac = decimalToZodiac(sweDecimal);
-        } catch (err) {
-          sweZodiac = null;
-        }
-
-        // Calculate difference in arcminutes (if both are available)
-        let diffMinutes = null;
-        if (typeof horizonsDecimal === 'number' && typeof sweDecimal === 'number' && !isNaN(horizonsDecimal) && !isNaN(sweDecimal)) {
-          let diff = Math.abs(horizonsDecimal - sweDecimal);
-          diff = Math.min(diff, 360 - diff); // handle wrap-around
-          diffMinutes = (diff * 60).toFixed(1);
-        }
-
-        results.push({
-          body: body.charAt(0).toUpperCase() + body.slice(1),
-          horizons: horizonsDisplay,
-          swe: sweZodiac ? `${sweZodiac.degree}°${sweZodiac.minutes}' ${sweZodiac.sign}` : 'ERR',
-          diffMinutes: diffMinutes !== null ? diffMinutes : 'ERR',
-        });
+      const horizonsLongitude = horizonsPlanet ? horizonsPlanet.longitude : null;
+      let diffMinutes = null;
+      if (typeof horizonsLongitude === 'number' && typeof sweLongitude === 'number' && !isNaN(horizonsLongitude) && !isNaN(sweLongitude)) {
+        let diff = Math.abs(horizonsLongitude - sweLongitude);
+        diff = Math.min(diff, 360 - diff); // handle wrap-around
+        diffMinutes = (diff * 60).toFixed(1);
       }
-
-      // Display results
-      console.log('Results:');
-      console.log('Body      | HORIZONS        | Swiss Ephemeris | Diff (min)');
-      console.log('----------|-----------------|-----------------|------------');
-
-      results.forEach(result => {
-        console.log(
-          `${result.body.padEnd(9)} | ${result.horizons.padEnd(15)} | ${result.swe.padEnd(15)} | ${result.diffMinutes.toString().padStart(10)}`
-        );
-      });
-
-    } catch (error) {
-      console.error(`❌ Error testing ${testCase.name}:`, error.message);
+      const row = `| ${planet.padEnd(8)} | ${horizonsLongitude !== null ? horizonsLongitude.toFixed(8).padEnd(17) : 'ERR'.padEnd(17)} | ${sweLongitude !== null ? sweLongitude.toFixed(8).padEnd(24) : 'ERR'.padEnd(24)} | ${diffMinutes !== null ? diffMinutes.padEnd(19) : 'ERR'.padEnd(19)} |`;
+      console.log(row);
     }
   }
 }

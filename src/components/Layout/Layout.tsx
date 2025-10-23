@@ -12,19 +12,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   // Update page title based on current path
   useEffect(() => {
     const path = window.location.pathname;
-    let title = 'Astrology Calculator';
+    let title = 'Shimmering Stars';
     
     if (path.startsWith('/signs/')) {
       const sign = path.split('/')[2];
       title = `${sign.charAt(0).toUpperCase() + sign.slice(1)} - Zodiac Signs | Astrology Calculator`;
     } else if (path === '/signs') {
-      title = 'Zodiac Signs | Astrology Calculator';
+      title = 'Zodiac Signs | Shimmering Stars';
     } else if (path === '/houses') {
-      title = 'Astrological Houses | Astrology Calculator';
+      title = 'Astrological Houses | Shimmering Stars';
     } else if (path === '/reading') {
-      title = 'Birth Chart Reading | Astrology Calculator';
+      title = 'Birth Chart Reading | Shimmering Stars';
     } else if (path === '/') {
-      title = 'Astrology Calculator - Educational Birth Chart Analysis';
+      title = 'Shimmering Stars - Educational Birth Chart Analysis';
     }
     
     document.title = title;
@@ -42,7 +42,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <span className="text-white text-sm font-bold">⊙</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-800 leading-none">Astrology Calculator</span>
+                <span className="text-xl font-bold text-gray-800 leading-none">Shimmering Stars</span>
                 <span className="text-xs text-gray-600 leading-none">Educational Platform</span>
               </div>
             </a>

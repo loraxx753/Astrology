@@ -11,7 +11,6 @@ export async function getBirthChartWithHorizons(
   date: Date,
   latitude: number,
   longitude: number,
-  elevation: number = 0
 ): Promise<{
   planets: Record<string, number>, // ecliptic longitude in degrees
   raw: HorizonsPlanetPosition[]
@@ -19,7 +18,7 @@ export async function getBirthChartWithHorizons(
   const iso = date.toISOString().slice(0, 19);
   const bodies = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'];
   // Fetch positions from HORIZONS API
-  const positions = await getHorizonsBirthChartPositions(iso, latitude, longitude, elevation, bodies);
+  const positions = await getHorizonsBirthChartPositions(iso, latitude, longitude, bodies);
   // Map HORIZONS results to planet longitudes
   const planets: Record<string, number> = {};
   for (const pos of positions) {

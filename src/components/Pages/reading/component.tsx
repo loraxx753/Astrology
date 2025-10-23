@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import tzLookup from 'tz-lookup';
 import { BirthChartData } from '@/lib/schemas/birthChart';
 import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
 import BirthChartForm from '@/components/Forms/BirthChartForm';
@@ -62,21 +63,34 @@ const ReadingPage: PageComponentType = () => {
   const createBirthDateTime = (birthDate: string, birthTime: string, lat: number, lng: number): Date => {
     const [year, month, day] = birthDate.split('-').map(Number);
     const [hours, minutes] = birthTime.split(':').map(Number);
-    
-    // Estimate timezone offset based on coordinates and date
-    const getTimezoneOffset = (latitude: number, longitude: number, date: Date): number => {
-      // Eastern US (EDT/EST) - Melbourne, FL area
-      const isDST = date.getMonth() >= 2 && date.getMonth() <= 10; // Mar-Nov (approximate)
-      if (longitude < -60 && longitude > -90 && latitude > 25 && latitude < 35) {
-        return isDST ? 4 : 5; // EDT (UTC-4) or EST (UTC-5)
-      }
-      // General longitude-based estimate (15° per hour)
-      return Math.round(-longitude / 15);
-    };
-    
-    const timezoneOffset = getTimezoneOffset(lat, lng, new Date(year, month - 1, day));
-    // Create UTC datetime by adding the timezone offset to convert local time to UTC
-    return new Date(Date.UTC(year, month - 1, day, hours + timezoneOffset, minutes));
+
+    // Use tz-lookup to get the IANA timezone name from coordinates
+    const tz = tzLookup(lat, lng);
+
+    // Create a Date object in local time
+    const localDate = new Date(year, month - 1, day, hours, minutes);
+
+    // Get the UTC offset in minutes for the local time in the found timezone
+    const dtf = new Intl.DateTimeFormat('en-US', {
+      timeZone: tz,
+      hour: '2-digit',
+      minute: '2-digit',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour12: false
+    });
+    // Format the local date in the target timezone
+    const parts = dtf.formatToParts(localDate);
+    const getPart = (type: string) => parts.find(p => p.type === type)?.value;
+    const utcYear = Number(getPart('year'));
+    const utcMonth = Number(getPart('month')) - 1;
+    const utcDay = Number(getPart('day'));
+    const utcHour = Number(getPart('hour'));
+    const utcMinute = Number(getPart('minute'));
+
+    // Construct a UTC date from the timezone-adjusted parts
+    return new Date(Date.UTC(utcYear, utcMonth, utcDay, utcHour, utcMinute));
   };
 
   const handleFormSubmit = async (data: BirthChartData) => {
@@ -240,7 +254,7 @@ const ReadingPage: PageComponentType = () => {
                 
                 const sunPosition = calculateSunPosition(birthDateTime);
                 const moonPosition = calculateMoonPosition(birthDateTime);
-                const allPlanetPositions = calculateAllPlanetPositions(birthDateTime);
+                const allPlanetPositions = calculateAllPlanetPositions();
                 const houseSystem = calculateHouseSystem(
                   birthDateTime, 
                   latitude, 
@@ -306,15 +320,17 @@ const ReadingPage: PageComponentType = () => {
 
                     {/* Planets */}
                     {Object.entries(allPlanetPositions).map(([planetKey, position]) => (
-                      <div key={planetKey} className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="text-2xl">{position.elements.emoji}</span>
-                          <h3 className="font-bold text-purple-800">{position.elements.name}</h3>
+                      position && position?.elements ? (
+                        <div key={planetKey} className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-2xl">{position?.elements.emoji}</span>
+                            <h3 className="font-bold text-purple-800">{position?.elements.name}</h3>
+                          </div>
+                          <p className="text-purple-700 font-mono text-sm">
+                            {position?.zodiacPosition.degree}° {position?.zodiacPosition.minutes}' {position?.zodiacPosition.sign}
+                          </p>
                         </div>
-                        <p className="text-purple-700 font-mono text-sm">
-                          {position.zodiacPosition.degree}° {position.zodiacPosition.minutes}' {position.zodiacPosition.sign}
-                        </p>
-                      </div>
+                      ) : null
                     ))}
 
                     {/* Midheaven */}
@@ -423,27 +439,21 @@ const ReadingPage: PageComponentType = () => {
                     return <div className="text-center p-4 text-red-600">Missing coordinates for planetary calculations</div>;
                   }
 
-                  const birthDateTime = createBirthDateTime(
-                    chartData.birthDate, 
-                    chartData.birthTime, 
-                    latitude, 
-                    longitude
-                  );
-                  
-                  const allPlanetPositions = calculateAllPlanetPositions(birthDateTime);
-                  const allPlanetSteps = getAllPlanetPositionSteps(birthDateTime);
+
+                  const allPlanetPositions = calculateAllPlanetPositions();
+                  const allPlanetSteps = getAllPlanetPositionSteps();
                   
                   const planetOrder = ['mercury', 'venus', 'mars', 'jupiter', 'saturn'];
                   
                   return planetOrder.map((planetKey) => {
                     const position = allPlanetPositions[planetKey];
                     const steps = allPlanetSteps[planetKey];
-                    const summary = `${position.elements.name} in ${position.zodiacPosition.degree}° ${position.zodiacPosition.minutes}' ${position.zodiacPosition.seconds}" ${position.zodiacPosition.sign}`;
+                    const summary = `${position?.elements.name} in ${position?.zodiacPosition.degree}° ${position?.zodiacPosition.minutes}' ${position?.zodiacPosition.seconds}" ${position?.zodiacPosition.sign}`;
                     
                     return (
                       <CalculationDetails
                         key={planetKey}
-                        title={`${position.elements.emoji} ${position.elements.name} Position Calculation`}
+                        title={`${position?.elements.emoji} ${position?.elements.name} Position Calculation`}
                         summary={summary}
                         steps={steps}
                       />
