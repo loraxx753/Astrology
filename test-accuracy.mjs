@@ -1,11 +1,5 @@
 import { getHorizonsBirthChartPositions } from './src/lib/services/horizonsService';
-
-import {
-  calculateSunPosition,
-  calculateMoonPosition,
-  calculateAllPlanetPositions,
-  calculateHouseSystem
-} from './src/lib/services/calculations.ts';
+import colors from 'ansi-colors';
 
 // Import swisseph (Swiss Ephemeris)
 import swisseph from 'swisseph';
@@ -122,10 +116,39 @@ async function runAccuracyTest() {
     // Calculate Julian Day for Swiss Ephemeris (UTC)
     const jd = getJulianDay(testCase.date);
 
-    // Prepare table header
-    console.log('\n| Planet   | HORIZONS Longitude | Swiss Ephemeris Longitude | Difference (arcmin) |');
-    console.log('|----------|-------------------|--------------------------|---------------------|');
-    // Collect and display table rows
+    // Color maps for elements and planets
+    const signData = [
+      { name: 'Aries', unicode: '♈', element: 'fire' },
+      { name: 'Taurus', unicode: '♉', element: 'earth' },
+      { name: 'Gemini', unicode: '♊', element: 'air' },
+      { name: 'Cancer', unicode: '♋', element: 'water' },
+      { name: 'Leo', unicode: '♌', element: 'fire' },
+      { name: 'Virgo', unicode: '♍', element: 'earth' },
+      { name: 'Libra', unicode: '♎', element: 'air' },
+      { name: 'Scorpio', unicode: '♏', element: 'water' },
+      { name: 'Sagittarius', unicode: '♐', element: 'fire' },
+      { name: 'Capricorn', unicode: '♑', element: 'earth' },
+      { name: 'Aquarius', unicode: '♒', element: 'air' },
+      { name: 'Pisces', unicode: '♓', element: 'water' }
+    ];
+
+    const elementColors = {
+      fire: colors.red.bold,
+      earth: colors.green.bold,
+      air: colors.cyan.bold,
+      water: colors.blue.bold
+    };
+
+    const planetData = {
+      Sun: { unicode: '☉', color: colors.yellow.bold },
+      Moon: { unicode: '☽', color: colors.white.bold },
+      Mercury: { unicode: '☿', color: colors.gray.bold },
+      Venus: { unicode: '♀', color: colors.green.bold },
+      Mars: { unicode: '♂', color: colors.red.bold },
+      Jupiter: { unicode: '♃', color: colors.blue.bold },
+      Saturn: { unicode: '♄', color: colors.magenta.bold }
+    };
+
     for (const planet of ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']) {
       const horizonsPlanet = horizonsPositions.find(p => p.name.toLowerCase() === planet.toLowerCase());
       let sweLongitude = null;
@@ -135,14 +158,40 @@ async function runAccuracyTest() {
         sweLongitude = null;
       }
       const horizonsLongitude = horizonsPlanet ? horizonsPlanet.longitude : null;
+      // Use HORIZONS longitude for display if available, else Swiss Ephemeris
+      const displayLongitude = typeof horizonsLongitude === 'number' ? horizonsLongitude : sweLongitude;
       let diffMinutes = null;
       if (typeof horizonsLongitude === 'number' && typeof sweLongitude === 'number' && !isNaN(horizonsLongitude) && !isNaN(sweLongitude)) {
         let diff = Math.abs(horizonsLongitude - sweLongitude);
         diff = Math.min(diff, 360 - diff); // handle wrap-around
         diffMinutes = (diff * 60).toFixed(1);
       }
-      const row = `| ${planet.padEnd(8)} | ${horizonsLongitude !== null ? horizonsLongitude.toFixed(8).padEnd(17) : 'ERR'.padEnd(17)} | ${sweLongitude !== null ? sweLongitude.toFixed(8).padEnd(24) : 'ERR'.padEnd(24)} | ${diffMinutes !== null ? diffMinutes.padEnd(19) : 'ERR'.padEnd(19)} |`;
-      console.log(row);
+      // Get zodiac info
+      const zodiac = typeof displayLongitude === 'number' ? decimalToZodiac(displayLongitude) : null;
+      const signIdx = zodiac ? signData.findIndex(s => s.name === zodiac.sign) : -1;
+      const sign = signIdx >= 0 ? signData[signIdx] : null;
+      const signColor = sign ? elementColors[sign.element] : colors.white.bold;
+      const planetInfo = planetData[planet];
+      // Output
+      if (planetInfo && zodiac && sign) {
+        console.log(planetInfo.color(`${planetInfo.unicode} ${planet}`));
+        console.log(planetInfo.color('============================='));
+        console.log(colors.bold(`${zodiac.degree}° ${zodiac.minutes}' ${zodiac.seconds}"`));
+        console.log(`Ruled by the sign ${signColor(`${sign.unicode} ${sign.name}`)}`);
+        if (diffMinutes !== null) {
+          const diffVal = parseFloat(diffMinutes);
+          if (diffVal <= 1.0) {
+            console.log(`${colors.green('✅')} ${colors.green.bold('Exact match!')}`);
+          } else {
+            console.log(`${colors.red('❌')} off by ${diffMinutes} arcmin`);
+          }
+        }
+        console.log('');
+      } else {
+        // Fallback to table row if data missing
+        const row = `| ${planet.padEnd(8)} | ${horizonsLongitude !== null ? horizonsLongitude.toFixed(8).padEnd(17) : 'ERR'.padEnd(17)} | ${sweLongitude !== null ? sweLongitude.toFixed(8).padEnd(24) : 'ERR'.padEnd(24)} | ${diffMinutes !== null ? diffMinutes.padEnd(19) : 'ERR'.padEnd(19)} |`;
+        console.log(row);
+      }
     }
   }
 }
