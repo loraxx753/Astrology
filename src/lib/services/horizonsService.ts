@@ -1,4 +1,6 @@
 import { raDecToEclipticOfDate, jdTTfromUTC, jdUTC } from '../utils';
+import { DateTime } from 'luxon';
+import tz_lookup from 'tz-lookup';
 
 // Alias for birth chart usage
 export async function getHorizonsBirthChartPositions(
@@ -55,74 +57,88 @@ export async function fetchHorizonsPositions(options: HorizonsRequestOptions): P
     const id = HORIZONS_IDS[body];
     if (!id) continue;
     // Calculate STOP_TIME as 1 minute after START_TIME
-    const start = new Date(options.datetime);
-    const stop = new Date(start.getTime() + 60 * 1000); // +1 minute
-    const startStr = start.toISOString().replace(/\.\d{3}Z$/, '').replace('T', ' ');
-    const stopStr = stop.toISOString().replace(/\.\d{3}Z$/, '').replace('T', ' ');
-    // Request RA/Dec and range data
-    const url = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='${id}'&OBJ_DATA='NO'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='500@399'&START_TIME='${startStr}'&STOP_TIME='${stopStr}'&STEP_SIZE='1 m'&QUANTITIES='1,2'&ANG_FORMAT='DEG'&CSV_FORMAT='YES'`;
+    // Use tz-lookup to get IANA timezone from lat/lon
+    const zone = tz_lookup(options.location.lat, options.location.lon);
+    // Parse options.datetime as local time in the observer's timezone
+    let startStr, stopStr;
+    // Detect BCE format: if options.datetime starts with 'bc '
+    if (options.datetime.startsWith('bc ')) {
+      // For BCE, use the string directly, and increment minute for stopStr
+      const match = options.datetime.match(/^bc (\d{4})-([A-Za-z]{3})-(\d{2}) (\d{2}):(\d{2})$/);
+      if (match) {
+        const year = match[1];
+        const month = match[2];
+        const day = match[3];
+        const hour = parseInt(match[4], 10);
+        const minute = parseInt(match[5], 10);
+        startStr = options.datetime;
+        // Increment minute for stopStr manually
+        let stopHour = hour, stopMinute = minute + 1;
+        if (stopMinute >= 60) {
+          stopMinute = 0;
+          stopHour = (stopHour + 1) % 24;
+        }
+        stopStr = `bc ${year}-${month}-${day} ${String(stopHour).padStart(2, '0')}:${String(stopMinute).padStart(2, '0')}`;
+      } else {
+        throw new Error('Invalid BCE date format for HORIZONS');
+      }
+      // SKIP Luxon for BCE
+    } else {
+      const localStart = DateTime.fromFormat(options.datetime, 'yyyy-MM-dd HH:mm:ss', { zone });
+      const localStop = localStart.plus({ minutes: 1 });
+      startStr = localStart.toUTC().toFormat('yyyy-MM-dd HH:mm:ss');
+      stopStr = localStop.toUTC().toFormat('yyyy-MM-dd HH:mm:ss');
+    }
+    let url = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='${id}'&OBJ_DATA='NO'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='500@399'&START_TIME='${startStr}'&STOP_TIME='${stopStr}'&STEP_SIZE='1 m'&QUANTITIES='1,2'&ANG_FORMAT='DEG'&CSV_FORMAT='YES'`;
     let resp, json;
     try {
       resp = await fetch(url);
       json = await resp.json();
     } catch (err) {
-      console.error(`[HORIZONS] Fetch error for ${body}:`, err);
       continue;
     }
 
+    // Fallback if date cannot be interpreted (only for AD dates, skip for BCE)
+    if (json.result && json.result.includes('Cannot interpret date') && !options.datetime.startsWith('bc ')) {
+      // Only use Luxon for AD dates
+      let startStrFallback, stopStrFallback;
+      try {
+        const localStart = DateTime.fromFormat(options.datetime, 'yyyy-MM-dd HH:mm:ss', { zone });
+        const localStop = localStart.plus({ minutes: 1 });
+        startStrFallback = localStart.toUTC().toFormat('yyyy-MMM-dd HH:mm');
+        stopStrFallback = localStop.toUTC().toFormat('yyyy-MMM-dd HH:mm');
+      } catch {
+        // If Luxon fails, skip fallback
+        return results;
+      }
+      url = `https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND='${id}'&OBJ_DATA='NO'&MAKE_EPHEM='YES'&EPHEM_TYPE='OBSERVER'&CENTER='500@399'&START_TIME='${startStrFallback}'&STOP_TIME='${stopStrFallback}'&STEP_SIZE='1 m'&QUANTITIES='1,2'&ANG_FORMAT='DEG'&CSV_FORMAT='YES'`;
+      try {
+        resp = await fetch(url);
+        json = await resp.json();
+      } catch (err) {
+        continue;
+      }
+    }
+
     const block = json.result.match(/\$\$SOE([\s\S]*?)\$\$EOE/);
-    if (!block) throw new Error("No data section");
+    if (!block) {
+      console.log(json.result);
+      throw new Error("No data section");
+    }
 
     const lines = block[1].trim().split('\n').filter(Boolean);
     for (const line of lines) {
-      // Example line:
-      // 2000-Jan-01 18:00, , ,    38.76084,   12.61588,     38.76021,    12.61436,
       const cols = line.split(',').map((s:string) => s.trim());
 
-      const dateStr = cols[0];               // "2000-Jan-01 18:00"
-      const raICRF  = parseFloat(cols[3]);   // not used for charts
-      const decICRF = parseFloat(cols[4]);   // not used for charts
-      const raApp   = parseFloat(cols[5]);   // <-- use this
-      const decApp  = parseFloat(cols[6]);   // <-- use this
-
+      const dateStr = cols[0];
+      const raApp   = parseFloat(cols[5]);
+      const decApp  = parseFloat(cols[6]);
 
       const jdInUTC = jdUTC(new Date(dateStr));
       const jdTT = jdTTfromUTC(jdInUTC, 69); // approx. delta T
-      // Convert apparent RA/Dec (deg, equator/equinox of date) -> ecliptic-of-date:
       const { lon, lat } = raDecToEclipticOfDate(raApp, decApp, jdTT);
       results.push({ name: body, ra: raApp, dec: decApp, longitude: lon, latitude: lat, dateStr });
     }
-
-
-    // // Log the raw response for debugging
-    // if (!text.includes('$$SOE')) {
-    //   console.error(`[HORIZONS] No $$SOE found for ${body}. Raw response:`);
-    //   console.error(text);
-    //   continue;
-    // }
-    // const match = text.match(/\$\$SOE([\s\S]*?)\$\$EOE/);
-    // if (match) {
-    //   const lines = match[1].trim().split('\n');
-    //   if (lines.length) {
-    //     const fields = lines[0].trim().split(/\s+/);
-    //     console.log(`[HORIZONS] Split fields for ${body}:`, fields);
-    //     // With QUANTITIES='31,32,20', columns are:
-    //     // 0: date, 1: time, 2: ecl. longitude (deg), 3: ecl. latitude (deg), 4: range (AU)
-    //     const longitude = parseFloat(fields[3]);
-    //     const latitude = parseFloat(fields[4]);
-    //     const distance = parseFloat(fields[8]);
-    //     results.push({
-    //       name: body,
-    //       longitude,
-    //       latitude,
-    //       distance,
-    //     });
-    //   } else {
-    //     console.error(`[HORIZONS] No data lines found for ${body}.`);
-    //   }
-    // } else {
-    //   console.error(`[HORIZONS] Could not parse $$SOE/$$EOE block for ${body}.`);
-    // }
   }
   return results;
 }

@@ -1,24 +1,62 @@
 import { getHorizonsBirthChartPositions } from './src/lib/services/horizonsService';
 import colors from 'ansi-colors';
+import { DateTime } from 'luxon';
+import tzLookup from 'tz-lookup';
 
 // Import swisseph (Swiss Ephemeris)
 import swisseph from 'swisseph';
 
 // Test cases for validation
+
 const referenceData = [
   {
     name: "Kevin Baugh Test Case",
-    date: new Date('1984-08-18T12:03:00.000Z'),
+    birthdate: "1984-08-18",
+    birthtime: "08:03:00",
     latitude: 28.078611,
-    longitude: -80.602778
+    longitude: -80.602778,
+    date: null, // will be set below
+    timezone: null // will be set below
   },
-  // {
-  //   name: "Modern Test Case",
-  //   date: new Date('2000-01-01T12:00:00.000Z'),
-  //   latitude: 40.7128,
-  //   longitude: -74.0060
-  // }
+  {
+    name: "Simran Gill Test Case",
+    birthdate: "1991-02-16",
+    birthtime: "06:10:00",
+    latitude: 30.266944,
+    longitude: -97.742778,
+    date: null, // will be set below
+    timezone: null // will be set below
+  },
+  {
+    name: "Albert Einstein Test Case",
+    birthdate: "1879-03-14",
+    birthtime: "11:30:00",
+    latitude: 48.1351,
+    longitude: 11.5820,
+    date: null, // will be set below
+    timezone: null // will be set below
+  }
+  ,
+  {
+    name: "US Founding Test Case",
+    birthdate: "1776-07-04",
+    birthtime: "12:00:00",
+    latitude: 39.9526, // Philadelphia, PA
+    longitude: -75.1652,
+    date: null, // will be set below
+    timezone: null // will be set below
+  },
+
 ];
+
+// Set date and timezone for each test case
+for (const testCase of referenceData) {
+  testCase.timezone = tzLookup(testCase.latitude, testCase.longitude);
+  // Local time as Luxon DateTime object
+  testCase.localDateTime = DateTime.fromISO(`${testCase.birthdate}T${testCase.birthtime}`, { zone: testCase.timezone });
+  // UTC JS Date for Swiss Ephemeris
+  testCase.utcDateTime = testCase.localDateTime.toUTC().toJSDate();
+}
 
 
 // function parseCalculatedPosition(zodiacPos) {
@@ -83,38 +121,34 @@ async function getSwissephLongitude(jd, planet) {
   });
 }
 
-function getLocalTimeForLongitude(date, longitude) {
-  // Convert UTC date to local time for given longitude
-  // Each 15° longitude = 1 hour offset
-  const offsetHours = Math.round(longitude / 15);
-  const localDate = new Date(date);
-  localDate.setUTCHours(localDate.getUTCHours() + offsetHours);
-  return localDate;
+function getLocalTimeWithTimezone(date, timezone) {
+  // Use Luxon to convert UTC JS Date to local time in the given IANA timezone
+  return DateTime.fromJSDate(date, { zone: 'utc' }).setZone(timezone);
 }
 
 async function runAccuracyTest() {
   console.log('🎯 Astronomical Accuracy Validation Test (vs Swiss Ephemeris)\n');
 
+
   for (const testCase of referenceData) {
     console.log(`\n📊 Testing: ${testCase.name}`);
-    console.log(`Date (input): ${testCase.date.toISOString()}`);
+    console.log(`Date (input): ${testCase.localDateTime.toFormat('yyyy-MM-dd')}`);
     console.log(`Location: ${testCase.latitude}°, ${testCase.longitude}°\n`);
 
-    // Convert UTC to local time for observer longitude
-    const localDate = getLocalTimeForLongitude(testCase.date, testCase.longitude);
-    const localISOString = localDate.toISOString().slice(0, 19).replace('T', ' ');
-    console.log('HORIZONS request datetime (local for observer):', localISOString);
+    // Use localDateTime for HORIZONS request
+    const localString = testCase.localDateTime.toFormat('yyyy-MM-dd HH:mm:ss');
+    console.log('HORIZONS request datetime (local for observer):', localString);
 
     // Request all planets from HORIZONS using local time
     const horizonsPositions = await getHorizonsBirthChartPositions(
-      localISOString,
+      localString,
       testCase.latitude,
       testCase.longitude,
       ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
     );
 
     // Calculate Julian Day for Swiss Ephemeris (UTC)
-    const jd = getJulianDay(testCase.date);
+    const jd = getJulianDay(testCase.utcDateTime);
 
     // Color maps for elements and planets
     const signData = [

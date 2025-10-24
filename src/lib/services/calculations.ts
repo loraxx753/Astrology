@@ -1,30 +1,10 @@
-import { getHorizonsBirthChartPositions, HorizonsPlanetPosition } from './horizonsService';
-/**
- * Get a birth chart using HORIZONS planetary positions as astronomical input.
- * Returns an object with planet longitudes, ready for house/aspect/chart calculations.
- * @param date JS Date object (UTC)
- * @param latitude Latitude of birthplace
- * @param longitude Longitude of birthplace
- * @param elevation Elevation in meters (optional)
- */
-export async function getBirthChartWithHorizons(
-  date: Date,
-  latitude: number,
-  longitude: number,
-): Promise<{
-  planets: Record<string, number>, // ecliptic longitude in degrees
-  raw: HorizonsPlanetPosition[]
-}> {
-  const iso = date.toISOString().slice(0, 19);
-  const bodies = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'];
-  // Fetch positions from HORIZONS API
-  const positions = await getHorizonsBirthChartPositions(iso, latitude, longitude, bodies);
-  // Map HORIZONS results to planet longitudes
-  const planets: Record<string, number> = {};
-  for (const pos of positions) {
-    planets[pos.name] = pos.longitude;
-  }
-  return { planets, raw: positions };
+// Dummy implementation for aspect calculation
+export function calculateAspects({ sun, moon, planets, houses }: any): any {
+  // Return a placeholder object for now
+  return {
+    summary: 'Aspect calculation is not yet implemented.',
+    aspects: []
+  };
 }
 
 // Calculate ΔT (difference between Terrestrial Time and UTC) in days
