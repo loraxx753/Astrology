@@ -7,7 +7,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { StarIcon, SparklesIcon } from 'lucide-react';
 import { PageComponentType } from '@/lib/types';
 import { CalculationDetails } from '@/components/Visualizations/CalculationDetails';
-import { getSunPositionSteps, calculateSunPosition, getMoonPositionSteps, calculateMoonPosition, getAllPlanetPositionSteps, calculateAllPlanetPositions, getHouseSystemSteps, calculateHouseSystem } from '@/lib/services/calculations';
+import { getSunPositionSteps, calculateSunPosition, getMoonPositionSteps, calculateMoonPosition, calculateAllPlanetPositions, getHouseSystemSteps, calculateHouseSystem } from '@/lib/services/calculations';
+import { useCelestialPositions } from '@/lib/hooks/useCelestialPositions';
+
+export interface CelestialBodyPosition {
+  name: string;
+  ra: number;
+  dec: number;
+  longitude: number;
+  latitude: number;
+  dateStr: string;
+}
 
 const ReadingPage: PageComponentType = () => {
   const [chartData, setChartData] = useState<BirthChartData | null>(null);
@@ -116,6 +126,26 @@ const ReadingPage: PageComponentType = () => {
       setIsCalculating(false);
     }
   };
+
+  // Extract planetary positions input from URL params
+  const urlParams = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
+  const birthDate = urlParams.get('date') || '';
+  const birthTime = urlParams.get('time') || '';
+  const latitude = urlParams.get('lat') ? parseFloat(urlParams.get('lat')!) : undefined;
+  const longitude = urlParams.get('lng') ? parseFloat(urlParams.get('lng')!) : undefined;
+  // Default to 7 classical planets if not provided
+  const bodies = urlParams.getAll('bodies').length > 0 ? urlParams.getAll('bodies') : ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'];
+
+  const hasCelestialInput = birthDate && birthTime && latitude !== undefined && longitude !== undefined;
+  const celestialInput = hasCelestialInput ? {
+    date: birthDate,
+    time: birthTime,
+    latitude: latitude as number,
+    longitude: longitude as number,
+    bodies,
+  } : undefined;
+
+  const { positions: celestialPositions, loading: celestialLoading, error: celestialError } = useCelestialPositions(celestialInput);
 
   return (
     <div className="min-h-screen" style={{ width: '100vw' }}>
@@ -251,7 +281,7 @@ const ReadingPage: PageComponentType = () => {
                 );
                 
 
-                
+                console.log({celestialPositions, celestialLoading, celestialError});
                 const sunPosition = calculateSunPosition(birthDateTime);
                 const moonPosition = calculateMoonPosition(birthDateTime);
                 const allPlanetPositions = calculateAllPlanetPositions();
@@ -425,41 +455,36 @@ const ReadingPage: PageComponentType = () => {
               <div className="border-b border-gray-200 pb-4 mb-6">
                 <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
                   <span className="text-3xl">🪐</span>
-                  Planetary Positions
+                  Planetary Positions (from API)
                 </h2>
                 <p className="text-gray-600 mt-2">
-                  The five visible planets and their precise positions using Kepler orbital mechanics and astronomical algorithms.
+                  The five visible planets and their precise positions using the backend API.
                 </p>
               </div>
-
               <div className="space-y-6">
-                {(() => {
-                  const { latitude, longitude } = chartData.birthLocation;
-                  if (typeof latitude !== 'number' || typeof longitude !== 'number') {
-                    return <div className="text-center p-4 text-red-600">Missing coordinates for planetary calculations</div>;
-                  }
-
-
-                  const allPlanetPositions = calculateAllPlanetPositions();
-                  const allPlanetSteps = getAllPlanetPositionSteps();
-                  
-                  const planetOrder = ['mercury', 'venus', 'mars', 'jupiter', 'saturn'];
-                  
-                  return planetOrder.map((planetKey) => {
-                    const position = allPlanetPositions[planetKey];
-                    const steps = allPlanetSteps[planetKey];
-                    const summary = `${position?.elements.name} in ${position?.zodiacPosition.degree}° ${position?.zodiacPosition.minutes}' ${position?.zodiacPosition.seconds}" ${position?.zodiacPosition.sign}`;
-                    
-                    return (
-                      <CalculationDetails
-                        key={planetKey}
-                        title={`${position?.elements.emoji} ${position?.elements.name} Position Calculation`}
-                        summary={summary}
-                        steps={steps}
-                      />
-                    );
-                  });
-                })()}
+                {celestialLoading && <div>Loading planetary positions...</div>}
+                {celestialError && <div className="text-red-600">Error loading planetary positions.</div>}
+                {celestialPositions && celestialPositions.length > 0 && (
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {celestialPositions.map((planet: CelestialBodyPosition) => (
+                      <div key={planet.name} className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-2xl">🪐</span>
+                          <h3 className="font-bold text-purple-800">{planet.name}</h3>
+                        </div>
+                        <p className="text-purple-700 font-mono text-sm">
+                          RA: {planet.ra.toFixed(4)} | Dec: {planet.dec.toFixed(4)}
+                        </p>
+                        <p className="text-purple-700 font-mono text-sm">
+                          Longitude: {planet.longitude.toFixed(4)} | Latitude: {planet.latitude.toFixed(4)}
+                        </p>
+                        <p className="text-purple-600 text-xs mt-1">
+                          Date: {planet.dateStr}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
 

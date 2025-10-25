@@ -9,6 +9,9 @@
 @import '@radix-ui/colors/blue-dark.css';
 @import '@radix-ui/colors/green-dark.css';
 @import '@radix-ui/colors/red-dark.css';
+/* KaTeX styles for mathematical notation */
+@import 'katex/dist/katex.min.css';
+
 
 /* Force light mode across the entire application */
 * {
@@ -112,9 +115,6 @@ button {
     color-scheme: light !important;
   }
 }
-
-/* KaTeX styles for mathematical notation */
-@import 'katex/dist/katex.min.css';
 
 @tailwind base;
 @tailwind components;

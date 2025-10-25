@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 export const client = new ApolloClient({
-    uri: 'https://www.dre.cx/api/graphql',
+    uri: import.meta.env.VITE_GRAPHQL_API_URL,
     cache: new InMemoryCache(),
 });

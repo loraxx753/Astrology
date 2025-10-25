@@ -1,35 +1,14 @@
 import { gql } from '@apollo/client'
 
-export const CHARACTERS = gql`
-query GetCharacters {
-  allPeople {
-    people {
-      id
-      name
-      gender
-      eyeColor
-      homeworld {
-        name
-        id
-      }
-      species {
-        name
-      }
-    }
-  }
-}`;
-
-export const CHARACTER = gql`
-query GetCharacter($id: ID!) {
-  person(id: $id) {
+export const GET_PLANETARY_POSITIONS = gql`
+query getPlanetaryPositions($date: String!, $time: String!, $latitude: Float!, $longitude: Float!, $bodies: [String!]!) {
+  planetaryPositions(date: $date, time: $time, latitude: $latitude, longitude: $longitude, bodies: $bodies) {
     name
-    species {
-      name
-    }
-    homeworld {
-      name
-    }
-    birthYear
+    longitude
+    latitude
+    ra
+    dec
+    dateStr
   }
 }
 `;

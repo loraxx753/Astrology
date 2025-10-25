@@ -1,6 +1,6 @@
+import 'katex/dist/katex.min.css';
 import React, { useState } from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import 'katex/dist/katex.min.css';
 // @ts-expect-error - KaTeX types might not be perfect
 import { InlineMath } from 'react-katex';
 import { CalculationStep } from '../../lib/services/calculations';
