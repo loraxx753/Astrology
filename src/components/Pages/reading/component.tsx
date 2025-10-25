@@ -147,6 +147,20 @@ const ReadingPage: PageComponentType = () => {
 
   const { positions: celestialPositions, loading: celestialLoading, error: celestialError } = useCelestialPositions(celestialInput);
 
+  // Helper: decimal degrees to zodiac sign/deg/min
+  function getZodiacFromLongitude(longitude: number) {
+    const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
+      'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
+    let d = longitude % 360;
+    if (d < 0) d += 360;
+    const signIndex = Math.floor(d / 30);
+    const sign = signs[signIndex];
+    const degree = Math.floor(d % 30);
+    const minutes = Math.floor((d % 1) * 60);
+    const seconds = Math.round((((d % 1) * 60) % 1) * 60);
+    return { degree, minutes, seconds, sign };
+  }
+
   return (
     <div className="min-h-screen" style={{ width: '100vw' }}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6" style={{ margin: '0 auto' }}>
@@ -273,15 +287,35 @@ const ReadingPage: PageComponentType = () => {
                   );
                 }
 
+                // Use API data for summary
+                if (celestialPositions && celestialPositions.length > 0) {
+                  return (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {celestialPositions.map((planet: CelestialBodyPosition) => {
+                        const zodiac = getZodiacFromLongitude(planet.longitude);
+                        return (
+                          <div key={planet.name} className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="text-2xl">🪐</span>
+                              <h3 className="font-bold text-purple-800">{planet.name}</h3>
+                            </div>
+                            <p className="text-purple-700 font-mono text-sm">
+                              {zodiac.degree}° {zodiac.minutes}' {zodiac.sign}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  );
+                }
+
+                // Fallback to local calculations if no API data
                 const birthDateTime = createBirthDateTime(
                   chartData.birthDate, 
                   chartData.birthTime, 
                   latitude, 
                   longitude
                 );
-                
-
-                console.log({celestialPositions, celestialLoading, celestialError});
                 const sunPosition = calculateSunPosition(birthDateTime);
                 const moonPosition = calculateMoonPosition(birthDateTime);
                 const allPlanetPositions = calculateAllPlanetPositions();
@@ -291,10 +325,6 @@ const ReadingPage: PageComponentType = () => {
                   longitude, 
                   chartData.houseSystem
                 );
-                
-
-
-
                 // Helper function to format angles
                 const formatAngle = (longitude: number) => {
                   const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
@@ -303,10 +333,8 @@ const ReadingPage: PageComponentType = () => {
                   const minutes = Math.floor(((longitude % 30) - degree) * 60);
                   return { degree, minutes, sign: signs[signIndex] };
                 };
-
                 const ascendant = formatAngle(houseSystem.ascendant);
                 const midheaven = formatAngle(houseSystem.midheaven);
-                
                 return (
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {/* Sun */}
@@ -319,7 +347,6 @@ const ReadingPage: PageComponentType = () => {
                         {sunPosition.zodiacPosition.degree}° {sunPosition.zodiacPosition.minutes}' {sunPosition.zodiacPosition.sign}
                       </p>
                     </div>
-
                     {/* Moon */}
                     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
                       <div className="flex items-center gap-2 mb-2">
@@ -333,7 +360,6 @@ const ReadingPage: PageComponentType = () => {
                         {moonPosition.phase.phaseName} ({moonPosition.phase.illumination.toFixed(0)}%)
                       </p>
                     </div>
-
                     {/* Ascendant */}
                     <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-4 rounded-lg border border-emerald-200">
                       <div className="flex items-center gap-2 mb-2">
@@ -347,7 +373,6 @@ const ReadingPage: PageComponentType = () => {
                         Rising Sign
                       </p>
                     </div>
-
                     {/* Planets */}
                     {Object.entries(allPlanetPositions).map(([planetKey, position]) => (
                       position && position?.elements ? (
@@ -362,7 +387,6 @@ const ReadingPage: PageComponentType = () => {
                         </div>
                       ) : null
                     ))}
-
                     {/* Midheaven */}
                     <div className="bg-gradient-to-r from-violet-50 to-purple-50 p-4 rounded-lg border border-violet-200">
                       <div className="flex items-center gap-2 mb-2">
@@ -466,23 +490,29 @@ const ReadingPage: PageComponentType = () => {
                 {celestialError && <div className="text-red-600">Error loading planetary positions.</div>}
                 {celestialPositions && celestialPositions.length > 0 && (
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {celestialPositions.map((planet: CelestialBodyPosition) => (
-                      <div key={planet.name} className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="text-2xl">🪐</span>
-                          <h3 className="font-bold text-purple-800">{planet.name}</h3>
+                    {celestialPositions.map((planet: CelestialBodyPosition) => {
+                      const zodiac = getZodiacFromLongitude(planet.longitude);
+                      return (
+                        <div key={planet.name} className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
+                          <div className="flex items-center gap-2 mb-2">
+                            <span className="text-2xl">🪐</span>
+                            <h3 className="font-bold text-purple-800">{planet.name}</h3>
+                          </div>
+                          <p className="text-purple-700 font-mono text-sm">
+                            RA: {planet.ra.toFixed(4)} | Dec: {planet.dec.toFixed(4)}
+                          </p>
+                          <p className="text-purple-700 font-mono text-sm">
+                            Longitude: {planet.longitude.toFixed(4)} | Latitude: {planet.latitude.toFixed(4)}
+                          </p>
+                          <p className="text-purple-700 font-mono text-sm">
+                            {zodiac.degree}° {zodiac.minutes}' {zodiac.seconds}" {zodiac.sign}
+                          </p>
+                          <p className="text-purple-600 text-xs mt-1">
+                            Date: {planet.dateStr}
+                          </p>
                         </div>
-                        <p className="text-purple-700 font-mono text-sm">
-                          RA: {planet.ra.toFixed(4)} | Dec: {planet.dec.toFixed(4)}
-                        </p>
-                        <p className="text-purple-700 font-mono text-sm">
-                          Longitude: {planet.longitude.toFixed(4)} | Latitude: {planet.latitude.toFixed(4)}
-                        </p>
-                        <p className="text-purple-600 text-xs mt-1">
-                          Date: {planet.dateStr}
-                        </p>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 )}
               </div>
