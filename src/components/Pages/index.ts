@@ -4,3 +4,4 @@ export { default as Houses } from './houses'
 export { default as Reading } from './reading'
 export { default as Clients } from './clients'
 export { default as LearnPage } from './learn'
+export { default as ChartPage } from './chart';

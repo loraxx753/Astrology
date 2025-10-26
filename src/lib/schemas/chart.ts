@@ -60,8 +60,21 @@ export type ChartFormData = z.infer<typeof chartFormSchema>;
 
 export const defaultChartFormValues: Partial<ChartFormData> = {
   pageFormData: {
-    houseSystem: 'placidus',
+    name: '',
+    gender: '',
+    date: '',
+    time: '',
     timeKnown: true,
+    location: {
+      city: '',
+      country: '',
+      state: '',
+      latitude: undefined,
+      longitude: undefined,
+      knowsCoordinates: undefined,
+      timezone: undefined,
+    },
+    houseSystem: 'placidus',
     orbPreferences: {
       conjunction: 8,
       opposition: 8,
@@ -70,6 +83,7 @@ export const defaultChartFormValues: Partial<ChartFormData> = {
       sextile: 6,
       quincunx: 3,
     },
+    notes: '',
   }
 };
 

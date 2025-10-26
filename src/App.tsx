@@ -7,21 +7,27 @@ import {
 } from 'react-router-dom';
 import * as pages from './components/Pages';
 import { Layout } from './components/Layout';
+import { NotFoundBoundary } from './components/NotFoundBoundary';
 
 /**
  * Router documentation https://reactrouter.com/en/main/routers/create-browser-router
  */
-const router = createBrowserRouter(Object.entries(pages).map(([_, Element]) => {
-  return ({
-    ...Element,
-    element: (
-      <Layout>
-        <Element />
-      </Layout>
-    ),
-  })
-}), {
+const pageRoutes = Object.entries(pages).map(([_, Element]) => ({
+  ...Element,
+  element: (
+    <Layout>
+      <Element />
+    </Layout>
+  ),
+}));
+
+// Add catch-all 404 route
+pageRoutes.push({
+  path: '*',
+  element: <NotFoundBoundary />,
 });
+
+const router = createBrowserRouter(pageRoutes);
 
 
 function App() {
