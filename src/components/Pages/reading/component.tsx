@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import tzLookup from 'tz-lookup';
-import { BirthChartData } from '@/lib/schemas/birthChart';
+import { ChartFormData } from '@/lib/schemas/chart';
 import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
-import BirthChartForm from '@/components/Forms/BirthChartForm';
+import NatalChartForm from '@/components/Forms/NatalChartForm';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ThirdParty/ShadCn/Card';
 import { StarIcon, SparklesIcon } from 'lucide-react';
 import { PageComponentType } from '@/lib/types';
@@ -20,7 +20,7 @@ export interface CelestialBodyPosition {
 }
 
 const ReadingPage: PageComponentType = () => {
-  const [chartData, setChartData] = useState<BirthChartData | null>(null);
+  const [chartData, setChartData] = useState<ChartFormData | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
   // Set cosmic background for the reading page
@@ -38,13 +38,13 @@ const ReadingPage: PageComponentType = () => {
     const longitude = urlParams.get('lng');
     
     if (name && birthDate && birthTime && latitude && longitude) {
-      const chartDataFromUrl: BirthChartData = {
+      const chartDataFromUrl: ChartFormData = {
         name: decodeURIComponent(name),
         gender: (urlParams.get('gender') as 'male' | 'female' | 'other' | 'prefer-not-to-say') || undefined,
-        birthDate: birthDate,
-        birthTime: birthTime,
+        date: birthDate,
+        time: birthTime,
         timeKnown: urlParams.get('timeKnown') !== 'false', // Default to true
-        birthLocation: {
+        location: {
           city: urlParams.get('city') || '',
           country: urlParams.get('country') || '',
           state: urlParams.get('state') || undefined,
@@ -103,7 +103,7 @@ const ReadingPage: PageComponentType = () => {
     return new Date(Date.UTC(utcYear, utcMonth, utcDay, utcHour, utcMinute));
   };
 
-  const handleFormSubmit = async (data: BirthChartData) => {
+  const handleFormSubmit = async (data: ChartFormData) => {
     setIsCalculating(true);
     
     try {
@@ -234,7 +234,7 @@ const ReadingPage: PageComponentType = () => {
               </p>
             </div>
             
-            <BirthChartForm 
+            <NatalChartForm 
               onSubmit={handleFormSubmit} 
               isLoading={isCalculating}
             />
@@ -245,13 +245,13 @@ const ReadingPage: PageComponentType = () => {
             {/* Chart Header */}
             <div className="bg-white/90 backdrop-blur-md rounded-lg p-4 sm:p-6 lg:p-8 text-center">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                🎉 Birth Chart for {chartData.name}
+                🎉 Birth Chart for {chartData.pageFormData.name}
               </h2>
               <p className="text-gray-600 mb-2">
-                Born: {chartData.birthDate} at {chartData.birthTime}
+                Born: {chartData.pageFormData.date} at {chartData.pageFormData.time}
               </p>
               <p className="text-gray-600 mb-6">
-                Location: {chartData.birthLocation.city}, {chartData.birthLocation.country}
+                Location: {chartData.pageFormData.location.city}, {chartData.pageFormData.location.country}
               </p>
               
               <button
@@ -276,7 +276,7 @@ const ReadingPage: PageComponentType = () => {
 
               {(() => {
                 // Ensure we have valid coordinates before calculations
-                const { latitude, longitude } = chartData.birthLocation;
+                const { latitude, longitude } = chartData.pageFormData.location;
                 if (typeof latitude !== 'number' || typeof longitude !== 'number') {
                   return (
                     <div className="text-center p-8 text-red-600">
@@ -311,8 +311,8 @@ const ReadingPage: PageComponentType = () => {
 
                 // Fallback to local calculations if no API data
                 const birthDateTime = createBirthDateTime(
-                  chartData.birthDate, 
-                  chartData.birthTime, 
+                  chartData.pageFormData.date, 
+                  chartData.pageFormData.time, 
                   latitude, 
                   longitude
                 );
@@ -323,7 +323,7 @@ const ReadingPage: PageComponentType = () => {
                   birthDateTime, 
                   latitude, 
                   longitude, 
-                  chartData.houseSystem
+                  chartData.pageFormData.houseSystem
                 );
                 // Helper function to format angles
                 const formatAngle = (longitude: number) => {
@@ -420,14 +420,14 @@ const ReadingPage: PageComponentType = () => {
               <div className="space-y-6">
                 {/* Sun Position Calculation */}
                 {(() => {
-                  const { latitude, longitude } = chartData.birthLocation;
+                  const { latitude, longitude } = chartData.pageFormData.location;
                   if (typeof latitude !== 'number' || typeof longitude !== 'number') {
                     return <div className="text-center p-4 text-red-600">Missing coordinates for Sun calculation</div>;
                   }
 
                   const birthDateTime = createBirthDateTime(
-                    chartData.birthDate, 
-                    chartData.birthTime, 
+                    chartData.pageFormData.date, 
+                    chartData.pageFormData.time, 
                     latitude, 
                     longitude
                   );
@@ -447,14 +447,14 @@ const ReadingPage: PageComponentType = () => {
 
                 {/* Moon Position Calculation */}
                 {(() => {
-                  const { latitude, longitude } = chartData.birthLocation;
+                  const { latitude, longitude } = chartData.pageFormData.location;
                   if (typeof latitude !== 'number' || typeof longitude !== 'number') {
                     return <div className="text-center p-4 text-red-600">Missing coordinates for Moon calculation</div>;
                   }
 
                   const birthDateTime = createBirthDateTime(
-                    chartData.birthDate, 
-                    chartData.birthTime, 
+                    chartData.pageFormData.date, 
+                    chartData.pageFormData.time, 
                     latitude, 
                     longitude
                   );
@@ -532,14 +532,14 @@ const ReadingPage: PageComponentType = () => {
 
               <div className="space-y-6">
                 {(() => {
-                  const { latitude, longitude } = chartData.birthLocation;
+                  const { latitude, longitude } = chartData.pageFormData.location;
                   if (typeof latitude !== 'number' || typeof longitude !== 'number') {
                     return <div className="text-center p-4 text-red-600">Missing coordinates for house system calculation</div>;
                   }
 
                   const birthDateTime = createBirthDateTime(
-                    chartData.birthDate, 
-                    chartData.birthTime, 
+                    chartData.pageFormData.date, 
+                    chartData.pageFormData.time, 
                     latitude, 
                     longitude
                   );
@@ -548,13 +548,13 @@ const ReadingPage: PageComponentType = () => {
                     birthDateTime, 
                     latitude, 
                     longitude, 
-                    chartData.houseSystem
+                    chartData.pageFormData.houseSystem
                   );
                   const houseSteps = getHouseSystemSteps(
                     birthDateTime,
                     latitude,
                     longitude,
-                    chartData.houseSystem
+                    chartData.pageFormData.houseSystem
                   );
 
                   // Summary of angles
@@ -574,11 +574,11 @@ const ReadingPage: PageComponentType = () => {
                     return `${degree}° ${minutes}' ${signs[signIndex]}`;
                   })();
 
-                  const summary = `Ascendant: ${ascendantZodiac} | Midheaven: ${midheavenZodiac} | System: ${chartData.houseSystem}`;
+                  const summary = `Ascendant: ${ascendantZodiac} | Midheaven: ${midheavenZodiac} | System: ${chartData.pageFormData.houseSystem}`;
 
                   return (
                     <CalculationDetails
-                      title={`🏠 ${chartData.houseSystem.charAt(0).toUpperCase() + chartData.houseSystem.slice(1)} House System Calculation`}
+                      title={`🏠 ${chartData.pageFormData.houseSystem.charAt(0).toUpperCase() + chartData.pageFormData.houseSystem.slice(1)} House System Calculation`}
                       summary={summary}
                       steps={houseSteps}
                     />
@@ -587,14 +587,14 @@ const ReadingPage: PageComponentType = () => {
 
                 {/* House Summary Grid */}
                 {(() => {
-                  const { latitude, longitude } = chartData.birthLocation;
+                  const { latitude, longitude } = chartData.pageFormData.location;
                   if (typeof latitude !== 'number' || typeof longitude !== 'number') {
                     return <div className="text-center p-4 text-red-600">Missing coordinates for house grid calculation</div>;
                   }
 
                   const birthDateTime = createBirthDateTime(
-                    chartData.birthDate, 
-                    chartData.birthTime, 
+                    chartData.pageFormData.date, 
+                    chartData.pageFormData.time, 
                     latitude, 
                     longitude
                   );
@@ -603,7 +603,7 @@ const ReadingPage: PageComponentType = () => {
                     birthDateTime, 
                     latitude, 
                     longitude, 
-                    chartData.houseSystem
+                    chartData.pageFormData.houseSystem
                   );
 
                   const houseNames = [
@@ -708,7 +708,7 @@ const ReadingPage: PageComponentType = () => {
                     <div>
                       <h4 className="font-semibold text-blue-700 mb-1">🏠 Houses & Angles</h4>
                       <ul className="text-sm text-blue-600 space-y-1 ml-4">
-                        <li>• {chartData.houseSystem} house system calculations</li>
+                        <li>• {chartData.pageFormData.houseSystem} house system calculations</li>
                         <li>• Ascendant (Rising Sign) determination</li>
                         <li>• Midheaven and house cusps</li>
                       </ul>

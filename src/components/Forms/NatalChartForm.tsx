@@ -1,59 +1,32 @@
 import React from 'react';
-import { useForm, FormProvider } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { 
-  birthChartSchema, 
-  BirthChartData, 
-  defaultBirthChartValues, 
-  commonTimezones,
-  houseSystemDescriptions
-} from '@/lib/schemas/birthChart';
-import { 
-  getTimezoneFromCoordinates,
-  popularLocations,
-  PopularLocation
-} from '@/lib/services/geocoding';
-
+import { FormProvider } from 'react-hook-form';
+import { useChartForm } from '@/lib/hooks/useChartForm';
+import { houseSystemDescriptions } from '@/lib/schemas/chart';
+import LocationSection from '@/components/Organisms/BirthLocation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ThirdParty/ShadCn/Card';
 import { Button } from '@/components/ThirdParty/ShadCn/Button';
 import { Badge } from '@/components/ThirdParty/ShadCn/Badge';
-import { StarIcon, MapPinIcon, ClockIcon, UserIcon } from 'lucide-react';
-import BirthLocationSection from '@/components/Organisms/BirthLocation';
+import { StarIcon, ClockIcon, UserIcon } from 'lucide-react';
 
-interface BirthChartFormProps {
-  onSubmit: (data: BirthChartData) => void;
+interface NatalChartFormProps {
+  onSubmit: (data: any) => void;
   isLoading?: boolean;
 }
 
-const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = false }) => {
-  const methods = useForm<BirthChartData>({
-    resolver: zodResolver(birthChartSchema),
-    defaultValues: defaultBirthChartValues,
-    mode: 'onChange'
-  });
+const NatalChartForm: React.FC<NatalChartFormProps> = ({ onSubmit, isLoading = false }) => {
+  const methods = useChartForm();
   const { register, handleSubmit, watch, setValue, formState: { errors, isValid } } = methods;
 
-  const timeKnown = watch('timeKnown');
-  const houseSystem = watch('houseSystem');
+  const timeKnown = watch('pageFormData.timeKnown');
+  const houseSystem = watch('pageFormData.houseSystem');
 
-  // Handle timeKnown checkbox - set default time when unchecked
   React.useEffect(() => {
     if (!timeKnown) {
-      setValue('birthTime', '12:00', { shouldValidate: true });
+      setValue('pageFormData.time', '12:00', { shouldValidate: true });
     }
   }, [timeKnown, setValue]);
 
-  // Quick select handler (no geocoding)
-  const handleQuickLocation = (location: PopularLocation) => {
-    setValue('birthLocation.city', location.city);
-    setValue('birthLocation.country', location.country);
-    if (location.state) {
-      setValue('birthLocation.state', location.state);
-    }
-  };
-
-  const handleFormSubmit = (data: BirthChartData) => {
-    console.log('Birth Chart Data:', data);
+  const handleFormSubmit = (data: any) => {
     onSubmit(data);
   };
 
@@ -77,14 +50,14 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
                   Full Name *
                 </label>
                 <input
-                  {...register('name')}
+                  {...register('pageFormData.name')}
                   type="text"
                   id="name"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                   placeholder="Enter your full name"
                 />
-                {errors.name && (
-                  <p className="text-sm text-red-600">{errors.name.message}</p>
+                {errors.pageFormData?.name && (
+                  <p className="text-sm text-red-600">{errors.pageFormData.name.message}</p>
                 )}
               </div>
 
@@ -94,7 +67,7 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
                   Gender (Optional)
                 </label>
                 <select
-                  {...register('gender')}
+                  {...register('pageFormData.gender')}
                   id="gender"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                 >
@@ -109,12 +82,12 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
           </CardContent>
         </Card>
 
-        {/* Birth Date & Time Section */}
+        {/* Date & Time Section */}
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-gray-800">
               <ClockIcon className="w-5 h-5" />
-              Birth Date & Time
+              Date & Time
             </CardTitle>
             <CardDescription>
               Precise timing is crucial for accurate astrological calculations
@@ -122,36 +95,36 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Birth Date */}
+              {/* Date */}
               <div className="space-y-2">
-                <label htmlFor="birthDate" className="text-sm font-medium text-gray-700">
-                  Birth Date *
+                <label htmlFor="date" className="text-sm font-medium text-gray-700">
+                  Date *
                 </label>
                 <input
-                  {...register('birthDate')}
+                  {...register('pageFormData.date')}
                   type="date"
-                  id="birthDate"
+                  id="date"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                 />
-                {errors.birthDate && (
-                  <p className="text-sm text-red-600">{errors.birthDate.message}</p>
+                {errors.pageFormData?.date && (
+                  <p className="text-sm text-red-600">{errors.pageFormData.date.message}</p>
                 )}
               </div>
 
-              {/* Birth Time */}
+              {/* Time */}
               <div className="space-y-2">
-                <label htmlFor="birthTime" className="text-sm font-medium text-gray-700">
-                  Birth Time *
+                <label htmlFor="time" className="text-sm font-medium text-gray-700">
+                  Time *
                 </label>
                 <input
-                  {...register('birthTime')}
+                  {...register('pageFormData.time')}
                   type="time"
-                  id="birthTime"
+                  id="time"
                   disabled={!timeKnown}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
                 />
-                {errors.birthTime && (
-                  <p className="text-sm text-red-600">{errors.birthTime.message}</p>
+                {errors.pageFormData?.time && (
+                  <p className="text-sm text-red-600">{errors.pageFormData.time.message}</p>
                 )}
               </div>
             </div>
@@ -159,7 +132,7 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
             {/* Time Known Checkbox */}
             <div className="flex items-center space-x-2">
               <input
-                {...register('timeKnown')}
+                {...register('pageFormData.timeKnown')}
                 type="checkbox"
                 id="timeKnown"
                 className="rounded border-gray-300 text-purple-600 focus:ring-purple-500"
@@ -181,7 +154,7 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
         </Card>
 
         {/* Location Section */}
-        <BirthLocationSection />
+        <LocationSection prefix="pageFormData.location" />
 
         {/* Chart Preferences Section */}
         <Card>
@@ -201,7 +174,7 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
                 House System
               </label>
               <select
-                {...register('houseSystem')}
+                {...register('pageFormData.houseSystem')}
                 id="houseSystem"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
               >
@@ -211,7 +184,6 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
                   </option>
                 ))}
               </select>
-              
               {houseSystem && (
                 <div className="p-3 bg-gray-50 border border-gray-200 rounded-md">
                   <p className="text-sm text-gray-700">
@@ -228,14 +200,14 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
                 Additional Notes (Optional)
               </label>
               <textarea
-                {...register('notes')}
+                {...register('pageFormData.notes')}
                 id="notes"
                 rows={3}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none"
                 placeholder="Any additional context or questions about your birth chart..."
               />
-              {errors.notes && (
-                <p className="text-sm text-red-600">{errors.notes.message}</p>
+              {errors.pageFormData?.notes && (
+                <p className="text-sm text-red-600">{errors.pageFormData.notes.message}</p>
               )}
             </div>
           </CardContent>
@@ -251,7 +223,6 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
                 </Badge>
                 Form validation: {isValid ? 'Complete' : 'Incomplete'}
               </div>
-              
               <Button
                 type="submit"
                 size="lg"
@@ -279,4 +250,4 @@ const BirthChartForm: React.FC<BirthChartFormProps> = ({ onSubmit, isLoading = f
   );
 };
 
-export default BirthChartForm;
+export default NatalChartForm;

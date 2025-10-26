@@ -58,10 +58,8 @@ export const birthChartSchema = z.object({
       .max(180, "Longitude must be between -180 and 180 degrees")
       .optional(),
 
-    // Timezone information
-    timezone: z.string()
-      .min(1, "Timezone is required")
-      .regex(/^[A-Za-z_/+-]+$/, "Invalid timezone format"),
+    // Timezone information (now optional, backend will determine if not provided)
+    timezone: z.string().optional(),
   }).refine((data) => {
     // Either both city AND country are provided, OR both latitude AND longitude are provided
     const hasCityCountry = data.city && data.city.trim().length > 0 && data.country && data.country.trim().length > 0;
