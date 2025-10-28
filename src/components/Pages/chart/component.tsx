@@ -9,7 +9,7 @@ import { useReverseGeocode } from '@/lib/hooks/useReverseGeocode';
 import { useLatLongFromLocation } from '@/lib/hooks/useLatLongFromLocation';
 
 
-import { getZodiacFromLongitude } from '@/lib/services/calculate/astrology';
+import { toDMS } from '@/lib/services/calculate/astrology';
 import { DateTime } from 'luxon';
 import ChartQRCode from './ChartQRCode';
 
@@ -50,7 +50,6 @@ function queryToChartFormData(query: Record<string, string>): ChartFormData | nu
     return null;
   }
 }
-
 
 // Only use planet symbols (no planet emojis)
 const bodySymbols: Record<string, string> = {
@@ -134,7 +133,7 @@ const ChartPage: PageComponentType = () => {
   }
 
   // const { name, date: birthDate, time: birthTime, location: loc, houseSystem, notes } = chartData.pageFormData;
-  const { name, date: birthDate, time: birthTime, houseSystem, notes } = chartData.pageFormData;
+  const { name, date: birthDate, time: birthTime } = chartData.pageFormData;
   {console.log('reading:', reading);}
   return (
     <div className="min-h-screen" style={{ width: '100vw' }}>
@@ -165,7 +164,7 @@ const ChartPage: PageComponentType = () => {
             )}
             {effectiveLat !== undefined && effectiveLong !== undefined && (
               <div className="text-md text-gray-500 mb-2">
-                {Number(effectiveLat).toFixed(7)}, {Number(effectiveLong).toFixed(7)}
+                {toDMS(effectiveLat, 'lat')} {toDMS(effectiveLong, 'long')}
               </div>
             )}
           </div>
