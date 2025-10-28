@@ -1,4 +1,4 @@
-// Re-export the styled birth location section from BirthChartForm for reuse
+// Re-export the styled birth location section from NatalChartForm for reuse
 
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
@@ -13,18 +13,23 @@ interface BirthLocationSectionProps {
 }
 
 const LocationSection: React.FC<BirthLocationSectionProps> = ({ prefix = 'location' }) => {
-  const { register, setValue, watch, formState: { errors } } = useFormContext<any>();
+  const { register, setValue, watch, formState: { errors } } = useFormContext();
+  // TypeScript workaround for dynamic field names in react-hook-form's watch
   const knowsCoordinates = watch(`${prefix}.knowsCoordinates`);
-
+  
   const handleQuickLocation = (location: typeof popularLocations[number]) => {
     setValue(`${prefix}.city`, location.city);
     setValue(`${prefix}.country`, location.country);
-    if (location.state) setValue(`${prefix}.state`, location.state);
+    if (location.region) setValue(`${prefix}.region`, location.region);
   };
 
   // Helper for error access
   const getError = (field: string) => {
-    return errors?.[prefix]?.[field]?.message;
+    const fieldError = errors?.[prefix]?.[field as keyof typeof errors[typeof prefix]];
+    if (fieldError && typeof fieldError === 'object' && 'message' in fieldError) {
+      return (fieldError as { message?: string }).message;
+    }
+    return undefined;
   };
 
   return (
@@ -50,10 +55,10 @@ const LocationSection: React.FC<BirthLocationSectionProps> = ({ prefix = 'locati
             <input {...register(`${prefix}.country`)} type="text" id="country" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="e.g., United States" defaultValue="United States" />
             {getError('country') && <p className="text-sm text-red-600">{getError('country')}</p>}
           </div>
-          {/* State/Province */}
+          {/* Region/Province */}
           <div className="space-y-2">
-            <label htmlFor="state" className="text-sm font-medium text-gray-700">State/Province</label>
-            <input {...register(`${prefix}.state`)} type="text" id="state" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="e.g., New York" />
+            <label htmlFor="region" className="text-sm font-medium text-gray-700">Region/Province</label>
+            <input {...register(`${prefix}.region`)} type="text" id="region" className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="e.g., New York" />
           </div>
         </div>
         {/* I know the exact Latitude/Longitude checkbox */}

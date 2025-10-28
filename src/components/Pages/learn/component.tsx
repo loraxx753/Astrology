@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import BirthLocationSection from '@/components/Organisms/BirthLocation';
-import { useCelestialPositions } from '../../../lib/hooks/useCelestialPositions';
+import useCelestialPositions  from '../../../lib/hooks/useCelestialPositions';
 import { PageComponentType } from '@/lib/types';
 import type { BirthChartData } from '@/lib/schemas/birthChart';
 

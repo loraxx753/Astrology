@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client'
 
-export const GET_PLANETARY_POSITIONS = gql`
+export const PLANETARY_POSITIONS_QUERY = gql`
 query getPlanetaryPositions($date: String!, $time: String!, $latitude: Float!, $longitude: Float!, $bodies: [String!]!) {
   planetaryPositions(date: $date, time: $time, latitude: $latitude, longitude: $longitude, bodies: $bodies) {
     name
@@ -9,6 +9,8 @@ query getPlanetaryPositions($date: String!, $time: String!, $latitude: Float!, $
     ra
     dec
     dateStr
+    northNodeLongitude
+    southNodeLongitude
   }
 }
 `;

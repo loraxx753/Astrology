@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useClients, Client } from '@/lib/hooks/useClients';
 import { useNavigate } from 'react-router-dom';
 import { usePageBackground, pageBackgrounds } from '@/lib/hooks/usePageBackground';
-import { HeroSection } from '@/components/ThirdParty/UiBlocks';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ThirdParty/ShadCn/Card';
 import { Button } from "@/components/ThirdParty/ShadCn/Button";
 import { PageComponentType } from '@/lib/types';
 
 const ClientsPage: PageComponentType = () => {
   usePageBackground(pageBackgrounds.cosmic);
-  const { clients, loading, error, saveClient, editClient, deleteClient, reload } = useClients();
+  // const { clients, loading, error, saveClient, editClient, deleteClient, reload } = useClients();
+  const { clients, loading, error, editClient, deleteClient, reload } = useClients();
   const [editingId, setEditingId] = useState<number | null>(null);
   const [editName, setEditName] = useState('');
   const navigate = useNavigate();

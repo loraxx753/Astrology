@@ -20,7 +20,7 @@ export const chartFormSchema = z.object({
     location: z.object({
       city: z.string().max(100, "City name too long").optional(),
       country: z.string().max(100, "Country name too long").optional(),
-      state: z.string().max(100, "State/Province name too long").optional(),
+      region: z.string().max(100, "State/Province name too long").optional(),
       latitude: z.number().min(-90).max(90).optional(),
       longitude: z.number().min(-180).max(180).optional(),
       knowsCoordinates: z.boolean().optional(),
@@ -68,7 +68,7 @@ export const defaultChartFormValues: Partial<ChartFormData> = {
     location: {
       city: '',
       country: '',
-      state: '',
+      region: '',
       latitude: undefined,
       longitude: undefined,
       knowsCoordinates: undefined,

@@ -13,7 +13,7 @@ export interface GeocodeResult {
 export interface GeocodeRequest {
   city: string;
   country: string;
-  state?: string;
+  region?: string;
 }
 
 class GecodingError extends Error {
@@ -28,10 +28,10 @@ class GecodingError extends Error {
  * Free, no API key required, good for basic geocoding
  */
 export const geocodeWithNominatim = async (request: GeocodeRequest): Promise<GeocodeResult> => {
-  const { city, country, state } = request;
+  const { city, country, region } = request;
   
   // Construct query string
-  const addressParts = [city, state, country].filter(Boolean);
+  const addressParts = [city, region, country].filter(Boolean);
   const query = encodeURIComponent(addressParts.join(', '));
   
   const url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}&limit=1&addressdetails=1`;
@@ -75,9 +75,9 @@ export const geocodeWithNominatim = async (request: GeocodeRequest): Promise<Geo
  * Sign up at: https://opencagedata.com/
  */
 export const geocodeWithOpenCage = async (request: GeocodeRequest, apiKey: string): Promise<GeocodeResult> => {
-  const { city, country, state } = request;
-  
-  const addressParts = [city, state, country].filter(Boolean);
+  const { city, country, region } = request;
+
+  const addressParts = [city, region, country].filter(Boolean);
   const query = encodeURIComponent(addressParts.join(', '));
   
   const url = `https://api.opencagedata.com/geocode/v1/json?q=${query}&key=${apiKey}&limit=1`;
@@ -262,7 +262,7 @@ export const getTimezoneFromCoordinates = (latitude: number, longitude: number):
 export interface PopularLocation {
   city: string;
   country: string;
-  state?: string;
+  region?: string;
   lat: number;
   lng: number;
 }
@@ -271,12 +271,12 @@ export interface PopularLocation {
  * Common location suggestions for quick selection
  */
 export const popularLocations: PopularLocation[] = [
-  { city: 'New York', country: 'United States', state: 'New York', lat: 40.7128, lng: -74.0060 },
-  { city: 'Los Angeles', country: 'United States', state: 'California', lat: 34.0522, lng: -118.2437 },
+  { city: 'New York', country: 'United States', region: 'New York', lat: 40.7128, lng: -74.0060 },
+  { city: 'Los Angeles', country: 'United States', region: 'California', lat: 34.0522, lng: -118.2437 },
   { city: 'London', country: 'United Kingdom', lat: 51.5074, lng: -0.1278 },
   { city: 'Paris', country: 'France', lat: 48.8566, lng: 2.3522 },
   { city: 'Tokyo', country: 'Japan', lat: 35.6762, lng: 139.6503 },
   { city: 'Sydney', country: 'Australia', lat: -33.8688, lng: 151.2093 },
-  { city: 'Toronto', country: 'Canada', state: 'Ontario', lat: 43.6532, lng: -79.3832 },
+  { city: 'Toronto', country: 'Canada', region: 'Ontario', lat: 43.6532, lng: -79.3832 },
   { city: 'Berlin', country: 'Germany', lat: 52.5200, lng: 13.4050 },
 ];

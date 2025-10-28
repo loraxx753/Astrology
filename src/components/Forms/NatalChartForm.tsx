@@ -8,8 +8,30 @@ import { Button } from '@/components/ThirdParty/ShadCn/Button';
 import { Badge } from '@/components/ThirdParty/ShadCn/Badge';
 import { StarIcon, ClockIcon, UserIcon } from 'lucide-react';
 
+type FormValues = {
+  pageFormData: {
+    date: string;
+    name: string;
+    time: string;
+    timeKnown: boolean;
+    location: {
+      city?: string;
+      country?: string;
+      region?: string;
+      latitude?: number;
+      longitude?: number;
+      knowsCoordinates?: boolean;
+      timezone?: string;
+    };
+    houseSystem: string;
+    gender?: string;
+    orbPreferences?: Record<string, unknown>;
+    notes?: string;
+  };
+};
+
 interface NatalChartFormProps {
-  onSubmit: (data: any) => void;
+  onSubmit: (data: FormValues) => void;
   isLoading?: boolean;
 }
 
@@ -26,7 +48,7 @@ const NatalChartForm: React.FC<NatalChartFormProps> = ({ onSubmit, isLoading = f
     }
   }, [timeKnown, setValue]);
 
-  const handleFormSubmit = (data: any) => {
+  const handleFormSubmit = (data: FormValues) => {
     onSubmit(data);
   };
 

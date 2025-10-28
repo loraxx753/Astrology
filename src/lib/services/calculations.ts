@@ -1,10 +1,18 @@
-// Dummy implementation for aspect calculation
-export function calculateAspects({ sun, moon, planets, houses }: any): any {
-  // Return a placeholder object for now
-  return {
-    summary: 'Aspect calculation is not yet implemented.',
-    aspects: []
-  };
+// Format a float orb value to { degree, minutes, seconds, float }
+export function formatOrb(orb: number) {
+  const degree = Math.floor(Math.abs(orb));
+  const minutesFloat = (Math.abs(orb) - degree) * 60;
+  const minutes = Math.floor(minutesFloat);
+  const seconds = Math.round((minutesFloat - minutes) * 60);
+  return { degree, minutes, seconds, float: orb };
+}
+import tzLookup from "tz-lookup";
+import { DateTime } from "luxon";
+
+export function getUTCFromLocal(dateStr: string, timeStr: string, latitude: number, longitude: number) {
+  const timezone = tzLookup(latitude, longitude);
+  const dt = DateTime.fromISO(`${dateStr}T${timeStr}`, { zone: timezone });
+  return dt.toUTC();
 }
 
 // Calculate ΔT (difference between Terrestrial Time and UTC) in days
@@ -31,6 +39,13 @@ export function calculateDeltaT(year: number): number {
     const deltaT_seconds = 64; // roughly current value
     return deltaT_seconds / 86400;
   }
+}
+
+export function getJulianDayFromStrings(dateStr: string, timeStr: string): number {
+  // Combine date and time into ISO string and create a Date object in UTC
+  const isoString = `${dateStr}T${timeStr.length === 5 ? timeStr + ':00' : timeStr}Z`;
+  const date = new Date(isoString);
+  return calculateJulianDay(date); // or calculateJulianDayTT(date) for Terrestrial Time
 }
 
 // Julian Day Number calculation (fundamental to astronomical calculations)
@@ -283,48 +298,6 @@ export function calculateMoonPhase(moonLongitude: number, sunLongitude: number):
     phaseName,
     phaseDescription,
     illumination
-  };
-}
-
-// Calculate Moon position for given date
-export function calculateMoonPosition(
-  date: Date
-): {
-  julianDay: number;
-  centuriesFromJ2000: number;
-  meanLongitude: number;
-  meanElongation: number;
-  sunMeanAnomaly: number;
-  moonMeanAnomaly: number;
-  argumentOfLatitude: number;
-  longitudeCorrection: number;
-  trueLongitude: number;
-  zodiacPosition: {
-    sign: string;
-    degree: number;
-    minutes: number;
-    seconds: number;
-  };
-  phase: {
-    phase: number;
-    phaseName: string;
-    phaseDescription: string;
-    illumination: number;
-  };
-} {
-  // Deprecated: All Moon position calculations are now sourced from HORIZONS. This function is retained for reference only.
-  return {
-    julianDay: 0,
-    centuriesFromJ2000: 0,
-    meanLongitude: 0,
-    meanElongation: 0,
-    sunMeanAnomaly: 0,
-    moonMeanAnomaly: 0,
-    argumentOfLatitude: 0,
-    longitudeCorrection: 0,
-    trueLongitude: 0,
-    zodiacPosition: { sign: '', degree: 0, minutes: 0, seconds: 0 },
-    phase: { phase: 0, phaseName: '', phaseDescription: '', illumination: 0 }
   };
 }
 
@@ -841,160 +814,6 @@ export interface CalculationStep {
   subSteps?: CalculationStep[];
 }
 
-export function getMoonPositionSteps(
-  date: Date,
-  // _latitude and _longitude parameters removed (no longer used)
-): CalculationStep[] {
-  const moonPos = calculateMoonPosition(date);
-  
-  return [
-    {
-      id: 'moon-julian-day',
-      title: 'Calculate Julian Day Number',
-      description: 'Convert the given date and time to Julian Day Number for lunar calculations.',
-      formula: 'JD = \\text{Julian Day Formula}',
-      calculation: `For ${date.toISOString().split('T')[0]} at ${date.toTimeString().split(' ')[0]} UTC`,
-      result: moonPos.julianDay.toFixed(6),
-      unit: 'days'
-    },
-    {
-      id: 'moon-centuries-j2000',
-      title: 'Calculate Centuries Since J2000.0',
-      description: 'Calculate time parameter T for lunar theory calculations.',
-      formula: 'T = \\frac{JD - 2451545.0}{36525}',
-      calculation: `(${moonPos.julianDay.toFixed(6)} - 2451545.0) / 36525`,
-      result: moonPos.centuriesFromJ2000.toFixed(8),
-      unit: 'centuries'
-    },
-    {
-      id: 'moon-mean-longitude',
-      title: 'Calculate Moon\'s Mean Longitude',
-      description: 'The Moon\'s mean longitude in its orbit, accounting for its rapid motion.',
-      formula: 'L\' = 218°.3164477 + 481267°.88123421 \\cdot T - 0°.0015786 \\cdot T^2 + \\frac{T^3}{538841} - \\frac{T^4}{65194000}',
-      calculation: `Complex polynomial expansion with T = ${moonPos.centuriesFromJ2000.toFixed(8)}`,
-      result: moonPos.meanLongitude.toFixed(6),
-      unit: 'degrees'
-    },
-    {
-      id: 'moon-fundamental-arguments',
-      title: 'Calculate Fundamental Arguments',
-      description: 'The five fundamental arguments needed for lunar position theory.',
-      formula: 'D, M, M\', F = \\text{Delaunay arguments}',
-      calculation: 'Mean elongation, Sun\'s anomaly, Moon\'s anomaly, argument of latitude',
-      result: 'Calculated',
-      subSteps: [
-        {
-          id: 'moon-elongation',
-          title: 'Mean Elongation (D)',
-          description: 'Angular distance between Moon and Sun as seen from Earth\'s center.',
-          formula: 'D = 297°.8501921 + 445267°.1114034 \\cdot T - 0°.0018819 \\cdot T^2 + \\frac{T^3}{545868} - \\frac{T^4}{113065000}',
-          calculation: `Polynomial with T = ${moonPos.centuriesFromJ2000.toFixed(8)}`,
-          result: moonPos.meanElongation.toFixed(6),
-          unit: 'degrees'
-        },
-        {
-          id: 'sun-anomaly-moon',
-          title: 'Sun\'s Mean Anomaly (M)',
-          description: 'Sun\'s position in its elliptical orbit for lunar calculations.',
-          formula: 'M = 357°.5291092 + 35999°.0502909 \\cdot T - 0°.0001536 \\cdot T^2 + \\frac{T^3}{24490000}',
-          calculation: `Sun's orbital position with T = ${moonPos.centuriesFromJ2000.toFixed(8)}`,
-          result: moonPos.sunMeanAnomaly.toFixed(6),
-          unit: 'degrees'
-        },
-        {
-          id: 'moon-anomaly',
-          title: 'Moon\'s Mean Anomaly (M\')',
-          description: 'Moon\'s position in its elliptical orbit around Earth.',
-          formula: 'M\' = 134°.9633964 + 477198°.8675055 \\cdot T + 0°.0087414 \\cdot T^2 + \\frac{T^3}{69699} - \\frac{T^4}{14712000}',
-          calculation: `Moon's orbital anomaly with T = ${moonPos.centuriesFromJ2000.toFixed(8)}`,
-          result: moonPos.moonMeanAnomaly.toFixed(6),
-          unit: 'degrees'
-        },
-        {
-          id: 'argument-latitude',
-          title: 'Argument of Latitude (F)',
-          description: 'Moon\'s argument of latitude relative to its ascending node.',
-          formula: 'F = 93°.2720950 + 483202°.0175233 \\cdot T - 0°.0036539 \\cdot T^2 - \\frac{T^3}{3526000} + \\frac{T^4}{863310000}',
-          calculation: `Latitude argument with T = ${moonPos.centuriesFromJ2000.toFixed(8)}`,
-          result: moonPos.argumentOfLatitude.toFixed(6),
-          unit: 'degrees'
-        }
-      ]
-    },
-    {
-      id: 'moon-longitude-correction',
-      title: 'Apply Periodic Corrections',
-      description: 'The Moon\'s orbit is highly perturbed. Apply the main periodic terms from lunar theory.',
-      formula: '\\Delta L = \\sum A_i \\sin(\\text{argument}_i)',
-      calculation: 'Sum of 15+ main periodic terms from Meeus lunar theory',
-      result: moonPos.longitudeCorrection.toFixed(6),
-      unit: 'degrees',
-      subSteps: [
-        {
-          id: 'main-terms',
-          title: 'Main Periodic Terms',
-          description: 'The largest amplitude terms in the lunar longitude series.',
-          formula: '6°.289 \\sin M\' + 1°.274 \\sin(2D - M\') + 0°.658 \\sin 2D + ...',
-          calculation: 'Trigonometric series with fundamental arguments',
-          result: 'Major perturbations applied'
-        }
-      ]
-    },
-    {
-      id: 'moon-true-longitude',
-      title: 'Calculate Moon\'s True Longitude',
-      description: 'Add the periodic corrections to the mean longitude.',
-      formula: '\\lambda_{Moon} = L\' + \\Delta L',
-      calculation: `${moonPos.meanLongitude.toFixed(6)}° + ${moonPos.longitudeCorrection.toFixed(6)}°`,
-      result: moonPos.trueLongitude.toFixed(6),
-      unit: 'degrees'
-    },
-    {
-      id: 'moon-zodiac-position',
-      title: 'Convert to Zodiac Position',
-      description: 'Convert ecliptic longitude to zodiac sign and degree.',
-      formula: '\\text{Sign} = \\lfloor\\frac{\\lambda_{Moon}}{30°}\\rfloor, \\text{Degree} = \\lambda_{Moon} \\bmod 30°',
-      calculation: `Longitude ${moonPos.trueLongitude.toFixed(6)}° in zodiac wheel`,
-      result: `${moonPos.zodiacPosition.degree}° ${moonPos.zodiacPosition.minutes}' ${moonPos.zodiacPosition.seconds}" ${moonPos.zodiacPosition.sign}`
-    },
-    {
-      id: 'moon-phase',
-      title: 'Calculate Moon Phase',
-      description: 'Determine the Moon\'s phase based on its angular separation from the Sun.',
-      formula: '\\text{Phase} = \\frac{1 - \\cos(\\lambda_{Moon} - \\lambda_{Sun})}{2}',
-      calculation: `Angular separation and illumination calculation`,
-      result: moonPos.phase.phaseName,
-      subSteps: [
-        {
-          id: 'phase-angle',
-          title: 'Phase Angle',
-          description: 'Angular separation between Moon and Sun as seen from Earth.',
-          formula: '\\text{Elongation} = \\lambda_{Moon} - \\lambda_{Sun}',
-          calculation: `${moonPos.trueLongitude.toFixed(2)}° - Sun longitude`,
-          result: 'Calculated'
-        },
-        {
-          id: 'illumination',
-          title: 'Illumination Percentage',
-          description: 'Percentage of the Moon\'s visible surface that is illuminated.',
-          formula: '\\text{Illumination} = \\text{Phase} \\times 100\\%',
-          calculation: 'Based on phase angle geometry',
-          result: `${moonPos.phase.illumination.toFixed(1)}%`,
-          unit: 'illuminated'
-        },
-        {
-          id: 'phase-name',
-          title: 'Phase Description',
-          description: moonPos.phase.phaseDescription,
-          formula: '\\text{Classification based on elongation angle}',
-          calculation: 'Phase name from astronomical definitions',
-          result: moonPos.phase.phaseName
-        }
-      ]
-    }
-  ];
-}
-
 export function getSunPositionSteps(
   date: Date,
   // _latitude and _longitude parameters removed (no longer used)
@@ -1112,4 +931,42 @@ export function getSunPositionSteps(
       ]
     }
   ];
+}
+
+/**
+ * Calculate the Local Sidereal Time (LST) in decimal hours for a given date, time, and longitude.
+ * @param dateStr - Date string in 'YYYY-MM-DD' format
+ * @param timeStr - Time string in 'HH:mm' or 'HH:mm:ss' format (24h)
+ * @param longitude - Longitude in degrees (East positive, West negative)
+ * @returns LST in decimal hours (0-24)
+ */
+export function getLocalSiderealTime(utcDateTime: DateTime, longitude: number): number {
+  // Parse date and time
+  const year = utcDateTime.year;
+  const month = utcDateTime.month;
+  const day = utcDateTime.day;
+  const hour = utcDateTime.hour;
+  const minute = utcDateTime.minute;
+  const second = utcDateTime.second;
+
+  // Julian Day calculation (at 0h UT)
+  const Y = month > 2 ? year : year - 1;
+  const M = month > 2 ? month : month + 12;
+  const D = day + (hour + minute / 60 + Number(second) / 3600) / 24;
+  const A = Math.floor(Y / 100);
+  const B = 2 - A + Math.floor(A / 4);
+  const JD = Math.floor(365.25 * (Y + 4716)) + Math.floor(30.6001 * (M + 1)) + D + B - 1524.5;
+
+  // Julian centuries since J2000.0
+  const T = (JD - 2451545.0) / 36525.0;
+
+  // Greenwich Mean Sidereal Time (GMST) in seconds
+  let GMST = 280.46061837 + 360.98564736629 * (JD - 2451545) + 0.000387933 * T * T - (T * T * T) / 38710000;
+  GMST = ((GMST % 360) + 360) % 360; // Normalize to 0-360
+  const GMST_hours = GMST / 15; // Convert degrees to hours
+
+  // Local Sidereal Time (LST) in hours
+  let LST = GMST_hours + longitude / 15;
+  LST = ((LST % 24) + 24) % 24; // Normalize to 0-24
+  return LST;
 }

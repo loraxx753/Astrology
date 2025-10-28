@@ -10,23 +10,47 @@ const ReadingPage: PageComponentType = () => {
   const navigate = useNavigate();
   usePageBackground(pageBackgrounds.cosmic);
 
-  // Helper to flatten nested form data for query string
-  function flatten(obj: Record<string, unknown>, prefix = ''): Record<string, string> {
-    const res: Record<string, string> = {};
-    for (const key in obj) {
-      if (typeof obj[key] === 'object' && obj[key] !== null) {
-        Object.assign(res, flatten(obj[key] as Record<string, unknown>, prefix ? `${prefix}.${key}` : key));
-      } else if (obj[key] !== undefined && obj[key] !== null) {
-        res[prefix ? `${prefix}.${key}` : key] = String(obj[key]);
-      }
-    }
-    return res;
+  interface FormSubmitData {
+    pageFormData: Record<string, unknown>;
+    [key: string]: unknown;
   }
 
-  const handleFormSubmit = (data: any) => {
-    const flat = flatten(data.pageFormData, 'pageFormData');
-    const params = new URLSearchParams(flat).toString();
-    navigate(`/chart?${params}`);
+  const handleFormSubmit = (data: FormSubmitData) => {
+    const pf = data.pageFormData || {};
+    const params: Record<string, string> = {};
+    // Basic fields
+    if (pf.name) params.name = String(pf.name);
+    if (pf.gender) params.gender = String(pf.gender);
+    if (pf.date) params.date = String(pf.date);
+    if (pf.time) params.time = String(pf.time);
+    if (pf.houseSystem) params.houseSystem = String(pf.houseSystem);
+    if (pf.notes) params.notes = String(pf.notes);
+    // Location
+    if (pf.location) {
+      const loc = pf.location as Record<string, unknown>;
+      if (loc.knowsCoordinates) {
+        if (loc.latitude !== undefined && loc.longitude !== undefined && loc.latitude !== '' && loc.longitude !== '') {
+          params.lat = String(loc.latitude);
+          params.long = String(loc.longitude);
+        }
+      } else {
+        if (loc.city) params.city = String(loc.city);
+        if (loc.state) params.region = String(loc.state);
+        if (loc.country) params.country = String(loc.country);
+      }
+    }
+    // Orb preferences (flattened)
+    if (pf.orbPreferences) {
+      const orb = pf.orbPreferences as Record<string, unknown>;
+      for (const orbKey of ['conjunction','opposition','trine','square','sextile','quincunx']) {
+        if (orb[orbKey] !== undefined && orb[orbKey] !== '') {
+          params[orbKey] = String(orb[orbKey]);
+        }
+      }
+    }
+    // Do NOT include timeKnown or orbPreferences as an object
+    const search = new URLSearchParams(params).toString();
+    navigate(`/chart?${search}`);
   };
 
   return (
