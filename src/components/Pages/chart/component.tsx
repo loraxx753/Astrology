@@ -265,34 +265,34 @@ const ChartPage: PageComponentType = () => {
                 <CardTitle className="text-lg text-purple-800">Angles</CardTitle>
               </CardHeader>
               <CardContent>
-                {celestialLoading && <p className="text-sm text-purple-700">Loading planetary positions...</p>}
-                {celestialError && <p className="text-sm text-red-600">Error loading positions.</p>}
-                {!celestialLoading && !celestialError && reading && (
+                {celestialLoading && <p className="text-sm text-purple-700">Loading angles...</p>}
+                {celestialError && <p className="text-sm text-red-600">Error loading angles.</p>}
+                {!celestialLoading && !celestialError && reading && reading.angles && (
                   <ul className="text-sm text-purple-700 space-y-1">
-                    {reading.angles?.ascendant && <li className="flex items-center gap-2">
+                    {reading.angles.ascendant && <li className="flex items-center gap-2">
                       <span className="text-lg">{bodySymbols['Ascendant']}</span>
                       <strong>Ascendant:</strong>
                       <span className="text-lg">{signEmojis[reading.angles.ascendant.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.ascendant.sign}</span> {reading.angles.ascendant.degree}° {reading.angles.ascendant.minutes}' {reading.angles.ascendant.seconds}
                     </li>}
-                    {reading.angles?.descendant && <li className="flex items-center gap-2">
+                    {reading.angles.descendant && <li className="flex items-center gap-2">
                       <span className="text-lg">{bodySymbols['Descendant']}</span>
                       <strong>Descendant:</strong>
                       <span className="text-lg">{signEmojis[reading.angles.descendant.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.descendant.sign}</span> {reading.angles.descendant.degree}° {reading.angles.descendant.minutes}' {reading.angles.descendant.seconds}
                     </li>}
-                    {reading.angles?.midheaven && <li className="flex items-center gap-2">
+                    {reading.angles.midheaven && <li className="flex items-center gap-2">
                       <span className="text-lg">{bodySymbols['Midheaven']}</span>
                       <strong>Midheaven (MC):</strong>
                       <span className="text-lg">{signEmojis[reading.angles.midheaven.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.midheaven.sign}</span> {reading.angles.midheaven.degree}° {reading.angles.midheaven.minutes}' {reading.angles.midheaven.seconds}
                     </li>}
-                    {reading.angles?.imumCoeli && <li className="flex items-center gap-2">
+                    {reading.angles.imumCoeli && <li className="flex items-center gap-2">
                       <span className="text-lg">{bodySymbols['Ascendant']}</span>
                       <strong>Imum Coeli (IC):</strong>
                       <span className="text-lg">{signEmojis[reading.angles.imumCoeli.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.imumCoeli.sign}</span> {reading.angles.imumCoeli.degree}° {reading.angles.imumCoeli.minutes}' {reading.angles.imumCoeli.seconds}
                     </li>}
                   </ul>
                 )}
-                {!celestialLoading && !celestialError && (!planetaryPositions || planetaryPositions.length === 0) && (
-                  <p className="text-sm text-purple-700">No planetary data available.</p>
+                {!celestialLoading && !celestialError && (!reading || !reading.angles) && (
+                  <p className="text-sm text-purple-700">No angle data available.</p>
                 )}
               </CardContent>
             </Card>
