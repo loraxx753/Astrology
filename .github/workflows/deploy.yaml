@@ -59,11 +59,11 @@ jobs:
           name: production-files
           path: ./dist
 
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: production-storybook
-          path: ./build-storybook
+      # - name: Download artifact
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: production-storybook
+      #     path: ./build-storybook
       
       - name: Create docs folder
         run: mkdir ./dist/docs/
