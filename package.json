@@ -22,7 +22,7 @@
     "storybook": "cross-env mode=storybook storybook dev -p 7001",
     "build:storybook": "cross-env mode=production storybook build",
     "build:both": "npm run build | npm run build:storybook",
-    "test": "jest --coverage",
+    "test": "npx tsx ./test-accuracy.mjs",
     "test:dev": "jest --coverage --watch"
   },
   "dependencies": {

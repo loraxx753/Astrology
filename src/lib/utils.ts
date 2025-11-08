@@ -103,3 +103,7 @@ export function raDecToEclipticOfDate(
 export function jdTTfromUTC(jdUtc: number, deltaT_sec: number): number {
   return jdUtc + deltaT_sec / 86400.0;
 }
+
+export const degToRad = (deg: number) => deg * Math.PI / 180;
+export const radToDeg = (rad: number) => rad * 180 / Math.PI;
+export const sanitizeDeg = (deg: number) => ((deg % 360) + 360) % 360;

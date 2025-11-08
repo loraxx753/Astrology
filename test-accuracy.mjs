@@ -1,12 +1,85 @@
 import colors from 'ansi-colors';
 import { DateTime } from 'luxon';
 import tzLookup from 'tz-lookup';
-import { getHorizonsBirthChartPositions } from './src/lib/services/';
+import { getAscendantAndMC, convertToZodiac } from './src/lib/services/calculate/astrology';
 
 // Import swisseph (Swiss Ephemeris)
 import swisseph from 'swisseph';
 
 // Test cases for validation
+
+const horizonsPositions = [
+  {
+    name: 'Sun',
+    ra: 147.96774,
+    dec: 12.95223,
+    longitude: 145.70836277521835,
+    latitude: 0.0006762709962969943,
+    dateStr: '1984-Aug-18 12:03',
+    northNodeLongitude: undefined,
+    southNodeLongitude: undefined
+  },
+  {
+    name: 'Moon',
+    ra: 39.06745,
+    dec: 13.32911,
+    longitude: 40.897015207492586,
+    latitude: -1.8591398622296227,
+    dateStr: '1984-Aug-18 12:03',
+    northNodeLongitude: undefined,
+    southNodeLongitude: undefined
+  },
+  {
+    name: 'Mercury',
+    ra: 162.41038,
+    dec: 2.66449,
+    longitude: 162.76212324092126,
+    latitude: -4.441208990173144,
+    dateStr: '1984-Aug-18 12:03',
+    northNodeLongitude: undefined,
+    southNodeLongitude: undefined
+  },
+  {
+    name: 'Venus',
+    ra: 165.00669,
+    dec: 7.92305,
+    longitude: 163.14135577899515,
+    latitude: 1.4057974539453746,
+    dateStr: '1984-Aug-18 12:03',
+    northNodeLongitude: undefined,
+    southNodeLongitude: undefined
+  },
+  {
+    name: 'Mars',
+    ra: 237.65422,
+    dec: -22.53832,
+    longitude: 240.35761296329645,
+    latitude: -2.3642806176187885,
+    dateStr: '1984-Aug-18 12:03',
+    northNodeLongitude: undefined,
+    southNodeLongitude: undefined
+  },
+  {
+    name: 'Jupiter',
+    ra: 273.63388,
+    dec: -23.4492,
+    longitude: 273.33341656072,
+    latitude: -0.04996143109806761,
+    dateStr: '1984-Aug-18 12:03',
+    northNodeLongitude: undefined,
+    southNodeLongitude: undefined
+  },
+  {
+    name: 'Saturn',
+    ra: 219.04433,
+    dec: -12.92024,
+    longitude: 220.749121245315,
+    latitude: 2.241026095830242,
+    dateStr: '1984-Aug-18 12:03',
+    northNodeLongitude: undefined,
+    southNodeLongitude: undefined
+  }
+]
 
 const referenceData = [
   {
@@ -16,32 +89,7 @@ const referenceData = [
     latitude: 28.078611,
     longitude: -80.602778,
     bodies: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
-  },
-  {
-    name: "Simran Gill Test Case",
-    date: "1991-02-16",
-    time: "06:10:00",
-    latitude: 30.266944,
-    longitude: -97.742778,
-    bodies: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
-  },
-  {
-    name: "Albert Einstein Test Case",
-    date: "1879-03-14",
-    time: "11:30:00",
-    latitude: 48.1351,
-    longitude: 11.5820,
-    bodies: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
-  },
-  {
-    name: "US Founding Test Case",
-    date: "1776-07-04",
-    time: "12:00:00",
-    latitude: 39.9526, // Philadelphia, PA
-    longitude: -75.1652,
-    bodies: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
-  },
-
+  }
 ];
 
 // Set date and timezone for each test case
@@ -80,31 +128,6 @@ const PLANET_MAP = {
   saturn: swisseph.SE_SATURN
 };
 
-// Helper: get Julian Day in UT
-function getJulianDay(date) {
-  // swisseph expects Julian Day in UT
-  // date: JS Date object (UTC)
-  const year = date.getUTCFullYear();
-  const month = date.getUTCMonth() + 1;
-  const day = date.getUTCDate();
-  const hour = date.getUTCHours() + date.getUTCMinutes() / 60 + date.getUTCSeconds() / 3600 + date.getUTCMilliseconds() / 3600000;
-  return swisseph.swe_julday(year, month, day, hour, swisseph.SE_GREG_CAL);
-}
-
-// Helper: decimal degrees to zodiac sign/deg/min
-function decimalToZodiac(deg) {
-  const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
-    'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
-  let d = deg % 360;
-  if (d < 0) d += 360;
-  const signIndex = Math.floor(d / 30);
-  const sign = signs[signIndex];
-  const degree = Math.floor(d % 30);
-  const minutes = Math.floor((d % 1) * 60);
-  const seconds = Math.round((((d % 1) * 60) % 1) * 60);
-  return { degree, minutes, seconds, sign };
-}
-
 async function getSwissephLongitude(jd, planet) {
   return new Promise((resolve, reject) => {
     swisseph.swe_calc_ut(jd, planet, swisseph.SEFLG_SWIEPH, (res) => {
@@ -129,20 +152,17 @@ async function runAccuracyTest() {
     // Use localDateTime for HORIZONS request
     // const localString = testCase.localDateTime.toFormat('yyyy-MM-dd HH:mm:ss');
     // console.log('HORIZONS request datetime (local for observer):', localString);
+      const { ascendant, midheaven } = getAscendantAndMC(testCase.date, testCase.time, testCase.latitude, testCase.longitude);
 
+      console.log({
+        ascendant,
+        midheaven
+      })
+      const  { sign, degree, minutes, seconds } = convertToZodiac(ascendant)
+      const  { sign: mcSign, degree: mcDegree, minutes: mcMinutes, seconds: mcSeconds } = convertToZodiac(midheaven);
+      console.log(`Ascendant: ${sign} ${degree}°${minutes}'${seconds}"`);
+      console.log(`Midheaven: ${mcSign} ${mcDegree}°${mcMinutes}'${mcSeconds}"\n`);
 
-    // Request all planets from HORIZONS using local time
-    const horizonsPositions = await getHorizonsBirthChartPositions(
-      testCase.date,
-      testCase.time,
-      testCase.latitude,
-      testCase.longitude,
-      ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn']
-    );
-
-
-    // Calculate Julian Day for Swiss Ephemeris (UTC)
-    const jd = getJulianDay(testCase.utcDateTime);
 
     // Color maps for elements and planets
     const signData = [
@@ -195,7 +215,7 @@ async function runAccuracyTest() {
         diffMinutes = (diff * 60).toFixed(1);
       }
       // Get zodiac info
-      const zodiac = typeof displayLongitude === 'number' ? decimalToZodiac(displayLongitude) : null;
+      const zodiac = typeof displayLongitude === 'number' ? convertToZodiac(displayLongitude) : null;
       const signIdx = zodiac ? signData.findIndex(s => s.name === zodiac.sign) : -1;
       const sign = signIdx >= 0 ? signData[signIdx] : null;
       const signColor = sign ? elementColors[sign.element] : colors.white.bold;

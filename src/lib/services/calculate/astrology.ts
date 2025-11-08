@@ -46,9 +46,9 @@ export function getAscendantAndMC(dateStr: string, timeStr: string, latitude: nu
     midheaven = ((midheaven % 360) + 360) % 360; // normalize
 
     const descendant = (ascendant + 180) % 360;
-    const imumCoelis = (midheaven + 180) % 360;
+    const imumCoeli = (midheaven + 180) % 360;
 
-    return { ascendant: convertToZodiac(ascendant), midheaven: convertToZodiac(midheaven), descendant: convertToZodiac(descendant), imumCoeli: convertToZodiac(imumCoelis) };
+    return { ascendant: ascendant, midheaven: midheaven, descendant, imumCoeli, obliquity, lstDegrees };
 }
 
 

@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
-import { getZodiacFromLongitude } from '../services/calculate/astrology';
+import { convertToZodiac } from '../services/calculate/astrology';
 import { formatOrb } from '../services/calculations';
-import { calculateHouseSystem } from '../services/calculations';
+import { calculateHouseSystem } from '../services/calculate/houses';
 import { PLANETARY_POSITIONS_QUERY } from '../queries/GET';
 
 const ASPECTS = [
@@ -130,17 +130,16 @@ export default function (input?: ChartReadingInput) {
 
   if (positions && !loading && !error) {
     // Calculate houses and angles (default to placidus, or allow system override via input if desired)
-    const dateObj = new Date(`${input!.date}T${input!.time.length === 5 ? input!.time + ':00' : input!.time}Z`);
-    const houseResult = calculateHouseSystem(dateObj, input!.latitude, input!.longitude, 'placidus');
+    const houseResult = calculateHouseSystem({ date: input!.date, time: input!.time, latitude: input!.latitude, longitude: input!.longitude, system: 'placidus' });
     reading.angles = {
-      ascendant: getZodiacFromLongitude(houseResult.ascendant),
-      midheaven: getZodiacFromLongitude(houseResult.midheaven),
-      descendant: getZodiacFromLongitude(houseResult.descendant),
-      imumCoeli: getZodiacFromLongitude(houseResult.imumCoeli),
+      ascendant: convertToZodiac(houseResult.ascendant),
+      midheaven: convertToZodiac(houseResult.midheaven),
+      descendant: convertToZodiac(houseResult.descendant),
+      imumCoeli: convertToZodiac(houseResult.imumCoeli),
     };
     reading.houses = {
       cusps: Object.entries(houseResult.cusps)
-        .map(([key, value]) => ({ [key]: getZodiacFromLongitude(value) }))
+        .map(([key, value]) => ({ [key]: convertToZodiac(value) }))
         .reduce((acc, curr) => ({ ...acc, ...curr }), {}),
       system: houseResult.system,
     };
@@ -154,15 +153,15 @@ export default function (input?: ChartReadingInput) {
         ra: planet.sign?.minutes || 0,
         dec: planet.sign?.seconds || 0,
         dateStr: new Date().toISOString(),
-        sign: getZodiacFromLongitude(planet.longitude),
+        sign: convertToZodiac(planet.longitude),
       };
 
       if(planet.name == 'Moon') {
         if(planet.northNodeLongitude !== undefined) {
-          reading.northNode = getZodiacFromLongitude(planet.northNodeLongitude);
+          reading.northNode = convertToZodiac(planet.northNodeLongitude);
         }
         if(planet.southNodeLongitude !== undefined) {
-          reading.southNode = getZodiacFromLongitude(planet.southNodeLongitude);
+          reading.southNode = convertToZodiac(planet.southNodeLongitude);
         }
       }
       reading.positions.push(result);
