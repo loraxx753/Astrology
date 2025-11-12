@@ -103,16 +103,13 @@ const ChartPage: PageComponentType = () => {
   const long = effectiveLong ? parseFloat(effectiveLong) : undefined;
   const date = query.date || '';
   const time = query.time || '';
-  const bodies = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
   const hasCelestialInput = date && time && lat !== undefined && long !== undefined;
   const celestialInput = hasCelestialInput ? {
     date,
     time,
     latitude: lat as number,
     longitude: long as number,
-    bodies,
   } : undefined;
-
 
   const { reading, loading: celestialLoading, error: celestialError } = useCelestialPositions(celestialInput);
   const planetaryPositions = reading?.positions;
@@ -138,6 +135,7 @@ const ChartPage: PageComponentType = () => {
 
   // const { name, date: birthDate, time: birthTime, location: loc, houseSystem, notes } = chartData.pageFormData;
   const { name, date: birthDate, time: birthTime } = chartData.pageFormData;
+
   return (
     <div className="min-h-screen" style={{ width: '100vw' }}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6" style={{ margin: '0 auto' }}>
@@ -154,7 +152,7 @@ const ChartPage: PageComponentType = () => {
             </h1>
             {birthDate && (
               <div className="text-2xl text-gray-700 mb-1">
-                {new Date(birthDate).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}
+                {DateTime.fromISO(birthDate).toLocaleString(DateTime.DATE_FULL)}
                 <span className="text-gray-500"> {DateTime.fromFormat(birthTime, 'HH:mm').toLocaleString(DateTime.TIME_SIMPLE)}</span>
               </div>
             )}
@@ -167,7 +165,7 @@ const ChartPage: PageComponentType = () => {
             )}
             {effectiveLat !== undefined && effectiveLong !== undefined && (
               <div className="text-md text-gray-500 mb-2">
-                {toDMS(effectiveLat, 'lat')} {toDMS(effectiveLong, 'long')}
+                {toDMS(effectiveLat as unknown as number, 'lat')} {toDMS(effectiveLong as unknown as number, 'long')}
               </div>
             )}
           </div>
@@ -188,9 +186,9 @@ const ChartPage: PageComponentType = () => {
                       const signEmoji = signEmojis[planet.sign.sign] || '';
                       return (
                         <li key={planet.name} className="flex items-center gap-2">
-                          <span className="text-lg">{planetSymbol}</span>
-                          <strong>{planet.name}:</strong>
-                          <span className="text-lg">{signEmoji}</span> <span className="text-sm text-gray-500 ml-1">{planet.sign.sign}</span> {planet.sign.degree}° {planet.sign.minutes}' {planet.sign.seconds}
+                          <span className="text-lg" title={planet.name}>{planetSymbol}</span>
+                          <strong >{planet.name}:</strong>
+                          <span className="text-lg" title={planet.sign.sign}>{signEmoji}</span> <span className="text-sm text-gray-500 ml-1 ">{planet.sign.sign}</span> {planet.sign.degree}° {planet.sign.minutes}' {planet.sign.seconds}
                         </li>
                       );
                     })}
@@ -215,7 +213,7 @@ const ChartPage: PageComponentType = () => {
                       <li key={houseNum} className="flex items-center gap-2">
                         <span className="text-lg font-bold">{houseNum}</span>
                         <span>
-                          <span className="text-lg">{signEmojis[cusp.sign] || ''}</span> <span className="text-sm text-gray-500 ml-1">{cusp.sign}</span> {cusp.degree}° {cusp.minutes}' {cusp.seconds}
+                          <span className="text-lg" title={cusp.sign}>{signEmojis[cusp.sign] || ''}</span> <span className="text-sm text-gray-500 ml-1 ">{cusp.sign}</span> {cusp.degree}° {cusp.minutes}' {cusp.seconds}
                         </span>
                       </li>
                     ))}
@@ -243,13 +241,13 @@ const ChartPage: PageComponentType = () => {
                       const orbStr = `${orb.degree}°${orb.minutes.toString().padStart(2, '0')}'${orb.seconds.toString().padStart(2, '0')}`;
                       return (
                         <li key={idx} className="flex items-center gap-2">
-                          <strong>{aspect.planetA}</strong>
-                          <span>-</span>
-                          <span className="text-lg">{symbolA}</span>
-                          <span className="font-semibold text-blue-800">{aspect.aspect}</span>
-                          <span className="text-lg">{symbolB}</span>
-                          <span>-</span>
-                          <strong>{aspect.planetB}</strong>
+                          <strong >{aspect.planetA}</strong>
+                          <span className="text-lg" title={aspect.planetA}>{symbolA}</span>
+                          <span className="text-xs text-gray-500" title={aspect.aspect}>{aspect.index}</span>
+                          <span className="font-semibold text-blue-800 ">{aspect.aspect}</span>
+                          
+                          <span className="text-lg" title={aspect.planetB}>{symbolB}</span>
+                          <strong >{aspect.planetB}</strong>
                           <span className="text-xs text-gray-500">(orb: {orbStr})</span>
                         </li>
                       );
@@ -272,24 +270,24 @@ const ChartPage: PageComponentType = () => {
                 {!celestialLoading && !celestialError && reading && reading.angles && (
                   <ul className="text-sm text-purple-700 space-y-1">
                     {reading.angles.ascendant && <li className="flex items-center gap-2">
-                      <span className="text-lg">{bodySymbols['Ascendant']}</span>
-                      <strong>Ascendant:</strong>
-                      <span className="text-lg">{signEmojis[reading.angles.ascendant.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.ascendant.sign}</span> {reading.angles.ascendant.degree}° {reading.angles.ascendant.minutes}' {reading.angles.ascendant.seconds}
+                      <span className="text-lg" title='Ascendant'>{bodySymbols['Ascendant']}</span>
+                      <strong >Ascendant:</strong>
+                      <span className="text-lg" title={reading.angles.ascendant.sign}>{signEmojis[reading.angles.ascendant.sign || '']}</span> <span className="text-sm text-gray-500 ml-1 ">{reading.angles.ascendant.sign}</span> {reading.angles.ascendant.degree}° {reading.angles.ascendant.minutes}' {reading.angles.ascendant.seconds}
                     </li>}
                     {reading.angles.descendant && <li className="flex items-center gap-2">
-                      <span className="text-lg">{bodySymbols['Descendant']}</span>
-                      <strong>Descendant:</strong>
-                      <span className="text-lg">{signEmojis[reading.angles.descendant.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.descendant.sign}</span> {reading.angles.descendant.degree}° {reading.angles.descendant.minutes}' {reading.angles.descendant.seconds}
+                      <span className="text-lg" title='Descendant'>{bodySymbols['Descendant']}</span>
+                      <strong >Descendant:</strong>
+                      <span className="text-lg" title={reading.angles.descendant.sign}>{signEmojis[reading.angles.descendant.sign || '']}</span> <span className="text-sm text-gray-500 ml-1 ">{reading.angles.descendant.sign}</span> {reading.angles.descendant.degree}° {reading.angles.descendant.minutes}' {reading.angles.descendant.seconds}
                     </li>}
                     {reading.angles.midheaven && <li className="flex items-center gap-2">
-                      <span className="text-lg">{bodySymbols['Midheaven']}</span>
-                      <strong>Midheaven (MC):</strong>
-                      <span className="text-lg">{signEmojis[reading.angles.midheaven.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.midheaven.sign}</span> {reading.angles.midheaven.degree}° {reading.angles.midheaven.minutes}' {reading.angles.midheaven.seconds}
+                      <span className="text-lg" title='Midheaven'>{bodySymbols['Midheaven']}</span>
+                      <strong >Midheaven (MC):</strong>
+                      <span className="text-lg" title={reading.angles.midheaven.sign}>{signEmojis[reading.angles.midheaven.sign || '']}</span> <span className="text-sm text-gray-500 ml-1 ">{reading.angles.midheaven.sign}</span> {reading.angles.midheaven.degree}° {reading.angles.midheaven.minutes}' {reading.angles.midheaven.seconds}
                     </li>}
                     {reading.angles.imumCoeli && <li className="flex items-center gap-2">
-                      <span className="text-lg">{bodySymbols['Ascendant']}</span>
-                      <strong>Imum Coeli (IC):</strong>
-                      <span className="text-lg">{signEmojis[reading.angles.imumCoeli.sign || '']}</span> <span className="text-sm text-gray-500 ml-1">{reading.angles.imumCoeli.sign}</span> {reading.angles.imumCoeli.degree}° {reading.angles.imumCoeli.minutes}' {reading.angles.imumCoeli.seconds}
+                      <span className="text-lg" title='Imum Coeli'>{bodySymbols['ImumCoeli']}</span>
+                      <strong >Imum Coeli (IC):</strong>
+                      <span className="text-lg" title={reading.angles.imumCoeli.sign}>{signEmojis[reading.angles.imumCoeli.sign || '']}</span> <span className="text-sm text-gray-500 ml-1 ">{reading.angles.imumCoeli.sign}</span> {reading.angles.imumCoeli.degree}° {reading.angles.imumCoeli.minutes}' {reading.angles.imumCoeli.seconds}
                     </li>}
                   </ul>
                 )}

@@ -3,28 +3,57 @@ import { convertToZodiac } from '../services/calculate/astrology';
 import { formatOrb } from '../services/calculations';
 import { PLANETARY_POSITIONS_QUERY, HOUSES_QUERY } from '../queries/GET';
 
-const ASPECTS = [
-  { name: 'Conjunction', angle: 0, orb: 8 },
-  { name: 'Opposition', angle: 180, orb: 8 },
-  { name: 'Trine', angle: 120, orb: 6 },
-  { name: 'Square', angle: 90, orb: 6 },
-  { name: 'Sextile', angle: 60, orb: 4 },
-  { name: 'Quincunx', angle: 150, orb: 3 }, // Inconjunct
-  { name: 'Semisextile', angle: 30, orb: 2 },
-  { name: 'Semisquare', angle: 45, orb: 2 },
-  { name: 'Sesquiquadrate', angle: 135, orb: 2 },
-  { name: 'Quintile', angle: 72, orb: 1.5 },
-  { name: 'Biquintile', angle: 144, orb: 1.5 },
-  { name: 'Septile', angle: 51.43, orb: 1 },
-  { name: 'Novile', angle: 40, orb: 1 },
-  { name: 'Decile', angle: 36, orb: 1 },
-  { name: 'Undecile', angle: 32.73, orb: 1 },
+const aspectGlyphs: Record<string, string> = {
+  Conjunction: '☌',
+  Opposition: '☍',
+  Trine: '△',
+  Square: '□',
+  Sextile: '⚹',
+  Quincunx: '⚻',
+  Semisextile: '⚺',
+  Semisquare: '∠',
+  Sesquiquadrate: '⚼',
+  Quintile: 'Q',
+  Biquintile: 'BQ',
+  Septile: '7',
+  Novile: '9',
+  Decile: '10',
+  Undecile: '11',
+};
+
+const aspectNames = [
+  'Conjunction',    // 1/1
+  'Opposition',     // 1/2
+  'Trine',          // 1/3
+  'Square',         // 1/4
+  'Quintile',       // 1/5
+  'Sextile',        // 1/6
+  'Septile',        // 1/7
+  'Octile',         // 1/8 (Semisquare)
+  'Novile',         // 1/9
+  'Decile',         // 1/10
+  'Undecile',       // 1/11
 ];
+
+const aspectOrbs = [8, 8, 6, 6, 1.5, 4, 1, 2, 1, 1, 1];
+
+const ASPECTS = aspectNames.map((name, i) => {
+  const angle = i === 0 ? 0 : 360 / (i + 1);
+  const orb = aspectOrbs[i];
+  return {
+    name,
+    angle,
+    orb,
+    glyph: aspectGlyphs[name] || '',
+  };
+});
 
 interface AspectResult {
   planetA: string;
   planetB: string;
   aspect: string;
+  glyph: string;
+  index: number;
   orb: {
     degree: number;
     minutes: number;
@@ -40,17 +69,19 @@ function getAspects(positions: Planet[]): AspectResult[] {
       const a = positions[i];
       const b = positions[j];
       const diff = Math.abs(((a.longitude - b.longitude + 360) % 360));
-      for (const aspect of ASPECTS) {
+      ASPECTS.forEach((aspect, index) => {
         const delta = Math.min(diff, 360 - diff);
         if (Math.abs(delta - aspect.angle) <= aspect.orb) {
           aspects.push({
             planetA: a.name,
             planetB: b.name,
             aspect: aspect.name,
+            glyph: aspect.glyph,
+            index: index+1,
             orb: formatOrb(Math.abs(delta - aspect.angle)),
           });
         }
-      }
+      });
     }
   }
   // Sort aspects by the order in ASPECTS array
@@ -70,7 +101,6 @@ export interface ChartReadingInput {
   city?: string;
   region?: string;
   country?: string;
-  bodies: string[];
 }
 
 type ZodiacSign = {
@@ -100,6 +130,8 @@ type Reading = {
     planetA: string;
     planetB: string;
     aspect: string;
+    glyph: string;
+    index: number;
     orb: {
       degree: number;
       minutes: number;
@@ -137,7 +169,6 @@ export default function (input?: ChartReadingInput) {
   });
 
   if (positions && !loading && !error && houseData && !houseLoading && !houseError) {
-    console.log('House Data:', houseData.housePositions);
     // Calculate houses and angles (default to placidus, or allow system override via input if desired)
     reading.angles = {
       ascendant: convertToZodiac(houseData.housePositions.ascendant),
