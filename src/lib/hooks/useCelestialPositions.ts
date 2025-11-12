@@ -67,6 +67,9 @@ export interface ChartReadingInput {
   time: string;
   latitude: number;
   longitude: number;
+  city?: string;
+  region?: string;
+  country?: string;
   bodies: string[];
 }
 
@@ -122,6 +125,8 @@ export default function (input?: ChartReadingInput) {
   const reading: Reading = {
     positions: [],
   };
+  
+  
   const { data:positions, loading, error } = useQuery(PLANETARY_POSITIONS_QUERY, {
     variables: input as ChartReadingInput,
     skip: !input,

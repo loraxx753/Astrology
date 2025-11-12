@@ -86,10 +86,21 @@ const ChartPage: PageComponentType = () => {
   const query = useMemo(() => parseQuery(location.search), [location.search]);
   const chartData = useMemo(() => queryToChartFormData(query), [query]);
   const hasCityRegionCountry = useMemo(() => Boolean(query.city && query.country), [query.city, query.country]);
-
+  
+  const shouldFetchLatLong = query.lat === undefined && query.long === undefined && hasCityRegionCountry;
+  // const { latLong, loading: latLongLoading, error: latLongError } = useLatLongFromLocation(
+  const { latLong } = useLatLongFromLocation(
+    shouldFetchLatLong ? query.city : undefined,
+    shouldFetchLatLong ? query.country : undefined,
+    shouldFetchLatLong ? query.region : undefined
+  );
+  
+  const effectiveLat = query.lat ?? latLong?.latitude;
+  const effectiveLong = query.long ?? latLong?.longitude;
+  
   // Prepare celestial input for API
-  const lat = query.lat ? parseFloat(query.lat) : undefined;
-  const long = query.long ? parseFloat(query.long) : undefined;
+  const lat = effectiveLat ? parseFloat(effectiveLat) : undefined;
+  const long = effectiveLong ? parseFloat(effectiveLong) : undefined;
   const date = query.date || '';
   const time = query.time || '';
   const bodies = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
@@ -101,19 +112,12 @@ const ChartPage: PageComponentType = () => {
     longitude: long as number,
     bodies,
   } : undefined;
+
+
   const { reading, loading: celestialLoading, error: celestialError } = useCelestialPositions(celestialInput);
   const planetaryPositions = reading?.positions;
   // const { location: reverseLocation, loading: reverseLoading, error: reverseError } = useReverseGeocode(lat, long);
   const { location: reverseLocation } = useReverseGeocode(lat, long);
-  const shouldFetchLatLong = lat === undefined && long === undefined && hasCityRegionCountry;
-  // const { latLong, loading: latLongLoading, error: latLongError } = useLatLongFromLocation(
-  const { latLong } = useLatLongFromLocation(
-    shouldFetchLatLong ? query.city : undefined,
-    shouldFetchLatLong ? query.country : undefined,
-    shouldFetchLatLong ? query.region : undefined
-  );
-  const effectiveLat = lat ?? latLong?.latitude;
-  const effectiveLong = long ?? latLong?.longitude;
 
   if (!chartData) {
     return (
