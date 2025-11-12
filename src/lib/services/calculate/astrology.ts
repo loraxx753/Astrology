@@ -1,4 +1,5 @@
-import { calculateObliquityOfEcliptic, getLocalSiderealTime, getUTCFromLocal, calculateJulianDay } from "../calculations";
+import { degToRad, radToDeg, sanitizeDeg, jdTTfromUTC, estimateDeltaT, trueObliquityDeg } from "../../utils";
+import { getLocalSiderealTime, getUTCFromLocal, calculateJulianDay, calculateLongitude } from "../calculations";
 
 export function getZodiacFromLongitude(longitude: number) {
   const names = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
@@ -14,41 +15,50 @@ export function getZodiacFromLongitude(longitude: number) {
 }
 
 export function getAscendantAndMC(dateStr: string, timeStr: string, latitude: number, longitude: number) {
-    const utcDate = getUTCFromLocal(dateStr, timeStr, latitude, longitude);
-    const julianDay = calculateJulianDay(new Date(utcDate.toISO() || ''));
+  const utcDate = getUTCFromLocal(dateStr, timeStr, latitude, longitude);
+  const dateObj = new Date(utcDate.toISO() || '');
+  const jdUtc = calculateJulianDay(dateObj);
+  // For modern dates, ΔT ≈ 69s (can be parameterized for historical accuracy)
+  const deltaT = estimateDeltaT(dateObj); // seconds
+  const jdTT = jdTTfromUTC(jdUtc, deltaT);
+  const obliquity = trueObliquityDeg(jdTT); // True obliquity (mean + nutation)
 
-    // Assume you have these values:
-    const lst = getLocalSiderealTime(utcDate, longitude);
-    const T = (julianDay - 2_451_545.0) / 36_525; // centuries since J2000
-    const obliquity = calculateObliquityOfEcliptic(T); // in degrees
+  // Sidereal time and angles
+  const lst = getLocalSiderealTime(utcDate, longitude);
+  const lstDegrees = lst * 15;
+  const ramc = lstDegrees; // RAMC is LST in degrees
+  const ic = sanitizeDeg(lstDegrees + 180);
 
+  // Debug output for sidereal time, RAMC, IC, and obliquity
+  console.log('DEBUG JD UTC:', jdUtc);
+  console.log('DEBUG JD TT:', jdTT);
+  console.log('DEBUG ΔT (sec):', deltaT);
+  console.log('DEBUG LST (hours):', lst);
+  console.log('DEBUG LST (deg):', lstDegrees);
+  console.log('DEBUG RAMC (deg):', ramc);
+  console.log('DEBUG IC (deg):', ic);
+  console.log('DEBUG Obliquity (deg):', obliquity);
 
-    // Convert LST from hours to degrees for the formulas
-    const lstDegrees = lst * 15;
+  // Calculate Ascendant (rising sign)
+  const lstRad = degToRad(lstDegrees);
+  const latRad = degToRad(latitude);
+  const oblRad = degToRad(obliquity);
 
-    // Calculate Ascendant (rising sign)
-    const lstRad = lstDegrees * Math.PI / 180;
-    const latRad = latitude * Math.PI / 180;
-    const oblRad = obliquity * Math.PI / 180;
+  const y = -Math.cos(lstRad);
+  const x = Math.sin(lstRad) * Math.cos(oblRad) + Math.tan(latRad) * Math.sin(oblRad);
 
-    const y = -Math.cos(lstRad);
-    const x = Math.sin(lstRad) * Math.cos(oblRad) + Math.tan(latRad) * Math.sin(oblRad);
+  let ascendant = radToDeg(Math.atan2(y, x));
+  ascendant += 180; // correct quadrant
+  ascendant = sanitizeDeg(ascendant); // normalize
 
-    let ascendant = Math.atan2(y, x) * 180 / Math.PI;
-    ascendant += 180; // correct quadrant
-    ascendant = ((ascendant % 360) + 360) % 360; // normalize
+  const midheaven = calculateLongitude(lstDegrees, obliquity);
+  const descendant = (ascendant + 180) % 360;
+  const imumCoeli = (midheaven + 180) % 360;
 
-    // Calculate Midheaven (MC)
-    const yMC = Math.sin(lstRad);
-    const xMC = Math.cos(lstRad) * Math.cos(oblRad);
+  console.log('Inputs for MC:', lstDegrees, obliquity); 
+  console.log('MC Result:', midheaven);
 
-    let midheaven = Math.atan2(yMC, xMC) * 180 / Math.PI;
-    midheaven = ((midheaven % 360) + 360) % 360; // normalize
-
-    const descendant = (ascendant + 180) % 360;
-    const imumCoeli = (midheaven + 180) % 360;
-
-    return { ascendant: ascendant, midheaven: midheaven, descendant, imumCoeli, obliquity, lstDegrees };
+  return { ascendant, midheaven, descendant, imumCoeli, obliquity, lstDegrees };
 }
 
 

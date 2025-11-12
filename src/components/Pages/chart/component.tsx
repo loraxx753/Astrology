@@ -134,7 +134,6 @@ const ChartPage: PageComponentType = () => {
 
   // const { name, date: birthDate, time: birthTime, location: loc, houseSystem, notes } = chartData.pageFormData;
   const { name, date: birthDate, time: birthTime } = chartData.pageFormData;
-  {console.log('reading:', reading);}
   return (
     <div className="min-h-screen" style={{ width: '100vw' }}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6" style={{ margin: '0 auto' }}>

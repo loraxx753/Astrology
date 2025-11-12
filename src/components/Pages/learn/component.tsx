@@ -20,7 +20,7 @@ const LearnPage: PageComponentType = () => {
   const longitude = methods.watch('birthLocation.longitude');
   const hasValidCoords = typeof latitude === 'number' && typeof longitude === 'number';
 
-  const { positions: celestialPositions, loading, error } = useCelestialPositions(
+  const { reading: celestialPositions, loading, error } = useCelestialPositions(
     submitted && birthDate && birthTime && hasValidCoords
       ? {
           date: birthDate,
@@ -34,7 +34,7 @@ const LearnPage: PageComponentType = () => {
 
   const handleSubmit = (data: BirthChartData) => {
     setSubmitted(true);
-    console.log(data);
+    return data;
   };
 
   return (

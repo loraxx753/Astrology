@@ -9,6 +9,7 @@
   "engines": {
     "node": ">=20.0.0"
   },
+  "target": "ES2022",
   "workspaces": [
     "./bin/*"
   ],
@@ -23,6 +24,7 @@
     "build:storybook": "cross-env mode=production storybook build",
     "build:both": "npm run build | npm run build:storybook",
     "test": "npx tsx ./test-accuracy.mjs",
+    "test:houses": "npx tsx ./test-houses.mjs",
     "test:dev": "jest --coverage --watch"
   },
   "dependencies": {
@@ -92,6 +94,7 @@
     "recharts": "^2.12.7",
     "serve": "^14.2.5",
     "sonner": "^1.5.0",
+    "swisseph-wasm": "^0.0.2",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "tsparticles": "^3.5.0",

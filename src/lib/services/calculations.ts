@@ -2,6 +2,9 @@ import tzLookup from "tz-lookup";
 import { DateTime } from "luxon";
 import { sanitizeDeg, radToDeg, degToRad } from "../utils";
 
+const PI = Math.PI;
+const DEG = PI / 180;
+
 // Calculate obliquity of the ecliptic (Earth's axial tilt)
 export function calculateObliquityOfEcliptic(T: number): number {
   // IAU 1980 formula for obliquity
@@ -141,16 +144,30 @@ export function getLocalSiderealTime(utcDateTime: DateTime, longitude: number): 
   // Julian centuries since J2000.0
   const T = (JD - 2_451_545.0) / 36_525.0;
 
+  // --- Calculate Nutation in Longitude (Delta Psi) ---
+  // You'll need to define meanObliquityDeg() if you don't have it yet.
+  const Omega = (125.04452 - 1934.136261 * T + 0.0020708 * T * T + T * T * T / 450000) % 360;
+  const L1 = (280.4665 + 36000.7698 * T) % 360; // Sun mean longitude (used in previous snippet)
+  const L2 = (218.3165 + 481267.8813 * T) % 360; // Moon mean longitude (used in previous snippet)
+  // Largest term for Delta Psi (in arcseconds)
+  const deltaPsiArcsec = -17.20 * Math.sin(Omega * DEG) - 1.32 * Math.sin(2 * L1 * DEG) - 0.23 * Math.sin(2 * L2 * DEG) + 0.21 * Math.sin(2 * Omega * DEG);
+  const deltaPsiDeg = deltaPsiArcsec / 3600.0; // Convert to degrees
+
   // Greenwich Mean Sidereal Time (GMST) in seconds
   let GMST = 280.46061837 + 360.98564736629 * (JD - 2_451_545) + 0.000387933 * T * T - (T * T * T) / 38_710_000;
-  GMST = ((GMST % 360) + 360) % 360; // Normalize to 0-360
-  const GMST_hours = GMST / 15; // Convert degrees to hours
+  GMST = ((GMST % 360) + 360) % 360; // Normalize GMST to 0-360
+
+  // --- Crucial Step: Add Delta Psi to get GAST ---
+  const GAST = sanitizeDeg(GMST + deltaPsiDeg);
+  const GAST_hours = GAST / 15;
 
   // Local Sidereal Time (LST) in hours
-  let LST = GMST_hours + longitude / 15;
+  // Use GAST_hours instead of GMST_hours
+  let LST = GAST_hours + longitude / 15;
   LST = ((LST % 24) + 24) % 24; // Normalize to 0-24
   return LST;
 }
+
 
 
 /**
@@ -166,34 +183,33 @@ export function calculateDeclination(L: number, O: number): number {
 
 /**
  * Calculates the Ecliptic Longitude (L) given Right Ascension (RA) and obliquity (O).
- * Formula: tan(L) = cos(RA) * tan(O) / cos(O)
- * (More robustly implemented with atan2 to handle quadrants)
+ * Uses atan2 for robust quadrant handling.
  */
 export function calculateLongitude(RA: number, O: number): number {
-  const RSRad = degToRad(RA);
-  const ORad = degToRad(O);
-
-  // Use atan2 for correct quadrant handling (0-360 deg)
-  const tanLon = Math.tan(RSRad) * Math.cos(ORad);
-  const longitudeRad = Math.atan(tanLon);
-
-  // Simple atan gives -90 to +90. Need to map to 0-360 based on RA quadrant.
-  let longitude = radToDeg(longitudeRad);
-
-  if (RA > 90 && RA < 270) {
-    longitude += 180;
-  } else if (RA >= 270) {
-      longitude += 360;
-  }
-
-  return sanitizeDeg(longitude);
-}
-
-// NOTE: The atan2 implementation is generally safer for quadrant handling:
-/*
-function calculateLongitude(RA: number, O: number): number {
     const RSRad = degToRad(RA);
     const ORad = degToRad(O);
-    return sanitizeDeg(radToDeg(Math.atan2(Math.sin(RSRad) * Math.cos(ORad), Math.cos(RSRad))));
+
+    // Using atan2 to correctly determine the angle in all four quadrants
+    // The formula for atan2(y, x) here is based on spherical trigonometry
+    const y = Math.sin(RSRad);
+    const x = Math.cos(RSRad) * Math.cos(ORad);
+    
+    const longitudeRad = Math.atan2(y, x);
+
+    return sanitizeDeg(radToDeg(longitudeRad));
 }
-*/
+
+export function calculateLongitudeFromOA(OA: number, latitude: number, obliquity: number): number {
+    const OARad = degToRad(OA);
+    const latRad = degToRad(latitude);
+    const oblRad = degToRad(obliquity);
+
+    // Using atan2(y, x) for correct quadrant handling:
+    const y = Math.sin(OARad);
+    const x = Math.cos(OARad) * Math.cos(oblRad) - Math.tan(latRad) * Math.sin(oblRad);
+
+    const longitudeRad = Math.atan2(y, x);
+
+    // Return the result normalized to 0-360 degrees
+    return sanitizeDeg(radToDeg(longitudeRad));
+}

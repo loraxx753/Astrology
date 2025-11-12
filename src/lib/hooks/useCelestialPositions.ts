@@ -1,8 +1,7 @@
 import { useQuery } from '@apollo/client';
 import { convertToZodiac } from '../services/calculate/astrology';
 import { formatOrb } from '../services/calculations';
-import { calculateHouseSystem } from '../services/calculate/houses';
-import { PLANETARY_POSITIONS_QUERY } from '../queries/GET';
+import { PLANETARY_POSITIONS_QUERY, HOUSES_QUERY } from '../queries/GET';
 
 const ASPECTS = [
   { name: 'Conjunction', angle: 0, orb: 8 },
@@ -127,21 +126,28 @@ export default function (input?: ChartReadingInput) {
     variables: input as ChartReadingInput,
     skip: !input,
   });
+  const { data: houseData, loading: houseLoading, error: houseError } = useQuery(HOUSES_QUERY, {
+    variables: input as Partial<ChartReadingInput>,
+    skip: !input,
+  });
 
-  if (positions && !loading && !error) {
+  if (positions && !loading && !error && houseData && !houseLoading && !houseError) {
+    console.log('House Data:', houseData.housePositions);
     // Calculate houses and angles (default to placidus, or allow system override via input if desired)
-    const houseResult = calculateHouseSystem({ date: input!.date, time: input!.time, latitude: input!.latitude, longitude: input!.longitude, system: 'placidus' });
     reading.angles = {
-      ascendant: convertToZodiac(houseResult.ascendant),
-      midheaven: convertToZodiac(houseResult.midheaven),
-      descendant: convertToZodiac(houseResult.descendant),
-      imumCoeli: convertToZodiac(houseResult.imumCoeli),
+      ascendant: convertToZodiac(houseData.housePositions.ascendant),
+      midheaven: convertToZodiac(houseData.housePositions.mc),
+      descendant: convertToZodiac((houseData.housePositions.ascendant + 180) % 360),
+      imumCoeli: convertToZodiac((houseData.housePositions.mc + 180) % 360),
     };
     reading.houses = {
-      cusps: Object.entries(houseResult.cusps)
-        .map(([key, value]) => ({ [key]: convertToZodiac(value) }))
-        .reduce((acc, curr) => ({ ...acc, ...curr }), {}),
-      system: houseResult.system,
+      cusps: houseData?.housePositions.house
+        .map((value: number) => convertToZodiac(value))
+        .reduce((acc: HouseCusps, sign: ZodiacSign, index: number) => {
+          acc[index + 1] = sign;
+          return acc;
+        }, {}),
+      system: 'Placidus',
     };
     reading.aspects = getAspects(positions.planetaryPositions);
 
