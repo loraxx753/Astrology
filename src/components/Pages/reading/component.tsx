@@ -39,15 +39,6 @@ const ReadingPage: PageComponentType = () => {
         if (loc.country) params.country = String(loc.country);
       }
     }
-    // Orb preferences (flattened)
-    if (pf.orbPreferences) {
-      const orb = pf.orbPreferences as Record<string, unknown>;
-      for (const orbKey of ['conjunction','opposition','trine','square','sextile','quincunx']) {
-        if (orb[orbKey] !== undefined && orb[orbKey] !== '') {
-          params[orbKey] = String(orb[orbKey]);
-        }
-      }
-    }
     // Do NOT include timeKnown or orbPreferences as an object
     const search = new URLSearchParams(params).toString();
     navigate(`/chart?${search}`);
