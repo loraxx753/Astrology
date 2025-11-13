@@ -195,8 +195,12 @@ const ChartPage: PageComponentType = () => {
                   </ul>
                 )}
                 {!celestialLoading && !celestialError && (!planetaryPositions || planetaryPositions.length === 0) && (
+                  <p className="text-sm text-purple-700">Initializing planetary positions...</p>
+                )}
+                {!celestialLoading && celestialError && (!planetaryPositions || planetaryPositions.length === 0) && (
                   <p className="text-sm text-purple-700">No planetary data available.</p>
                 )}
+
               </CardContent>
             </Card>
             {/* House Placements */}
@@ -220,6 +224,9 @@ const ChartPage: PageComponentType = () => {
                   </ul>
                 )}
                 {!celestialLoading && !celestialError && (!reading || !reading.houses) && (
+                  <p className="text-sm text-indigo-700">Initializing house data...</p>
+                )}
+                {!celestialLoading && celestialError && (!reading || !reading.houses) && (
                   <p className="text-sm text-indigo-700">No house data available.</p>
                 )}
               </CardContent>
@@ -255,6 +262,9 @@ const ChartPage: PageComponentType = () => {
                   </ul>
                 )}
                 {!celestialLoading && !celestialError && (!reading || !reading.aspects || reading.aspects.length === 0) && (
+                  <p className="text-sm text-blue-700">Initializing aspect data...</p>
+                )}
+                {!celestialLoading && celestialError && (!reading || !reading.aspects || reading.aspects.length === 0) && (
                   <p className="text-sm text-blue-700">No aspect data available.</p>
                 )}
               </CardContent>
@@ -292,6 +302,9 @@ const ChartPage: PageComponentType = () => {
                   </ul>
                 )}
                 {!celestialLoading && !celestialError && (!reading || !reading.angles) && (
+                  <p className="text-sm text-purple-700">Initializing angle data...</p>
+                )}
+                {!celestialLoading && celestialError && (!reading || !reading.angles) && (
                   <p className="text-sm text-purple-700">No angle data available.</p>
                 )}
               </CardContent>
